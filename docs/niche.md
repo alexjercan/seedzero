@@ -54,11 +54,13 @@ and both are printed by the sim.
 1. Galton board: twelve rows of pegs, ten thousand balls; center bin beats
    the edge bin by nine hundred twenty four to one. [produced]
 2. Double pendulum: two runs, one thousandth of a degree apart; measure the
-   time to full divergence. [in production]
+   time to full divergence. [produced]
 3. Monty Hall: ten thousand simultaneous games as two racing bars; switching
-   wins about two thirds.
+   wins about two thirds. [produced]
 4. Boids: three rules on screen as toggles; flocking appears and collapses
-   as rules toggle off and on.
+   as rules toggle off and on. Research 2026-08-30: also measure flock
+   polarization each frame and narrate the tick the scatter snaps into
+   alignment; answers "how do flocks work with no leader".
 
 ## Backlog
 
@@ -66,14 +68,20 @@ Each idea must yield one measurable surprise before it earns a slot.
 
 - Birthday paradox: a grid of fifty rooms of twenty three people fills;
   count how many rooms hold a shared birthday (expect about half).
+  Research 2026-08-30: demand validated; ten thousand rooms gives a
+  sharper count (expect near five thousand seventy).
 - Gambler's ruin: a fair coin, one player has ten times the bankroll;
   measure how often the small stack survives.
 - Schelling segregation: agents needing only thirty percent same-color
   neighbors; measure final segregation percentage.
 - Traffic jam from nothing: a ring road, one braking car; measure the
-  backward wave speed of the phantom jam.
+  backward wave speed of the phantom jam. Research 2026-08-30: use the
+  Sugiyama twenty two car ring with no obstacle at all; expect the wave
+  to roll backward near twenty km/h.
 - Sorting race: quicksort versus bubble sort on the same shuffled array
-  with honest comparison counters.
+  with honest comparison counters. Research 2026-08-30: demand validated
+  ("fastest sorting algorithm" is a recurring search); expect a ratio
+  above twenty to one on five hundred twelve bars.
 - A-star versus BFS: same maze, count the cells each one touches.
 - Epidemic threshold: same virus, contact rate just below versus just
   above the threshold; measure final infected counts.
@@ -91,3 +99,39 @@ Each idea must yield one measurable surprise before it earns a slot.
   the nines.
 - Percolation: grid fills randomly; measure the sharp threshold where a
   path suddenly connects.
+
+Added by trend research 2026-08-30 (evidence in task 20260830-222119):
+
+- Pendulum wave: thirty pendulums with tuned lengths scatter into
+  apparent chaos, then snap back into a perfect line; measure the exact
+  realignment period and make the last frame equal the first for a
+  seamless loop.
+- Streak test: ten thousand seeded runs of one hundred coin flips;
+  measure how many contain a streak of six or more (expect nearly all;
+  corrects the gambler's fallacy "due for tails" intuition).
+- Seven shuffles: riffle shuffle thousands of decks one to ten times; a
+  card guesser plays each deck and measures its edge over chance, which
+  survives four shuffles and dies near seven.
+- Busy beaver: run the five-state busy beaver champion machine to its
+  halt as a scrolling tape; count every step, exactly 47,176,870 from
+  five states (peg: ninety years of Turing's 1936 paper, window through
+  December 2026).
+- Coin flip for a million: ten thousand players choose fifty thousand
+  sure versus a coin flip for a million; expected value says flip, yet
+  measure how many flippers walk away with nothing (peg: viral poll,
+  publish by mid September 2026).
+- Random versus balanced: ten thousand items signed plus or minus by
+  coin flip versus a greedy balancing rule; measure the random drift
+  near one hundred against the balanced drift near three (peg:
+  discrepancy breakthrough coverage, August 2026).
+- Golden angle: place one thousand seeds at the golden angle, then a
+  tenth of a degree off; measure how far packing efficiency collapses
+  and count the spiral arms that appear (peg: Fibonacci Day,
+  2026-11-23).
+- Pi race: Leibniz versus Ramanujan series with digits locking in on
+  screen; measure terms needed for seven correct digits, about five
+  million versus two (peg: Ramanujan's birthday, 2026-12-22).
+- Best of seven: one hundred thousand series where the better team wins
+  each game fifty five percent of the time; measure how often it wins
+  the series (expect near sixty percent; peg: playoff season,
+  September and October).
