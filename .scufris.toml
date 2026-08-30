@@ -26,6 +26,19 @@ web/data/. If no claim is supported by a strong measured number, slip the
 slot and say so.
 """
 
+[agents.research]
+description = "Research online trends in the niche and add measurable idea candidates to the backlog."
+keywords = { harness = "claude" }
+guidance = """
+Follow the research-trends skill: read docs/niche.md, run a handful of
+focused web searches for trending subjects and formats in the sim-science
+shorts space, and keep only ideas that a deterministic in-repo simulation
+can turn into one measured surprising number. Append survivors to the
+backlog in docs/niche.md and record queries, sources, and reasoning in a
+Tatr task. Research feeds ideas only; narrated claims still come from
+simulations measured in this repo.
+"""
+
 [agents.analytics]
 description = "Pull YouTube stats and analytics, answer questions, refresh the status page."
 keywords = { harness = "claude" }
