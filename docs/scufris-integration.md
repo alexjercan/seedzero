@@ -15,7 +15,7 @@ delegates work to Pi or Claude harnesses in owned tmux sessions
 ## Integration architecture
 
 ```text
-agent-youtube                          scufris2
+seedzero                               scufris2
   web/status.json  <-- agent writes --> seedzero backend reads (widget data)
   .scufris.toml    <-- menu ----------> jobs helper spawns claude jobs (triggers)
   systemd user timer -> claude -p /produce-short (scheduled slots)
@@ -121,7 +121,7 @@ widget, and can ask Scufris to stop it by the recorded PID or to spawn a
 
 ## What needs building
 
-agent-youtube side:
+seedzero side:
 
 - `web/status.json` writer alongside the existing `web/data.js` habit.
 - `scripts/yt-stats.py` (Analytics API pull using `secrets/token.json`).
