@@ -28,9 +28,7 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 ## Channel identity
 
 - **Name: Seed Zero**
-- Handle: `@SeedZero`. Fallbacks in order: `@SeedZeroLab`, `@SeedZeroSim`.
-- Alternate names if Seed Zero is rejected at creation time:
-  `Initial Conditions`, `Ten Thousand Runs`.
+- Handle: `@SeedZeroLab` (`@SeedZero` was taken at creation time).
 - Tagline: "Real simulations. Measured claims. Seed on screen."
 - About text: "Every video on this channel is a real, deterministic
   simulation. Every claim you hear was measured from that exact run. The seed

@@ -8,7 +8,7 @@ upload and analytics access. The agent never touches the main channel.
 1. Sign in to YouTube with your normal Google account.
 2. Settings -> "Add or manage your channel(s)" -> "Create a channel".
 3. Name it **Seed Zero** (fallback names in `README.md`).
-4. Set the handle: `@SeedZero`, else `@SeedZeroLab`, else `@SeedZeroSim`.
+4. Set the handle: `@SeedZeroLab`.
 
 A Brand Account channel is a separate identity under your Google account.
 OAuth below is scoped to this identity only, so the agent's token cannot see
