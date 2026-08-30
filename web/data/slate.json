@@ -1,0 +1,28 @@
+[
+  {
+    "title": "10,000 balls fell. 3 reached the edges.",
+    "status": "public",
+    "date": "2026-08-30",
+    "url": "https://youtu.be/K_ntI_mY4v0",
+    "views": 6
+  },
+  {
+    "title": "0.001 degrees apart. Watch them disagree.",
+    "status": "public",
+    "date": "2026-08-30",
+    "url": "https://youtu.be/BU_j-UbPR7k",
+    "views": 8
+  },
+  {
+    "title": "Fourteen more measured-claim ideas",
+    "status": "backlog in docs/niche.md"
+  },
+  {
+    "title": "Monty Hall: ten thousand games as two racing bars",
+    "status": "queued"
+  },
+  {
+    "title": "Boids: flocking from three toggleable rules",
+    "status": "queued"
+  }
+]

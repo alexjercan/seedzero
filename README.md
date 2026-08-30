@@ -67,9 +67,10 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 - `media/` — rendered output, ignored by git.
 - `scripts/` — production helpers (voice-over, music, composition).
 - `tasks/` — Tatr-tracked work.
-- `web/` — static status page: stats, videos, ideas, and a work log. Open
-  `web/index.html` in a browser; the agent keeps `web/data.js` current. Pushes
-  to `master` deploy it to GitHub Pages through `.github/workflows/pages.yml`.
+- `web/` - static status page: stats, the video and idea slate, and a work log.
+  Data lives in JSON and JSONL under `web/data/`. Run `python -m http.server -d web` to
+  preview it locally. Pushes to `master` deploy it to GitHub Pages through
+  `.github/workflows/pages.yml`.
 - `secrets/` — OAuth credentials for uploads, ignored by git.
 
 ## Quickstart

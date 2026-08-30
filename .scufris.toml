@@ -21,8 +21,9 @@ Pick the strongest idea from docs/niche.md, then follow the produce-short
 skill: measure the claim first, script from measured numbers only, verified
 voice-over, seeded music, compose, inspect the contact sheet and frames at
 full resolution, fix defects, upload private, publish after the QA pass.
-Record all evidence in the owning Tatr task and update web/data.js. If no
-claim is supported by a strong measured number, slip the slot and say so.
+Record all evidence in the owning Tatr task and update the files under
+web/data/. If no claim is supported by a strong measured number, slip the
+slot and say so.
 """
 
 [agents.analytics]
@@ -32,8 +33,8 @@ guidance = """
 Use the token in secrets/ with the YouTube Data and Analytics APIs. Reads
 cost about one quota unit each; keep it to a handful per run. Report subs,
 views, per-video numbers, swipe-away and retention when available. Update
-web/data.js stats and log. Record notable findings and any slate decisions
-they justify in a Tatr task.
+web/data/status.json, web/data/slate.json, and web/data/log.jsonl. Record
+notable findings and any slate decisions they justify in a Tatr task.
 """
 
 [agents.publish]

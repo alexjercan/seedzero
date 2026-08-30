@@ -30,7 +30,7 @@ delegates work to Pi or Claude harnesses in owned tmux sessions
 
 ```text
 seedzero                               scufris2
-  web/status.json  <-- agent writes --> seedzero backend reads (widget data)
+  web/data/*       <-- agent writes --> seedzero backend reads (widget data)
   .scufris.toml    <-- menu ----------> jobs helper spawns claude jobs (triggers)
   systemd user timer -> claude -p /produce-short (scheduled slots)
 ```
@@ -50,16 +50,15 @@ deterministic backend under `surfaces/desktop/backends/NAME/`. Contract:
 
 Data flow:
 
-1. This repo gains `web/status.json`, a machine-readable sibling of
-   `web/data.js`: channel stats, per-video views, idea queue, recent log
-   entries, and a `run` block (slot, phase, PID, started, outcome). The same
-   update step that keeps `data.js` current writes both.
+1. The normalized files under `web/data/` provide channel status, a unified
+   video and idea slate, and a timestamped JSONL log. A future `run` block
+   (slot, phase, PID, started, outcome) belongs in `web/data/status.json`.
 2. A new `scripts/yt-stats.py` pulls the YouTube Analytics API with
    `secrets/token.json` (scope `yt-analytics.readonly`, see
-   `docs/channel-setup.md`) and refreshes stats in both files. It runs on the
+   `docs/channel-setup.md`) and refreshes the relevant data files. It runs on the
    "pull analytics" trigger and at the start of each scheduled slot.
 3. A new shipped scufris widget `seedzero` plus backend
-   `surfaces/desktop/backends/seedzero/backend.py` reads `status.json`. Model
+   `surfaces/desktop/backends/seedzero/backend.py` reads `web/data/status.json`. Model
    it on the `today` backend: stat the file on a beat, re-read on mtime
    change, one JSON reading per line, `trouble` beside the data. Path via a
    `SCUFRIS_SEEDZERO_STATUS` variable, following the `SCUFRIS_TODAY_COMMAND`
@@ -71,7 +70,7 @@ stat per beat. The owner says "show me seed zero" and Pi opens the exhibit.
 
 Quick first step, no scufris rebuild: an external view-only widget
 (`widget.toml` + compiled `widget.js`) on `SCUFRIS_WIDGET_PATH`. External
-widgets cannot load new backends, so Pi passes a snapshot of `status.json` in
+widgets cannot load new backends, so Pi passes a snapshot of `web/data/status.json` in
 the call arguments and the panel does not live-refresh. Good for week one;
 the shipped widget is the real target.
 
@@ -92,7 +91,7 @@ description = "Produce the next Seed Zero short end to end."
 keywords = { harness = "claude" }
 
 [agents.analytics]
-description = "Pull YouTube analytics and refresh web/data.js and web/status.json."
+description = "Pull YouTube analytics and refresh the files under web/data/."
 keywords = { harness = "claude" }
 
 [agents.publish]
@@ -111,18 +110,18 @@ conversation (`docs/src/dev/messaging.md`); the owner steers a live job with
 
 Mechanism: 2-3 systemd user timers (e.g. 09:00, 14:00, 19:00) run a new
 `scripts/produce-slot.sh` in this repo. The script takes a lock file, records
-its PID in `status.json` (so it can be stopped by recorded PID), refreshes
+its PID in `web/data/status.json` (so it can be stopped by recorded PID), refreshes
 analytics, then runs `claude -p "/produce-short"` headless. YouTube quota
 allows about six uploads per day (`docs/channel-setup.md`), so 3/day fits.
 
 Quality gate: a slot ships nothing weak. After the measure step, if no claim
 in the queue is supported by a strong measured number, the run records
-`outcome: slipped` with the reason in `status.json` and the log, and exits
+`outcome: slipped` with the reason in `web/data/status.json` and the log, and exits
 clean. The slot slips; the next timer tries again with a fresh or fixed idea.
 Never pad the slot with filler and never bend a number to fit a claim.
 
 Failure handling: the script traps errors and writes
-`outcome: failed, reason: ...` to `status.json`; the widget shows the last
+`outcome: failed, reason: ...` to `web/data/status.json`; the widget shows the last
 outcome and the systemd journal keeps the transcript. One attempt per slot, no
 retry storms. Two consecutive failures stop the timers until the owner clears
 the state. Uploads stay private on upload per `README.md`; publishing runs
@@ -137,7 +136,7 @@ widget, and can ask Scufris to stop it by the recorded PID or to spawn a
 
 seedzero side:
 
-- `web/status.json` writer alongside the existing `web/data.js` habit.
+- `web/data/status.json` run-state writer and analytics updater.
 - `scripts/yt-stats.py` (Analytics API pull using `secrets/token.json`).
 - `.scufris.toml` with the `produce`, `analytics`, `publish` agents.
 - `scripts/produce-slot.sh` plus systemd user timer/service units.
@@ -169,7 +168,7 @@ Findings from scufris2, read-only:
 Options, ranked by machinery added:
 
 - **A. Greeted briefing** (skill only): owner says "morning"; a scufris2
-  skill tells Pi to read `web/status.json`, optionally run a small
+  skill tells Pi to read `web/data/status.json`, optionally run a small
   analytics pull, compare uploads against the cadence target, report, and
   offer to spawn produce/publish jobs. Spoken, zero new mechanisms, but
   needs the one-word prompt.
@@ -184,10 +183,10 @@ Options, ranked by machinery added:
 
 Positions on the open points: trigger is fixed time plus catch-up on
 session start, deduped by a state file; the cadence target lives in
-`web/status.json` (for example `targets.shorts_per_day`); a live stats
+`web/data/status.json` (for example `targets.shorts_per_day`); a live stats
 pull inside the briefing is allowed, since reads cost about one quota
 unit. Building B later means: `briefing.ts` plus a time setting in
-scufris2, and `scripts/yt-stats.py` plus `web/status.json` here.
+scufris2, and `scripts/yt-stats.py` plus `web/data/status.json` here.
 
 ## Open questions for the owner
 

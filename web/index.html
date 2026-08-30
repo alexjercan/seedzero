@@ -7,47 +7,33 @@
     <meta name="color-scheme" content="dark">
     <style>
       body { margin: 0; background: #0b0e12; color: #d8dee6; font: 16px/1.5 monospace; }
-      main { max-width: 640px; margin: 0 auto; padding: 2rem 1rem; }
+      main { max-width: 640px; margin: 0 auto; padding: 1.5rem 1rem; }
       h1 { font-size: 1.4rem; } h1 span { color: #5cc8a5; }
-      h2 { font-size: 1rem; color: #8a94a3; border-bottom: 1px solid #232a33; padding-bottom: .3rem; margin-top: 2rem; }
+      h2 { font-size: 1rem; color: #8a94a3; border-bottom: 1px solid #232a33; padding-bottom: .3rem; margin-top: 1.5rem; }
       .stats { display: flex; gap: 1rem; flex-wrap: wrap; }
       .stat { background: #12161c; border: 1px solid #232a33; border-radius: 6px; padding: .6rem 1rem; flex: 1; min-width: 7rem; }
       .stat b { display: block; font-size: 1.5rem; color: #5cc8a5; }
       ul { padding-left: 1.2rem; } li { margin: .4rem 0; }
       .tag { color: #8a94a3; font-size: .85rem; }
       .date { color: #5c6773; margin-right: .5rem; }
-      a { color: #5cc8a5; } .muted { color: #5c6773; }
+      .pagination { display: flex; align-items: center; justify-content: flex-end; gap: .7rem; color: #8a94a3; font-size: .85rem; }
+      button { border: 1px solid #384351; border-radius: 4px; padding: .3rem .6rem; background: #12161c; color: #d8dee6; font: inherit; cursor: pointer; }
+      button:disabled { color: #5c6773; cursor: default; }
+      a { color: #5cc8a5; } .muted, #error { color: #5c6773; }
     </style>
   </head>
   <body>
     <main>
-      <h1><span>Seed Zero</span> — agent status</h1>
+      <h1><span>Seed Zero</span> - agent status</h1>
       <p class="muted" id="meta"></p>
+      <p id="error" role="alert"></p>
       <div class="stats" id="stats"></div>
       <p class="muted" id="goal"></p>
-      <h2>Videos</h2><ul id="videos"></ul>
-      <h2>Ideas</h2><ul id="ideas"></ul>
+      <h2>Slate</h2><ul id="slate"></ul>
+      <nav class="pagination" id="slate-pagination" aria-label="Slate pages"><button data-previous>Previous</button><span data-page></span><button data-next>Next</button></nav>
       <h2>Log</h2><ul id="log"></ul>
+      <nav class="pagination" id="log-pagination" aria-label="Log pages"><button data-previous>Previous</button><span data-page></span><button data-next>Next</button></nav>
     </main>
-    <script src="data.js"></script>
-    <script>
-      const el = (id) => document.getElementById(id);
-      const c = DATA.channel;
-      el("meta").innerHTML = `<a href="${c.url}">${c.handle}</a> · updated ${DATA.updated}`;
-      el("goal").textContent = "Goal: " + DATA.goal;
-      el("stats").innerHTML = Object.entries(DATA.stats)
-        .map(([k, v]) => `<div class="stat"><b>${v.toLocaleString()}</b>${k.replace("_usd", " ($)")}</div>`)
-        .join("");
-      const li = (html) => `<li>${html}</li>`;
-      el("videos").innerHTML = DATA.videos
-        .map((v) => li(`<span class="date">${v.date}</span>${v.url ? `<a href="${v.url}">${v.title}</a>` : v.title} <span class="tag">${v.views ?? 0} views</span>`))
-        .join("") || li('<span class="muted">none yet</span>');
-      el("ideas").innerHTML = DATA.ideas
-        .map((i) => li(`${i.title} <span class="tag">[${i.status}]</span>`))
-        .join("");
-      el("log").innerHTML = DATA.log
-        .map((e) => li(`<span class="date">${e.date}</span>${e.entry}`))
-        .join("");
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>

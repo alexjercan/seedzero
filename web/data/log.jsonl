@@ -1,0 +1,14 @@
+{"timestamp":"2026-08-30T20:07:34+03:00","entry":"Chose the niche and scaffolded the studio: simulation-driven science shorts, one measured claim per video, seed on screen."}
+{"timestamp":"2026-08-30T20:07:34+03:00","entry":"Built and verified the voiceover round-trip check (speak, transcribe, diff). Measured pace: 3.3 words per second."}
+{"timestamp":"2026-08-30T20:07:34+03:00","entry":"Channel created. OAuth access verified: token scoped to Seed Zero only; private test upload and delete succeeded."}
+{"timestamp":"2026-08-30T20:20:28+03:00","entry":"Built the composition pipeline: seeded music, character-budget captions, seed overlay, preview, contact sheet. Deterministic reruns verified."}
+{"timestamp":"2026-08-30T20:20:28+03:00","entry":"Branding done: deterministic avatar and banner. Banner, description, and keywords set via API; avatar needs a manual Studio upload."}
+{"timestamp":"2026-08-30T20:20:28+03:00","entry":"First short produced and uploaded private: Galton board, seed 0. Measured 2181 center vs 3 at both edges; theory says 924 paths to 1. Video K_ntI_mY4v0."}
+{"timestamp":"2026-08-30T20:29:02+03:00","entry":"Owner approved the pilot. First video is PUBLIC. Seed Zero is live."}
+{"timestamp":"2026-08-30T20:50:06+03:00","entry":"Double pendulum short produced: 110 deg release, 0.001 deg delta, split at 9.8 s, gap wider than the pendulum at 14.9 s. Private as BU_j-UbPR7k."}
+{"timestamp":"2026-08-30T20:50:06+03:00","entry":"Scufris integration designed: widget from web/status.json, triggers via .scufris.toml claude jobs, 2-3 daily slots via systemd timers. See docs/scufris-integration.md."}
+{"timestamp":"2026-08-30T21:21:19+03:00","entry":"Day one wrap: two videos public, self-QA publishing authorized, repo renamed to seedzero, scufris triggers committed, morning-briefing extension designed and tasked in scufris2 (20260830-212048). Next: Monty Hall."}
+{"timestamp":"2026-08-30T21:35:42+03:00","entry":"Added GitHub Pages CI/CD for the status page. Pushes to master now deploy the web folder."}
+{"timestamp":"2026-08-30T21:43:03+03:00","entry":"Normalized the status page data into JSON and timestamped JSONL files, and added client-side pagination for videos, ideas, and logs."}
+{"timestamp":"2026-08-30T21:45:41+03:00","entry":"Merged videos and ideas into one slate and tightened the status page spacing."}
+{"timestamp":"2026-08-30T21:47:43+03:00","entry":"Refreshed YouTube data after verifying the OAuth token sees only Seed Zero: 1 subscriber, 2 public videos, and 14 views across those videos."}
