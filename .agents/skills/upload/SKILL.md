@@ -14,7 +14,8 @@ Use the YouTube Data API via the Python environment in the dev shell:
 - Upload `media/<name>/final.mp4` with `videos.insert`, category Education,
   visibility private, self-declared altered content, metadata from
   `projects/<name>/metadata.json`.
-- After a QA pass of the processed video, flip visibility to public.
+- After the agent's own QA pass of the processed video, flip visibility to
+  public (owner authorized self-QA publishing on 2026-08-30).
 - One upload costs 1,600 quota units of the 10,000 daily budget.
 - Record the video ID and publish time in the task evidence.
 

@@ -45,7 +45,7 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 | Default language | English |
 | Audience | Not made for kids (channel-level) |
 | Altered content disclosure | Yes; the channel is openly AI-made |
-| Default visibility | Private on upload; public after final QA pass |
+| Default visibility | Private on upload; the agent publishes after its own QA pass (owner authorized 2026-08-30) |
 | Comments | On, hold potentially inappropriate for review |
 | License | Standard YouTube license |
 | Country | Owner's choice |

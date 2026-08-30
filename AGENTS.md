@@ -20,6 +20,9 @@ Global `~/AGENTS.md` applies.
   transcription must match the approved narration text.
 - All footage, music, and art are generated in-repo. No external media, no
   licensed assets, no stock.
+- Publishing: upload private, then publish after the agent's own QA pass
+  (owner authorized 2026-08-30). Never publish work that fails the quality
+  gate; slip the slot instead.
 
 ## Workflow
 

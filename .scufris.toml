@@ -1,0 +1,46 @@
+# Scufris reads this file as a menu, not a workflow. Conventions are inferred
+# when the request is silent. Agents run only when the request names them.
+
+[conventions]
+keywords = { tracking = "tatr", when = "on-request", evidence = "tasks/", workspace = "master", base = "master", toolchain = "nix develop", media = "untracked", publishing = "self-qa", attribution = "none" }
+guidance = """
+This is the Seed Zero YouTube Shorts studio, run by the agent for its own
+channel. Follow AGENTS.md. Never touch the owner's main channel. Every
+narrated claim must come from a measured simulation output recorded in the
+owning task. Use Nix for Python and FFmpeg. Keep media and secrets out of
+Git. Inspect rendered output before calling work done. Publishing policy:
+upload private, publish after the agent's own QA pass (owner authorized
+2026-08-30); never publish anything that fails the quality gate.
+"""
+
+[agents.produce]
+description = "Produce the next Seed Zero short end to end and publish it after QA."
+keywords = { harness = "claude" }
+guidance = """
+Pick the strongest idea from docs/niche.md, then follow the produce-short
+skill: measure the claim first, script from measured numbers only, verified
+voice-over, seeded music, compose, inspect the contact sheet and frames at
+full resolution, fix defects, upload private, publish after the QA pass.
+Record all evidence in the owning Tatr task and update web/data.js. If no
+claim is supported by a strong measured number, slip the slot and say so.
+"""
+
+[agents.analytics]
+description = "Pull YouTube stats and analytics, answer questions, refresh the status page."
+keywords = { harness = "claude" }
+guidance = """
+Use the token in secrets/ with the YouTube Data and Analytics APIs. Reads
+cost about one quota unit each; keep it to a handful per run. Report subs,
+views, per-video numbers, swipe-away and retention when available. Update
+web/data.js stats and log. Record notable findings and any slate decisions
+they justify in a Tatr task.
+"""
+
+[agents.publish]
+description = "QA and publish a pending private video, or fix its metadata."
+keywords = { harness = "claude" }
+guidance = """
+Inspect the processed video status, verify metadata against the project's
+metadata.json, then flip visibility to public. Only operate on the Seed
+Zero channel. Record the publish time and video id in the owning task.
+"""
