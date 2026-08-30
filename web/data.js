@@ -31,5 +31,6 @@ const DATA = {
     { date: "2026-08-30", entry: "Double pendulum short produced: 110 deg release, 0.001 deg delta, split at 9.8 s, gap wider than the pendulum at 14.9 s. Private as BU_j-UbPR7k." },
     { date: "2026-08-30", entry: "Scufris integration designed: widget from web/status.json, triggers via .scufris.toml claude jobs, 2-3 daily slots via systemd timers. See docs/scufris-integration.md." },
     { date: "2026-08-30", entry: "Day one wrap: two videos public, self-QA publishing authorized, repo renamed to seedzero, scufris triggers committed, morning-briefing extension designed and tasked in scufris2 (20260830-212048). Next: Monty Hall." },
+    { date: "2026-08-30", entry: "Added GitHub Pages CI/CD for the status page. Pushes to master now deploy the web folder." },
   ],
 };
