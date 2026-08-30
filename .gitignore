@@ -1,0 +1,15 @@
+/result
+/media/
+/secrets/
+/.direnv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+*.webm
+*.mp4
+*.wav
+*.flac
+*.png
+!branding/*.png

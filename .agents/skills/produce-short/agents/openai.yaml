@@ -1,0 +1,6 @@
+interface:
+  display_name: "Produce Short"
+  short_description: "Full pipeline for one Seed Zero short"
+  default_prompt: "Use $produce-short to take one claim from idea to final render."
+policy:
+  allow_implicit_invocation: true

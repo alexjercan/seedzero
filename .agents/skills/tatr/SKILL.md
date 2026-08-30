@@ -1,0 +1,19 @@
+---
+name: tatr
+description: Create, list, query, and edit Seed Zero's Markdown tasks when tracked work is requested.
+---
+
+# Tatr
+
+Tasks live at `tasks/<YYYYMMDD-HHMMSS>/TASK.md`.
+
+```bash
+tatr new "Title" -p 0 -t backlog
+tatr ls --sort priority
+tatr ls --filter ':status eq OPEN'
+tatr edit <id> --status CLOSED
+```
+
+Valid statuses are `OPEN` and `CLOSED`. Use `-r ROOT` for another project.
+Edit an existing task body directly. Follow Seed Zero's scheduling and
+task-evidence rules in `AGENTS.md`.

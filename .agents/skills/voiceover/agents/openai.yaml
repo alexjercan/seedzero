@@ -1,0 +1,6 @@
+interface:
+  display_name: "Voiceover"
+  short_description: "Speak and verify narration audio"
+  default_prompt: "Use $voiceover to generate verified narration for a short."
+policy:
+  allow_implicit_invocation: true

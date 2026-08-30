@@ -1,0 +1,6 @@
+interface:
+  display_name: "Upload"
+  short_description: "Publish a short to Seed Zero"
+  default_prompt: "Use $upload to publish a finished short or build a manual upload packet."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Tatr"
+  short_description: "Track Seed Zero work in Markdown"
+  default_prompt: "Use $tatr to inspect and update Seed Zero's tracked tasks."
+policy:
+  allow_implicit_invocation: true
