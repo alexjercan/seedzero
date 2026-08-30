@@ -3,6 +3,20 @@
 How the Seed Zero studio plugs into scufris (`~/personal/scufris2`), the
 owner's assistant. Everything below cites real scufris mechanisms.
 
+## Decisions (2026-08-30)
+
+- Triggers: adopted. `.scufris.toml` is committed at the repo root with
+  `produce`, `analytics`, and `publish` agents; the owner triggers runs by
+  asking scufris. Publishing is self-QA (owner authorized): upload private,
+  agent QA, then public.
+- Scheduled slots: rejected. No systemd timers; the sections below on
+  timers are kept as reference only. The owner asks scufris instead.
+- Widget: on hold (owner wants no refresh pressure on quotas). Stats
+  questions go through the `analytics` agent on demand; Data API reads
+  cost ~1 unit each of 10,000/day, and the Analytics API has a separate
+  quota pool, so on-demand answering is effectively free.
+- A proactive morning briefing is under design; see the follow-up research.
+
 ## What scufris is
 
 Scufris is a Pi-based assistant: a background service owns the conversation, a
