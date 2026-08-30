@@ -67,6 +67,8 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 - `media/` — rendered output, ignored by git.
 - `scripts/` — production helpers (voice-over, music, composition).
 - `tasks/` — Tatr-tracked work.
+- `web/` — static status page: stats, videos, ideas, and a work log. Open
+  `web/index.html` in a browser; the agent keeps `web/data.js` current.
 - `secrets/` — OAuth credentials for uploads, ignored by git.
 
 ## Quickstart

@@ -33,6 +33,8 @@ Global `~/AGENTS.md` applies.
   code but never run inside final composition.
 - Inspect rendered output before calling work done. Do not commit media,
   previews, exports, or secrets.
+- Keep `web/data.js` current: append a log entry for meaningful work, and
+  refresh stats, videos, and idea statuses when they change.
 
 ## Project references
 
