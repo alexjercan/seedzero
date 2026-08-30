@@ -58,7 +58,7 @@ def main() -> None:
 
     filters = [
         f"drawtext=fontfile={font}:text='{escape(overlay)}'"
-        ":fontsize=34:fontcolor=0x5cc8a5@0.9:x=(w-text_w)/2:y=170"
+        ":fontsize=34:fontcolor=0x5cc8a5@0.9:x=(w-text_w)/2:y=96"
     ]
     clock = offset
     for chunk in parts:

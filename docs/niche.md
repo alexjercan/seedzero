@@ -52,10 +52,42 @@ and both are printed by the sim.
 ## Pilot slate (first four)
 
 1. Galton board: twelve rows of pegs, ten thousand balls; center bin beats
-   the edge bin by nine hundred twenty four to one.
+   the edge bin by nine hundred twenty four to one. [produced]
 2. Double pendulum: two runs, one thousandth of a degree apart; measure the
-   time to full divergence.
+   time to full divergence. [in production]
 3. Monty Hall: ten thousand simultaneous games as two racing bars; switching
    wins about two thirds.
 4. Boids: three rules on screen as toggles; flocking appears and collapses
    as rules toggle off and on.
+
+## Backlog
+
+Each idea must yield one measurable surprise before it earns a slot.
+
+- Birthday paradox: a grid of fifty rooms of twenty three people fills;
+  count how many rooms hold a shared birthday (expect about half).
+- Gambler's ruin: a fair coin, one player has ten times the bankroll;
+  measure how often the small stack survives.
+- Schelling segregation: agents needing only thirty percent same-color
+  neighbors; measure final segregation percentage.
+- Traffic jam from nothing: a ring road, one braking car; measure the
+  backward wave speed of the phantom jam.
+- Sorting race: quicksort versus bubble sort on the same shuffled array
+  with honest comparison counters.
+- A-star versus BFS: same maze, count the cells each one touches.
+- Epidemic threshold: same virus, contact rate just below versus just
+  above the threshold; measure final infected counts.
+- Conway glider gun: count cells alive over time; a machine from four
+  rules.
+- Buffon's needle: estimate pi by dropping ten thousand needles; show the
+  estimate converge on screen.
+- Random walk versus drunk walk home: measure return-to-origin times in
+  one and two dimensions.
+- Three-body figure eight: the periodic solution, then nudge it; measure
+  how long the choreography survives.
+- Coupon collector: how many packs to complete a fifty-sticker album;
+  measure the expected long tail.
+- Benford's law: leading digits of powers of two; count the ones versus
+  the nines.
+- Percolation: grid fills randomly; measure the sharp threshold where a
+  path suddenly connects.

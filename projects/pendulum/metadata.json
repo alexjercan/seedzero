@@ -1,0 +1,18 @@
+{
+  "title": "0.001 degrees apart. Watch them disagree.",
+  "description": "Two identical frictionless double pendulums, released together. One starts 0.001 degrees off; at arm's length that offset is about 12 micrometers, thinner than a hair. They overlap perfectly for 9.8 seconds, split, and by 14.9 seconds the gap is wider than the whole pendulum. They never agree again.\n\nNo randomness anywhere: the same equations, integrated exactly the same way (RK4, fixed step, energy drift under 1e-6). The divergence times in the narration were measured from this exact run at 110 degrees release angle. Rerun it and you get the same video.\n\nThis is chaos: determined, but not predictable.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "double pendulum",
+    "chaos theory",
+    "butterfly effect",
+    "physics",
+    "simulation",
+    "chaos",
+    "sensitive dependence",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -1,0 +1,11 @@
+{
+  "theta_deg": 110.0,
+  "delta_deg": 0.001,
+  "fps": 60,
+  "scout_duration": 40.0,
+  "after_full": 12.5,
+  "music_seed": 1,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "delta 0.001 deg | deterministic"
+}

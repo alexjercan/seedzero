@@ -1,0 +1,10 @@
+Two identical double pendulums, released together.
+The only difference: one starts one thousandth of a degree off.
+That is less than the width of a hair at arm's length.
+For almost ten seconds they overlap so perfectly you can only see one.
+Then, at nine point eight seconds, they split.
+By fourteen point nine seconds the gap is wider than the whole pendulum,
+and they never agree again.
+No randomness, no noise. The same equations, computed exactly, twice.
+That tiny difference doubled, and doubled, and doubled again.
+This is chaos: the future is determined, but it is not predictable.
