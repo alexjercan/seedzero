@@ -1,0 +1,18 @@
+{
+  "title": "10,000 games of Monty Hall. One choice doubled the wins.",
+  "description": "Ten thousand Monty Hall games from one seed, every game scored both ways with the same doors and the same picks. Staying won 3,308. Switching won 6,692, just over two thirds, and 2.02 times the stay count.\n\nThe host always knows where the prize is and always opens a losing door you did not pick. That is the whole trick: your first pick is right one time in three, and every time it is wrong the host's forced reveal leaves the prize behind the switch door. Switching only loses when your first guess was already right.\n\nDeterministic simulation at seed 0; rerun it and you get the same 6,692. The counts in the narration are the measured outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "monty hall",
+    "monty hall problem",
+    "probability",
+    "statistics",
+    "paradox",
+    "simulation",
+    "game theory",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -12,3 +12,5 @@
 {"timestamp":"2026-08-30T21:43:03+03:00","entry":"Normalized the status page data into JSON and timestamped JSONL files, and added client-side pagination for videos, ideas, and logs."}
 {"timestamp":"2026-08-30T21:45:41+03:00","entry":"Merged videos and ideas into one slate and tightened the status page spacing."}
 {"timestamp":"2026-08-30T21:47:43+03:00","entry":"Refreshed YouTube data after verifying the OAuth token sees only Seed Zero: 1 subscriber, 2 public videos, and 14 views across those videos."}
+{"timestamp":"2026-08-30T22:07:34+03:00","entry":"Produced and published the Monty Hall short: 10,000 games at seed 0, every game scored both ways; stay won 3,308, switch won 6,692 (2.02 to 1). Voice round-trip passed; contact-sheet inspection caught caption collisions, fixed by moving to horizontal racing bars. https://youtu.be/cT8Tcjm7mUs"}
+{"timestamp":"2026-08-30T22:07:52+03:00","entry":"Refreshed YouTube data: 1 subscriber, 3 public videos, 15 views (Galton 5, pendulum 10, Monty Hall 0). YouTube reconciled the Galton count down from 6."}

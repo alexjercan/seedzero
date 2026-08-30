@@ -1,0 +1,11 @@
+Ten thousand rounds of the same game, all at once.
+Three doors, one prize. You pick a door.
+The host, who knows where the prize hides, opens a different door: always a losing one.
+Then you choose: stay, or switch.
+We scored every round both ways, with the same doors and the same picks.
+Staying won three thousand three hundred eight rounds.
+The switch won six thousand six hundred ninety two: two out of three.
+Here is why. Your first pick is right one time in three.
+Every time it is wrong, the host has no choice, and the switch door hides the prize.
+The switch only loses when your first guess was already right.
+Same doors, same luck. One choice doubled the wins.

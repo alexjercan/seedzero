@@ -1,0 +1,12 @@
+{
+  "seed": 0,
+  "games": 10000,
+  "fps": 60,
+  "race_duration": 16.0,
+  "payoff_hold": 22.0,
+  "demo_time": 3.0,
+  "music_seed": 2,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "seed 0 | 10000 games | deterministic"
+}
