@@ -1,0 +1,10 @@
+{
+  "seed": 0,
+  "balls": 10000,
+  "rows": 12,
+  "fps": 60,
+  "music_seed": 0,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "seed 0 | 10000 balls | deterministic"
+}

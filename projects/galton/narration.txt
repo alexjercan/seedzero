@@ -1,0 +1,9 @@
+Ten thousand balls are about to fall through twelve rows of pegs.
+Every peg is a fair coin flip: left or right, fifty fifty.
+To land at an edge, a ball must flip the same way twelve times in a row.
+There is only one path that does that.
+The center has nine hundred twenty four paths.
+In this run, seed zero, the middle bin caught two thousand one hundred
+eighty one balls. Both edges together caught three.
+Nobody designed that curve. It is just counting paths.
+Same seed, same balls, exactly the same curve, every single time.

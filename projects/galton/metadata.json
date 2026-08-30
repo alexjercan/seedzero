@@ -1,0 +1,18 @@
+{
+  "title": "10,000 balls fell. 3 reached the edges.",
+  "description": "Ten thousand balls drop through twelve rows of pegs. Every peg is a fair fifty-fifty coin flip, yet the middle bin caught 2,181 balls and both edges together caught 3.\n\nThere is only one path to each edge, and 924 paths to the center bin. The bell curve is nobody's design; it is just counting paths.\n\nDeterministic simulation, seed 0. Same seed, same 10,000 balls, exactly the same curve, every time. Every number in the narration was measured from this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "galton board",
+    "probability",
+    "bell curve",
+    "binomial distribution",
+    "simulation",
+    "math",
+    "statistics",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

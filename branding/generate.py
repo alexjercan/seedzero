@@ -34,12 +34,13 @@ FAINT2 = (24, 30, 38)    # faint peg dots outside the safe area
 TAGLINE = "Real simulations. Measured claims. Seed on screen."
 
 # Galton mark geometry in design units (origin = top peg center).
-MARK_ROW_STEP = 85       # vertical distance between peg rows
-MARK_COL_STEP = 85       # horizontal distance between pegs in a row
-MARK_PEG_R = 36          # peg dot radius
+# Peg spacing keeps ~1.8 px gaps between dots after the 32x32 downscale.
+MARK_ROW_STEP = 112      # vertical distance between peg rows
+MARK_COL_STEP = 112      # horizontal distance between pegs in a row
+MARK_PEG_R = 34          # peg dot radius
 MARK_ROWS = 3            # rows of 1, 2, 3 pegs
-MARK_BASE_Y = 415        # mound baseline below top peg center
-MARK_MOUND_H = 155       # mound peak height above baseline
+MARK_BASE_Y = 470        # mound baseline below top peg center
+MARK_MOUND_H = 160       # mound peak height above baseline
 MARK_MOUND_HALF_W = 235  # mound half width
 MARK_TOP = -MARK_PEG_R
 MARK_BOTTOM = MARK_BASE_Y
@@ -53,7 +54,7 @@ def dot(draw, cx, cy, r, color):
 
 def mound_polygon(cx, base_y, half_w, height, steps=256):
     """Filled Gaussian mound with a flat baseline."""
-    sigma = half_w * 0.36
+    sigma = half_w * 0.40
     pts = []
     for i in range(steps + 1):
         x = cx - half_w + 2.0 * half_w * i / steps
@@ -119,15 +120,15 @@ def make_banner():
 
     # Safe-area lockup: mini Galton mark + wordmark + tagline, group centered.
     word_font = ImageFont.truetype(FONT_PATH, 120 * ss)
-    tag_font = ImageFont.truetype(FONT_PATH, 32 * ss)
+    tag_font = ImageFont.truetype(FONT_PATH, 31 * ss)
     word_bb = word_font.getbbox("Seed Zero")
     tag_bb = tag_font.getbbox(TAGLINE)
     word_w, word_ink_h = word_bb[2] - word_bb[0], word_bb[3] - word_bb[1]
     tag_w, tag_ink_h = tag_bb[2] - tag_bb[0], tag_bb[3] - tag_bb[1]
 
-    mark_scale = 0.42 * ss
+    mark_scale = 0.40 * ss
     mark_w = MARK_W * mark_scale
-    gap = 48 * ss
+    gap = 44 * ss
     line_gap = 34 * ss
     text_w = max(word_w, tag_w)
     group_w = mark_w + gap + text_w
