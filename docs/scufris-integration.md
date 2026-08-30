@@ -149,6 +149,46 @@ scufris2 side:
   plumbing. Optional interim: the external view-only widget on
   `SCUFRIS_WIDGET_PATH`.
 
+## Morning briefing (designed 2026-08-30, not built)
+
+Findings from scufris2, read-only:
+
+- Scufris has no scheduler, cron, or login hook that reaches Pi. The one
+  proactive primitive is the worker-event wake: an extension calls
+  `pi.sendMessage(..., { deliverAs: "followUp", triggerTurn: true })`
+  (`agent/extensions/scufris/workflow/orchestration.ts:239-254`) and Pi
+  runs an unprompted turn. Quick Review completion uses the same path.
+- Pi extensions are TypeScript modules under the `pi.extensions` key of
+  `scufris2/package.json`: default-export `(pi: ExtensionAPI)`, lifecycle
+  via `pi.on("session_start", ...)`, tools via `pi.registerTool`. An
+  in-tree `setTimeout` precedent exists (`service/client.ts:150`).
+- `surface.sock` accepts synthetic surfaces (protocol v5 hello/message),
+  but an injected message is never spoken by the desktop and fabricates a
+  user message.
+
+Options, ranked by machinery added:
+
+- **A. Greeted briefing** (skill only): owner says "morning"; a scufris2
+  skill tells Pi to read `web/status.json`, optionally run a small
+  analytics pull, compare uploads against the cadence target, report, and
+  offer to spawn produce/publish jobs. Spoken, zero new mechanisms, but
+  needs the one-word prompt.
+- **B. Briefing extension** (recommended): a small foreground extension
+  `agent/extensions/scufris/briefing.ts` arms one `setTimeout` at
+  `session_start` for the configured time (catch-up on late login), checks
+  a last-briefing-date state file, then fires the job-event wake with a
+  briefing instruction. Unprompted, no polling, lands on all surfaces.
+- **C. Synthetic-surface injector**: external process injects a message
+  through `surface.sock`; still needs its own scheduler, is never spoken,
+  and fakes a user message. Not recommended.
+
+Positions on the open points: trigger is fixed time plus catch-up on
+session start, deduped by a state file; the cadence target lives in
+`web/status.json` (for example `targets.shorts_per_day`); a live stats
+pull inside the briefing is allowed, since reads cost about one quota
+unit. Building B later means: `briefing.ts` plus a time setting in
+scufris2, and `scripts/yt-stats.py` plus `web/status.json` here.
+
 ## Open questions for the owner
 
 1. Widget path: build the shipped widget and backend in scufris2 now, or
