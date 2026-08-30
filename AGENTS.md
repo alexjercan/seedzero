@@ -24,6 +24,19 @@ Global `~/AGENTS.md` applies.
   (owner authorized 2026-08-30). Never publish work that fails the quality
   gate; slip the slot instead.
 
+## Cadence
+
+- Quality over quantity (owner confirmed 2026-08-30). A strong short that
+  slips beats a weak short that ships.
+- Up to 3 uploads per day. Hard cap 5, never 6: an upload costs 1600 of
+  10,000 daily quota units, and the day must keep room for one QA-failure
+  re-upload plus analytics reads.
+- Ramp condition: after about two weeks or twenty published shorts, if
+  retention data shows which formats work and the backlog holds fifteen or
+  more validated ideas, raise to 4-5 per day and spend the extra slots on
+  the proven formats.
+- Run the research-trends skill about weekly to keep the backlog fed.
+
 ## Workflow
 
 - Work on `master` unless the user requests isolation.
