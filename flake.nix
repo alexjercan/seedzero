@@ -28,6 +28,7 @@
           jq
           curl
         ];
+        SEED_ZERO_FONT = "${pkgs.dejavu_fonts}/share/fonts/truetype/DejaVuSans-Bold.ttf";
       };
     });
 

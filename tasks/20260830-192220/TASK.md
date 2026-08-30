@@ -1,6 +1,6 @@
 # Build the shorts composition pipeline
 
-- STATUS: OPEN
+- STATUS: CLOSED
 - PRIORITY: 1
 - TAGS: pilot
 
@@ -34,3 +34,30 @@ overlay, preview, and contact sheet.
 - Shell checks and `nix flake check` pass.
 
 ## Evidence
+
+### Built (2026-08-30)
+
+- `scripts/music.py SEED DURATION OUT`: seeded numpy track (A2 drone pad
+  plus sparse pentatonic plucks, lowpassed, peak 0.30, fade in and out).
+- `scripts/captions.py`: emits an FFmpeg video filter script with the seed
+  overlay and captions chunked at 20 characters, timed proportionally to
+  word count across the measured voice duration.
+- `scripts/compose.sh NAME`: reads `projects/NAME/manifest.json`
+  (music_seed, music_gain, voice_offset, overlay), generates music sized to
+  the footage, mixes voice over music with a limiter, burns captions via
+  `-/filter:v`, writes `final.mp4` (H.264/AAC 1080x1920) plus a 540x960
+  30 fps preview and a contact sheet.
+- `scripts/contact-sheet.sh`: one-frame-per-second 8-column sheet.
+
+### Verification
+
+- Smoke project (12 s synthetic footage, verified voice-over): one command
+  produced final, preview, and sheet. Contact-sheet inspection caught
+  caption overflow at fontsize 72 with word-count chunking; fixed by
+  character-budget chunking at fontsize 64 and re-inspected a caption
+  frame at full resolution.
+- Determinism: reruns produce byte-identical `music.wav` and
+  `captions.filter` (md5 checked); the encoder re-produces the same
+  content.
+- ffmpeg 8 dropped `-filter_script:v`; the pipeline uses `-/filter:v`.
+- Python compile checks, bash syntax checks, and `nix flake check` pass.
