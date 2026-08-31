@@ -26,6 +26,7 @@ SCALES = {"hundred": 100, "thousand": 1_000, "million": 1_000_000}
 
 def tokenize(text: str) -> list[str]:
     text = text.lower()
+    text = text.replace("%", " percent ")
     text = re.sub(r"(\d),(\d)", r"\1\2", text)  # 10,000 -> 10000
     text = re.sub(r"(\d)\.(\d)", r"\1 \2", text)  # 8.2 -> 8 2
     tokens = re.split(r"[^a-z0-9]+", text)

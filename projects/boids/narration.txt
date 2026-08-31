@@ -1,0 +1,12 @@
+Two hundred birds. No leader. Watch them agree in eight seconds.
+At the start, the headings agree only seven percent.
+Then the snap: at seven point eight seconds, the flock holds above ninety percent, in sync.
+Each bird sees only its neighbors, yet agreement spreads neighbor to neighbor.
+Now we turn the alignment rule off.
+Every bird still keeps its distance, still drifts toward the group. But nobody matches headings anymore.
+The flock breaks into drifting clumps, down to fifty percent.
+Cohesion still holds the clumps together.
+Turn the rule back on.
+In under two seconds, the flock snaps back above ninety percent.
+No leader, no plan, just three local rules and one flock.
+Seed zero. Run it again, you get this exact flock.

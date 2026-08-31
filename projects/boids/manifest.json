@@ -1,0 +1,13 @@
+{
+  "seed": 0,
+  "boids": 200,
+  "fps": 60,
+  "scene_duration": 40.0,
+  "align_off": 16.0,
+  "align_on": 29.0,
+  "payoff_fade": 35.0,
+  "music_seed": 3,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "seed 0 | 200 boids | deterministic"
+}

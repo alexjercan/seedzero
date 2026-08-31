@@ -1,0 +1,18 @@
+{
+  "title": "200 birds, no leader. In sync in 7.8 seconds.",
+  "description": "Two hundred simulated birds start pointing in random directions: headings only 7% in sync. Each bird follows three local rules against its nearest neighbors: keep space, match headings, drift toward the group. No leader, no script. At 7.8 seconds the flock snaps above 90% in sync and holds.\n\nThen the experiment: turn the alignment rule off mid-flight and the flock breaks into drifting clumps, down to 50% in sync. Turn it back on and it snaps back above 90% in under two seconds.\n\nDeterministic simulation at seed 0 on a wrap-around arena; rerun it and you get this exact flock, snap for snap. The sync percentages and times in the narration are the measured outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "boids",
+    "flocking",
+    "murmuration",
+    "emergence",
+    "swarm intelligence",
+    "complex systems",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
