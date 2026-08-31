@@ -1,6 +1,6 @@
 # Produce short: Pendulum wave realignment
 
-- STATUS: OPEN
+- STATUS: CLOSED
 - PRIORITY: 0
 - TAGS: day2
 
@@ -31,4 +31,26 @@ into one line with a measured gap of zero point zero pixels.
 - mirror at 15.000 s: strict alternation at full amplitude: True
 - realign at 30.000 s: max gap 0.000000 px (at 380 px amplitude)
 - max disorder: t = 25.00 s, phase coherence R = 0.000
+
+### Production
+
+- Voice round-trip: three iterations. "order: zero" transcribed as
+  "0.0" (said "zero point zero"); adjacent number sentences merged
+  ("...zero point zero. Thirty point zero..." heard as one number
+  cluster; added "At" before the realign sentence); trimmed 113 to
+  106 words after measuring Piper at 0.366 s/word with short
+  sentences. Final ok at 38.45 s.
+- Contact sheet: mirror caption lands on the exact zigzag frame,
+  realign caption on the one-line frame; changed "the scramble peaks"
+  to "spread the widest" because the 25 s frame shows an elegant
+  W-wave, and the measured zero is phase spread, not visual mess.
+- Mix: mean -15.6 dB. Loop closes (intro = end state).
+
+### Upload and publish
+
+- Uploaded private after the Pacific quota reset (1,600 units):
+  video `kIuhNc9TguE`, <https://youtu.be/kIuhNc9TguE>.
+- QA: processing succeeded, PT41S, all metadata fields verified.
+- Published public at 2026-08-31 ~10:04 +03:00 under the self-QA
+  policy. Second of the day's three slots.
 
