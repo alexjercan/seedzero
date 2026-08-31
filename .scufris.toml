@@ -58,3 +58,32 @@ Inspect the processed video status, verify metadata against the project's
 metadata.json, then flip visibility to public. Only operate on the Seed
 Zero channel. Record the publish time and video id in the owning task.
 """
+
+[briefings.morning]
+description = "Report the channel as the data has it, then say what today should make."
+keywords = { harness = "claude", model = "Opus", thinking = "high" }
+guidance = """
+Read `web/data/status.json`, `web/data/slate.json` and `web/data/log.jsonl` as
+they sit on disk, and `docs/niche.md` for the backlog. Do not call the YouTube
+API, do not run the analytics or upload helpers, and do not open `secrets/`.
+The `analytics` agent owns that path: it spends quota and it writes these
+files. If `updated_at` is old, say it is old rather than refreshing it.
+
+Report the channel first, from the data only: subscribers, total views, and how
+the recent videos are doing against each other. Say how many days since the
+last public video, and name anything still private that is waiting on QA.
+
+Then say what today should make. Give the number of shorts you think is right
+for today, against the three-upload cadence and the quota day, and name the
+ideas you would make them from. Choose them from the backlog in
+`docs/niche.md` and from what the recent numbers say is working. This part is
+your judgement and not a measurement, so say what you think and why in a few
+sentences. Keep it short enough to read over coffee and concrete enough that
+the owner can answer "yes, start".
+
+Facts are numbers: subscribers, total views, days since the last publish,
+videos waiting on QA, shorts proposed for today. Set `status` to `attention`
+when the cadence has slipped or something is waiting on the owner, and `stale`
+when `web/data` is too old to stand behind. Never estimate a number the data
+does not hold; say it is missing instead.
+"""
