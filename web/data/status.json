@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T22:07:52+03:00",
+  "updated_at": "2026-08-31T08:20:00+03:00",
   "channel": {
     "name": "Seed Zero",
     "handle": "@SeedZeroLab",
@@ -7,8 +7,8 @@
     "url": "https://www.youtube.com/@SeedZeroLab"
   },
   "stats": {
-    "subscribers": 1,
-    "views": 15,
+    "subscribers": 2,
+    "views": 583,
     "videos": 3,
     "revenue_usd": 0
   },
