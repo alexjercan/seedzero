@@ -60,30 +60,41 @@ Zero channel. Record the publish time and video id in the owning task.
 """
 
 [briefings.morning]
-description = "Report the channel as the data has it, then say what today should make."
+description = "Refresh the channel numbers, report them, and say what today should make."
 keywords = { harness = "claude", model = "Opus", thinking = "high" }
 guidance = """
-Read `web/data/status.json`, `web/data/slate.json` and `web/data/log.jsonl` as
-they sit on disk, and `docs/niche.md` for the backlog. Do not call the YouTube
-API, do not run the analytics or upload helpers, and do not open `secrets/`.
-The `analytics` agent owns that path: it spends quota and it writes these
-files. If `updated_at` is old, say it is old rather than refreshing it.
+Refresh the channel numbers first, then read the repository.
 
-Report the channel first, from the data only: subscribers, total views, and how
-the recent videos are doing against each other. Say how many days since the
-last public video, and name anything still private that is waiting on QA.
+- Use the token in `secrets/` with the YouTube Data and Analytics APIs, through
+  `python3`, the way the analytics agent does. Read the subscriber count, the
+  total views, and the numbers for the videos already on the slate.
+- Reads cost about one quota unit each. Keep the whole morning under ten of
+  them. The day's 10,000 units belong to uploads and one QA-failure re-upload,
+  so never upload, publish, or change anything on the channel from here.
+- Write what you read into `web/data/status.json` and `web/data/slate.json` in
+  the shape they already have, including `updated_at`. Leave
+  `web/data/log.jsonl` alone: the produce and publish agents own that journal.
+  Do not commit anything.
+- If the token is missing or the API refuses, report the numbers already on
+  disk, say how old `updated_at` is, and set `status` to `stale`. Never guess a
+  number in place of one you could not read.
+- Read `docs/niche.md` for the backlog and `web/data/log.jsonl` for what the
+  last days actually did.
+
+Report the channel first: subscribers, total views, and how the recent videos
+are doing against each other. Say how many days since the last public video,
+and name anything still private that is waiting on QA.
 
 Then say what today should make. Give the number of shorts you think is right
 for today, against the three-upload cadence and the quota day, and name the
-ideas you would make them from. Choose them from the backlog in
-`docs/niche.md` and from what the recent numbers say is working. This part is
-your judgement and not a measurement, so say what you think and why in a few
-sentences. Keep it short enough to read over coffee and concrete enough that
-the owner can answer "yes, start".
+ideas you would make them from. Choose them from the backlog in `docs/niche.md`
+and from what the recent numbers say is working. This part is your judgement
+and not a measurement, so say what you think and why in a few sentences. Keep
+it short enough to read over coffee and concrete enough that the owner can
+answer "yes, start".
 
 Facts are numbers: subscribers, total views, days since the last publish,
 videos waiting on QA, shorts proposed for today. Set `status` to `attention`
 when the cadence has slipped or something is waiting on the owner, and `stale`
-when `web/data` is too old to stand behind. Never estimate a number the data
-does not hold; say it is missing instead.
+when the numbers could not be refreshed and what is on disk is old.
 """
