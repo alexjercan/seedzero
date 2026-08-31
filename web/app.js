@@ -94,7 +94,11 @@ async function main() {
   ]);
 
   renderMeta(status);
-  renderPagedList("slate", slate, (item, entry) => {
+  const slateNewestFirst = slate
+    .filter((entry) => entry.date)
+    .reverse()
+    .concat(slate.filter((entry) => !entry.date));
+  renderPagedList("slate", slateNewestFirst, (item, entry) => {
     if (entry.date) addText(item, `${entry.date} `, "date");
     if (entry.url) {
       const link = document.createElement("a");
