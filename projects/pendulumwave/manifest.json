@@ -1,0 +1,13 @@
+{
+  "seed": 0,
+  "pendulums": 30,
+  "base_cycles": 30,
+  "period": 30.0,
+  "fps": 60,
+  "scene_duration": 38.0,
+  "payoff_fade": 30.0,
+  "music_seed": 4,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "30 pendulums | one swing apart | deterministic"
+}

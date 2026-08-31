@@ -1,0 +1,18 @@
+{
+  "title": "30 pendulums, 30 speeds. One line every 30.0 seconds.",
+  "description": "Thirty pendulums, tuned by length: the slowest (24.8 cm) swings exactly 30 times in 30 seconds, and each neighbor swings exactly once more, down to 6.4 cm at 59 swings. Released as one line, they scatter into traveling waves, split into a perfect mirror at 15.0 seconds (15 up, 15 down), hit maximum phase spread at 25.0 seconds (measured order 0.000), and snap back into one line at exactly 30.0 seconds with a measured gap of 0.000000 pixels.\n\nNothing is random and nothing drifts: every pendulum fits a whole number of swings into 30 seconds, so they must meet again, every 30 seconds, forever.\n\nDeterministic simulation; the times, lengths, and gaps in the narration are the measured outputs of this exact run. The video loops.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "pendulum wave",
+    "pendulum",
+    "physics",
+    "harmonic motion",
+    "oddly satisfying",
+    "simulation",
+    "resonance",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

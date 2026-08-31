@@ -1,0 +1,18 @@
+{
+  "title": "Same 512 bars. One sorter did 29x less work.",
+  "description": "Quicksort versus bubble sort, racing the exact same seeded shuffle of 512 bars, with every comparison counted and both counters running at the same shared rate (4,356 comparisons per second).\n\nQuicksort: 4,461 comparisons, finished at 1.0 seconds of race time. Bubble sort: 130,680 comparisons, crossing the line at exactly 30.0 seconds. That is 29.3 times the work for the same sorted result.\n\nWhy: quicksort picks a pivot and splits the problem, so each round works on shrinking halves. Bubble sort compares neighbors and swaps, pass after pass, which costs about n squared comparisons.\n\nDeterministic simulation at seed 0; both algorithms are replayed from their real instrumented event logs, and both final arrays are verified sorted. The counts in the narration are the measured outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "sorting algorithms",
+    "quicksort",
+    "bubble sort",
+    "algorithm visualization",
+    "computer science",
+    "big o notation",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

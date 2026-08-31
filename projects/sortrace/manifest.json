@@ -1,0 +1,12 @@
+{
+  "seed": 0,
+  "bars": 512,
+  "fps": 60,
+  "race_duration": 30.0,
+  "scene_duration": 38.0,
+  "payoff_fade": 31.0,
+  "music_seed": 5,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "seed 0 | 512 bars | same array | deterministic"
+}

@@ -1,0 +1,8 @@
+Two sorting algorithms. Same five hundred twelve shuffled bars. Go.
+The top one is already done. Quick sort: four thousand four hundred sixty one comparisons, in one point zero seconds.
+It picks a pivot, throws smaller values left, bigger values right, and repeats on each half.
+Bubble sort compares neighbors and swaps, one pass at a time.
+Same rules, same array. Watch the counter climb.
+Ninety thousand. Then one hundred thousand. Still going.
+It crosses the finish at thirty point zero seconds: one hundred thirty thousand six hundred eighty comparisons.
+Twenty nine times the work, same result. The method is the whole game.
