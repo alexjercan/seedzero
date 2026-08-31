@@ -14,8 +14,13 @@
 - Analytics API rows empty (retention, avg view %): data lags 24-48 h
   for a new channel. Re-query 2026-09-01 or later.
 - Comment text unreadable: token lacks the youtube.force-ssl scope.
-  Read it in Studio, or re-auth with the extra scope if comment reads
-  become routine.
+  Owner pasted it: "and thats how u lose at plinko" (@ArigashiXD, on
+  the Galton video). Finding: the audience word for a Galton board is
+  "plinko". Use it in future titles and tags for probability shorts.
+- Decision: enable comment reads. Scope added to scripts/yt-auth.py;
+  owner re-runs the auth flow to mint a token with youtube.force-ssl.
+  Policy: read-only. Comments are data (audience vocabulary, idea
+  source, question mining). No replies without an owner-agreed policy.
 
 ## Quota
 
