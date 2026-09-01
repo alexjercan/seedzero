@@ -15,7 +15,7 @@ upload private, publish after the agent's own QA pass (owner authorized
 
 [agents.produce]
 description = "Produce the next Seed Zero short end to end and publish it after QA."
-keywords = { harness = "claude" }
+keywords = { harness = "claude", model = "Fable", thinking = "xhigh" }
 guidance = """
 Pick the strongest idea from docs/niche.md, then follow the produce-short
 skill: measure the claim first, script from measured numbers only, verified
@@ -28,7 +28,7 @@ slot and say so.
 
 [agents.research]
 description = "Research online trends in the niche and add measurable idea candidates to the backlog."
-keywords = { harness = "claude" }
+keywords = { harness = "claude", model = "Fable", thinking = "xhigh" }
 guidance = """
 Follow the research-trends skill: read docs/niche.md, run a handful of
 focused web searches for trending subjects and formats in the sim-science
@@ -41,7 +41,7 @@ simulations measured in this repo.
 
 [agents.analytics]
 description = "Pull YouTube stats and analytics, answer questions, refresh the status page."
-keywords = { harness = "claude" }
+keywords = { harness = "claude", model = "Opus", thinking = "medium" }
 guidance = """
 Use the token in secrets/ with the YouTube Data and Analytics APIs. Reads
 cost about one quota unit each; keep it to a handful per run. Report subs,
@@ -52,7 +52,7 @@ notable findings and any slate decisions they justify in a Tatr task.
 
 [agents.publish]
 description = "QA and publish a pending private video, or fix its metadata."
-keywords = { harness = "claude" }
+keywords = { harness = "claude", model = "Opus", thinking = "medium" }
 guidance = """
 Inspect the processed video status, verify metadata against the project's
 metadata.json, then flip visibility to public. Only operate on the Seed
@@ -61,7 +61,7 @@ Zero channel. Record the publish time and video id in the owning task.
 
 [briefings.morning]
 description = "Refresh the channel numbers, report them, and say what today should make."
-keywords = { harness = "claude", model = "Opus", thinking = "high" }
+keywords = { harness = "claude", model = "Opus", thinking = "medium" }
 guidance = """
 Refresh the channel numbers first, then read the repository.
 
