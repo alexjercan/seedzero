@@ -1,0 +1,7 @@
+Same walls. Same start. Same goal. Two searches, one shared rate.
+Flood fill spreads out. Every cell one step out, then every cell two steps out. It never guesses which way the goal is.
+A star adds one number to each cell: the straight line distance still to go. It spends its next check on the cell that looks closest to done.
+A star has already finished. Three hundred fifty one cells checked.
+Flood fill is still going. It will not stop until it reaches the corner.
+Nine thousand two hundred seventy two cells. Twenty six times as many.
+Both searches returned the same shortest path: two hundred twenty three cells. One of them looked in the right direction.

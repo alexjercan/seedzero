@@ -1,0 +1,19 @@
+{
+  "title": "3 stars, 1 path, 40 laps. The error grew 482x, not a trillion.",
+  "description": "The three-body problem has almost no exact solutions. The figure-eight choreography is one of them: three equal masses chasing each other around a single closed curve, forever.\n\nThis runs two copies of it in the same integrator. In the second copy one star starts displaced by 0.001 along x, which is one thousandth of its starting distance from the center of mass (that distance is exactly 1).\n\nMeasured at an integrator step of 0.002:\n- gap after 1 lap: 0.011992, or 12.0x the nudge\n- gap after 40 laps: 0.482101, or 482.1x the nudge\n- straight-line fit: 0.012175 per lap, largest deviation 0.0049\n- energy drift over 40 laps: 1.3e-11\n\nThe gap grows in a straight line, not an exponential. A doubling-per-lap law, which is what chaos does, would have multiplied the error by 1.1 trillion over the same 40 laps. The figure eight is linearly stable, so error only accumulates.\n\nThe measurement is identical to six decimal places at steps of 0.004, 0.002, 0.001 and 0.0005, so the number is a property of the orbit and not of the step size.\n\nIntegrator: a 4th-order Yoshida composition of leapfrog steps, symplectic and time-reversible. The trail before t = 0 is the same scheme run backwards.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "three body problem",
+    "figure eight orbit",
+    "chaos theory",
+    "celestial mechanics",
+    "orbital mechanics",
+    "physics simulation",
+    "n body simulation",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

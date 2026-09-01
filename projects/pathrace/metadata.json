@@ -1,0 +1,19 @@
+{
+  "title": "9,272 cells vs 351. Same maze, same shortest path.",
+  "description": "Breadth-first search and A* run on the same seeded grid of 40 rectangular wall blocks (160 by 72 cells, 9,284 walkable), from one corner to the other, with the same four-neighbour moves. Every cell a search removes from its queue counts as one check, and the replay plays both check logs at one shared rate, so the two panels always sit at the same number of checks.\n\nMeasured at seed 0:\n- breadth first: 9,272 cells checked, 99.9% of the walkable grid\n- A star: 351 cells checked\n- 26.4 to 1\n- both return the same shortest path, 223 cells, asserted equal before anything is rendered\n\nWhy: breadth first expands in every direction at once, so by the time it reaches a far corner it has touched almost the whole grid. A* adds the Manhattan distance still to go to each cell's cost, so it spends its checks on the cells that look closest to finishing. It uses the standard prefer-higher-g tie break, which keeps the path optimal and stops it spreading across the plateau of equally good routes.\n\nThe voice calls breadth-first search \"flood fill\", which is the same algorithm; the on-screen label is the formal name.\n\nThe counts in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "a star algorithm",
+    "pathfinding",
+    "breadth first search",
+    "algorithm visualization",
+    "computer science",
+    "graph search",
+    "maze solving",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

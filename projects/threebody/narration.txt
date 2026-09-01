@@ -1,0 +1,6 @@
+Three stars on one path. The three body problem has almost no exact solutions. This figure eight is one of them.
+Two copies are running. In the second, one star is moved a thousandth of its distance from the center.
+That is the classic chaos setup. Chaos multiplies error. Double the gap every lap and forty laps make it a trillion times bigger.
+Watch the orange dots. Each one is the measured gap after another lap.
+They are not curving upward. They land on a straight line. Every lap adds the same twelve nudges to the gap.
+After forty laps the gap is four hundred eighty two nudges wide. This orbit adds error. It never multiplies it.

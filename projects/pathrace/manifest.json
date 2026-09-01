@@ -1,0 +1,19 @@
+{
+  "seed": 0,
+  "grid_w": 160,
+  "grid_h": 72,
+  "blocks": 40,
+  "block_min": 3,
+  "block_max": 14,
+  "cell_px": 6,
+  "fps": 60,
+  "slow_end": 4.0,
+  "slow_cells": 400,
+  "race_end": 27.0,
+  "scene_duration": 38.5,
+  "payoff_fade": 27.0,
+  "music_seed": 7,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "seed 0 | breadth first vs A star | one grid | one rate"
+}

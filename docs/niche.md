@@ -60,7 +60,7 @@ and both are printed by the sim.
 4. Boids: three rules on screen as toggles; flocking appears and collapses
    as rules toggle off and on. Research 2026-08-30: also measure flock
    polarization each frame and narrate the tick the scatter snaps into
-   alignment; answers "how do flocks work with no leader".
+   alignment; answers "how do flocks work with no leader". [produced]
 
 ## Backlog
 
@@ -81,8 +81,12 @@ Each idea must yield one measurable surprise before it earns a slot.
 - Sorting race: quicksort versus bubble sort on the same shuffled array
   with honest comparison counters. Research 2026-08-30: demand validated
   ("fastest sorting algorithm" is a recurring search); expect a ratio
-  above twenty to one on five hundred twelve bars.
+  above twenty to one on five hundred twelve bars. [produced 2026-08-31,
+  measured 29.3 to 1]
 - A-star versus BFS: same maze, count the cells each one touches.
+  [produced 2026-09-01: a perfect maze gives no story (1.03 to 1); use
+  rectangular wall blocks and the prefer-higher-g tie break, measured
+  26.4 to 1]
 - Epidemic threshold: same virus, contact rate just below versus just
   above the threshold; measure final infected counts.
 - Conway glider gun: count cells alive over time; a machine from four
@@ -92,7 +96,9 @@ Each idea must yield one measurable surprise before it earns a slot.
 - Random walk versus drunk walk home: measure return-to-origin times in
   one and two dimensions.
 - Three-body figure eight: the periodic solution, then nudge it; measure
-  how long the choreography survives.
+  how long the choreography survives. [produced 2026-09-01: survival time
+  is not step-independent, so the claim became the linear growth law,
+  482x the nudge over forty laps]
 - Coupon collector: how many packs to complete a fifty-sticker album;
   measure the expected long tail.
 - Benford's law: leading digits of powers of two; count the ones versus
@@ -105,7 +111,7 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 - Pendulum wave: thirty pendulums with tuned lengths scatter into
   apparent chaos, then snap back into a perfect line; measure the exact
   realignment period and make the last frame equal the first for a
-  seamless loop.
+  seamless loop. [produced 2026-08-31, measured 30.0 s]
 - Streak test: ten thousand seeded runs of one hundred coin flips;
   measure how many contain a streak of six or more (expect nearly all;
   corrects the gambler's fallacy "due for tails" intuition).
@@ -119,7 +125,9 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 - Coin flip for a million: ten thousand players choose fifty thousand
   sure versus a coin flip for a million; expected value says flip, yet
   measure how many flippers walk away with nothing (peg: viral poll,
-  publish by mid September 2026).
+  publish by mid September 2026). [produced 2026-09-01: the one-shot
+  version surprises nobody (5,064 of 10,000 keep the million), so the
+  short repeats the bet; zero of ten thousand left at round thirteen]
 - Random versus balanced: ten thousand items signed plus or minus by
   coin flip versus a greedy balancing rule; measure the random drift
   near one hundred against the balanced drift near three (peg:
