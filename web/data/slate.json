@@ -4,66 +4,87 @@
     "status": "public",
     "date": "2026-08-30",
     "url": "https://youtu.be/K_ntI_mY4v0",
-    "views": 376
+    "views": 462
   },
   {
     "title": "0.001 degrees apart. Watch them disagree.",
     "status": "public",
     "date": "2026-08-30",
     "url": "https://youtu.be/BU_j-UbPR7k",
-    "views": 929
+    "views": 1141
   },
   {
     "title": "10,000 games of Monty Hall. One choice doubled the wins.",
     "status": "public",
     "date": "2026-08-30",
     "url": "https://youtu.be/cT8Tcjm7mUs",
-    "views": 83
+    "views": 99
   },
   {
     "title": "200 birds, no leader. In sync in 7.8 seconds.",
     "status": "public",
     "date": "2026-08-31",
     "url": "https://youtu.be/-hm9P9TXi60",
-    "views": 285
+    "views": 363
   },
   {
     "title": "30 pendulums, 30 speeds. One line every 30.0 seconds.",
     "status": "public",
     "date": "2026-08-31",
     "url": "https://youtu.be/kIuhNc9TguE",
-    "views": 493
+    "views": 699
   },
   {
     "title": "Same 512 bars. One sorter did 29x less work.",
     "status": "public",
     "date": "2026-08-31",
     "url": "https://youtu.be/wZt9K5LYZB4",
-    "views": 336
+    "views": 479
   },
   {
     "title": "3 stars, 1 path, 40 laps. The error grew 482x, not a trillion.",
     "status": "public",
     "date": "2026-09-01",
     "url": "https://youtu.be/2zsfLnS9k34",
-    "views": 0
+    "views": 305
   },
   {
     "title": "9,272 cells vs 351. Same maze, same shortest path.",
     "status": "public",
     "date": "2026-09-01",
     "url": "https://youtu.be/tp5SPF6mIEo",
-    "views": 0
+    "views": 957
   },
   {
     "title": "50,000 sure, or flip for a million? 10,000 players, 0 left.",
     "status": "public",
     "date": "2026-09-01",
     "url": "https://youtu.be/AbSkSS1F2Mw",
+    "views": 108
+  },
+  {
+    "title": "22 cars, 0 obstacles. The jam appeared at 52 s and rolled backward at 6.0 km/h.",
+    "status": "public",
+    "date": "2026-09-02",
+    "url": "https://youtu.be/jCLHCYeRziY",
     "views": 0
   },
   {
-    "title": "Eighteen measured-claim ideas",
+    "title": "Random cells, exact threshold. 1,000 grids average 59.26%. Theory says 59.27%.",
+    "status": "public",
+    "date": "2026-09-02",
+    "url": "https://youtu.be/i_YIsr65vgk",
+    "views": 0
+  },
+  {
+    "title": "Everyone asked for 30% alike neighbors. They got 75.9%.",
+    "status": "public",
+    "date": "2026-09-02",
+    "url": "https://youtu.be/WFSD0ywLnAM",
+    "views": 0
+  },
+  {
+    "title": "Fifteen measured-claim ideas",
     "status": "backlog in docs/niche.md"
   }
 ]

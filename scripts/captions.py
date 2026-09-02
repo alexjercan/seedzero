@@ -17,7 +17,8 @@ MAX_CHARS = 20  # at fontsize 64 this keeps lines well inside 1080 px
 
 
 def escape(text: str) -> str:
-    # drawtext escaping: backslash, quote, colon, comma, semicolon.
+    # drawtext escaping: backslash, quote, colon, comma, semicolon. The
+    # filters use expansion=none, so a percent sign needs no escape.
     for char, repl in (
         ("\\", "\\\\"),
         ("'", "’"),
@@ -57,7 +58,7 @@ def main() -> None:
     total_words = sum(len(c) for c in parts)
 
     filters = [
-        f"drawtext=fontfile={font}:text='{escape(overlay)}'"
+        f"drawtext=fontfile={font}:expansion=none:text='{escape(overlay)}'"
         ":fontsize=34:fontcolor=0x5cc8a5@0.9:x=(w-text_w)/2:y=96"
     ]
     clock = offset
@@ -65,7 +66,7 @@ def main() -> None:
         span = voice_dur * len(chunk) / total_words
         line = escape(" ".join(chunk))
         filters.append(
-            f"drawtext=fontfile={font}:text='{line}'"
+            f"drawtext=fontfile={font}:expansion=none:text='{line}'"
             ":fontsize=64:fontcolor=white:borderw=6:bordercolor=black@0.9"
             ":x=(w-text_w)/2:y=h*0.70"
             f":enable='between(t,{clock:.3f},{clock + span:.3f})'"

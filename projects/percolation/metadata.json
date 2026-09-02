@@ -1,0 +1,19 @@
+{
+  "title": "Random cells, exact threshold. 1,000 grids average 59.26%. Theory says 59.27%.",
+  "description": "A 100 by 100 grid where cells switch on one at a time in a seeded random order (seed 0 on screen). Union-find with virtual top and bottom nodes decides the exact cell at which a path of open cells first connects the top edge to the bottom edge, and the biggest connected cluster is tracked exactly after every cell.\n\nMeasured at seed 0:\n- first top-to-bottom path at cell 6,137: 61.37% filled\n- biggest cluster at 50% filled: 3.4% of the grid; at 58%: 15.3%; at the moment of connection: 54.6%\n- five points before connection the biggest cluster was 10.6% of the grid, five points after it was 63.6%\n\nThe same experiment on 1,000 seeded grids of the same size (seeds 0 to 999):\n- connection fraction: mean 59.26%, median 59.29%, min 52.48%, max 63.86%, standard deviation 1.54 points\n- 792 of 1,000 grids connected within 2 points of 59.27%, 999 within 5 points\n- the site percolation threshold for an infinite square lattice is 0.5927 (Newman and Ziff 2000); a finite grid connects a little early or late, and the average over many grids lands on it\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "percolation",
+    "phase transition",
+    "percolation threshold",
+    "random grid",
+    "emergence",
+    "statistical physics",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

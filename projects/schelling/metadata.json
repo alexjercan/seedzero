@@ -1,0 +1,19 @@
+{
+  "title": "Everyone asked for 30% alike neighbors. They got 75.9%.",
+  "description": "Schelling's segregation model on a 100 by 100 grid, seed 0: 9,000 agents of two kinds and 1,000 empty cells. An agent is content when at least 30% of its occupied neighbours (eight surrounding cells) are its own kind. Every round, every discontented agent jumps to a random empty cell. Nothing else happens.\n\nMeasured at seed 0:\n- start: neighbours 50.7% alike on average, 1,505 of 9,000 agents discontent (16.7%)\n- after round 1: 60.0% alike; round 3: 69.2%; round 5: 73.6%; round 10: 75.8%\n- settled after 16 rounds and 3,780 moves: 75.9% alike, 0 discontent\n- 2,681 agents finish with every neighbour their own kind\n- same seed, other thresholds: ask for 20% and get 57.9%; 25% gives 58.5%; 35% gives 77.4%; 40% gives 83.0%; 50% gives 88.0%\n\nWhy: an agent that moves away from a mixed neighbourhood makes the neighbourhood it left less mixed for the ones who stay, and lands somewhere that is already mostly its own kind. Mild individual preferences add up to a strongly sorted grid that nobody asked for.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "schelling segregation",
+    "schelling model",
+    "emergence",
+    "agent based model",
+    "game theory",
+    "social simulation",
+    "complex systems",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

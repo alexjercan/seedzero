@@ -28,7 +28,8 @@ def tokenize(text: str) -> list[str]:
     text = text.lower()
     text = text.replace("%", " percent ")
     text = re.sub(r"(\d),(\d)", r"\1\2", text)  # 10,000 -> 10000
-    text = re.sub(r"(\d)\.(\d)", r"\1 \2", text)  # 8.2 -> 8 2
+    # 8.2 -> 8 2, and 59.26 -> 59 2 6: decimals are spoken digit by digit.
+    text = re.sub(r"(\d)\.(\d+)", lambda m: m.group(1) + " " + " ".join(m.group(2)), text)
     tokens = re.split(r"[^a-z0-9]+", text)
     # "point" pairs with the decimal split above; drop it on both sides.
     return [t for t in tokens if t and t != "point"]

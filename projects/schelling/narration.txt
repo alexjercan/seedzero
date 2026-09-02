@@ -1,0 +1,7 @@
+Nobody here wants to live apart. Each of these nine thousand agents is content when just thirty percent of its neighbors are its own kind.
+At the start, neighbors are half and half, and one in six agents wants to move.
+Each round, the unhappy ones jump to a random empty cell.
+One round in, sixty percent alike. Three rounds, sixty nine point two. Five rounds, seventy three point six.
+Nobody asked for that. Every move was made by someone who only wanted thirty percent.
+Sixteen rounds and three thousand seven hundred eighty moves later, nobody wants to move. Neighbors are seventy five point nine percent alike, and two thousand six hundred eighty one agents have no different neighbor at all.
+Ask for thirty. Get seventy six.

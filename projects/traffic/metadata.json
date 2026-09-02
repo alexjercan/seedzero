@@ -1,0 +1,19 @@
+{
+  "title": "22 cars, 0 obstacles. The jam appeared at 52 s and rolled backward at 6.0 km/h.",
+  "description": "Twenty two identical cars on a 230 m ring road, the layout of the Sugiyama 2008 experiment. No accident, no red light, no slow driver: the cars start spaced within 3 m of even (seeded jitter, seed 0) and every driver follows the same car-following law, the intelligent driver model (Treiber 2000): desired speed 50 km/h, time headway 1.2 s, comfortable acceleration 0.3 m/s2, comfortable braking 2.0 m/s2, minimum gap 2.0 m, car length 4.0 m. Fourth-order Runge-Kutta at 0.01 s steps; a stopped car stays stopped until its gap opens. The video plays the simulation at 4x.\n\nMeasured at seed 0:\n- equilibrium speed before the jam: 13.3 km/h\n- first car below 2 km/h at 52.4 s\n- back of the main jam tracked for the 50 s after the jam settled (62.4 s to 112.4 s): moved 84.7 m against the traffic, 6.02 km/h backward, straight-line fit with a max residual of 6.09 m\n- all cars in that same window: average 6.1 km/h forward\n- stop-front check, each stop paired with the stop of the car ahead: median 5.44 km/h backward\n- over the rest of the run (112.4 s to 164 s) the same tracker gives 5.37 km/h\n- minimum headway over the whole run 5.22 m, so no two cars ever touch\n- identical at step sizes 0.02, 0.01 and 0.005 s\n\nWhy: at this density the even flow is unstable. Every small slowdown makes the driver behind brake a little harder and a little later, the wave grows, and the cars at its back stop dead. Cars leave the front of the jam while new ones join at the back, so the jam itself travels against the traffic. The space-time chart at the bottom draws each car's position over time; the red band leaning left is the jam moving backward.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "traffic jam",
+    "phantom traffic jam",
+    "traffic simulation",
+    "emergence",
+    "sugiyama experiment",
+    "car following model",
+    "physics simulation",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

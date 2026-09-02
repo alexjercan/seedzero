@@ -1,0 +1,7 @@
+Watch the grid fill at random. At some exact moment, the top will touch the bottom.
+One hundred by one hundred grid, seed zero. Green is the biggest connected patch. Blue is everything else. Small patches everywhere, none of them touching.
+At fifty percent filled, the biggest patch holds just three point four percent of the grid.
+At fifty eight, fifteen percent. Three more points of fill, and it happens.
+Sixty one point four: one cell opens, and the patch is more than half the grid. Top and bottom, connected.
+One thousand random grids, one thousand different moments. Their average: fifty nine point two six percent. Theory for an infinite grid says fifty nine point two seven.
+Randomness has a threshold.

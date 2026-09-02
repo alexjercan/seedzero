@@ -73,11 +73,16 @@ Each idea must yield one measurable surprise before it earns a slot.
 - Gambler's ruin: a fair coin, one player has ten times the bankroll;
   measure how often the small stack survives.
 - Schelling segregation: agents needing only thirty percent same-color
-  neighbors; measure final segregation percentage.
+  neighbors; measure final segregation percentage. [produced 2026-09-02:
+  seed 0, 100 by 100, ten percent empty; asking for 30% alike settles at
+  75.9% alike after 16 rounds and 3,780 moves]
 - Traffic jam from nothing: a ring road, one braking car; measure the
   backward wave speed of the phantom jam. Research 2026-08-30: use the
   Sugiyama twenty two car ring with no obstacle at all; expect the wave
-  to roll backward near twenty km/h.
+  to roll backward near twenty km/h. [produced 2026-09-02: the optimal
+  velocity model let cars overlap, so the short uses the Intelligent
+  Driver Model; 22 cars at 50 km/h desired speed jam at 52 s and the jam
+  rolls backward at 6.0 km/h, far below the twenty the research guessed]
 - Sorting race: quicksort versus bubble sort on the same shuffled array
   with honest comparison counters. Research 2026-08-30: demand validated
   ("fastest sorting algorithm" is a recurring search); expect a ratio
@@ -104,7 +109,9 @@ Each idea must yield one measurable surprise before it earns a slot.
 - Benford's law: leading digits of powers of two; count the ones versus
   the nines.
 - Percolation: grid fills randomly; measure the sharp threshold where a
-  path suddenly connects.
+  path suddenly connects. [produced 2026-09-02: 1,000 grids of 100 by 100
+  connect at 59.26% filled on average against the 59.27% theory; seed 0
+  connects at 61.4%]
 
 Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 
