@@ -50,10 +50,15 @@ def fold_numbers(tokens: list[str]) -> list[str]:
         in_number = False
 
     for token in tokens:
-        if token in UNITS:
+        if token == "zero":
+            # "zero" is always its own digit: "zero two" is "0 2", and
+            # "generation zero, thirty six" keeps the 0.
+            flush()
+            out.append("0")
+        elif token in UNITS:
             # A unit may extend a number only after a tens or scale word,
             # so digit-by-digit speech like "one two" stays "1 2".
-            if token == "zero" or (in_number and current % 10 != 0):
+            if in_number and current % 10 != 0:
                 flush()
             current += UNITS[token]
             in_number = True
@@ -61,6 +66,12 @@ def fold_numbers(tokens: list[str]) -> list[str]:
             if in_number and current % 100 != 0:
                 flush()
             current += TENS[token]
+            in_number = True
+        elif token.isdigit():
+            # Transcribed digits start a number too, so "25 million" folds
+            # the same way as "twenty five million".
+            flush()
+            current = int(token)
             in_number = True
         elif token == "hundred" and in_number:
             current *= 100

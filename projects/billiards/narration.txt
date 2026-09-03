@@ -1,0 +1,10 @@
+Same two balls. Same nudge. Two tables.
+Each table gets two balls launched from the same spot, zero point zero zero one degrees apart.
+On the round table every bounce hits the wall at the same angle, sixty nine point six degrees, so the gap has nowhere to grow.
+The stadium has two flat walls. At nine point zero two seconds they are one centimeter apart.
+At seventeen point four five seconds, a full meter apart, and they never agree again.
+No friction, no randomness, no time step.
+On the chart, the round line stays flat. The stadium line shoots up.
+The round table: never more than about a tenth of a millimeter apart.
+The stadium: one point seven nine meters.
+Same nudge. Different table. That is chaos.

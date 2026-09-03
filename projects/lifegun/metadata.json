@@ -1,0 +1,19 @@
+{
+  "title": "36 cells, 4 rules. Every 30 generations it fires a glider. 50 of them by generation 1,500.",
+  "description": "Conway's Game of Life on an unbounded grid, starting from the 36 live cells of the Gosper glider gun (Bill Gosper, 1970). No seed, no randomness: the four rules run exactly. A live cell with two or three live neighbors survives, a dead cell with exactly three live neighbors is born, every other cell dies or stays dead. Gliders are counted as five-cell components that match one of the four glider phases and have separated from the gun.\n\nMeasured over 3,200 generations:\n- the first glider separates from the gun at generation 15\n- launches happen every 30 generations exactly: 107 gliders by generation 3,200, spacing between launches always 30\n- the gun returns to the same 36 cells at every multiple of 30, and no shorter period works\n- the gun never leaves a 36 by 9 cell box\n- live cells 30 generations later minus live cells now: always exactly 5, at every generation from 0 to 3,170\n- generation 1,500: 50 gliders launched, 286 cells alive\n- generation 3,000: 100 gliders launched, 536 cells alive\n- the leading glider moves one diagonal cell every 4.00 generations (0.2500 cells per generation in each axis)\n\nThe scene shows the first 3,138 generations; the playback rate ramps from 4 to 100 generations per second.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "game of life",
+    "conway's game of life",
+    "glider gun",
+    "gosper glider gun",
+    "cellular automaton",
+    "emergence",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

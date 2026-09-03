@@ -1,0 +1,8 @@
+Thirty six cells, four rules: Conway's Game of Life. Watch what they build.
+Generation fifteen: five cells break away and fly.
+Live with two or three neighbors, born with exactly three, dead otherwise. Nothing there mentions gliders or guns.
+Every thirty generations, exactly, one more breaks away and moves one cell diagonally every four generations.
+The gun never changes: thirty six cells at every multiple of thirty.
+Generation one thousand five hundred: the gun has launched fifty gliders, and two hundred eighty six cells are alive.
+Every thirty generations, the count grows by exactly five. Two thousand generations, no exceptions.
+Four rules. A machine that builds machines.

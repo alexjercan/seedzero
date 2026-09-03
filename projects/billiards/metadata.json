@@ -1,0 +1,19 @@
+{
+  "title": "Same 0.001 degree nudge. Round table: 0.1 mm apart. Stadium: 1.79 m. That is chaos.",
+  "description": "Two frictionless billiard tables, each with two point balls launched from the same spot at 1 m/s, 0.001 degrees apart (1.745e-05 radians). The round table is a circle of radius 0.5 m. The stadium is the Bunimovich stadium: the same circle cut in half with two 1.0 m straight walls between the halves. The motion is event driven: each leg is a straight line to the exact wall hit, and each bounce is an exact reflection. There is no time step, no friction, no randomness, and the gap between the two balls is sampled at 240 Hz from the exact legs.\n\nMeasured over 43 s:\n- round table: every hit meets the wall at 69.612259 degrees, spread 2.4e-12 degrees over 46 hits, so the balls cannot drift apart; the gap stays below 0.1 mm until 36.0 s and peaks at 0.121 mm at 42.57 s\n- stadium: the balls are 1 mm apart at 7.10 s, 1 cm apart at 9.02 s (8 bounces), one ball width on screen at 10.55 s, 1 m apart at 17.45 s (15 bounces), and never closer than 19.5 mm after that\n- stadium widest gap: 1.79 m at 30.37 s (the table is 2.0 m long)\n- stadium gap growth from 0.1 mm to 5 cm: about 0.91 per second, doubling every 0.76 s, but bursty (max log residual 5.27), which is why the video does not narrate a doubling time\n- other nudges and launch angles (0.0005 and 0.002 degrees, 30 and 42 degrees) tell the same story: the round table stays under 0.25 mm, the stadium reaches one ball width by 10 to 11.4 s\n\nWhy: the circle conserves the angle of every hit, so a tiny launch difference stays a tiny difference. The flat walls of the stadium break that conservation and each bounce off the curved ends magnifies the difference.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "chaos",
+    "chaos theory",
+    "billiards",
+    "bunimovich stadium",
+    "dynamical systems",
+    "butterfly effect",
+    "physics simulation",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

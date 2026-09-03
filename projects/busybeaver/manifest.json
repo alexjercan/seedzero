@@ -1,0 +1,71 @@
+{
+  "machine": "1RB1LC_1RC1RB_1RD0LE_1LA1LD_1RZ0LA",
+  "tape_alloc": 40000,
+  "fps": 60,
+  "scene_duration": 40.0,
+  "step_keys": [
+    [
+      0.0,
+      0
+    ],
+    [
+      1.0,
+      1
+    ],
+    [
+      4.0,
+      12
+    ],
+    [
+      7.0,
+      100
+    ],
+    [
+      11.0,
+      2000
+    ],
+    [
+      15.0,
+      50000
+    ],
+    [
+      18.0,
+      1000000
+    ],
+    [
+      22.0,
+      12000000
+    ],
+    [
+      27.0,
+      47176870
+    ],
+    [
+      40.0,
+      47176870
+    ]
+  ],
+  "span_milestones": [
+    10,
+    100,
+    1000,
+    10000
+  ],
+  "report_steps": [
+    1,
+    12,
+    100,
+    2000,
+    50000,
+    1000000,
+    12000000,
+    47176870
+  ],
+  "payoff_t": 27.5,
+  "payoff_hold": 0.6,
+  "payoff_text": "5 states. 47,176,870 steps. then it halts.",
+  "music_seed": 14,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "5 states | blank tape | no seed | deterministic"
+}

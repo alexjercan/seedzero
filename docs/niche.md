@@ -95,7 +95,10 @@ Each idea must yield one measurable surprise before it earns a slot.
 - Epidemic threshold: same virus, contact rate just below versus just
   above the threshold; measure final infected counts.
 - Conway glider gun: count cells alive over time; a machine from four
-  rules.
+  rules. [produced 2026-09-03: the Gosper gun fires one glider every 30
+  generations exactly; at generation 1,500 it has launched 50 and 286
+  cells are alive, and the count grows by exactly 5 every 30
+  generations over the whole run]
 - Buffon's needle: estimate pi by dropping ten thousand needles; show the
   estimate converge on screen.
 - Random walk versus drunk walk home: measure return-to-origin times in
@@ -112,6 +115,11 @@ Each idea must yield one measurable surprise before it earns a slot.
   path suddenly connects. [produced 2026-09-02: 1,000 grids of 100 by 100
   connect at 59.26% filled on average against the 59.27% theory; seed 0
   connects at 61.4%]
+- Stadium versus circle billiards (pillar idea): two balls one
+  thousandth of a degree apart on each table; measure the split.
+  [produced 2026-09-03: event-driven, no time step; the round table
+  keeps every hit at 69.6 degrees and the gap under 0.13 mm for 43 s,
+  the stadium is 1 cm apart at 9.02 s, 1 m at 17.45 s, widest 1.79 m]
 
 Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 
@@ -128,7 +136,9 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 - Busy beaver: run the five-state busy beaver champion machine to its
   halt as a scrolling tape; count every step, exactly 47,176,870 from
   five states (peg: ninety years of Turing's 1936 paper, window through
-  December 2026).
+  December 2026). [produced 2026-09-03: exact run halts at step
+  47,176,870 with 4,098 ones; the tape spans 100 cells at step 2,670,
+  1,000 at 284,475, 10,000 at 25,615,315]
 - Coin flip for a million: ten thousand players choose fifty thousand
   sure versus a coin flip for a million; expected value says flip, yet
   measure how many flippers walk away with nothing (peg: viral poll,

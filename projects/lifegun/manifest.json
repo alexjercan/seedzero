@@ -1,0 +1,79 @@
+{
+  "gun_origin": [
+    2,
+    2
+  ],
+  "period": 30,
+  "generations": 3200,
+  "report_generations": [
+    0,
+    15,
+    30,
+    45,
+    60,
+    90,
+    120,
+    150,
+    300,
+    600,
+    900,
+    1200,
+    1500,
+    1800,
+    2100,
+    2400,
+    2700,
+    3000,
+    3200
+  ],
+  "cell_px": 14,
+  "window_rows": 60,
+  "fps": 60,
+  "rate_keys": [
+    [
+      0.0,
+      4.0
+    ],
+    [
+      5.0,
+      4.0
+    ],
+    [
+      9.0,
+      30.0
+    ],
+    [
+      19.0,
+      100.0
+    ],
+    [
+      41.0,
+      100.0
+    ]
+  ],
+  "scene_duration": 43.0,
+  "chart_ticks": [
+    0,
+    1000,
+    2000
+  ],
+  "chart_vticks": [
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "payoff_hold": 0.6,
+  "payoff_text": "gen 1,500: 50 gliders, 286 alive. +5 every 30",
+  "music_seed": 13,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "36 cells | 4 rules | no seed | deterministic",
+  "payoff_generation": 1500,
+  "rules_text": [
+    "live cell with 2 or 3 neighbors: survives",
+    "dead cell with exactly 3 neighbors: born",
+    "everything else: dies. that is all four rules"
+  ]
+}

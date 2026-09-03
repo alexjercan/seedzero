@@ -1,0 +1,7 @@
+Five states. Two symbols. How long can it run before it stops?
+A Turing machine. It reads one cell, writes a zero or a one, moves one cell, and switches state. Ten rules. That is the whole program.
+Give it a blank tape. It writes, walks back, and sweeps wider every pass.
+One hundred cells took two thousand six hundred seventy steps. One thousand cells took two hundred eighty four thousand steps. Ten thousand cells took twenty five million.
+Then, at step forty seven million, one hundred seventy six thousand, eight hundred seventy, the fifth state reads a zero, and it halts.
+Four thousand ninety eight ones on the tape.
+This is the five-state busy beaver.
