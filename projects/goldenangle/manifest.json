@@ -1,0 +1,43 @@
+{
+  "seeds": 1000,
+  "offset_deg": 0.1,
+  "seed_width": 1.0,
+  "report_counts": [
+    100,
+    200,
+    500,
+    1000
+  ],
+  "fps": 60,
+  "scene_duration": 40.0,
+  "count_keys": [
+    [
+      0.0,
+      60
+    ],
+    [
+      16.5,
+      377
+    ],
+    [
+      19.5,
+      410
+    ],
+    [
+      23.5,
+      1000
+    ],
+    [
+      40.0,
+      1000
+    ]
+  ],
+  "payoff_t": 24.5,
+  "payoff_hold": 0.6,
+  "payoff_text": "+0.1 deg: 34 arms, 658 seeds touching",
+  "music_seed": 15,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.487,
+  "overlay": "137.508 vs 137.608 deg | 1,000 seeds | deterministic"
+}

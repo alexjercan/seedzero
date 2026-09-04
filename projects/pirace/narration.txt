@@ -1,0 +1,8 @@
+Two formulas for pi. Who gets seven digits first?
+The top one: four, minus four thirds, plus four fifths, minus four sevenths, forever.
+Ramanujan: one term, and seven digits are already right. Two terms: sixteen digits. Done.
+The top one is still bouncing. A thousand terms: off by a thousandth. A million terms: off by a millionth.
+Every extra digit of accuracy costs ten times more terms.
+The seventh digit finally stops changing at term two million, eight hundred eighty six thousand, seven hundred fifty.
+Ramanujan needed one term for the same seven digits.
+Same target. One formula crawls. The other one teleports.

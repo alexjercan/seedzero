@@ -31,8 +31,11 @@ Seed on screen.
    birthday paradox as a filling grid. The Galton board burying its edges.
    Gambler's ruin. The inspection paradox with buses.
 2. **Chaos and physics.** Double pendulum divergence from a hair-width
-   nudge. Three-body orbits. Resonance building until failure. Billiards in
-   stadium versus circle tables.
+   nudge. Three-body orbits. Resonance building until failure [produced
+   2026-09-04: 1 mm shake, damping ratio 0.004; on tempo the stretch
+   grows about 3 mm a push and snaps the 60 mm limit at push 27, 3%
+   faster peaks at 29.1 mm on push 16 and never reaches 30 mm in 618
+   pushes]. Billiards in stadium versus circle tables.
 3. **Emergence.** Boids from three rules. Traffic jams from nothing.
    Segregation from tiny preferences (Schelling). Ant trails. Conway life
    guns.
@@ -152,10 +155,17 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 - Golden angle: place one thousand seeds at the golden angle, then a
   tenth of a degree off; measure how far packing efficiency collapses
   and count the spiral arms that appear (peg: Fibonacci Day,
-  2026-11-23).
+  2026-11-23). [produced 2026-09-04: packing efficiency is a weak
+  claim (the biggest gap grows only 1.32x), so the short counts
+  touching seeds: the golden angle keeps 0 of 1,000 seeds touching,
+  closest pair 1.60 seed widths; +0.1 deg has 658 touching in exactly
+  34 arms, first touch at seed 377, 34 arms from seed 410]
 - Pi race: Leibniz versus Ramanujan series with digits locking in on
   screen; measure terms needed for seven correct digits, about five
-  million versus two (peg: Ramanujan's birthday, 2026-12-22).
+  million versus two (peg: Ramanujan's birthday, 2026-12-22). [produced
+  2026-09-04: the guess was wrong both ways; with exact arithmetic
+  Leibniz's seventh digit locks at term 2,886,750 (error about 1/N) and
+  Ramanujan has 7 digits after 1 term, 16 after 2]
 - Best of seven: one hundred thousand series where the better team wins
   each game fifty five percent of the time; measure how often it wins
   the series (expect near sixty percent; peg: playoff season,

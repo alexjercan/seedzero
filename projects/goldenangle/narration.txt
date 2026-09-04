@@ -1,0 +1,9 @@
+Two discs. Same seeds, same rule: each new seed turns one hundred thirty seven point five degrees from the last one, and the older seeds move out.
+The bottom disc adds one tenth of a degree.
+For three hundred seeds you cannot tell them apart.
+Seed three hundred seventy seven: the first two seeds touch.
+Seed four hundred ten: thirty four spiral arms.
+From then on the arms only get longer.
+One thousand seeds. The golden angle: zero seeds touching. Every neighbor stays at least one point six seed widths away.
+Plus a tenth of a degree: six hundred fifty eight seeds touching, packed into thirty four arms.
+Same seeds. Same rule. One tenth of a degree.

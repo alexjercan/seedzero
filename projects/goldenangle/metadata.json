@@ -1,0 +1,19 @@
+{
+  "title": "Same seeds, same rule, one tenth of a degree off. 0 seeds touching vs 658 in 34 arms.",
+  "description": "Two sunflower discs built by the same rule: seed number k sits at angle k times alpha and radius square root of k, so every new seed goes in the middle and the older ones move outward (the Vogel model). The top disc turns by the golden angle, 360 divided by phi squared = 137.507764 degrees. The bottom disc turns by 137.607764 degrees, one tenth of a degree more. Each disc grows to 1,000 seeds. The seed width is 1.0 in spacing units, and two seeds count as touching when their centres are closer than one seed width. There is no seed value and no randomness: the positions are exact functions of k.\n\nMeasured at 1,000 seeds:\n- golden angle: closest pair 1.60 seed widths apart, 0 seeds touching, the biggest empty circle 2.95 seed widths wide; the same closest-pair distance (1.60) holds at 100, 200, 500 and 1,000 seeds\n- plus 0.1 degree: closest pair 0.89 seed widths apart, 658 seeds touching a neighbour, packed into exactly 34 touching chains (the 34 arms), longest chain 20 seeds\n- plus 0.1 degree, the first two seeds touch when the disc reaches 377 seeds (2 touching, 1 chain); at 410 seeds there are 34 chains (68 touching); from 410 to 1,000 seeds the chain count stays at exactly 34, the touching count never drops, and the longest chain grows from 2 to 20 seeds\n- the arm count is the nearest-neighbour index difference: 34 for both discs at 1,000 seeds, because 34 is a Fibonacci number and 34 x 137.6078 mod 360 = -1.34 degrees\n- context, not narrated: 0.05 degrees off gives 0 touching seeds at 1,000, 0.2 degrees off gives 0 touching but 21 wide gaps in the outer ring; the offset only wins on packing at small counts\n\nWhy: the golden angle is the most irrational turn, so k times alpha never nearly repeats a full turn and the seeds never line up. Add a tenth of a degree and after 34 turns the seeds fall almost exactly on top of a previous direction, so they stack into 34 straight arms.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "golden angle",
+    "phyllotaxis",
+    "fibonacci",
+    "golden ratio",
+    "sunflower",
+    "math visualization",
+    "pattern formation",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

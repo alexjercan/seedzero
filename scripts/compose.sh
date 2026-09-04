@@ -25,6 +25,7 @@ music_seed=$(jq -r .music_seed "$manifest")
 music_gain=$(jq -r '.music_gain // 0.18' "$manifest")
 voice_offset=$(jq -r '.voice_offset // 0.6' "$manifest")
 overlay=$(jq -r .overlay "$manifest")
+caption_y=$(jq -r '.caption_y // 0.70' "$manifest")
 
 duration=$(ffprobe -v error -show_entries format=duration \
     -of default=noprint_wrappers=1:nokey=1 "$med/footage.mp4")
@@ -33,7 +34,7 @@ voice_dur=$(ffprobe -v error -show_entries format=duration \
 
 python3 "$root/scripts/music.py" "$music_seed" "$duration" "$med/music.wav"
 python3 "$root/scripts/captions.py" "$proj/narration.txt" "$voice_dur" \
-    "$voice_offset" "$overlay" >"$med/captions.filter"
+    "$voice_offset" "$overlay" "$caption_y" >"$med/captions.filter"
 
 offset_ms=$(python3 -c "print(round($voice_offset * 1000))")
 ffmpeg -y -v error -i "$med/footage.mp4" -i "$med/voice.wav" -i "$med/music.wav" \

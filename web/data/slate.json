@@ -11,7 +11,7 @@
     "status": "public",
     "date": "2026-08-30",
     "url": "https://youtu.be/BU_j-UbPR7k",
-    "views": 1158
+    "views": 1161
   },
   {
     "title": "10,000 games of Monty Hall. One choice doubled the wins.",
@@ -32,14 +32,14 @@
     "status": "public",
     "date": "2026-08-31",
     "url": "https://youtu.be/kIuhNc9TguE",
-    "views": 716
+    "views": 722
   },
   {
     "title": "Same 512 bars. One sorter did 29x less work.",
     "status": "public",
     "date": "2026-08-31",
     "url": "https://youtu.be/wZt9K5LYZB4",
-    "views": 483
+    "views": 487
   },
   {
     "title": "3 stars, 1 path, 40 laps. The error grew 482x, not a trillion.",
@@ -53,7 +53,7 @@
     "status": "public",
     "date": "2026-09-01",
     "url": "https://youtu.be/tp5SPF6mIEo",
-    "views": 971
+    "views": 975
   },
   {
     "title": "50,000 sure, or flip for a million? 10,000 players, 0 left.",
@@ -67,45 +67,66 @@
     "status": "public",
     "date": "2026-09-02",
     "url": "https://youtu.be/jCLHCYeRziY",
-    "views": 19
+    "views": 20
   },
   {
     "title": "Random cells, exact threshold. 1,000 grids average 59.26%. Theory says 59.27%.",
     "status": "public",
     "date": "2026-09-02",
     "url": "https://youtu.be/i_YIsr65vgk",
-    "views": 100
+    "views": 104
   },
   {
     "title": "Everyone asked for 30% alike neighbors. They got 75.9%.",
     "status": "public",
     "date": "2026-09-02",
     "url": "https://youtu.be/WFSD0ywLnAM",
-    "views": 54
+    "views": 57
   },
   {
     "title": "Same 0.001 degree nudge. Round table: 0.1 mm apart. Stadium: 1.79 m. That is chaos.",
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/8l_VDPlOLC0",
-    "views": 0
+    "views": 666
   },
   {
     "title": "36 cells, 4 rules. Every 30 generations it fires a glider. 50 of them by generation 1,500.",
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/BSlee2s9ezM",
-    "views": 0
+    "views": 119
   },
   {
     "title": "5 states, blank tape. It runs 47,176,870 steps, then halts. The busy beaver.",
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/-Jkxs7kNpCg",
+    "views": 308
+  },
+  {
+    "title": "Same seeds, same rule, one tenth of a degree off. 0 seeds touching vs 658 in 34 arms.",
+    "status": "public",
+    "date": "2026-09-04",
+    "url": "https://youtu.be/PqQJxCkhUAo",
     "views": 0
   },
   {
-    "title": "Thirteen measured-claim ideas",
+    "title": "Two formulas for pi. Seven digits: Ramanujan needs 1 term. Leibniz needs 2,886,750.",
+    "status": "public",
+    "date": "2026-09-04",
+    "url": "https://youtu.be/7H-27Updk5g",
+    "views": 0
+  },
+  {
+    "title": "Same 1 mm shake. On tempo: the spring snaps at push 27. 3% faster: it never gets close.",
+    "status": "public",
+    "date": "2026-09-04",
+    "url": "https://youtu.be/_oFXN2TRdGE",
+    "views": 0
+  },
+  {
+    "title": "Eleven measured-claim ideas",
     "status": "backlog in docs/niche.md"
   }
 ]

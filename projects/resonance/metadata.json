@@ -1,0 +1,19 @@
+{
+  "title": "Same 1 mm shake. On tempo: the spring snaps at push 27. 3% faster: it never gets close.",
+  "description": "Two identical mass-spring systems with a natural frequency of 1.00 Hz and a damping ratio of 0.004 (quality factor 125). The mount of each one shakes up and down by 1 mm. The left mount shakes at 1.00 Hz, exactly the natural frequency. The right mount shakes at 1.03 Hz, three percent faster. The spring breaks when the stretch beyond rest passes 60 mm. The equation is x'' + 2 zeta w0 x' + w0^2 x = A wd^2 sin(wd t), integrated with fixed-step RK4 at 960 steps per second; a half-step rerun differs by 6e-8 mm, and the closed-form steady-state gain (125x on tempo, 17.3x at 1.03 Hz) is used as a check only. There is no seed and no randomness.\n\nMeasured:\n- on tempo: peak stretch per push 1.6, 4.6, 7.6, 10.5, 13.4, 16.1, 18.8, 21.5, 24.0, 26.5 mm for pushes 1 to 10 (2.5 to 3.1 mm more each push; pi times the shake is 3.14 mm)\n- 3% faster: 1.6, 4.8, 7.9, 10.8, 13.6, 16.1, 18.5, 20.7, 22.6, 24.3 mm for the same pushes\n- both cross 10 mm during push 4 (3.45 s and 3.39 s) and 20 mm during push 8 (7.44 s and 7.35 s)\n- on tempo crosses 30 mm at push 12, 40 mm at push 16, 50 mm at push 21 and 60 mm at 26.47 s during push 27: snap\n- 3% faster peaks at 29.1 mm at 15.25 s (push 16), then shrinks; over 600 s and 618 pushes it never passes 29.1 mm and settles near 17.3 mm\n- context, not narrated: 1% faster still snaps (at 33.30 s); 2% faster peaks at 39.4 mm; 5% faster at 19.5 mm; 10% faster at 11.3 mm\n\nThe video starts the shake 0.5 s in, so the snap on screen lands on the spoken word.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "resonance",
+    "harmonic oscillator",
+    "physics",
+    "vibration",
+    "natural frequency",
+    "physics simulation",
+    "engineering",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

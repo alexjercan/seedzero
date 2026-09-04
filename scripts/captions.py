@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Emit an FFmpeg video filter script: timed captions plus the seed overlay.
 
-usage: captions.py NARRATION_FILE VOICE_DURATION VOICE_OFFSET OVERLAY_TEXT
+usage: captions.py NARRATION_FILE VOICE_DURATION VOICE_OFFSET OVERLAY_TEXT [CAPTION_Y]
 
 Caption timing is proportional to word count across the voice duration.
+CAPTION_Y is the caption top as a fraction of the frame height (0.70 by
+default); a project whose layout needs the band elsewhere sets it in its
+manifest as caption_y.
 The output goes to stdout and is used with ffmpeg -filter_script:v.
 """
 
@@ -47,10 +50,11 @@ def chunks(text: str) -> list[list[str]]:
 
 
 def main() -> None:
-    if len(sys.argv) != 5:
-        sys.exit("usage: captions.py NARRATION_FILE VOICE_DURATION VOICE_OFFSET OVERLAY")
+    if len(sys.argv) not in (5, 6):
+        sys.exit("usage: captions.py NARRATION_FILE VOICE_DURATION VOICE_OFFSET OVERLAY [CAPTION_Y]")
     narration_file, voice_dur, offset, overlay = sys.argv[1:5]
     voice_dur, offset = float(voice_dur), float(offset)
+    caption_y = float(sys.argv[5]) if len(sys.argv) == 6 else 0.70
     font = os.environ["SEED_ZERO_FONT"]
 
     text = open(narration_file).read()
@@ -68,7 +72,7 @@ def main() -> None:
         filters.append(
             f"drawtext=fontfile={font}:expansion=none:text='{line}'"
             ":fontsize=64:fontcolor=white:borderw=6:bordercolor=black@0.9"
-            ":x=(w-text_w)/2:y=h*0.70"
+            f":x=(w-text_w)/2:y=h*{caption_y:.3f}"
             f":enable='between(t,{clock:.3f},{clock + span:.3f})'"
         )
         clock += span

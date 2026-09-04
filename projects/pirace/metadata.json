@@ -1,0 +1,19 @@
+{
+  "title": "Two formulas for pi. Seven digits: Ramanujan needs 1 term. Leibniz needs 2,886,750.",
+  "description": "Two series for pi, summed side by side with exact arithmetic. Leibniz: pi = 4 - 4/3 + 4/5 - 4/7 + ..., computed with 30-digit integer arithmetic for six million terms. Ramanujan (1914): 1/pi = (2 sqrt 2 / 9801) x sum over k of (4k)! (1103 + 26390k) / ((k!)^4 396^(4k)), computed with exact fractions and a 60-digit square root of two. The reference value of pi comes from Machin's formula at 40 digits. A digit counts as locked when no later term can change it: for Leibniz that is guaranteed by the alternating-series tail bound 4/(2N+3), for Ramanujan by the next term. There is no seed and no floating point.\n\nMeasured:\n- Leibniz after 1 term: 4.0; after 3 terms: 3.4666...; after 1,000 terms off by 1.0e-3; after 1,000,000 terms off by 1.0e-6 (the error is about 1/N)\n- Leibniz digits lock at term 7 (3.1), 25 (3.14), 627 (3.141), 2,454 (3.1415), 136,120 (3.14159), 376,847 (3.141592), 2,886,750 (3.1415926)\n- the seventh digit is first correct at term 1,530,012 but keeps flipping until term 2,886,750\n- Ramanujan after 1 term: 3.14159273..., 7 correct digits, error 7.6e-8; after 2 terms: 16 correct digits, error 6.4e-16; after 3 terms: 24 correct digits\n- ratio for seven digits: 2,886,750 terms to 1\n\nThe video runs the Leibniz counter on a logarithmic clock: terms 1 to 4 as they are spoken, 1,000 at 17 s, one million at 19 s, 2,886,750 at 27 s.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "pi",
+    "ramanujan",
+    "leibniz",
+    "infinite series",
+    "convergence",
+    "math visualization",
+    "number theory",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

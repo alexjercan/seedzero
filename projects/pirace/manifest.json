@@ -1,0 +1,73 @@
+{
+  "leibniz_terms": 6000000,
+  "ramanujan_terms": 3,
+  "target_digits": 7,
+  "fps": 60,
+  "scene_duration": 40.0,
+  "start_t": 2.0,
+  "term_keys": [
+    [
+      2.0,
+      1
+    ],
+    [
+      5.2,
+      1
+    ],
+    [
+      5.8,
+      2
+    ],
+    [
+      6.4,
+      2
+    ],
+    [
+      6.9,
+      3
+    ],
+    [
+      7.5,
+      3
+    ],
+    [
+      8.0,
+      4
+    ],
+    [
+      8.7,
+      4
+    ],
+    [
+      8.9,
+      10
+    ],
+    [
+      16.8,
+      1000
+    ],
+    [
+      19.4,
+      1000000
+    ],
+    [
+      27.0,
+      2886750
+    ],
+    [
+      40.0,
+      2886750
+    ]
+  ],
+  "ramanujan_keys": [
+    9.5,
+    12.8
+  ],
+  "payoff_t": 28.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "7 digits: 1 term vs 2,886,750 terms",
+  "music_seed": 16,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "two series | exact arithmetic | no seed | deterministic"
+}

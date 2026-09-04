@@ -1,0 +1,19 @@
+{
+  "f0_hz": 1.0,
+  "zeta": 0.004,
+  "drive_mm": 1.0,
+  "limit_mm": 60.0,
+  "detune": 0.03,
+  "fps": 60,
+  "substeps": 16,
+  "scene_duration": 40.0,
+  "long_duration": 600.0,
+  "payoff_t": 29.3,
+  "payoff_hold": 0.6,
+  "payoff_text": "on tempo: snapped. 3% faster: never",
+  "music_seed": 17,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "overlay": "1.00 Hz vs 1.03 Hz | 1 mm shake | deterministic",
+  "start_t": 0.5
+}
