@@ -1,0 +1,26 @@
+{
+  "seed": 0,
+  "series": 100000,
+  "p": 0.55,
+  "games": 7,
+  "targets": [
+    0.9,
+    0.95,
+    0.99
+  ],
+  "max_games": 2001,
+  "fps": 60,
+  "scene_duration": 40.0,
+  "start_t": 0.5,
+  "fill_end_t": 8.0,
+  "payoff_t": 31.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "best of 7: 60.7%. nine in ten needs best of 163",
+  "music_seed": 20,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.68,
+  "overlay": "seed 0 | 100,000 series | 55% team | deterministic",
+  "chart_start_t": 22.0,
+  "chart_end_t": 27.0
+}

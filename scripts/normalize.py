@@ -31,8 +31,7 @@ def tokenize(text: str) -> list[str]:
     # 8.2 -> 8 2, and 59.26 -> 59 2 6: decimals are spoken digit by digit.
     text = re.sub(r"(\d)\.(\d+)", lambda m: m.group(1) + " " + " ".join(m.group(2)), text)
     tokens = re.split(r"[^a-z0-9]+", text)
-    # "point" pairs with the decimal split above; drop it on both sides.
-    return [t for t in tokens if t and t != "point"]
+    return [t for t in tokens if t]
 
 
 def fold_numbers(tokens: list[str]) -> list[str]:
@@ -50,7 +49,11 @@ def fold_numbers(tokens: list[str]) -> list[str]:
         in_number = False
 
     for token in tokens:
-        if token == "zero":
+        if token == "point":
+            # "sixty point seven" is "60 7", the same as the digit split of
+            # "60.7" above; the word itself is dropped on both sides.
+            flush()
+        elif token == "zero":
             # "zero" is always its own digit: "zero two" is "0 2", and
             # "generation zero, thirty six" keeps the 0.
             flush()

@@ -43,7 +43,7 @@ ffmpeg -y -v error -i "$med/footage.mp4" -i "$med/voice.wav" -i "$med/music.wav"
 [2:a]volume=${music_gain}[ma];\
 [va][ma]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.9[a]" \
     -map 0:v -map '[a]' -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p \
-    -c:a aac -b:a 192k -shortest "$med/final.mp4"
+    -c:a aac -b:a 192k -movflags +faststart -shortest "$med/final.mp4"
 
 ffmpeg -y -v error -i "$med/final.mp4" \
     -vf scale=540:960 -r 30 -c:v libx264 -crf 28 -preset fast -pix_fmt yuv420p \

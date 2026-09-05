@@ -1,0 +1,9 @@
+Ten thousand walkers on a line. Ten thousand on a plane. Same coin, same seed.
+Each step is one unit in a random direction.
+A walker turns green the first time it gets back home.
+On the line, half are home after two steps. After one hundred steps, ninety two percent.
+On the plane, a quarter after two steps. After one hundred steps, fifty eight percent.
+After one thousand steps: ninety seven percent on the line, sixty eight percent on the plane.
+After two thousand steps, two hundred seven walkers are still out on the line. Three thousand thirteen on the plane.
+Fifteen times as many.
+Same coin. One more direction to get lost in.

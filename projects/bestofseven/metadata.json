@@ -1,0 +1,19 @@
+{
+  "title": "The better team wins 55% of games and 60.7% of best-of-7 series. Nine in ten needs a best of 163.",
+  "description": "One team wins any single game with probability 0.55. One hundred thousand best-of-seven series (first to four wins) are played from seed 0 (numpy RandomState); every game of every series comes from that one stream, so the whole record is reproducible from the seed. The exact series probability is the binomial tail, computed for every odd series length up to 2,001 games and checked with exact rational arithmetic for the best of seven.\n\nMeasured at seed 0:\n- the better team won 60,721 of 100,000 series (60.72%); the other team won 39,279 (39.28%)\n- exact probability for a best of seven: 38,930,419 / 64,000,000 = 60.83%; the seeded count is 0.11 points below it (one standard deviation is 0.15 points)\n- series lengths: 4 games 13,158 (the better team swept 9,052, was swept in 4,106); 5 games 25,491; 6 games 30,895; 7 games 30,456\n- of the 30,456 series that went to a game seven, the better team won 16,721 = 54.9%\n- exact series win probability by length: best of 1: 55.0%; 3: 57.5%; 5: 59.3%; 7: 60.8%; 9: 62.1%; 15: 65.4%; 21: 67.9%; 51: 76.4%; 101: 84.4%\n- the shortest series that gives the better team at least 90% is a best of 163 (90.01%); 95% needs a best of 269; 99% needs a best of 539\n\nWhy: a 55-45 edge per game is small, and a series of seven games is a small sample. The edge compounds slowly, roughly with the square root of the number of games, so it takes about 163 games to turn 55% into 90%.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "best of seven",
+    "playoffs",
+    "probability",
+    "sports statistics",
+    "binomial",
+    "monte carlo",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

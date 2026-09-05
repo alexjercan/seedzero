@@ -96,7 +96,12 @@ Each idea must yield one measurable surprise before it earns a slot.
   rectangular wall blocks and the prefer-higher-g tie break, measured
   26.4 to 1]
 - Epidemic threshold: same virus, contact rate just below versus just
-  above the threshold; measure final infected counts.
+  above the threshold; measure final infected counts. [produced
+  2026-09-05: SIR on a 200 by 200 grid town, seed 0, same 10 first
+  cases, 5% per contact, 2 sick days; 11 contacts a day dies on day 50
+  at 225 cases (realised R 0.93 over the first 100 cases), 13 a day
+  burns out on day 255 at 11,397 cases (R 1.19), 50.7 to 1; over 300
+  seeds 11 takes off in 6% of runs and 13 in 97%]
 - Conway glider gun: count cells alive over time; a machine from four
   rules. [produced 2026-09-03: the Gosper gun fires one glider every 30
   generations exactly; at generation 1,500 it has launched 50 and 286
@@ -105,7 +110,11 @@ Each idea must yield one measurable surprise before it earns a slot.
 - Buffon's needle: estimate pi by dropping ten thousand needles; show the
   estimate converge on screen.
 - Random walk versus drunk walk home: measure return-to-origin times in
-  one and two dimensions.
+  one and two dimensions. [produced 2026-09-05: 10,000 walkers each,
+  seed 0, 2,000 steps; on the line 5,053 are home by step 2 and 9,793
+  by step 2,000 (207 still out, exact expectation 178); on the plane
+  2,480 by step 2 and 6,987 by step 2,000 (3,013 still out, 14.6x);
+  three dimensions, not narrated: 3,335 home by step 2,000]
 - Three-body figure eight: the periodic solution, then nudge it; measure
   how long the choreography survives. [produced 2026-09-01: survival time
   is not step-independent, so the claim became the linear growth law,
@@ -169,4 +178,7 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 - Best of seven: one hundred thousand series where the better team wins
   each game fifty five percent of the time; measure how often it wins
   the series (expect near sixty percent; peg: playoff season,
-  September and October).
+  September and October). [produced 2026-09-05: 100,000 series at seed
+  0, the better team won 60,721 = 60.7% (exact 60.83%); 30,456 went to
+  a game seven and it won 54.9% of those; nine in ten needs a best of
+  163, ninety nine in a hundred a best of 539]

@@ -1,0 +1,19 @@
+{
+  "title": "Same town, same virus, same 10 first cases. 11 contacts a day: 225 cases. 13 a day: 11,397.",
+  "description": "A town of 200 by 200 = 40,000 people who stay where they live. Ten first cases sit at ten seeded houses, the same ten in both panels. Each day every sick person meets a fixed number of neighbours drawn at random from the 11 by 11 block around their house, and passes the virus to each susceptible contact with probability 0.05. A person is contagious for 2 days, then recovers for good (an SIR model on a grid). Seed 0, numpy RandomState. The only difference between the two towns is the contact count: 11 a day in the top town, 13 in the bottom town.\n\nMeasured at seed 0:\n- 11 contacts a day: over the first 100 cases each case infected 0.93 others on average; the outbreak ended on day 50 with 225 cases (0.6% of the town), peak 26 people sick at once\n- 13 contacts a day: over the first 100 cases each case infected 1.19 others on average; 1,094 cases by day 40, 5,044 by day 100, 10,752 by day 200; the outbreak ended on day 255 with 11,397 cases (28.5% of the town), peak 184 sick at once on day 99\n- ratio of final counts: 50.7 to 1\n- how typical the two runs are, over 300 seeds each: with 11 contacts the outbreak passed 1,000 cases in 6% of runs (median 267 cases); with 13 contacts in 97% of runs (median 12,004 cases); seed 0 sits at the 45th and 35th percentile of those distributions\n- a scan from 6 to 16 contacts a day puts the tipping point at 12, where about half the runs take off\n\nWhy: an outbreak grows when each case causes more than one new case. Two more contacts a day move the realised reproduction number from just under one to just over one, and the outcome flips from a few hundred cases to more than a quarter of the town.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "epidemic",
+    "SIR model",
+    "reproduction number",
+    "tipping point",
+    "emergence",
+    "agent based model",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
