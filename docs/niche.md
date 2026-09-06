@@ -74,7 +74,17 @@ Each idea must yield one measurable surprise before it earns a slot.
   Research 2026-08-30: demand validated; ten thousand rooms gives a
   sharper count (expect near five thousand seventy).
 - Gambler's ruin: a fair coin, one player has ten times the bankroll;
-  measure how often the small stack survives.
+  measure how often the small stack survives. [produced 2026-09-06: 10
+  chips against 100, 10,000 games per panel at seed 0 on the same draws;
+  the fair coin let 866 break the house (exact 9.09%), the 49% coin 64
+  (exact 0.61%), 13.5 to 1; average game 950 and 462 flips]
+- Inspection paradox with buses (pillar idea): the same passengers and
+  the same number of buses, on tempo versus at random moments; measure
+  the average wait. [produced 2026-09-06: 1,008 buses a week, 10,000
+  passengers, seed 0; on tempo the average wait is 4.97 min, at random
+  10.02 (exact 5.00 and 9.99); the gap around a passenger is 10.0 versus
+  19.9 min; 3,776 waited over 10 min at random, none on tempo; longest
+  66 min]
 - Schelling segregation: agents needing only thirty percent same-color
   neighbors; measure final segregation percentage. [produced 2026-09-02:
   seed 0, 100 by 100, ten percent empty; asking for 30% alike settles at
@@ -144,7 +154,12 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
   corrects the gambler's fallacy "due for tails" intuition).
 - Seven shuffles: riffle shuffle thousands of decks one to ten times; a
   card guesser plays each deck and measures its edge over chance, which
-  survives four shuffles and dies near seven.
+  survives four shuffles and dies near seven. [produced 2026-09-06:
+  10,000 decks per row at seed 0; a guesser that knows the factory order
+  names 31.2 of 52 after one riffle, then 19.7, 12.9, 8.8, 6.6, 5.5 and
+  5.0 after two to seven; a random deck gives 4.5, pure chance; the edge
+  roughly halves per riffle; exact total variation 0.924 after five
+  riffles, 0.334 after seven]
 - Busy beaver: run the five-state busy beaver champion machine to its
   halt as a scrolling tape; count every step, exactly 47,176,870 from
   five states (peg: ninety years of Turing's 1936 paper, window through

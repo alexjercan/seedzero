@@ -1,0 +1,7 @@
+Ten chips against one hundred. Each flip moves a chip, until someone has nothing.
+Ten thousand players, seed zero, the same random draws in both panels.
+Top: a fair coin, fifty percent. Bottom: forty nine percent. One flip out of one hundred lands differently.
+Fair coin: three thousand two hundred eighty one players were finished within one hundred flips.
+Eight hundred sixty six broke the house on the fair coin. Nine thousand one hundred thirty four went bust. Nine of every ten.
+On the tilted coin, sixty four broke the house. Thirteen times fewer.
+Fair coin: the average player lasted nine hundred fifty flips. Tilted coin: four hundred sixty two.

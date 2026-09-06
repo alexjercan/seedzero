@@ -1,0 +1,20 @@
+{
+  "title": "Same 1,008 buses, same 10,000 passengers. On tempo: 5.0 min wait. At random: 10.0 min.",
+  "description": "One bus stop, one week of 10,080 minutes, 10,000 passengers arriving at uniformly random moments (seed 0, numpy RandomState), the same moments on both roads. The top road runs 1,008 buses on tempo, one every ten minutes. The bottom road runs the same 1,008 buses at times drawn uniformly at random over the week, so both roads average one bus every ten minutes. Each passenger waits for the next bus; the week repeats, so a passenger after the last bus waits for the first bus of the next week.\n\nMeasured at seed 0:\n- on tempo: average wait 4.965 min, median 4.95, longest 10.00; nobody waited over 10 min; gap around the average passenger 10.000 min\n- at random: average wait 10.018 min, median 6.99, longest 66.35; 3,776 passengers (37.8%) waited over 10 min and 1,369 (13.7%) over 20; gap around the average passenger 19.899 min\n- bus-to-bus gap: mean 10.000 min on both roads; at random the median gap is 6.93 min, the shortest 0.01 and the longest 67.21\n- exact values for this model: 5.000 and 9.990 min average wait, 10.000 and 19.980 min gap around a passenger, 36.8% waiting over 10 min at random\n\nWhy: a random moment is more likely to land in a long gap than a short one, in proportion to the gap's length. With equal gaps that changes nothing; with random gaps the average passenger sees a gap twice the average bus gap, and waits about half of it. This is the inspection paradox (waiting time paradox).\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "inspection paradox",
+    "waiting time paradox",
+    "bus wait",
+    "poisson process",
+    "probability",
+    "queueing",
+    "monte carlo",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

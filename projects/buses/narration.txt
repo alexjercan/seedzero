@@ -1,0 +1,6 @@
+Same stop, same ten thousand passengers, same number of buses.
+Top: one bus every ten minutes, on tempo. Bottom: the same buses at random moments. Same average gap, ten minutes.
+Every passenger shows up at a random moment and waits for the next bus. Seed zero, one week.
+On tempo, the average wait is five minutes. At random, ten. Double the wait, for the same number of buses.
+A random moment usually lands in a long gap. The gap around the average passenger is nearly twenty minutes, not ten.
+At random, three thousand seven hundred seventy six passengers waited over ten minutes. On tempo, none. The longest random wait: sixty six minutes.

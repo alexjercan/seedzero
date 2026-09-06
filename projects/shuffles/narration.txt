@@ -1,0 +1,8 @@
+A deck in factory order, riffled seven times. A guesser knows the order and remembers every card it sees.
+One shuffle: it still names thirty one cards of fifty two.
+Two shuffles: twenty. Three shuffles: thirteen.
+Four shuffles: nearly nine, double chance.
+Five shuffles: six and a half. Six shuffles: five and a half.
+Seven shuffles: five.
+A random deck: four and a half, pure chance.
+Each riffle roughly halves the edge. Ten thousand decks per row, seed zero, and after seven riffles the order is gone.
