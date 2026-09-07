@@ -67,14 +67,14 @@
     "status": "public",
     "date": "2026-09-02",
     "url": "https://youtu.be/jCLHCYeRziY",
-    "views": 20
+    "views": 21
   },
   {
     "title": "Random cells, exact threshold. 1,000 grids average 59.26%. Theory says 59.27%.",
     "status": "public",
     "date": "2026-09-02",
     "url": "https://youtu.be/i_YIsr65vgk",
-    "views": 105
+    "views": 106
   },
   {
     "title": "Everyone asked for 30% alike neighbors. They got 75.9%.",
@@ -88,7 +88,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/8l_VDPlOLC0",
-    "views": 774
+    "views": 776
   },
   {
     "title": "36 cells, 4 rules. Every 30 generations it fires a glider. 50 of them by generation 1,500.",
@@ -102,35 +102,35 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/-Jkxs7kNpCg",
-    "views": 315
+    "views": 316
   },
   {
     "title": "Same seeds, same rule, one tenth of a degree off. 0 seeds touching vs 658 in 34 arms.",
     "status": "public",
     "date": "2026-09-04",
     "url": "https://youtu.be/PqQJxCkhUAo",
-    "views": 1
+    "views": 2
   },
   {
     "title": "Two formulas for pi. Seven digits: Ramanujan needs 1 term. Leibniz needs 2,886,750.",
     "status": "public",
     "date": "2026-09-04",
     "url": "https://youtu.be/7H-27Updk5g",
-    "views": 209
+    "views": 211
   },
   {
     "title": "Same 1 mm shake. On tempo: the spring snaps at push 27. 3% faster: it never gets close.",
     "status": "public",
     "date": "2026-09-04",
     "url": "https://youtu.be/_oFXN2TRdGE",
-    "views": 865
+    "views": 872
   },
   {
     "title": "Same town, same virus, same 10 first cases. 11 contacts a day: 225 cases. 13 a day: 11,397.",
     "status": "public",
     "date": "2026-09-05",
     "url": "https://youtu.be/jD5cymWeNgM",
-    "views": 39
+    "views": 40
   },
   {
     "title": "Same coin, 2,000 steps. Line: 207 of 10,000 walkers still out. Plane: 3,013.",
@@ -144,31 +144,52 @@
     "status": "public",
     "date": "2026-09-05",
     "url": "https://youtu.be/ispETEpU3I0",
-    "views": 39
+    "views": 49
   },
   {
     "title": "1 shuffle: a guesser names 31 of 52 cards. 7 shuffles: 5. Chance: 4.5.",
     "status": "public",
     "date": "2026-09-06",
     "url": "https://youtu.be/IEzd2tJSBXU",
-    "views": 0
+    "views": 88
   },
   {
     "title": "Same 1,008 buses, same 10,000 passengers. On tempo: 5.0 min wait. At random: 10.0 min.",
     "status": "public",
     "date": "2026-09-06",
     "url": "https://youtu.be/KpidSRY8hpM",
-    "views": 0
+    "views": 46
   },
   {
     "title": "10 chips vs 100, 10,000 players. Fair coin: 866 broke the house. 49% coin: 64.",
     "status": "public",
     "date": "2026-09-06",
     "url": "https://youtu.be/P2tQerZucVI",
+    "views": 29
+  },
+  {
+    "title": "10,000 sticks dropped on floorboards. 6,350 crossed a line. Estimate of pi: 3.1496.",
+    "status": "public",
+    "date": "2026-09-07",
+    "url": "https://youtu.be/rY2w4GjBfoc",
     "views": 0
   },
   {
-    "title": "Six measured-claim ideas",
+    "title": "Same 10,000 rooms of 23 people. Someone shares YOUR birthday: 569 rooms. Any two share one: 4,922.",
+    "status": "public",
+    "date": "2026-09-07",
+    "url": "https://youtu.be/fMkt_YLUjUA",
+    "views": 0
+  },
+  {
+    "title": "Same 10,000 balls, 100 bins. One random pick: stacks 78 to 134. Emptier of two picks: 98 to 102.",
+    "status": "public",
+    "date": "2026-09-07",
+    "url": "https://youtu.be/b5UMZJhc9UY",
+    "views": 0
+  },
+  {
+    "title": "Three measured-claim ideas",
     "status": "backlog in docs/niche.md"
   }
 ]

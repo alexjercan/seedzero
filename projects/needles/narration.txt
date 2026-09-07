@@ -1,0 +1,6 @@
+Drop sticks on a floor. Count the ones crossing a line. Out comes the number pi.
+Every board is one stick wide. Every stick lands at a random spot and angle. Seed zero.
+A tilted stick casts a shorter shadow. Over every angle, the shadow averages two over pi of a stick. So two over pi of the sticks cross a line.
+Ten thousand sticks. Six thousand three hundred fifty crossed. Two times ten thousand over that: three point one four nine six.
+Pi: three point one four one six. Off by a quarter of a percent.
+A million sticks gave three point one four zero zero. Ten thousand sticks give two digits. A million give three.

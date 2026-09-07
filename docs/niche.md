@@ -72,7 +72,13 @@ Each idea must yield one measurable surprise before it earns a slot.
 - Birthday paradox: a grid of fifty rooms of twenty three people fills;
   count how many rooms hold a shared birthday (expect about half).
   Research 2026-08-30: demand validated; ten thousand rooms gives a
-  sharper count (expect near five thousand seventy).
+  sharper count (expect near five thousand seventy). [produced
+  2026-09-07 as two panels on the same 10,000 rooms at seed 0: someone
+  shares your birthday in 569 rooms (exact 5.86%), any two share one in
+  4,922 (exact 50.73%), 22 comparisons against 253 pairs; the top room
+  keeps filling and reaches a coin flip on your own birthday at 253
+  people, 4,986 rooms; 100,000-room check at seed 1 gives 6.00% and
+  50.65%]
 - Gambler's ruin: a fair coin, one player has ten times the bankroll;
   measure how often the small stack survives. [produced 2026-09-06: 10
   chips against 100, 10,000 games per panel at seed 0 on the same draws;
@@ -118,7 +124,11 @@ Each idea must yield one measurable surprise before it earns a slot.
   cells are alive, and the count grows by exactly 5 every 30
   generations over the whole run]
 - Buffon's needle: estimate pi by dropping ten thousand needles; show the
-  estimate converge on screen.
+  estimate converge on screen. [produced 2026-09-07: 10,000 sticks
+  tumble onto boards one stick wide at seed 0; 6,350 cross a line
+  (exact 2/pi = 63.66%), estimate 3.1496, off by 0.26%; a million sticks
+  at seed 1 give 3.1400; over 1,000 seeds the 10,000-stick estimate has
+  sd 0.024, so ten thousand sticks buy two digits and a million three]
 - Random walk versus drunk walk home: measure return-to-origin times in
   one and two dimensions. [produced 2026-09-05: 10,000 walkers each,
   seed 0, 2,000 steps; on the line 5,053 are home by step 2 and 9,793
@@ -175,7 +185,13 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
 - Random versus balanced: ten thousand items signed plus or minus by
   coin flip versus a greedy balancing rule; measure the random drift
   near one hundred against the balanced drift near three (peg:
-  discrepancy breakthrough coverage, August 2026).
+  discrepancy breakthrough coverage, August 2026). [produced 2026-09-07
+  as balls into bins: the scalar greedy rule never drifts past one, so
+  the short uses the power of two choices; 10,000 balls into 100 bins at
+  seed 0 on the same first pick, random stacks 78 to 134 (gap 56) against
+  98 to 102 (gap 4) when each ball takes the emptier of two bins; the
+  second look changed the pick 3,490 times; at 100,000 balls the gaps
+  are 135 and 5]
 - Golden angle: place one thousand seeds at the golden angle, then a
   tenth of a degree off; measure how far packing efficiency collapses
   and count the spiral arms that appear (peg: Fibonacci Day,

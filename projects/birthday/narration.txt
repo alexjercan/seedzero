@@ -1,0 +1,7 @@
+Same ten thousand rooms. Twenty three people in each. Same birthdays. Only the question changes.
+Top: rooms where someone shares your birthday. Bottom: rooms where any two people share one.
+Seed zero.
+Room one: nobody shares yours. But two strangers share March twenty nine.
+All twenty three in. Top: five hundred sixty nine rooms. Under six percent. Bottom: four thousand nine hundred twenty two. Nearly half.
+You get twenty two comparisons. Any two people: two hundred fifty three pairs.
+A coin flip on your own birthday takes two hundred fifty three people. Then: four thousand nine hundred eighty six rooms.

@@ -1,0 +1,19 @@
+{
+  "title": "10,000 sticks dropped on floorboards. 6,350 crossed a line. Estimate of pi: 3.1496.",
+  "description": "Buffon's needle. Ten thousand sticks fall onto a floor of boards exactly one stick wide, each at a random spot and a random angle, from seed 0 (numpy RandomState). A stick crosses a board line when half its horizontal shadow reaches the nearest line. Two times the stick count over the crossing count estimates pi, and the estimate is read out live as the sticks land.\n\nMeasured at seed 0:\n- 6,350 of 10,000 sticks crossed a line (63.50%; exact 2/pi = 63.66%, one standard deviation 0.48 points)\n- estimate 2 x 10,000 / 6,350 = 3.1496; pi = 3.1416; off by 0.0080 = 0.26%\n- mean shadow |cos angle| 0.6364 (exact 2/pi = 0.6366)\n- running estimate: 2.2222 after 10 sticks, 2.7397 after 100, 3.2468 after 500, 3.1397 after 1,000, 3.1373 after 2,000, 3.1338 after 5,000, 3.1496 after 10,000; within 0.1 of pi from stick 551 on, within 0.01 from stick 9,855 on\n- independent check with 1,000,000 sticks at seed 1: 636,943 crossed, estimate 3.1400, off by 0.0016\n- 10,000 sticks over seeds 0 to 999: mean estimate 3.1434, standard deviation 0.0239, lowest 3.0703, highest 3.2180; 32.9% of seeds land within 0.01 of pi\n\nWhy: a stick at angle a to the boards spans |cos a| of a board across the lines, so it crosses with probability |cos a|. Averaged over every angle that is 2/pi. Each stick is one trial with success chance 2/pi, so the crossing share converges on 2/pi and 2n/crossings converges on pi, but only as fast as one over the square root of the count: ten thousand sticks buy about two digits, a million about three.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "buffon's needle",
+    "pi",
+    "monte carlo",
+    "geometric probability",
+    "probability",
+    "estimate pi",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

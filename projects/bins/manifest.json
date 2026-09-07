@@ -1,0 +1,57 @@
+{
+  "seed": 0,
+  "balls": 100000,
+  "claim_balls": 10000,
+  "bins": 100,
+  "check_seeds": 1000,
+  "fps": 60,
+  "scene_duration": 40.0,
+  "land_keys": [
+    [
+      0.4,
+      0
+    ],
+    [
+      3.5,
+      30
+    ],
+    [
+      6.5,
+      200
+    ],
+    [
+      9.5,
+      1000
+    ],
+    [
+      12.0,
+      4000
+    ],
+    [
+      14.0,
+      10000
+    ],
+    [
+      27.0,
+      10000
+    ],
+    [
+      33.0,
+      100000
+    ]
+  ],
+  "fall_s": 0.35,
+  "max_falling": 240,
+  "scale_balls": 150,
+  "peek_until": 60,
+  "mark_from": 200,
+  "peek_t": 26.5,
+  "payoff_t": 33.5,
+  "payoff_hold": 0.6,
+  "payoff_text": "100,000 balls: gap 135 vs 5",
+  "music_seed": 26,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.49,
+  "overlay": "seed 0 | same balls, same first pick | 100 bins"
+}

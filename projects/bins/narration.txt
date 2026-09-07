@@ -1,0 +1,7 @@
+Same ten thousand balls. Same one hundred bins. Same first pick for every ball. Seed zero.
+Top: each ball drops into its random bin. Bottom: each ball also looks at one more bin, and drops into the emptier one.
+One extra look. That is the only difference.
+Ten thousand balls in. Top: tallest stack one hundred thirty four, shortest seventy eight. Gap fifty six.
+Bottom: one hundred two and ninety eight. Gap four. Fourteen times flatter.
+The second look changed the pick only three thousand four hundred ninety times.
+Now one hundred thousand balls. Random: gap one hundred thirty five. Two choices: only five.
