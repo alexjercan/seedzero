@@ -1,0 +1,6 @@
+Count up: one, two, three, four. Or double: one, two, four, eight. Watch the first digit of every number.
+Counting spreads the first digits evenly. Doubling piles them up on one.
+One thousand steps. Counting: one hundred twelve numbers start with one, one hundred eleven start with nine.
+Double instead: three hundred one start with one. Only forty five start with nine. Six point seven to one.
+Two to the nine hundred ninety nine has three hundred one digits.
+Ten thousand steps: three thousand ten against four hundred fifty eight. Thirty percent of the doubled numbers start with one. That is Benford's law.

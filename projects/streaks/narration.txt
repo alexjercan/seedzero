@@ -1,0 +1,7 @@
+One of these coins is fair. The other never runs past three in a row. Which is which?
+Same random draws, seed zero. Ten thousand runs of one hundred flips each.
+Six or more in a row lights up gold.
+The top coin is the fair one. A real coin streaks.
+Eight thousand one hundred two of ten thousand runs held six or more in a row. Five thousand four hundred forty three held seven or more. Eight hundred seventy nine held ten or more.
+The longest streak of the fair coin: twenty one in a row.
+The bottom coin looks random. It never streaked once. And it is the fake.

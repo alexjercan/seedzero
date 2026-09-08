@@ -140,9 +140,17 @@ Each idea must yield one measurable surprise before it earns a slot.
   is not step-independent, so the claim became the linear growth law,
   482x the nudge over forty laps]
 - Coupon collector: how many packs to complete a fifty-sticker album;
-  measure the expected long tail.
+  measure the expected long tail. [produced 2026-09-08: 50 stickers, one
+  random sticker per pack at seed 0; the first 40 took 64 packs, the
+  last 10 took 136, complete after 200 with 150 doubles; 10,000 albums
+  took 224.7 packs on average (exact 224.96), the last 10 cost more than
+  the first 40 in 90.2% of them and 10.8% needed over 300]
 - Benford's law: leading digits of powers of two; count the ones versus
-  the nines.
+  the nines. [produced 2026-09-08: two panels take the same steps,
+  counting up versus doubling, leading digits drop into bins; after
+  1,000 steps counting gives 112 ones and 111 nines, doubling gives 301
+  and 45 (Benford exact 301.0 and 45.8); after 10,000 steps 3,010 and
+  458; exact integers, no seed]
 - Percolation: grid fills randomly; measure the sharp threshold where a
   path suddenly connects. [produced 2026-09-02: 1,000 grids of 100 by 100
   connect at 59.26% filled on average against the 59.27% theory; seed 0
@@ -161,7 +169,11 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
   seamless loop. [produced 2026-08-31, measured 30.0 s]
 - Streak test: ten thousand seeded runs of one hundred coin flips;
   measure how many contain a streak of six or more (expect nearly all;
-  corrects the gambler's fallacy "due for tails" intuition).
+  corrects the gambler's fallacy "due for tails" intuition). [produced
+  2026-09-08: two coins on the same seed-0 draws, one fair and one never
+  allowed past three in a row; 8,102 of 10,000 fair runs hold 6+ (exact
+  80.7%), 5,443 hold 7+, 879 hold 10+, longest streak 21; seed 1 gives
+  8,029; the capped coin never streaks and it is the fake]
 - Seven shuffles: riffle shuffle thousands of decks one to ten times; a
   card guesser plays each deck and measures its edge over chance, which
   survives four shuffles and dies near seven. [produced 2026-09-06:

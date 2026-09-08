@@ -1,0 +1,92 @@
+{
+  "seed": null,
+  "claim_steps": 1000,
+  "steps": 10000,
+  "fps": 60,
+  "scene_duration": 40.0,
+  "step_keys": [
+    [
+      -0.6,
+      0
+    ],
+    [
+      0.0,
+      1
+    ],
+    [
+      2.4,
+      4
+    ],
+    [
+      4.6,
+      8
+    ],
+    [
+      8.0,
+      120
+    ],
+    [
+      11.0,
+      1000
+    ],
+    [
+      23.5,
+      1000
+    ],
+    [
+      28.3,
+      10000
+    ]
+  ],
+  "fall_s": 0.3,
+  "max_falling": 40,
+  "scale_steps": 40,
+  "payoff_t": 18.6,
+  "long_payoff_t": 29.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "count: {c1} vs {c9}.  double: {d1} vs {d9}",
+  "long_payoff_text": "count: {c1:,} vs {c9:,}.  double: {d1:,} vs {d9:,}",
+  "music_seed": 29,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.49,
+  "overlay": "count up vs double | exact integers | no seed | deterministic",
+  "pulses": [
+    [
+      12.9,
+      "count",
+      1
+    ],
+    [
+      15.7,
+      "count",
+      9
+    ],
+    [
+      17.7,
+      "double",
+      1
+    ],
+    [
+      19.8,
+      "double",
+      9
+    ]
+  ],
+  "pulse_until": 23.5,
+  "replay_t": 31.6,
+  "replay_keys": [
+    [
+      31.6,
+      0
+    ],
+    [
+      34.0,
+      50
+    ],
+    [
+      39.5,
+      1000
+    ]
+  ]
+}

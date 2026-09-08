@@ -1,0 +1,18 @@
+{
+  "title": "Count to 1,000: 112 numbers start with 1, 111 with 9. Double 1,000 times: 301 and 45.",
+  "description": "Benford's law. Two panels take the same number of steps. The top panel counts up, one at a time: 1, 2, 3, ... The bottom panel doubles: 1, 2, 4, 8, ... At every step the leading digit of the current number drops into one of nine bins. Exact integer arithmetic, no seed, nothing random.\n\nMeasured after 1,000 steps:\n- counting 1 to 1,000: 112 numbers start with 1 and 111 start with each of 2 to 9\n- doubling 2^0 to 2^999: 301 start with 1, 176 with 2, 125 with 3, 97 with 4, 79 with 5, 69 with 6, 56 with 7, 52 with 8, 45 with 9; ratio 6.7 to 1\n- Benford's exact shares log10(1 + 1/d): 30.1%, 17.6%, 12.5%, 9.7%, 7.9%, 6.7%, 5.8%, 5.1%, 4.6%; at 1,000 steps that predicts 301.0 ones and 45.8 nines\n- 2^999 has 301 digits\n\nAfter 10,000 steps:\n- counting: 1,112 start with 1, 1,111 with each other digit\n- doubling: 3,010 start with 1, 458 with 9; 2^9,999 has 3,010 digits\n\nWhy: doubling multiplies the number by a fixed factor, so its logarithm grows by log10(2) = 0.30103 each step. The leading digit is 1 exactly when the fractional part of the logarithm sits below 0.30103, which happens 30.1% of the time; it is 9 when the fractional part sits above log10(9) = 0.954, only 4.6% of the time. Counting adds instead of multiplying, so every digit gets an equal share.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "benford's law",
+    "leading digit",
+    "powers of two",
+    "logarithms",
+    "number theory",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

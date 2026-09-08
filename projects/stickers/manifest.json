@@ -1,0 +1,38 @@
+{
+  "seed": 0,
+  "stickers": 50,
+  "check_seeds": 10000,
+  "fps": 60,
+  "scene_duration": 40.0,
+  "pack_keys": [
+    [
+      0.0,
+      0
+    ],
+    [
+      2.0,
+      10
+    ],
+    [
+      6.5,
+      "first40"
+    ],
+    [
+      15.5,
+      "all"
+    ]
+  ],
+  "fly_s": 0.25,
+  "drop_s": 0.35,
+  "replay_t": 25.0,
+  "replay_s": 13.5,
+  "wipe_t": 39.3,
+  "payoff_t": 21.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "first 40: {first40} packs. last 10: {last10} packs",
+  "music_seed": 27,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.61,
+  "overlay": "seed 0 | 50 stickers | one random sticker per pack"
+}

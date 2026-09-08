@@ -1,0 +1,19 @@
+{
+  "title": "One coin is fair, one never runs past 3. 10,000 runs of 100 flips: 8,102 streaked 6+. Longest: 21.",
+  "description": "The streak test. Two coins flip from the same seeded draws (seed 0, numpy RandomState). The top coin is fair: heads when the draw is under one half. The bottom coin gets the same intended flip but is never allowed more than three of the same side in a row: after three, it switches whatever the draw says. Ten thousand runs of one hundred flips each. A coin inside a streak of six or more lights up gold.\n\nMeasured at seed 0, fair coin:\n- 8,102 of 10,000 runs hold a streak of 6 or more (exact 80.7%)\n- 9,714 hold 5 or more (exact 97.2%); 5,443 hold 7 or more (exact 54.2%); 3,204 hold 8 or more (exact 31.5%); 879 hold 10 or more (exact 8.7%)\n- longest streak: 21, in run 6,269; mean longest streak per run 6.99; heads 49.92%\n- longest streak per run: 4 in 285 runs, 5 in 1,612, 6 in 2,659, 7 in 2,239, 8 in 1,500, 9 in 825, 10 in 448, 11 in 216, 12 in 119, 13 or more in 96\n\nThe never-past-three coin: 0 of 10,000 runs hold 4 or more; it agreed with the fair coin on 930,039 of the 1,000,000 flips and was forced to switch 69,961 times.\n\nChecks: at seed 1 the fair coin gives 8,029 of 10,000 runs with 6 or more and a longest streak of 21; over seeds 0 to 99 with 100 runs each, 80.0 runs per 100 on average (70 to 89).\n\nWhy: any given spot in a run starts a streak of six with chance 1/32, and a run of one hundred flips offers about ninety five such spots, so most runs hold at least one. The exact figures come from a transfer matrix over the current run length. Streaks are what random looks like; a sequence that never runs past three is the one that was made up.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "coin flip",
+    "streaks",
+    "gambler's fallacy",
+    "randomness",
+    "probability",
+    "hot hand",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

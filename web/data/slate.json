@@ -88,7 +88,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/8l_VDPlOLC0",
-    "views": 776
+    "views": 777
   },
   {
     "title": "36 cells, 4 rules. Every 30 generations it fires a glider. 50 of them by generation 1,500.",
@@ -130,7 +130,7 @@
     "status": "public",
     "date": "2026-09-05",
     "url": "https://youtu.be/jD5cymWeNgM",
-    "views": 40
+    "views": 39
   },
   {
     "title": "Same coin, 2,000 steps. Line: 207 of 10,000 walkers still out. Plane: 3,013.",
@@ -144,14 +144,14 @@
     "status": "public",
     "date": "2026-09-05",
     "url": "https://youtu.be/ispETEpU3I0",
-    "views": 49
+    "views": 50
   },
   {
     "title": "1 shuffle: a guesser names 31 of 52 cards. 7 shuffles: 5. Chance: 4.5.",
     "status": "public",
     "date": "2026-09-06",
     "url": "https://youtu.be/IEzd2tJSBXU",
-    "views": 88
+    "views": 129
   },
   {
     "title": "Same 1,008 buses, same 10,000 passengers. On tempo: 5.0 min wait. At random: 10.0 min.",
@@ -165,31 +165,52 @@
     "status": "public",
     "date": "2026-09-06",
     "url": "https://youtu.be/P2tQerZucVI",
-    "views": 29
+    "views": 35
   },
   {
     "title": "10,000 sticks dropped on floorboards. 6,350 crossed a line. Estimate of pi: 3.1496.",
     "status": "public",
     "date": "2026-09-07",
     "url": "https://youtu.be/rY2w4GjBfoc",
-    "views": 0
+    "views": 27
   },
   {
     "title": "Same 10,000 rooms of 23 people. Someone shares YOUR birthday: 569 rooms. Any two share one: 4,922.",
     "status": "public",
     "date": "2026-09-07",
     "url": "https://youtu.be/fMkt_YLUjUA",
-    "views": 0
+    "views": 1
   },
   {
     "title": "Same 10,000 balls, 100 bins. One random pick: stacks 78 to 134. Emptier of two picks: 98 to 102.",
     "status": "public",
     "date": "2026-09-07",
     "url": "https://youtu.be/b5UMZJhc9UY",
+    "views": 61
+  },
+  {
+    "title": "50 stickers, 1 random per pack. First 40 took 64 packs. Last 10 took 136.",
+    "status": "public",
+    "date": "2026-09-08",
+    "url": "https://youtu.be/P_igHVYavLI",
     "views": 0
   },
   {
-    "title": "Three measured-claim ideas",
+    "title": "One coin is fair, one never runs past 3. 10,000 runs of 100 flips: 8,102 streaked 6+. Longest: 21.",
+    "status": "public",
+    "date": "2026-09-08",
+    "url": "https://youtu.be/w50iLhHg-8o",
+    "views": 0
+  },
+  {
+    "title": "Count to 1,000: 112 numbers start with 1, 111 with 9. Double 1,000 times: 301 and 45.",
+    "status": "public",
+    "date": "2026-09-08",
+    "url": "https://youtu.be/HkqX1e1EK_M",
+    "views": 0
+  },
+  {
+    "title": "Backlog empty: every measured-claim idea is produced; run research-trends",
     "status": "backlog in docs/niche.md"
   }
 ]

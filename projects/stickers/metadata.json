@@ -1,0 +1,19 @@
+{
+  "title": "50 stickers, 1 random per pack. First 40 took 64 packs. Last 10 took 136.",
+  "description": "The coupon collector problem. An album has fifty numbered stickers. Packs are opened one at a time and each pack holds one sticker drawn uniformly at random, from seed 0 (numpy RandomState). A new sticker flies into its slot; a duplicate drops onto the pile. The album fills fast at first, then stalls.\n\nMeasured at seed 0:\n- the album completes after 200 packs, with 150 duplicates\n- the first 40 stickers took 64 packs (exact expectation 78.5)\n- the last 10 stickers took 136 packs (exact expectation 146.5), more than twice the first 40\n- sticker 45 arrived at pack 126, sticker 48 at pack 178, sticker 49 at pack 192, sticker 50 at pack 200\n- exact expected packs for the whole album: 50 x (1 + 1/2 + ... + 1/50) = 224.96\n\nCheck over 10,000 albums (seeds 0 to 9,999): mean 224.7 packs, median 214, standard deviation 62.2, fewest 96, most 681; the last 10 stickers cost more than the first 40 in 90.2% of albums; the last sticker alone costs 50.0 packs on average; 10.8% of albums needed more than 300 packs and 1.6% more than 400.\n\nWhy: when k stickers are still missing, each pack finds a new one with chance k/50, so it takes 50/k packs on average. The first sticker takes one pack, the last takes fifty. Adding those up gives 50 times the harmonic number H(50), about 225 packs, and most of them go to the last few stickers.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "coupon collector",
+    "sticker album",
+    "probability",
+    "expected value",
+    "harmonic number",
+    "random",
+    "math visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
