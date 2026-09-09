@@ -39,6 +39,26 @@ A default short makes one surprising claim in 30 to 45 seconds:
   speaker.
 - The first rendered frame must work as the thumbnail.
 
+## Framing (added 2026-09-09)
+
+Owner viewer feedback on the first thirty shorts: they are often hard to
+understand quickly and hard to follow, and the viewer sometimes cannot tell
+what the goal is. Pace is not the problem; cognitive load and unclear
+framing are. The retention curves are consistent with this without proving
+it: viewers stay through the opening motion and leave fastest between 4 and
+12 seconds, where the setup is narrated (evidence in task 20260909-083310).
+Rules for every new short:
+
+- Open with one concrete question or goal in plain words inside the first
+  two seconds. The payoff must answer that exact question, in the same
+  words.
+- One visible causal story. Narration follows the one thing moving on
+  screen and never describes something the frame does not show.
+- One setup number and one payoff number in the narration and the title.
+  Other measurements go to the description.
+- Plain language. No jargon in the hook or the payoff; name the mechanism
+  only in the mechanism beat, and only if the picture shows it.
+
 ## Determinism
 
 - Fixed seeds everywhere; the seed is part of the manifest and the video.

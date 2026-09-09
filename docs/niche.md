@@ -37,11 +37,12 @@ Seed on screen.
    faster peaks at 29.1 mm on push 16 and never reaches 30 mm in 618
    pushes]. Billiards in stadium versus circle tables.
 3. **Emergence.** Boids from three rules. Traffic jams from nothing.
-   Segregation from tiny preferences (Schelling). Ant trails. Conway life
-   guns.
+   Segregation from tiny preferences (Schelling). Ant trails [in the backlog 2026-09-09 as the
+   double bridge]. Conway life guns.
 4. **Algorithms in motion.** Sorting races with honest operation counts.
    Pathfinding A* versus BFS flood. Epidemic spread on networks. Hash
-   collisions filling a table.
+   collisions filling a table [in the backlog 2026-09-09 as parking-lot
+   probing].
 
 ## Claim style
 
@@ -51,6 +52,11 @@ eight point two seconds they are on opposite sides of the screen."
 
 The good version names the initial difference, the measured divergence time,
 and both are printed by the sim.
+
+Framing rules (2026-09-09, from viewer feedback and the retention curves)
+live in `docs/vision.md`: one plain question in the first two seconds, one
+setup number, one payoff number that answers the question, narration tied
+to the one thing moving on screen.
 
 ## Pilot slate (first four)
 
@@ -225,3 +231,75 @@ Added by trend research 2026-08-30 (evidence in task 20260830-222119):
   0, the better team won 60,721 = 60.7% (exact 60.83%); 30,456 went to
   a game seven and it won 54.9% of those; nine in ten needs a best of
   163, ninety nine in a hundred a best of 539]
+
+Added by trend research 2026-09-09 (evidence in task 20260909-083310;
+selection favoured continuous physical motion, two-panel same-input
+comparisons, one plain question per short, and seamless loops where the
+physics is periodic):
+
+- Tautochrone bowl: five balls released from five heights in a circular
+  bowl versus a cycloid bowl; measure the arrival-time spread and each
+  ball's period; expect 0.000 s and equal periods on the cycloid against
+  a spread that grows every swing in the circle; the cycloid panel is
+  exactly periodic, so the last frame equals the first.
+- Brachistochrone race: straight, circular-arc and cycloid tracks from
+  the same start to the same end; measure the arrival times and track
+  lengths; expect the longest track (the cycloid) to win by about
+  eighteen percent over the straight line.
+- Dzhanibekov flip: a 1:2:3 box in zero g spun about the intermediate
+  axis versus the long axis with the same 0.001 rad/s wobble; measure the
+  first flip time, the flip period and the count of flips in forty
+  seconds, with the long axis never flipping; check energy and angular
+  momentum to 1e-10 (peg: Nobel week, physics prize 2026-10-06).
+- Magnetic pendulum: two bobs released a tenth of a millimetre apart over
+  three magnets; measure the time they separate by a bob width and the
+  final magnet of each; plus a grid of releases counting the share whose
+  one-pixel neighbour ends at a different magnet (expect a large share).
+- Kapitza pendulum: the same inverted pendulum with the same 0.001 rad
+  nudge, pivot still versus pivot shaking 2 cm at 30 Hz; measure the fall
+  time of the still one and the maximum tilt of the shaken one over ten
+  minutes (expect it never falls; stability 3.77 against a threshold of
+  1.40).
+- Lorenz forecast horizon: nudge the Lorenz system by 1e-3, 1e-6 and
+  1e-9; measure the time to disagree by one unit; expect about 7.6, 15.3
+  and 22.9, so every thousandfold gain in precision buys the same 7.6.
+- Gyroscope top: two identical tops with the same one-degree tilt, one
+  spinning three times faster; measure the precession periods (expect a
+  3:1 ratio against the exact mgr / (I omega)) and the fall time of a top
+  spun below the critical rate.
+- Kelvin wake: a moving source on a deep-water surface at three speeds;
+  measure the wake half-angle; expect 19.47 degrees at every speed
+  (heavier build: a spectral wave solver; measure the angle before
+  committing a slot).
+- Langton's ant: two rules, one ant; measure the step at which the
+  highway starts, its period and its drift; expect step 9,977, period
+  104, two cells per period; exact, no seed.
+- Ant double bridge (pillar idea, ant trails): same colony and seed;
+  short and long bridge open from the start versus the short bridge
+  opening a minute after the long one; measure the share of trips on the
+  short bridge at ten minutes; expect about nine in ten against a
+  minority: the colony that found the long path first keeps it.
+- Plane boarding: the same 150 passengers, seats and bag times;
+  back-to-front versus random versus Steffen; measure boarding time;
+  expect Steffen about twice as fast as back-to-front and back-to-front
+  the slowest of the three.
+- Elevator paradox: ten floors, you wait on floor two; measure over ten
+  thousand waits how often the first elevator to arrive is going down;
+  expect about eighty nine percent.
+- Parking-lot probing (pillar idea, hash collisions): 1,000 spaces, 950
+  cars with the same preferred spots; roll forward to the next free spot
+  versus a fresh random spot on each retry; measure the spots passed by
+  the last fifty cars and the longest run of taken spots; expect about
+  fifty against ten at ninety percent full and two hundred against
+  twenty at ninety five.
+- Collatz flights: start numbers launched as flights with altitude equal
+  to the value; measure steps and peak; expect 27 to take 111 steps and
+  climb to 9,232; measure the longest flight under a million in the sim.
+- Secretary problem: one hundred candidates walk past; skip thirty seven
+  and take the next best; measure the share of ten thousand runs that
+  pick the very best; expect about thirty seven percent against one
+  percent for a random pick.
+- Fourier square from circles: spinning circles draw a square wave;
+  measure the peak overshoot at 5, 50 and 500 circles; expect the peak
+  eighteen percent above the flat top every time (Gibbs), with the
+  drawing as a seamless loop.
