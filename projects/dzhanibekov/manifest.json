@@ -1,0 +1,28 @@
+{
+  "seed": 0,
+  "sides": [
+    1,
+    2,
+    3
+  ],
+  "turns_per_second": 1.0,
+  "wobble_rad_s": 0.001,
+  "check_wobbles": [
+    1e-06,
+    0.01
+  ],
+  "fps": 60,
+  "substeps": 20,
+  "scene_duration": 40.0,
+  "camera_tilt_deg": 35.0,
+  "title": "Which one flips?",
+  "title_until": 3.0,
+  "payoff_t": 23.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "middle axis: a flip every {period:.1f} s | long axis: never",
+  "music_seed": 32,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.49,
+  "overlay": "same brick | same spin | same wobble | no seed"
+}

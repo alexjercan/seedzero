@@ -1,0 +1,19 @@
+{
+  "title": "Which one flips? Same brick, same spin. Long axis: never. Middle axis: a flip every 6.8 s.",
+  "description": "Which brick flips? A 1 x 2 x 3 brick in zero g, spun at one turn per second with the same tiny wobble of 0.001 rad/s. Top: spun about its long axis. Bottom: spun about its middle axis. Euler's rigid-body equations integrated with RK4 at 1,200 steps per second, orientation tracked as a quaternion.\n\nMeasured (deterministic, no seed):\n- moments of inertia 1.083, 0.833 and 0.417 for unit mass and sides 1, 2, 3\n- long axis: 0 flips in 40 s; the tilt never passes 0.032 degrees; energy and angular momentum drift under 1e-13\n- middle axis: 6 flips, at 3.04, 9.85, 16.66, 23.47, 30.28 and 37.09 s; one flip every 6.810 s (minimum and maximum equal); each flip turns the brick from 10 to 170 degrees in 1.615 s\n- middle axis tilt: 0.013 degrees at 0 s, 0.24 at 1 s, 5.0 at 2 s, 22 at 2.5 s (growth rate 3.02 per second, predicted first flip 2.90 s)\n- checks: the thin axis is also steady (0 flips, tilt under 0.011 degrees); a wobble of 0.000001 rad/s flips first at 5.33 s and then every 11.3 s; a wobble of 0.01 rad/s flips first at 2.28 s and then every 5.29 s\n\nWhy: spin about the axis of largest or smallest moment of inertia is stable. Spin about the middle axis is not: any wobble grows exponentially until the brick flips over, then flips back (the intermediate axis theorem, seen in orbit by Vladimir Dzhanibekov in 1985).\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "Dzhanibekov effect",
+    "tennis racket theorem",
+    "intermediate axis theorem",
+    "rigid body",
+    "rotation",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

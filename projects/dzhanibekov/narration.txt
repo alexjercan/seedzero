@@ -1,0 +1,7 @@
+Which one flips? Same brick, same spin, one turn per second, same tiny wobble.
+Top: spun about its long axis. Bottom: spun about its middle axis.
+Watch the bottom one. Its tilt grows, and the brick turns right over, again and again.
+Spin about the long axis is steady. Spin about the middle axis is not: any wobble doubles and doubles until the brick flips, then flips back.
+Bottom brick: a flip every six point eight seconds. Six by the end of this video.
+Top brick: never. Not even a wobble you can see.
+Which one flips? The middle one. Every time.

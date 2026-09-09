@@ -1,0 +1,6 @@
+Do ants find the shortest path? One colony, the same random choices, two bridges to the food. The long one is twice as long.
+Every ant leaves scent, and ants follow the stronger scent.
+Top: both bridges open. Ants on the short bridge come back sooner, so its scent builds faster, so more ants pick it.
+Bottom: only the long bridge at first. Its scent builds alone. Then the short bridge opens. Nobody switches. The colony that found the long bridge first keeps it.
+Minute ten. Top: ninety eight percent of trips take the short bridge. Bottom: zero.
+Do ants find the shortest path? Yes, if they find it first.

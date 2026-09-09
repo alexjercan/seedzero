@@ -1,0 +1,6 @@
+Do they arrive together? Five balls at five heights. A round bowl, and a curved bowl. Same drop, no friction.
+Round bowl: the top ball has farther to go, and it falls behind. Every crossing, the gap grows.
+Curved bowl: the top ball starts where the wall is nearly vertical, so it moves faster, and the extra speed exactly pays for the extra distance. This curve is a cycloid.
+The round one: no. By crossing thirty they arrive three point two seconds apart.
+The curved one: yes. Zero seconds apart, every crossing, all forty.
+At forty seconds they are back on their marks, together. This video loops.

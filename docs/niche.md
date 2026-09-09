@@ -241,16 +241,27 @@ physics is periodic):
   bowl versus a cycloid bowl; measure the arrival-time spread and each
   ball's period; expect 0.000 s and equal periods on the cycloid against
   a spread that grows every swing in the circle; the cycloid panel is
-  exactly periodic, so the last frame equals the first.
+  exactly periodic, so the last frame equals the first. [produced
+  2026-09-09: five balls at 20 to 100 percent of the depth in a round
+  bowl against a cycloid of the same depth; round periods 1.452 to 1.669
+  s, spread 0.054 s at the first crossing, 3.209 s at crossing 30, 4.297
+  s at 40; cycloid period 2.000 s for every ball, spread 0.000 s at all
+  40 crossings; 20 exact periods in 40 s so the video loops;
+  deterministic, no seed]
 - Brachistochrone race: straight, circular-arc and cycloid tracks from
   the same start to the same end; measure the arrival times and track
   lengths; expect the longest track (the cycloid) to win by about
   eighteen percent over the straight line.
 - Dzhanibekov flip: a 1:2:3 box in zero g spun about the intermediate
-  axis versus the long axis with the same 0.001 rad/s wobble; measure the
-  first flip time, the flip period and the count of flips in forty
+  axis versus the long axis with the same 0.001 rad/s wobble; measure
+  the first flip time, the flip period and the count of flips in forty
   seconds, with the long axis never flipping; check energy and angular
   momentum to 1e-10 (peg: Nobel week, physics prize 2026-10-06).
+  [produced 2026-09-09: a 1 x 2 x 3 brick at one turn per second with a
+  0.001 rad/s wobble; long axis 0 flips, tilt under 0.032 deg; middle
+  axis 6 flips at 3.04, 9.85, 16.66, 23.47, 30.28, 37.09 s, one every
+  6.810 s; energy and angular momentum drift under 1e-12; thin axis also
+  steady; deterministic, no seed]
 - Magnetic pendulum: two bobs released a tenth of a millimetre apart over
   three magnets; measure the time they separate by a bob width and the
   final magnet of each; plus a grid of releases counting the share whose
@@ -279,6 +290,12 @@ physics is periodic):
   opening a minute after the long one; measure the share of trips on the
   short bridge at ten minutes; expect about nine in ten against a
   minority: the colony that found the long path first keeps it.
+  [produced 2026-09-09: 60 ants, seed 0, Deneubourg rule k 20 n 2, 600 s
+  scent half life; both bridges open: 98.0% of trips on the short bridge
+  at minute 10 (64% in minute 1, 80% or more from minute 3); long bridge
+  first with the short bridge opening at minute 8: 0 short trips in ten
+  minutes, 0.0% at minute 10; seeds 1 to 3 give 97.4, 96.7, 98.7%
+  against 0.0%]
 - Plane boarding: the same 150 passengers, seats and bag times;
   back-to-front versus random versus Steffen; measure boarding time;
   expect Steffen about twice as fast as back-to-front and back-to-front

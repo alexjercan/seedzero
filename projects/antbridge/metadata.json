@@ -1,0 +1,19 @@
+{
+  "title": "Do ants find the shortest path? Both bridges open: 98% take the short one. Long bridge first: 0%.",
+  "description": "Do ants find the shortest path? One colony of 60 ants, two bridges from nest to food, the long bridge twice as long (a crossing takes 20 s on the short bridge, 40 s on the long one). Every ant leaves scent on the bridge it walks. At each choice an ant picks a bridge with probability proportional to (20 + scent)^2, Deneubourg's double-bridge rule; scent evaporates with a 600 s half-life. Both panels use the same random draws (seed 0, one numpy RandomState stream per ant). Top: both bridges open from the start. Bottom: only the long bridge for the first eight minutes, then the short bridge opens. Ten colony minutes play in 40 s.\n\nMeasured at seed 0:\n- top, share of trips on the short bridge by minute: 64, 78, 84, 88, 93, 96, 97, 97, 99 and 98 percent; first minute at 80 percent or more: minute 3; over ten minutes 1,332 short trips against 138 long (90.6%); scent at minute 10: 995 on the short bridge, 85 on the long one\n- bottom: 0 short trips in every minute, before and after the short bridge opens; over ten minutes 0 short trips against 830 long; scent at minute 10: 0 on the short bridge, 607 on the long one\n- at minute 10: 98.0 percent on top, 0.0 percent below\n- checks at seeds 1, 2 and 3: top 97.4, 96.7 and 98.7 percent; bottom 0.0 percent each time\n\nWhy: ants on the short bridge return sooner, so its scent builds faster and recruits more ants. But that feedback amplifies whichever bridge already carries scent, so a colony that found the long bridge first stays locked on it, as in the 1989 double-bridge experiments of Goss, Aron, Deneubourg and Pasteels with Argentine ants.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "ants",
+    "ant colony",
+    "pheromone",
+    "shortest path",
+    "emergence",
+    "swarm",
+    "self-organization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

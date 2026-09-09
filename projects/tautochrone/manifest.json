@@ -1,0 +1,30 @@
+{
+  "seed": 0,
+  "g": 9.81,
+  "fps": 60,
+  "substeps": 10,
+  "scene_duration": 40.0,
+  "curve_periods": 20,
+  "height_fractions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "payoff_crossing": 30,
+  "title": "Do they arrive together?",
+  "title_until": 3.0,
+  "strip_seconds": 4.0,
+  "reset_t": 38.8,
+  "reset_dur": 1.2,
+  "payoff_t": 24.6,
+  "payoff_end": 38.4,
+  "payoff_hold": 0.6,
+  "payoff_text": "crossing {k}: round bowl {round:.1f} s apart | curved bowl {curve:.3f} s apart",
+  "music_seed": 31,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.49,
+  "overlay": "same 5 heights | same equation | no seed"
+}

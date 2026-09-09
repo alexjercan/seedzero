@@ -240,7 +240,28 @@
     "likes": 2
   },
   {
-    "title": "Sixteen measured-claim ideas from trend research 2026-09-09",
+    "title": "Do they arrive together? Round bowl: 3.2 s apart. Curved bowl: 0.000 s apart, every crossing.",
+    "status": "public",
+    "date": "2026-09-09",
+    "url": "https://youtu.be/i0HN7HQdfZ0",
+    "views": 0
+  },
+  {
+    "title": "Which one flips? Same brick, same spin. Long axis: never. Middle axis: a flip every 6.8 s.",
+    "status": "public",
+    "date": "2026-09-09",
+    "url": "https://youtu.be/nNsIK9nWsUY",
+    "views": 0
+  },
+  {
+    "title": "Do ants find the shortest path? Both bridges open: 98% take the short one. Long bridge first: 0%.",
+    "status": "public",
+    "date": "2026-09-09",
+    "url": "https://youtu.be/NywakrCTt94",
+    "views": 0
+  },
+  {
+    "title": "Thirteen measured-claim ideas from trend research 2026-09-09",
     "status": "backlog in docs/niche.md"
   }
 ]
