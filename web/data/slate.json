@@ -100,7 +100,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/8l_VDPlOLC0",
-    "views": 777,
+    "views": 776,
     "likes": 6
   },
   {
@@ -220,7 +220,7 @@
     "status": "public",
     "date": "2026-09-08",
     "url": "https://youtu.be/P_igHVYavLI",
-    "views": 34,
+    "views": 35,
     "likes": 0
   },
   {
@@ -228,15 +228,15 @@
     "status": "public",
     "date": "2026-09-08",
     "url": "https://youtu.be/w50iLhHg-8o",
-    "views": 55,
-    "likes": 0
+    "views": 59,
+    "likes": 1
   },
   {
     "title": "Count to 1,000: 112 numbers start with 1, 111 with 9. Double 1,000 times: 301 and 45.",
     "status": "public",
     "date": "2026-09-08",
     "url": "https://youtu.be/HkqX1e1EK_M",
-    "views": 68,
+    "views": 82,
     "likes": 2
   },
   {
@@ -244,24 +244,51 @@
     "status": "public",
     "date": "2026-09-09",
     "url": "https://youtu.be/i0HN7HQdfZ0",
-    "views": 0
+    "views": 941,
+    "likes": 6
   },
   {
     "title": "Which one flips? Same brick, same spin. Long axis: never. Middle axis: a flip every 6.8 s.",
     "status": "public",
     "date": "2026-09-09",
     "url": "https://youtu.be/nNsIK9nWsUY",
-    "views": 0
+    "views": 935,
+    "likes": 5
   },
   {
     "title": "Do ants find the shortest path? Both bridges open: 98% take the short one. Long bridge first: 0%.",
     "status": "public",
     "date": "2026-09-09",
     "url": "https://youtu.be/NywakrCTt94",
-    "views": 0
+    "views": 160,
+    "likes": 3
   },
   {
-    "title": "Thirteen measured-claim ideas from trend research 2026-09-09",
+    "title": "Which slide is fastest? The longest one. Curve: 1.0 s. Straight line: 1.2 s.",
+    "status": "public",
+    "date": "2026-09-10",
+    "url": "https://youtu.be/WJMYAZP0YGw",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Can a pendulum stand upside down? Pivot still: falls in 0.43 s. Shaking 40 times a second: stays up.",
+    "status": "public",
+    "date": "2026-09-10",
+    "url": "https://youtu.be/rkux49qUSzg",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Two drops, a hair apart. Same magnet? No. Released 0.1 mm apart: purple and red.",
+    "status": "public",
+    "date": "2026-09-10",
+    "url": "https://youtu.be/Y-rfFZyeAc0",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Ten measured-claim ideas from trend research 2026-09-09",
     "status": "backlog in docs/niche.md"
   }
 ]

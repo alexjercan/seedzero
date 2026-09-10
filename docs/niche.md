@@ -252,6 +252,12 @@ physics is periodic):
   the same start to the same end; measure the arrival times and track
   lengths; expect the longest track (the cycloid) to win by about
   eighteen percent over the straight line.
+  [produced 2026-09-10: bead on a wire, no friction, start (0, 0) to
+  end (pi a, -2a) with a 0.994 m so the cycloid takes 1.0000 s; cycloid
+  3.976 m in 1.0000 s, straight line 3.702 m in 1.1854 s, gentle
+  circular arc 3.760 m in 1.5030 s; arcs of 45/60/75/90 deg 1.083,
+  1.022, 1.005, 1.025 s; five races of 8 s at quarter speed loop;
+  deterministic, no seed]
 - Dzhanibekov flip: a 1:2:3 box in zero g spun about the intermediate
   axis versus the long axis with the same 0.001 rad/s wobble; measure
   the first flip time, the flip period and the count of flips in forty
@@ -266,11 +272,26 @@ physics is periodic):
   three magnets; measure the time they separate by a bob width and the
   final magnet of each; plus a grid of releases counting the share whose
   one-pixel neighbour ends at a different magnet (expect a large share).
+  [produced 2026-09-10: 1 m string, drag 0.3/s, three magnets 6 cm out at
+  90/210/330 deg, bob 3 cm above them, strength 0.006 m^3/s^2, RK4 at
+  1200 steps/s; released at (-0.05, 7.95) cm and 0.1 mm to the right;
+  gap passes one bob width (10 mm) at 1.071 s and 100 mm at 3.29 s;
+  white bob settles over purple at 7.85 s, gold over red at 7.96 s; 200
+  x 200 release map: 41.7% of points end at a different magnet from the
+  neighbour 1 mm to the right, 26.9% from 0.1 mm; 2400 steps/s agrees;
+  two drops of 22 s at half speed loop; deterministic, no seed]
 - Kapitza pendulum: the same inverted pendulum with the same 0.001 rad
   nudge, pivot still versus pivot shaking 2 cm at 30 Hz; measure the fall
   time of the still one and the maximum tilt of the shaken one over ten
   minutes (expect it never falls; stability 3.77 against a threshold of
   1.40).
+  [produced 2026-09-10: 10 cm pendulum, air drag 0.2/s, pivot stroke 1 cm
+  each way at 40 Hz (stability 1.79 against the threshold), nudge 0.5
+  rad/s at 2.5 s; still pivot falls past 90 deg 0.427 s after the nudge; shaking pivot peaks at 2.35 deg and wobbles with a
+  0.423 s period; a 6 rad/s kick at 15 s swings it out to 28.5 deg and
+  it is back under 5 deg 0.09 s later; shaking stopped at 29 s, it falls
+  in 0.429 s; a 600 s run never fell; stroke 0.3 cm falls in 0.474 s;
+  deterministic, no seed]
 - Lorenz forecast horizon: nudge the Lorenz system by 1e-3, 1e-6 and
   1e-9; measure the time to disagree by one unit; expect about 7.6, 15.3
   and 22.9, so every thousandfold gain in precision buys the same 7.6.

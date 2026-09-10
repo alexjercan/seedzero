@@ -1,0 +1,48 @@
+{
+  "seed": 0,
+  "g": 9.81,
+  "fps": 60,
+  "substeps": 20,
+  "length": 1.0,
+  "damping": 0.3,
+  "magnet_strength": 0.006,
+  "magnet_radius": 0.06,
+  "magnet_gap": 0.03,
+  "magnet_angles_deg": [
+    90,
+    210,
+    330
+  ],
+  "magnet_names": [
+    "red",
+    "blue",
+    "purple"
+  ],
+  "separation": 0.0001,
+  "bob_diameter": 0.01,
+  "reference_point": [
+    0.0,
+    0.08
+  ],
+  "view_half_width": 0.1,
+  "map_n": 200,
+  "map_duration": 50.0,
+  "map_steps_per_s": 400,
+  "settle_radius": 0.005,
+  "settle_speed": 0.005,
+  "scene_duration": 44.0,
+  "title": "Two drops, a hair apart.|Same magnet?",
+  "title_until": 2.4,
+  "payoff_hold": 0.6,
+  "payoff_text": "same magnet? no: {a} and {b} | released a tenth of a millimeter apart",
+  "music_seed": 36,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.655,
+  "overlay": "half speed | released 0.1 mm apart | no seed",
+  "playback": 0.5,
+  "drop_period": 22.0,
+  "release_t": 5.0,
+  "reset_dur": 0.8,
+  "run_duration": 9.0
+}

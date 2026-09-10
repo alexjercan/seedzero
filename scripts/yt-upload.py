@@ -41,6 +41,10 @@ def main() -> int:
         print(f"error: missing {video}", file=sys.stderr)
         return 1
 
+    if len(meta["title"]) > 100:
+        print(f"error: title is {len(meta['title'])} characters; YouTube allows 100", file=sys.stderr)
+        return 1
+
     youtube = client()
     channels = youtube.channels().list(part="id", mine=True).execute()["items"]
     if [c["id"] for c in channels] != [SEED_ZERO_ID]:

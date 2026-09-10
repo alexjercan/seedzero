@@ -1,0 +1,18 @@
+{
+  "title": "Can a pendulum stand upside down? Pivot still: falls in 0.43 s. Shaking 40 times a second: stays up.",
+  "description": "Can a pendulum stand upside down? The same rigid pendulum twice, balanced on end, the same small nudge at the same moment. Top: the pivot holds still. Bottom: the pivot shakes straight up and down, one centimetre each way, forty times a second. Equation: theta'' = (g + y_p'') / l sin(theta) - damping theta', RK4 at 2,400 steps per second; the shaking panel is drawn with sub-frame motion blur.\n\nMeasured (deterministic, no seed):\n- pendulum 10 cm, pivot stroke 1.0 cm each way at 40 Hz (peak pivot acceleration 64 g), air drag 0.2 per second, nudge 0.5 rad/s at 2.5 s\n- pivot still: tilt passes 90 degrees 0.427 s after the nudge, hangs straight down 0.09 s later\n- pivot shaking: largest tilt after the nudge 2.35 degrees, slow wobble 0.423 s per cycle (averaged-motion prediction 0.426 s); A omega = 2.51 m/s against the threshold sqrt(2 g l) = 1.40 m/s\n- a hard kick at 15 s, twelve times the nudge, swings it out to 28.5 degrees; it comes back under 5 degrees in 0.21 s and never falls\n- shaking switched off at 29 s: tilt passes 90 degrees 0.429 s later (0.945 s in the same run without the kick)\n- ten minute run with the shaking never stopped: largest tilt after the first minute 0.0075 degrees, never fell\n- check: a stroke of 0.3 cm, below the threshold, falls 0.474 s after the nudge\n\nWhy: each shake of the pivot yanks the rod back toward the line of shaking. Averaged over many shakes that is an upward-pointing restoring force, and when the pivot's peak speed beats sqrt(2 g l) it wins against gravity (Kapitza's pendulum, 1951).\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "Kapitza pendulum",
+    "inverted pendulum",
+    "pendulum",
+    "dynamic stabilization",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

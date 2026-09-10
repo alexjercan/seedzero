@@ -1,0 +1,19 @@
+{
+  "title": "Two drops, a hair apart. Same magnet? No. Released 0.1 mm apart: purple and red.",
+  "description": "Two drops, a hair apart. Same magnet? Two identical pendulums over a table with three magnets, released from rest one tenth of a millimetre apart. They move as one, then split, and end over different magnets. Seen from above at half speed, twice from the same spot.\n\nMeasured (deterministic, no seed):\n- string 1 m, drag 0.3 per second, three magnets 6 cm from the centre at 90, 210 and 330 degrees, bob 3 cm above the magnet plane, magnet strength 0.006 m^3/s^2 (pull straight above a magnet 0.68 g), bob 10 mm across, RK4 at 1,200 steps per second\n- release point chosen by rule: the nearest 1 mm grid point to (0, 8 cm) whose neighbour 0.1 mm to the right ends at a different magnet; result (-0.05, 7.95) cm\n- the gap passes 1 mm at 0.66 s, one ball width (10 mm) at 1.07 s, and 100 mm (a thousand times the release gap) at 3.29 s\n- the white ball settles over the purple magnet at 7.85 s, the gold ball over the red magnet at 7.96 s (within 5 mm, under 5 mm/s)\n- basin map, 200 x 200 release points 1 mm apart over a 20 cm square: 41.7 percent of points end at a different magnet from their neighbour 1 mm to the right; 26.9 percent differ from a neighbour 0.1 mm to the right\n- check at 2,400 steps per second: same split time, same magnets; released 1 mm apart: split at 0.66 s, purple and blue; 10 mm apart: split at 0.22 s, purple and blue\n\nWhy: three magnets make the pull on the ball change direction sharply between them, so every pass near a magnet bends two nearly identical swings a little differently and the difference compounds. The equations have no randomness; the outcome is decided by the start to a fraction of a hair (a chaotic magnetic pendulum).\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "magnetic pendulum",
+    "chaos",
+    "butterfly effect",
+    "sensitive dependence",
+    "pendulum",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

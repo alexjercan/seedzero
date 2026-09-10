@@ -1,0 +1,6 @@
+Which slide is fastest? Three slides, same start, same end. One ball on each. No friction, quarter speed.
+The gentle slide starts flat, so its ball crawls, and comes in last.
+The straight slide is the shortest. The curved slide is the longest: seven percent longer.
+Watch the start. The curve drops steeply at once, so its ball picks up speed first. It stays ahead to the end.
+Same race, again and again. Which slide is fastest? The longest one. The curve arrives at one point zero seconds. The straight slide at one point two.
+This curve is a cycloid. The shortest path is not the fastest.

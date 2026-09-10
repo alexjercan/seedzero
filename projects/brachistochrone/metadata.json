@@ -1,0 +1,18 @@
+{
+  "title": "Which slide is fastest? The longest one. Curve: 1.0 s. Straight line: 1.2 s.",
+  "description": "Which slide is fastest? Three frictionless slides from the same start to the same end, one ball on each, released together from rest. The straight slide is the shortest path. The curved slide is 7.4 percent longer and its ball arrives first, every race. Bead on a wire, s'' = -g dy/ds, RK4 at 2,400 steps per physics second, played at quarter speed.\n\nMeasured (deterministic, no seed):\n- start (0, 0), end (3.123, -1.988) m; the curve is a cycloid with a = 0.994 m, chosen so its time is exactly 1.000 s\n- curve: length 3.976 m, arrives at 1.0000 s (closed form 1.0000 s)\n- straight slide: length 3.702 m, arrives at 1.1854 s (closed form 1.1854 s); the straight slide takes 18.5 percent longer\n- gentle-start slide (a circle of radius 6.16 m leaving the start at 15 degrees): length 3.760 m, arrives at 1.5030 s\n- energy drift at arrival under 1e-7 on all three\n- check: circular arcs leaving the start at 45, 60, 75 and 90 degrees arrive at 1.083, 1.022, 1.005 and 1.025 s, all after the cycloid\n- five races of 8 s at quarter speed; the last reset returns to the first frame, so the video loops\n\nWhy: the curve drops steeply at once, so its ball is moving fast early and keeps that speed over most of the path; the gentle slide starts flat, so its ball crawls. The fastest path between two points under gravity is the cycloid (the brachistochrone; Johann Bernoulli's 1696 challenge).\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "brachistochrone",
+    "cycloid",
+    "fastest slide",
+    "Bernoulli",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
