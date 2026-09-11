@@ -1,0 +1,3 @@
+Add more circles. Does the bump go away? Five spinning circles draw a wave. The pen follows a square, and overshoots the top by eighteen percent.
+Fifty circles. Ten times more. The wave hugs the square ten times tighter, and the corners look sharp. But watch the pen at each jump. It still overshoots, by the same eighteen percent. Five hundred circles: eighteen percent. Five thousand circles: eighteen again. The bump gets thinner, and never shorter.
+Does the bump go away? No. Eighteen percent too high, with five circles or five thousand.

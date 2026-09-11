@@ -1,0 +1,19 @@
+{
+  "title": "Add more circles. Does the bump go away? 5 circles: 18% too high. 50: 18%. 5,000: 18%. Never.",
+  "description": "Add more circles. Does the bump go away? Spinning circles chained end to end draw the Fourier series of a square wave: the k-th circle has radius (4/pi)/(2k+1) times the wave height and turns 2k+1 times per period, so the pen's height is exactly the partial sum S_N(x) = (4/pi) sum sin((2k+1)x)/(2k+1) for k from 0 to N-1. Top panel: 5 circles (harmonics 1 to 9). Bottom panel: 50 circles (harmonics 1 to 99). Same square, same pen, one period every 8 seconds; the dashed grey line is the flat top of the square and the dashed coloured line is the measured peak.\n\nMeasured (exact arithmetic, deterministic, no seed):\n- 5 circles: highest point 1.182328 of a square of height 1, 18.23% above the flat top, 400 ms after the jump at 8 s per period; the bump is back down to the top level 621 ms after the jump; root-mean-square gap to the square 0.2010\n- 50 circles: 1.179013, 17.90% above, 40 ms after the jump, back at the top level at 62 ms; RMS gap 0.0637\n- 500 circles: 1.178980, 17.90%, 4 ms, back at 6 ms; RMS gap 0.0201\n- 5,000 circles: 1.178980, 17.90%, 0.4 ms, back at 0.6 ms; RMS gap 0.0064\n- limit for infinitely many circles: (2/pi) Si(pi) = 1.178980, 17.90% above the flat top (the Wilbraham-Gibbs constant)\n- from 5 to 50 circles the bump got 10.0x thinner and its height went from 18.23% to 17.90%; the RMS gap shrinks like one over the square root of the circle count while the peak never drops below 17.90%\n\nWhy: every circle you add fixes the wave a little more everywhere except right at the jump. Near a jump the partial sum is the integral of a sinc-shaped kernel across the edge, and that integral overshoots by (2/pi) Si(pi) - 1 = 8.95% of the whole jump, which is 17.90% of the half-height, no matter how many terms you use. More circles squeeze the bump toward the jump (its width goes like 1/N) but never shrink it. This is the Gibbs phenomenon, first described by Henry Wilbraham in 1848.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "fourier series",
+    "gibbs phenomenon",
+    "epicycles",
+    "square wave",
+    "mathematics",
+    "math visualization",
+    "signal processing",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

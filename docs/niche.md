@@ -292,9 +292,14 @@ physics is periodic):
   it is back under 5 deg 0.09 s later; shaking stopped at 29 s, it falls
   in 0.429 s; a 600 s run never fell; stroke 0.3 cm falls in 0.474 s;
   deterministic, no seed]
-- Lorenz forecast horizon: nudge the Lorenz system by 1e-3, 1e-6 and
-  1e-9; measure the time to disagree by one unit; expect about 7.6, 15.3
-  and 22.9, so every thousandfold gain in precision buys the same 7.6.
+- Lorenz forecast horizon: nudge the Lorenz system by 1e-3, 1e-6 and 1e-9;
+  measure the time to disagree by one unit; expect about 7.6, 15.3 and
+  22.9, so every thousandfold gain in precision buys the same 7.6.
+  [produced 2026-09-11: three copies nudged by 1e-3, 1e-6 and 1e-9 split
+  from the reference by one unit at 6.72, 14.22 and 21.82 s (gaps 7.50 and
+  7.60 s; 200-start ensemble means 6.77, 14.35 and 22.15 s; unchanged to
+  0.0003 s at half the step); https://youtu.be/td7bbyUL77s, task
+  20260911-102046]
 - Gyroscope top: two identical tops with the same one-degree tilt, one
   spinning three times faster; measure the precession periods (expect a
   3:1 ratio against the exact mgr / (I omega)) and the fall time of a top
@@ -353,5 +358,10 @@ physics is periodic):
   percent for a random pick.
 - Fourier square from circles: spinning circles draw a square wave;
   measure the peak overshoot at 5, 50 and 500 circles; expect the peak
-  eighteen percent above the flat top every time (Gibbs), with the
-  drawing as a seamless loop.
+  eighteen percent above the flat top every time (Gibbs), with the drawing
+  as a seamless loop. [produced 2026-09-11: 5, 50, 500 and 5,000 circles
+  overshoot the flat top by 18.23, 17.90, 17.90 and 17.90 percent (limit
+  (2/pi) Si(pi) = 1.178980, 17.90 percent) while the bump gets 10x thinner
+  per step (400, 40, 4 and 0.4 ms after the jump); one period drawn in 8 s
+  so the 40 s short loops exactly; https://youtu.be/iIWkxb6zYqE, task
+  20260911-103540]

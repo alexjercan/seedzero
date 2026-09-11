@@ -1,0 +1,41 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "period_s": 8.0,
+  "scene_duration": 40.0,
+  "circles": {
+    "few": 5,
+    "many": 50
+  },
+  "check_terms": [
+    500,
+    5000
+  ],
+  "amplitude_px": 100.0,
+  "chain_x": 400.0,
+  "trace_x0": 740.0,
+  "trace_x1": 1040.0,
+  "px_per_period": 300.0,
+  "title": "Add more circles.|Does the bump go away?",
+  "title_until": 2.4,
+  "flash_seconds": 0.5,
+  "payoff_t": 27.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "does the bump go away? no | {few}, {many} or {big} circles: {big_pct:.0f}% too high",
+  "loop_fade": 0.6,
+  "music_seed": 43,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.49,
+  "overlay": "same square | same pen | no seed",
+  "extra_checks": [
+    [
+      500,
+      21.1
+    ],
+    [
+      5000,
+      22.9
+    ]
+  ]
+}
