@@ -1,0 +1,19 @@
+{
+  "title": "Spin a top 3x faster. Does it circle faster? No: 2.0 s a lap became 6.0 s. Same top, same lean.",
+  "description": "Spin a top three times faster. Does it circle faster? The same top twice on a table at the same 30 degree lean. Top: it spins 30 times a second (1,800 rpm). Bottom: 90 times a second (5,400 rpm). Each top is started in steady precession, the state a real top settles into once friction has eaten its first wobble. Equations: Lagrange's equations of the heavy symmetric top, I1 theta'' = I1 phi'^2 sin(theta) cos(theta) - p_psi phi' sin(theta) + m g r sin(theta), with phi' = (p_phi - p_psi cos(theta)) / (I1 sin(theta)^2) and psi' = p_psi / I3 - phi' cos(theta); RK4 at 2,400 steps per second; the mass cancels.\n\nMeasured (deterministic, no seed):\n- top: solid disc of radius 2.0 cm and thickness 0.6 cm on a stem, centre 1.2 cm above the tip; per unit mass I1 2.470e-4 and I3 2.000e-4 m^2; g 9.81 m/s^2\n- 30 turns a second: one lap of the circle every 1.9758 s, 20 laps in 40 s (the fast-top formula m g r / (I3 w3) gives 2.0122 s; the exact steady root of I1 cos(theta) W^2 - I3 w3 W + m g r = 0 gives 1.9758 s)\n- 90 turns a second: one lap every 6.0245 s, 6 laps in 40 s (formula 6.0365 s, exact root 6.0245 s)\n- ratio 3.049: three times the spin, three times slower to within 2 percent; the formula alone says exactly 3\n- checks: a full rigid-body run (Euler's equations with the gravity torque about the tip, unit quaternion, 14,400 steps per second) gives the same first laps, 1.9758 and 6.0245 s; halving the step changes nothing; released from rest instead of in steady precession the tops wobble by 1.24 and 0.13 degrees and average 1.9756 and 6.0238 s a lap\n- checks, too little spin: released from rest at the same lean, 5 turns a second falls past horizontal in 0.097 s, 6 in 0.108 s, 7 stays up wobbling out to 83 degrees; standing straight up needs more than 8.58 turns a second\n\nWhy: gravity pulls the leaning top down, which is a twist about the tip. That twist cannot tip a spinning top over; it swings the spin axis sideways instead, at a rate of twist divided by spin momentum, m g r / (I3 w3). Three times the spin momentum, one third the swing rate, three times as long a lap. The 1.6 percent extra comes from the axis also carrying a little momentum of the circling itself (the I1 cos(theta) W^2 term).\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "gyroscope",
+    "spinning top",
+    "precession",
+    "gyroscopic precession",
+    "angular momentum",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

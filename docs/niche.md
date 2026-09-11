@@ -298,7 +298,14 @@ physics is periodic):
 - Gyroscope top: two identical tops with the same one-degree tilt, one
   spinning three times faster; measure the precession periods (expect a
   3:1 ratio against the exact mgr / (I omega)) and the fall time of a top
-  spun below the critical rate.
+  spun below the critical rate. [produced 2026-09-11: a 2 cm disc top
+  at a 30 deg lean, started in steady precession; 30 turns a second
+  circles once every 1.9758 s (20 laps in 40 s), 90 turns a second
+  every 6.0245 s (6 laps), ratio 3.049 against exactly 3 from
+  m g r / (I3 w3); rigid-body quaternion and step-halving checks agree;
+  released from rest the averages are 1.9756 and 6.0238 s; below 6.52
+  turns a second the top falls past horizontal from rest (5 turns a
+  second in 0.097 s); deterministic, no seed]
 - Kelvin wake: a moving source on a deep-water surface at three speeds;
   measure the wake half-angle; expect 19.47 degrees at every speed
   (heavier build: a spectral wave solver; measure the angle before
