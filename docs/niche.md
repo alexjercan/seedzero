@@ -309,7 +309,14 @@ physics is periodic):
 - Kelvin wake: a moving source on a deep-water surface at three speeds;
   measure the wake half-angle; expect 19.47 degrees at every speed
   (heavier build: a spectral wave solver; measure the angle before
-  committing a slot).
+  committing a slot). [measured 2026-09-11, slot not committed: the
+  steady linear deep-water wake of a 1 m Gaussian pressure patch,
+  computed spectrally, gives amplitude peaks along rays at 18.8, 10.3
+  and 8.8 deg for 4, 8 and 12 m/s (the visible wake narrows with speed,
+  Rabaud and Moisy 2013) and noisy outer-crest fits of 19.7, 19.1 and
+  13.2 deg; the constant 19.47 deg is the crest-cusp geometry, not what
+  the amplitude shows, so the claim needs a boat-size definition and a
+  two-part story; evidence in task 20260911-103540]
 - Langton's ant: two rules, one ant; measure the step at which the
   highway starts, its period and its drift; expect step 9,977, period
   104, two cells per period; exact, no seed.

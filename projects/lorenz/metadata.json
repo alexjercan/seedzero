@@ -1,0 +1,20 @@
+{
+  "title": "Know the start 1,000x better. How much longer can you predict? The same 7.5 s each time. Lorenz.",
+  "description": "Know the start a thousand times better. How much longer can you predict? Three copies of Lorenz's 1963 weather model ride the same path as a reference run. Their starts differ from it by one part in a thousand, one in a million and one in a billion (x moved by 0.001, 0.000001 and 0.000000001). A copy \"splits\" when its distance from the reference first reaches 1.0 in the model's units. Equations: x' = 10 (y - x), y' = x (28 - z) - y, z' = x y - 8 z / 3 (sigma 10, rho 28, beta 8/3); RK4 at 2,400 steps per time unit; one model time unit is shown as one second of video, and the stopwatches count model time from the moment the copies start.\n\nMeasured (deterministic, no seed):\n- the start in the video: (13.611006, 16.317673, 30.798821), reached from (1, 1, 1) after a 76.25 unit transient; the sim picks it as the one of 200 candidate starts spaced 0.37 units along the attractor whose split times are closest to the ensemble averages\n- 1 thousandth off: splits at 6.72 s; 1 millionth off: 14.22 s; 1 billionth off: 21.82 s; gaps 7.50 and 7.60 s\n- so each thousandfold gain in precision bought the same 7.5 s, not a thousand times more time; implied growth rate 0.915 per unit time (the distance doubles every 0.76 s)\n- ensemble of 200 starts: the copies split at 6.77, 14.35 and 22.15 s on average (sd 1.9 s each); gaps 7.59 and 7.80 s on average, sd 1.9; implied largest Lyapunov exponent 0.898 (the accepted value is about 0.906)\n- checks: the same start at 4,800 steps per unit gives 6.7205, 14.2193, 21.8181 s (unchanged to 0.0003 s); moving y instead of x gives 5.28, 12.83, 21.11 s; moving z gives 6.78, 14.28, 22.58 s; the single times move by up to 1.4 s with the direction, the law does not\n\nWhy: on a chaotic attractor any small difference grows by the same factor per unit time (e^0.9 each unit, about 2.5x). To buy one more unit of forecast you must shrink the starting error by that factor, so a thousandfold in precision always buys ln(1000) / 0.9 = 7.6 units, whether you go from a thousandth to a millionth or from a millionth to a billionth. Prediction time grows with the logarithm of the precision, which is why forecasts have a horizon no instrument can push far.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "lorenz attractor",
+    "chaos",
+    "chaos theory",
+    "butterfly effect",
+    "weather forecast",
+    "lyapunov exponent",
+    "physics",
+    "simulation",
+    "physics visualization",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

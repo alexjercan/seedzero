@@ -1,0 +1,43 @@
+{
+  "seed": 0,
+  "sigma": 10.0,
+  "rho": 28.0,
+  "beta": 2.6666666666666665,
+  "fps": 60,
+  "substeps": 40,
+  "transient": 30.0,
+  "nudges": {
+    "a": 0.001,
+    "b": 1e-06,
+    "c": 1e-09
+  },
+  "nudge_labels": {
+    "a": "1 thousandth off",
+    "b": "1 millionth off",
+    "c": "1 billionth off"
+  },
+  "threshold": 1.0,
+  "scene_duration": 40.0,
+  "check_steps_per_second": 4800,
+  "check_starts": 200,
+  "check_start_spacing": 0.37,
+  "backdrop_duration": 60.0,
+  "trail_seconds": 2.0,
+  "px_per_unit": 26.0,
+  "view_centre": [
+    540.0,
+    1560.0
+  ],
+  "title": "Know the start 1,000x better.|How much longer can you predict?",
+  "title_until": 2.4,
+  "payoff_hold": 0.6,
+  "payoff_delay": 1.2,
+  "payoff_text": "how much longer? {gap:.1f} s, each time | {a:.1f} s, then {b:.1f} s, then {c:.1f} s",
+  "loop_fade": 0.6,
+  "music_seed": 41,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.93,
+  "overlay": "same model | 3 starts | no seed",
+  "preroll": 6.9
+}
