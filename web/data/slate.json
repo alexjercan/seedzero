@@ -12,7 +12,7 @@
     "status": "public",
     "date": "2026-08-30",
     "url": "https://youtu.be/BU_j-UbPR7k",
-    "views": 1160,
+    "views": 1161,
     "likes": 16
   },
   {
@@ -236,7 +236,7 @@
     "status": "public",
     "date": "2026-09-08",
     "url": "https://youtu.be/HkqX1e1EK_M",
-    "views": 94,
+    "views": 96,
     "likes": 2
   },
   {
@@ -244,7 +244,7 @@
     "status": "public",
     "date": "2026-09-09",
     "url": "https://youtu.be/i0HN7HQdfZ0",
-    "views": 943,
+    "views": 945,
     "likes": 6
   },
   {
@@ -252,7 +252,7 @@
     "status": "public",
     "date": "2026-09-09",
     "url": "https://youtu.be/nNsIK9nWsUY",
-    "views": 937,
+    "views": 939,
     "likes": 5
   },
   {
@@ -260,7 +260,7 @@
     "status": "public",
     "date": "2026-09-09",
     "url": "https://youtu.be/NywakrCTt94",
-    "views": 163,
+    "views": 165,
     "likes": 3
   },
   {
@@ -268,7 +268,7 @@
     "status": "public",
     "date": "2026-09-10",
     "url": "https://youtu.be/WJMYAZP0YGw",
-    "views": 526,
+    "views": 949,
     "likes": 3
   },
   {
@@ -276,15 +276,15 @@
     "status": "public",
     "date": "2026-09-10",
     "url": "https://youtu.be/rkux49qUSzg",
-    "views": 216,
-    "likes": 2
+    "views": 672,
+    "likes": 7
   },
   {
     "title": "Two drops, a hair apart. Same magnet? No. Released 0.1 mm apart: purple and red.",
     "status": "public",
     "date": "2026-09-10",
     "url": "https://youtu.be/Y-rfFZyeAc0",
-    "views": 121,
+    "views": 188,
     "likes": 1
   },
   {
@@ -292,27 +292,51 @@
     "status": "public",
     "date": "2026-09-11",
     "url": "https://youtu.be/AcMvMjpwBLc",
-    "views": 0,
-    "likes": 0
+    "views": 553,
+    "likes": 5
   },
   {
     "title": "Know the start 1,000x better. How much longer can you predict? The same 7.5 s each time. Lorenz.",
     "status": "public",
     "date": "2026-09-11",
     "url": "https://youtu.be/td7bbyUL77s",
-    "views": 0,
-    "likes": 0
+    "views": 362,
+    "likes": 4
   },
   {
     "title": "Add more circles. Does the bump go away? 5 circles: 18% too high. 50: 18%. 5,000: 18%. Never.",
     "status": "public",
     "date": "2026-09-11",
     "url": "https://youtu.be/iIWkxb6zYqE",
+    "views": 1044,
+    "likes": 10
+  },
+  {
+    "title": "What is the fastest way to board a plane? Window seats first 5:18, back to front 19:12, 3.6x slower",
+    "status": "public",
+    "date": "2026-09-12",
+    "url": "https://youtu.be/L8qbh5LHRso",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Ten measured-claim ideas from trend research 2026-09-09",
+    "title": "You wait on floor 2. Which way is the first elevator going? Down, 8,900 times out of 10,000.",
+    "status": "public",
+    "date": "2026-09-12",
+    "url": "https://youtu.be/Bdksy-fBzow",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "One ant, two rules. What does it build? A mess for 9,977 steps, then a highway: 104 steps a block.",
+    "status": "public",
+    "date": "2026-09-12",
+    "url": "https://youtu.be/No7zkBgVoc0",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Four unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

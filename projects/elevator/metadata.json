@@ -1,0 +1,18 @@
+{
+  "title": "You wait on floor 2. Which way is the first elevator going? Down, 8,900 times out of 10,000.",
+  "description": "You wait on floor 2 of a 10-floor building. Which way is the first elevator going? One elevator runs from the ground floor to the top and back, 2 s per floor, never stopping. You press the button at 10,000 random moments (seed 0, spread evenly over six full 36 s cycles) and count which way the elevator is moving when it first reaches you. The line on the right shows where the elevator has been. Played at 10x.\n\nMeasured (closed-form first arrival for each press, seed 0):\n- floor 2: going down 8,900 times, going up 1,100 (89.00% down); the exact share of the cycle the elevator spends above floor 2 is 8/9 = 88.89%\n- mean wait 14.3 s: 15.8 s when it came down, 2.0 s when it came up\n- floor 9: going down 1,138, going up 8,862 (the opposite)\n- floor 5: going down 5,562, going up 4,438 (exact 5/9)\n- check with 1,000,000 presses at seed 1: 88.850% down\n\nWhy: the elevator is above you eight ninths of the time, and from up there the first time it passes floor 2 is on the way down. It can only arrive going up when you catch it on the short trip below you, to the ground floor and back, which lasts one ninth of the cycle. This is the elevator paradox described by George Gamow and Marvin Stern in 1958. Real buildings have stops and several cars, which blur the ratio but keep the direction.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "elevator paradox",
+    "gamow",
+    "probability",
+    "waiting time",
+    "simulation",
+    "mathematics",
+    "math visualization",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

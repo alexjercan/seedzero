@@ -1,0 +1,19 @@
+{
+  "title": "What is the fastest way to board a plane? Window seats first 5:18, back to front 19:12, 3.6x slower",
+  "description": "What is the fastest way to board a plane? The same 150 passengers, the same seats and the same bags, boarded three ways on a single-aisle plane of 25 rows of six (A and F window, B and E middle, C and D aisle). Top: back to front, five zones of five rows, rear zone first. Middle: one random order. Bottom: window seats first (the Steffen order: window, then middle, then aisle seats, every other row, one side and then the other). Each passenger walks 0.8 s per row, needs 5 to 20 s to stow a bag (drawn once per passenger at seed 0, mean 12.55 s) and adds 6 s for every seated neighbour they climb over. Nobody can pass anybody in the aisle. Played at 50x.\n\nMeasured (time-stepped model, 0.1 s steps, seed 0):\n- back to front: last passenger seated at 1,151.9 s = 19 min 12 s; 145 of 150 passengers stood blocked in the aisle at some point; on average 1.63 passengers stowing a bag at the same time, at most 6\n- random: 790.4 s = 13 min 10 s; 134 of 150 blocked at some point; 2.38 stowing at once on average, at most 6\n- window seats first: 318.4 s = 5 min 18 s; 70 of 150 blocked at some point; 5.91 stowing at once on average, at most 13\n- back to front is 3.62x slower than window seats first; random is 2.48x slower\n- 20 seeds of bag times and shuffles: mean 19.19, 13.76 and 5.30 min; back to front slowest in 20 of 20, window seats first fastest in 20 of 20; halving the time step changes nothing\n\nWhy: boarding is limited by how many people can stow a bag at the same time. Back to front sends everyone to the same five rows, so one stowing passenger blocks the whole line behind them. Window seats first, every other row, spreads the stowing along the whole plane, lets up to 13 bags go up at once, and nobody climbs over a seated neighbour.\n\nThe numbers in the narration are the printed outputs of this exact run. Real boarding adds families, carry-on limits, gate agents and late passengers, so the times belong to the model, not to an airline.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "plane boarding",
+    "boarding simulation",
+    "steffen method",
+    "back to front boarding",
+    "queue simulation",
+    "airplane",
+    "simulation",
+    "mathematics",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

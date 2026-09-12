@@ -1,0 +1,18 @@
+{
+  "title": "One ant, two rules. What does it build? A mess for 9,977 steps, then a highway: 104 steps a block.",
+  "description": "One ant, two rules. What does it build? Langton's ant stands on an empty grid. Empty cell: paint it, turn right, step. Painted cell: wipe it, turn left, step. No plan, no memory, only the cell under its feet. Exact integers, no seed. The view is turned a quarter turn so the road runs down the screen; a rotation keeps right turns right turns.\n\nMeasured (1,000,000 steps, exact arithmetic):\n- for the first 9,976 steps the ant makes a mess: 715 painted cells over a box of 49 by 45 cells when the road starts\n- from step 9,977 the same 104-step block repeats: the same 104 turns (58 right, 46 left), landing 2 cells further along the diagonal every block\n- checked for 9,519 blocks out to step 999,953: the turn sequence is identical in every block\n- the video shows 12,653 steps in 40 s: 12 steps a second while the rules are read, 805 a second through the mess, 110 a second on the road\n\nWhy: nobody has a short answer. Every finite starting pattern that has been tried ends up on this same road, but nobody has proved that it always must; the one proven fact is that the ant's path is never bounded (the Cohen-Kong theorem). Step 9,977 counts the ant's first move as step 1; the highway is usually quoted as starting after about 10,000 steps.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "langton's ant",
+    "cellular automaton",
+    "emergence",
+    "chaos",
+    "simulation",
+    "mathematics",
+    "math visualization",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

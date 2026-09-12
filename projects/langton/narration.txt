@@ -1,0 +1,3 @@
+One ant follows two rules. What does it build? Empty cell: paint it, turn right, step. Painted cell: wipe it, turn left, step. No plan, no memory, just the cell under its feet.
+For thousands of steps it makes a mess: loops, blobs, scribbles over its own trail, and every crossing changes the next turn. Then, on step nine thousand nine hundred seventy seven, something clicks.
+What does it build? A highway. The same one hundred four steps, over and over, two cells further each time, checked out to a million steps. Two rules. A mess for ten thousand steps, then a road.

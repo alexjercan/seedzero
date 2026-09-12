@@ -324,7 +324,11 @@ physics is periodic):
   two-part story; evidence in task 20260911-103540]
 - Langton's ant: two rules, one ant; measure the step at which the
   highway starts, its period and its drift; expect step 9,977, period
-  104, two cells per period; exact, no seed.
+  104, two cells per period; exact, no seed. [produced 2026-09-12:
+  exact run to 1,000,000 steps; highway from step 9,977, period 104
+  (58 right, 46 left turns), 2 cells per period, verified for 9,519
+  periods out to step 999,953; 715 painted cells over a 49 by 45 box
+  when the road starts; https://youtu.be/No7zkBgVoc0]
 - Ant double bridge (pillar idea, ant trails): same colony and seed;
   short and long bridge open from the start versus the short bridge
   opening a minute after the long one; measure the share of trips on the
@@ -339,10 +343,17 @@ physics is periodic):
 - Plane boarding: the same 150 passengers, seats and bag times;
   back-to-front versus random versus Steffen; measure boarding time;
   expect Steffen about twice as fast as back-to-front and back-to-front
-  the slowest of the three.
+  the slowest of the three. [produced 2026-09-12: 25 rows of six, bags
+  5 to 20 s, 0.8 s per row, 6 s per seated neighbour, seed 0: back to
+  front 19:12 (1,151.9 s), random 13:10 (790.4 s), window seats first
+  (Steffen) 5:18 (318.4 s), 3.62x; 20 seeds: 19.19, 13.76 and 5.30 min
+  with the same order in 20 of 20; https://youtu.be/L8qbh5LHRso]
 - Elevator paradox: ten floors, you wait on floor two; measure over ten
   thousand waits how often the first elevator to arrive is going down;
-  expect about eighty nine percent.
+  expect about eighty nine percent. [produced 2026-09-12: 10 floors, 2 s
+  per floor, never stopping, 10,000 presses at seed 0: 8,900 down, 1,100
+  up (89.00%, exact 8/9 = 88.89%); floor 9 the opposite (1,138 down);
+  1,000,000 presses at seed 1: 88.85%; https://youtu.be/Bdksy-fBzow]
 - Parking-lot probing (pillar idea, hash collisions): 1,000 spaces, 950
   cars with the same preferred spots; roll forward to the next free spot
   versus a fresh random spot on each retry; measure the spots passed by
