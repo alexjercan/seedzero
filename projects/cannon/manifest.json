@@ -1,0 +1,79 @@
+{
+  "seed": 0,
+  "g": 9.81,
+  "fps": 60,
+  "balls": {
+    "basketball": {
+      "radius": 0.12,
+      "mass": 0.62
+    },
+    "tennis": {
+      "radius": 0.033,
+      "mass": 0.058
+    }
+  },
+  "drop_height": 1.0,
+  "sim_duration": 4.0,
+  "sample_rate": 2400,
+  "check_restitution": 0.85,
+  "check_mass_ratios": [
+    3.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "check_third_ball": {
+    "radius": 0.021,
+    "mass": 0.0459
+  },
+  "scene_duration": 40.0,
+  "px_per_m_max": 600.0,
+  "zoom_margin": 0.35,
+  "looks": [
+    {
+      "t0": 0.5,
+      "speed": 0.5,
+      "end": 3.6,
+      "readouts": false
+    },
+    {
+      "t0": 9.4,
+      "speed": 0.25,
+      "end": 13.8,
+      "readouts": true
+    },
+    {
+      "t0": 14.4,
+      "speed": 0.15,
+      "end": 24.2,
+      "readouts": true
+    },
+    {
+      "t0": 24.6,
+      "speed": 0.3,
+      "end": 36.4,
+      "readouts": true,
+      "freeze_at_peak": true,
+      "hold_until": 34.0,
+      "resume_speed": 0.5
+    },
+    {
+      "t0": 37.0,
+      "speed": 0.5,
+      "end": 40.5,
+      "readouts": true
+    }
+  ],
+  "reset_fade": 0.4,
+  "title": "Drop a tennis ball|on a basketball.|How high does it fly?",
+  "title_until": 2.4,
+  "payoff_t": 29.5,
+  "payoff_hold": 0.6,
+  "payoff_text": "how high does it fly? | alone: back up to {alone:.1f} m | on a basketball: {stack:.1f} m",
+  "loop_fade": 0.6,
+  "music_seed": 46,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same ball | same 1 m drop | no seed"
+}

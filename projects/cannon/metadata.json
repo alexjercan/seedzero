@@ -1,0 +1,19 @@
+{
+  "title": "Drop a tennis ball on a basketball. How high does it fly? 5.6 m from a 1 m drop. Alone: 1 m.",
+  "description": "Drop a tennis ball on a basketball. How high does it fly? The same tennis ball is dropped from the same height, its bottom 1 m above the floor. Alone, it bounces straight back up to 1 m. Riding on a basketball, it takes off to 5.6 m.\n\nModel: one-dimensional motion under gravity, perfectly elastic bounces at the floor and between the balls, no air, no spin. Event driven: between collisions every ball follows its exact parabola, the time to the next floor hit or ball contact is solved in closed form, and each collision applies the one-dimensional elastic rule. Basketball radius 12 cm, 620 g; tennis ball radius 3.3 cm, 58 g; mass ratio 10.7.\n\nMeasured (deterministic, no seed):\n- alone: hits the floor at 0.452 s at 4.43 m/s, back to a peak of 1.000 m at 0.903 s\n- on the basketball: both fall together; the basketball hits the floor at 0.394 s at 3.86 m/s and bounces up into the tennis ball still coming down at 3.86 m/s; after the hit the tennis ball goes up at 10.26 m/s (closed form (3M - m)/(M + m) v) and the basketball at 2.54 m/s (66 percent of its bounce speed)\n- the tennis ball's bottom peaks at 5.609 m at 1.440 s, 5.6 times its own bounce; the basketball peaks at 0.33 m\n- limit: a very heavy bottom ball gives 3 times the speed and 9 times the height; mass ratio 3 gives 3.28 m, 100 gives 6.90 m, 1000 gives 7.06 m\n- energy conserved to 6e-16; later flights after the first one comes down reach 8.66 m as the balls keep colliding\n- real balls lose energy in each bounce: with a restitution of 0.85 at the floor and between the balls, alone bounces to 0.72 m and on the basketball to 3.69 m, still 5.1 times higher\n- a third, lighter ball on top (46 g golf-ball size) would reach 7.5 m\n\nWhy: the basketball bounces off the floor and meets the tennis ball head on while the tennis ball is still coming down. In a head-on elastic hit with a much heavier ball, the light ball leaves at nearly three times the closing speed. Nearly three times the speed means nearly nine times the height.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "galilean cannon",
+    "tennis ball basketball",
+    "bouncing balls",
+    "elastic collision",
+    "physics",
+    "momentum",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

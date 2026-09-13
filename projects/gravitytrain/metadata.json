@@ -1,0 +1,20 @@
+{
+  "title": "Fall through the Earth. How long to the other side? 42 min, via the centre or a 4,000 km tunnel.",
+  "description": "Fall through the Earth. How long to the other side? Two straight frictionless tunnels through a uniform-density Earth, no engine: one through the centre (12,742 km long) and one short chord near the edge (4,000 km long, its midpoint 322 km below the surface). A capsule is dropped into each at the same moment. Equations: inside a uniform sphere gravity is g0 r / R toward the centre; the component along a straight tunnel is integrated with RK4 at 20 steps per second of travel; deterministic, no seed.\n\nMeasured:\n- Earth radius 6,371 km, surface gravity 9.81 m/s^2\n- through the centre: arrives at the far end after 2,531.74 s = 42:12, top speed 7,905.7 m/s at the midpoint, back at the start after 5,063.48 s\n- the 4,000 km tunnel: arrives after 2,531.74 s = 42:12, top speed 2,481.8 m/s, back at the start after 5,063.48 s\n- difference in arrival times: 0.000 ms; closed forms pi sqrt(R / g0) = 2,531.7 s, sqrt(g0 R) = 7,906 m/s, (c / 2) sqrt(g0 / R) = 2,482 m/s\n- checks: doubling the steps changes nothing; chords of 340, 1,000, 8,000 and 12,000 km all arrive at 42:12 (top speeds 211, 620, 4,964 and 7,445 m/s)\n- check, a two-layer Earth (dense core of 3,480 km radius, lighter mantle): the centre tunnel arrives at 38:52 and the 4,000 km tunnel at 42:00, so the equal times need the uniform Earth\n\nWhy: inside a uniform Earth the pull grows in proportion to the distance from the centre, so the pull along any straight tunnel grows in proportion to the distance from the tunnel's midpoint. That is the law of a pendulum or a mass on a spring: the swing time does not depend on how far it swings. A longer tunnel means a stronger pull and a faster capsule, in exactly the ratio that keeps the trip time the same.\n\nOn screen the fall is sped up 379.8x: three round trips in 40 s. The stopwatch shows the simulated time since the drop. The numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "gravity train",
+    "gravity tunnel",
+    "fall through the earth",
+    "physics",
+    "gravity",
+    "simple harmonic motion",
+    "pendulum",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

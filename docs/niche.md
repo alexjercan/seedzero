@@ -376,3 +376,97 @@ physics is periodic):
   per step (400, 40, 4 and 0.4 ms after the jump); one period drawn in 8 s
   so the 40 s short loops exactly; https://youtu.be/iIWkxb6zYqE, task
   20260911-103540]
+
+Added by trend research 2026-09-13 (evidence in task 20260913-212839;
+selection favoured continuous physical motion, two-panel same-input
+comparisons, one plain question per short, live pegs and viral debates a
+simulation settles with a number):
+
+- Orbit passing lane: two ships side by side in the same 400 km circular
+  orbit; one fires a 10 m/s burst forward; measure the gap after one lap
+  and the height difference at the far side; expect the burst ship about
+  170 km behind after one 92-minute lap and 35 km higher at the far
+  side, and the same burst fired backward puts it ahead; one orbit is
+  exactly periodic so the short loops (peg: JUICE Earth flyby
+  2026-09-30, Sputnik 1957-10-04).
+- Galilean cannon: a tennis ball on a basketball dropped together from 1
+  m beside a tennis ball dropped alone; measure the peak height of the
+  tennis ball; expect about 7 m with the 10.7 to 1 mass ratio (9 m in
+  the limit) while the basketball nearly stops; event-driven elastic
+  collisions; three stacked balls should pass 30 m. [produced
+  2026-09-13: 1 m drop, mass ratio 10.7, perfect bounces, no air; alone
+  the tennis ball returns to 1.0000 m; on the basketball the floor hit
+  at 0.3936 s sends it up at 10.263 m/s to 5.6086 m at 1.440 s (5.61x)
+  while the basketball keeps 2.540 m/s; a third ball reaches 7.53 m,
+  not 30 (the 9 m limit needs an infinite mass ratio; ratios 3, 10,
+  100 and 1,000 give 3.28, 5.52, 6.90 and 7.06 m); restitution 0.85
+  gives 3.69 m; https://youtu.be/wN82zmHFM5c, task 20260913-213308]
+- Gravity train: a capsule dropped into a straight tunnel through the
+  centre of a uniform Earth beside one dropped into a 340 km chord
+  tunnel; measure the arrival time at the far end and the top speed;
+  expect 42.2 min for both, 7.9 km/s through the centre against about
+  210 m/s in the short tunnel; the motion is exactly periodic (84.4 min)
+  so the time-lapse loops; state the 38 min real-density caveat in the
+  description. [produced 2026-09-13: 4,000 km chord (322 km deep) used
+  instead of 340 km so the short capsule visibly moves; both arrive at
+  2,531.74 s = 42:12 with 0.000 ms between them, top speeds 7,905.7 and
+  2,481.8 m/s, period 5,063.48 s; chords 340 to 12,000 km all 42:12;
+  two-layer Earth gives 38:52 against 42:00, stated in the description;
+  https://youtu.be/WWpQVZMrn00, task 20260913-213257]
+- Slinky drop: a stretched slinky of 100 coils hanging from its top
+  beside a rigid rod of the same length; release both; measure how long
+  the bottom coil stays still and how far the top has fallen by then;
+  expect the bottom to hold for about 0.32 s on a 1.5 m stretch (the
+  model gives sqrt(2L/3g)) while the top falls the whole 1.5 m, 3 g on
+  average; the rod bottom moves at once. [produced 2026-09-13: 100
+  coils hanging 1.289 m (0.9 N/m, inelastic pile-up); the bottom coil
+  moves less than 2 micrometres until the front reaches it at 0.2905 s
+  (1 mm at 0.2908 s), the top has fallen 1.226 m by then (2.96 g), the
+  rod bottom 0.414 m; sqrt(2L/3g) gives 0.2960 s; softer and stiffer
+  springs give 0.3354 and 0.2372 s; https://youtu.be/d2ET4XCc_TY, task
+  20260913-213306]
+- Swing pumping: a swing started at 5 degrees with no push; the rider
+  stands at the bottom and squats at the top, 10 percent length change,
+  versus the reversed rhythm; measure the angle after each swing; expect
+  the right rhythm to pass 60 degrees in about ten swings and the
+  reversed rhythm to shrink toward zero; a swing at rest never starts.
+- Quantum tunnelling: a wave packet with 80 percent of the energy needed
+  to top a wall beside a classical ball with the same energy; measure
+  the share of the packet that comes out on the far side; expect a few
+  percent (set the wall so it lands near 3 percent) against 0 for the
+  ball, and halving the wall width to multiply the share by about ten;
+  split-step Fourier, no seed (peg: Schrodinger equation centenary 2026,
+  Nobel physics 2026-10-06; the 2025 prize was macroscopic tunnelling).
+- Gravity assist: the same probe at 5 km/s relative to an Earth-mass
+  planet on a 30 km/s orbit, passing behind the planet versus in front
+  of it at the same distance; measure the speed relative to the Sun
+  before and after; expect about plus 5 km/s behind and minus 5 in
+  front, mirror images, with the planet's own speed unchanged to nine
+  digits (peg: JUICE Earth flyby 2026-09-30; its 2024 flyby gave minus
+  4.8 km/s).
+- Metronome sync: two metronomes started a quarter beat apart on a board
+  that rolls on two cans versus the same two on a fixed table; measure
+  the time to lock in step; expect the board pair to lock within about a
+  minute and the table pair to keep their gap for the whole run
+  (Pantaleone 2002 model: escapement pendulums coupled through the
+  moving base).
+- Rogue wave: sum 200 sine waves with random phases and a spectrum
+  peaked at 10 s; run 10,000 waves past a buoy; count crests above twice
+  the significant height; expect about 3 (Rayleigh gives 1 in 2,981)
+  with the tallest near 2.2 times the significant height; the payoff is
+  a count, so keep the moving surface on screen; seed on screen.
+- Rainbow angle: 10,000 parallel rays into a water drop, one internal
+  bounce, red and violet; measure the exit angle where the rays pile up;
+  expect 42.4 deg for red and 40.6 for violet and no rays past the pile,
+  a dark band, then the two-bounce pile near 51 deg; exact Snell
+  geometry, no seed.
+- Mach cone: a sound source emitting a ring every 0.1 s at Mach 0.5, 1
+  and 2; measure the half angle of the ring envelope; expect no cone at
+  0.5, a flat wall at 1 and exactly 30.0 deg at 2; exact circles, loops;
+  the cheap replacement for the Kelvin wake.
+- Dropped versus fired bullet: same 1.5 m height, one dropped and one
+  fired level at 360 m/s, in a vacuum and in air with quadratic drag;
+  measure the landing times; expect 0.553 s for both in a vacuum and the
+  fired one a few hundredths later in air because drag on the fast
+  bullet also pushes up; the vacuum tie is the headline, the air gap
+  depends on the drag choice.

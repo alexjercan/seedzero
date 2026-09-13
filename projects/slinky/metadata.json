@@ -1,0 +1,19 @@
+{
+  "title": "Drop a slinky. When does the bottom fall? Not when you let go: when the top hits it, 0.29 s later.",
+  "description": "Drop a slinky. When does the bottom start to fall? A slinky stretched to 1.3 m hangs beside a solid rod of the same length. Both are released at the same moment. The rod's bottom falls at once. The slinky's bottom coil hangs still until the collapsing top crashes into it, 0.29 s after the drop.\n\nModel: a chain of 80 equal coils joined by springs of rest length 0.8 mm (two touching coils); coils cannot pass through each other, and coils that touch move on together (a perfectly inelastic pile-up, the standard collapse model of a falling slinky). Hanging at rest, the spring below each coil carries the weight of every coil under it, so the top coils are far apart and the bottom coils nearly touch. Semi-implicit Euler at 100,000 steps per second. The rod is in free fall.\n\nMeasured (deterministic, no seed):\n- slinky: 80 coils, 200 g, whole-slinky stiffness 0.8 N/m; hanging length 1.289 m (top two coils 31.5 mm apart, bottom two 1.19 mm); collapsed length 63 mm\n- the bottom coil moves less than 2 thousandths of a millimetre until the collapse front arrives at 0.2905 s; it passes 1 mm at 0.2908 s\n- by then the top coil has fallen 1.226 m of the 1.289 m hang, an average acceleration of 2.96 g, while a body in free fall (the rod) drops 0.414 m in the same 0.29 s\n- checks: the centre of mass falls exactly as a free body (largest deviation 49 micrometres over 1 s, the integrator's own offset); halving the step changes nothing; 100 coils at the same stiffness give 0.2901 s; a 1.698 m hang gives 0.3354 s and a 0.881 m hang 0.2372 s; the closed-form estimate sqrt(2 L / 3 g) gives 0.2960 s\n\nWhy: the bottom coil is held up by the stretched coil above it. Until that coil moves, nothing changes at the bottom. The news that the top let go travels down the slinky as the collapse itself, coil by coil, and the collapse front arrives faster than a small wave would: the top is falling at nearly three times gravity, dragged down by the stretched coils below it.\n\nThe numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "slinky",
+    "slinky drop",
+    "falling slinky",
+    "physics",
+    "gravity",
+    "free fall",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

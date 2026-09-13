@@ -1,0 +1,40 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "earth_radius_km": 6371.0,
+  "surface_g": 9.81,
+  "chord_length_km": 4000.0,
+  "steps_per_second": 20,
+  "scene_duration": 40.0,
+  "periods_in_scene": 3,
+  "check_steps_per_second": 40,
+  "check_chords_km": [
+    340.0,
+    1000.0,
+    8000.0,
+    12000.0
+  ],
+  "check_layers": [
+    {
+      "name": "core",
+      "radius_km": 3480.0,
+      "density": 11000.0
+    },
+    {
+      "name": "mantle",
+      "radius_km": 6371.0,
+      "density": 4450.0
+    }
+  ],
+  "title": "Fall through the Earth.|How long to the other side?",
+  "title_until": 2.4,
+  "payoff_t": 30.6,
+  "payoff_hold": 0.6,
+  "payoff_text": "how long to the other side? | through the centre: {centre} | the {chord_km:,.0f} km tunnel: {chord}",
+  "loop_fade": 0.6,
+  "music_seed": 47,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same Earth | same start | no engine | no seed"
+}
