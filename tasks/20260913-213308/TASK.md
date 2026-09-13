@@ -148,3 +148,14 @@ Narration numbers: one meter (setup), five point six meters (payoff).
   publish run (1 read, 50 update, 1 re-read) = 1,654 units; day total
   3,309 of 10,000 at this point; insert attempt 2 of the hard cap of
   five for the quota day that began 2026-09-13 10:00 EEST
+
+### Repository
+
+- committed on master as ebe182a "Publish the day fifteen slate"
+  (sims, projects, tasks, docs/niche.md, web/data; media and secrets
+  untracked) and pushed to origin git@github.com:alexjercan/seedzero.git
+  at 22:04 EEST on 2026-09-13; the push advanced origin/master from
+  7d85634 to ebe182a; verified with `git rev-parse HEAD origin/master`
+  (both ebe182a2bcdd38e5be5904c8642a7de5cb6eff93) and `git status -sb`
+  (master...origin/master, no divergence); this note is committed
+  separately as "Record the day fifteen push"

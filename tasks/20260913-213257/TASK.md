@@ -142,3 +142,14 @@ Narration numbers: four thousand kilometers (setup), forty two minutes
   4,963 of 10,000; insert attempt 3 of the hard cap of five for the
   quota day that began 2026-09-13 10:00 EEST; two attempts remain
   unused
+
+### Repository
+
+- committed on master as ebe182a "Publish the day fifteen slate"
+  (sims, projects, tasks, docs/niche.md, web/data; media and secrets
+  untracked) and pushed to origin git@github.com:alexjercan/seedzero.git
+  at 22:04 EEST on 2026-09-13; the push advanced origin/master from
+  7d85634 to ebe182a; verified with `git rev-parse HEAD origin/master`
+  (both ebe182a2bcdd38e5be5904c8642a7de5cb6eff93) and `git status -sb`
+  (master...origin/master, no divergence); this note is committed
+  separately as "Record the day fifteen push"
