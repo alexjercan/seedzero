@@ -28,7 +28,8 @@ Follow `docs/vision.md`. One short is one tracked task with this checklist:
 9. **Package.** Write `projects/<name>/metadata.json`: title, description
    (claim plus seed plus reproduction note), tags, category Education,
    visibility private, altered-content disclosure true.
-10. **Close.** Record all evidence in the task, then close it.
+10. **Handoff.** Record the render and QA evidence in the task. Keep it open
+    until upload and publication evidence are recorded.
 
 Media stays out of git. Manifests, narration, metadata, and sim code are
 tracked.

@@ -49,8 +49,8 @@ Scopes the agent will request:
 
 ## 4. Known constraints
 
-- **Quota**: 10,000 units per day by default. One upload costs 1,600 units,
-  so about six uploads per day maximum. Fine for three shorts per week.
+- **Quota**: 10,000 units per day by default. One upload costs 1,600 units.
+  Daily production targets three uploads and stops at five attempts.
 - **Unverified-app private lock**: YouTube can keep videos uploaded through
   an unverified API project locked private until the project passes a
   Google audit. If that happens, the fallback below covers publishing while

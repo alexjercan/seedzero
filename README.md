@@ -55,7 +55,8 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 - Vertical 1080x1920, 60 fps, VP9 or H.264 source, 30 to 45 seconds.
 - Voice: local speech API, `piper-1`, `en_US-lessac-medium`.
 - Music and sound: procedural, generated in-repo, no licensed audio.
-- Cadence: 3 shorts per week to start. Adjust from retention data.
+- Cadence: target 3 shorts per quota day, released after the 10:00 local quota
+  reset. Quality gates may reduce the day's count.
 - Shorts only. Other platforms (TikTok, IG Reels) reuse the same vertical
   file if the owner grants access later. Long form is out of scope.
 

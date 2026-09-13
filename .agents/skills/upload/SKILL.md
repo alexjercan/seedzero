@@ -17,7 +17,9 @@ Use the YouTube Data API via the Python environment in the dev shell:
 - After the agent's own QA pass of the processed video, flip visibility to
   public (owner authorized self-QA publishing on 2026-08-30).
 - One upload costs 1,600 quota units of the 10,000 daily budget.
-- Record the video ID and publish time in the task evidence.
+- Before every upload call, record its time and video name in the task and
+  `web/data/log.jsonl`; that start counts as an attempt. Append its outcome,
+  video ID, and publish time after it finishes.
 
 ## Without credentials
 
