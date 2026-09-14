@@ -1,0 +1,20 @@
+{
+  "title": "Speed up in orbit. Do you pull ahead? No. One lap later the faster ship is 167 km behind.",
+  "description": "Speed up in orbit. Do you pull ahead? Two ships side by side in the same circular orbit 400 km above a point-mass Earth. The gold ship fires a short burst along its direction of motion and gains 10 m/s (36 km/h, 0.13% of its speed). The white ship does nothing. Both are integrated in the inertial plane with RK4 at 0.5 s steps; the gold ship's position is then measured in the white ship's frame: along the track (ahead or behind) and in height. Deterministic, no seed.\n\nMeasured:\n- orbit: 400 km up, speed 7,672.6 m/s, one lap 5,544.9 s = 92:25\n- the gold ship pulls ahead by at most 4.21 km, 10:38 after the burst, then falls back level at 18:46\n- at the far side (46:12) it is 35.41 km higher and 82.74 km behind\n- highest point 35.42 km above the white ship; its own lap takes 92:47, 21.8 s longer\n- after one lap of the white ship (92:25) the gold ship is 167.22 km behind and back at the same height (+0.01 km); straight-line distance 167.21 km\n- checks: half the step changes nothing (167.216 km); energy drift 1e-14; the Clohessy-Wiltshire closed forms give -3 T dv = -166.35 km along the track, 4 dv / n = 35.30 km up and a 4.21 km lead at 638 s\n- check, the same burst fired backward: the gold ship dips 35.18 km lower, its lap is 21.6 s shorter, and after one lap it is 165.48 km ahead\n\nWhy: the extra speed does not keep the ship on the same circle. It lifts the far side of the orbit by 35 km, and a bigger orbit takes longer: 21.8 s more per lap. Twenty-two seconds at 7.7 km/s is 167 km. To pass a ship in orbit you slow down, drop lower and lap faster.\n\nOn screen: the dial shows both ships around the Earth (one lap in 22 s of video, 252x); the lower view holds the white ship fixed and shows the gold ship in its frame at true scale (the 100 km bar). The numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "orbital mechanics",
+    "orbit",
+    "spaceflight",
+    "physics",
+    "orbital rendezvous",
+    "kepler",
+    "space",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

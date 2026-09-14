@@ -1,0 +1,20 @@
+{
+  "title": "How does a swing go higher? Stand at the bottom, squat at the top: past 60 degrees in 8 swings.",
+  "description": "Nobody is pushing. How does a swing go higher? Two identical swings (2.5 m rope) are released from rest at 5 degrees and never touched again. The rider is a point mass whose distance from the pivot changes by 10% of the rope: standing raises the rider's centre of mass to 2.25 m from the pivot, squatting lowers it to 2.5 m. On the top swing the rider stands up as the swing passes the bottom and squats as it reaches each end (the playground rhythm). On the bottom swing the rider does the opposite. The rope angle obeys the variable-length pendulum equation theta'' = -(g / L) sin(theta) - 2 (L' / L) theta', the rider's centre of mass moves toward its target with a 40 ms time constant, RK4 at 2,000 steps per second. Deterministic, no seed.\n\nMeasured:\n- peak angle after each swing, stand at the bottom and squat at the top: 6.8, 9.3, 12.7, 17.3, 23.6, 32.3, 44.5, 62.2, 89.4 degrees\n- peak angle after each swing, the other way round: 3.67, 2.70, 1.98, 1.46, 1.07, 0.79, 0.58, 0.43 degrees\n- the pumped swing first passes 60 degrees on swing 8 (62.15 degrees at 25.27 s after release); on that swing the other rhythm peaks at 0.43 degrees; it passes 90 degrees on swing 9\n- growth per swing about 1.36x at small angles; the impulsive closed form gives (L / L')^3 = 1.372x in energy per half swing\n- checks: a swing at rest with the same rider never moves (nothing to pump); half the step and half the reaction lag give swing 8 as well; a 5% length change needs 17 swings\n\nWhy: standing up at the bottom, where the swing is fastest, lifts the rider against gravity and against the pull of the swing, so it costs work; squatting at the end, where the swing is still, gives back less. The difference goes into the swing on every pass, and it grows with the swing itself, so the angle multiplies each time. Done the other way round, every pass takes energy out.\n\nOn screen the swings run in real time from the release; the pumped swing freezes at its 60-degree peak. The numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "swing",
+    "pumping a swing",
+    "parametric resonance",
+    "pendulum",
+    "physics",
+    "playground physics",
+    "energy",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

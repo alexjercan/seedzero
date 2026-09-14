@@ -1,0 +1,20 @@
+{
+  "title": "Why do these two end up ticking together? On a rolling board: in step in 23 s. On the table: never.",
+  "description": "Why do these two end up ticking together? Two identical metronomes at 120 beats per minute, modelled as escapement-driven pendulums (24.8 cm, 30 g bob, 30 degree swing held by a van der Pol escapement of strength 0.3), started an eighth of a second (125 ms, a quarter of a beat) apart. On the table the board is fixed and the metronomes never feel each other. On top the same two stand on a 1.6 kg board that rolls freely on two cans (drag 0.2 kg/s). The equations come from the Lagrangian of a base sliding in one dimension with two pendulums hung from it (Pantaleone's 2002 model); the 3 by 3 system for the accelerations is solved at every RK4 stage, 1,000 steps per second. Both metronomes start on the escapement's limit cycle, so on the table the gap never changes. Deterministic, no seed.\n\nMeasured:\n- gap between the ticks on the rolling board: 125 ms at the start, 98 ms at 5 s, 68 ms at 10 s, 49 ms at 15 s, 32 ms at 20 s, 20 ms at 25 s, 15 ms at 30 s, 6 ms at 40 s, 1 ms at 60 s\n- in step (gap under 25 ms and staying there) from the tick at 22.83 s; the board moves at most 14.0 mm\n- on the table: 125 ms apart at the start, 125 ms apart at 60 s, never in step\n- checks: half the step gives 22.83 s as well; a lighter 0.8 kg board locks at 10.95 s, a 3.2 kg board at 47.7 s, a 6.4 kg board is still 48 ms apart at 60 s; started half a beat apart they lock at 42.2 s; started 0.9 of a beat apart they are still 83 ms apart at 60 s\n\nWhy: each swing pushes the board sideways a little (the board is light, so it moves), and the moving board pushes on the other metronome. A metronome that is behind gets a nudge along; one that is ahead gets held back. The gap shrinks every swing until the ticks land together. With no board motion there is no push, and the gap stays.\n\nOn screen the run is in real time; the board's motion is drawn at true scale (about 1 cm). The numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "metronome",
+    "synchronization",
+    "metronome sync",
+    "coupled oscillators",
+    "pendulum",
+    "physics",
+    "emergence",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

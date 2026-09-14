@@ -276,7 +276,7 @@
     "status": "public",
     "date": "2026-09-10",
     "url": "https://youtu.be/rkux49qUSzg",
-    "views": 822,
+    "views": 827,
     "likes": 8
   },
   {
@@ -300,7 +300,7 @@
     "status": "public",
     "date": "2026-09-11",
     "url": "https://youtu.be/td7bbyUL77s",
-    "views": 563,
+    "views": 565,
     "likes": 6
   },
   {
@@ -316,15 +316,15 @@
     "status": "public",
     "date": "2026-09-12",
     "url": "https://youtu.be/L8qbh5LHRso",
-    "views": 439,
-    "likes": 7
+    "views": 598,
+    "likes": 9
   },
   {
     "title": "You wait on floor 2. Which way is the first elevator going? Down, 8,900 times out of 10,000.",
     "status": "public",
     "date": "2026-09-12",
     "url": "https://youtu.be/Bdksy-fBzow",
-    "views": 777,
+    "views": 923,
     "likes": 4
   },
   {
@@ -332,35 +332,59 @@
     "status": "public",
     "date": "2026-09-12",
     "url": "https://youtu.be/No7zkBgVoc0",
-    "views": 594,
-    "likes": 7
+    "views": 889,
+    "likes": 10
   },
   {
     "title": "Drop a slinky. When does the bottom fall? Not when you let go: when the top hits it, 0.29 s later.",
     "status": "public",
     "date": "2026-09-13",
     "url": "https://youtu.be/d2ET4XCc_TY",
-    "views": 0,
-    "likes": 0
+    "views": 450,
+    "likes": 6
   },
   {
     "title": "Drop a tennis ball on a basketball. How high does it fly? 5.6 m from a 1 m drop. Alone: 1 m.",
     "status": "public",
     "date": "2026-09-13",
     "url": "https://youtu.be/wN82zmHFM5c",
-    "views": 0,
-    "likes": 0
+    "views": 269,
+    "likes": 1
   },
   {
     "title": "Fall through the Earth. How long to the other side? 42 min, via the centre or a 4,000 km tunnel.",
     "status": "public",
     "date": "2026-09-13",
     "url": "https://youtu.be/WWpQVZMrn00",
+    "views": 26,
+    "likes": 2
+  },
+  {
+    "title": "Speed up in orbit. Do you pull ahead? No. One lap later the faster ship is 167 km behind.",
+    "status": "public",
+    "date": "2026-09-14",
+    "url": "https://youtu.be/Mx9chV20aDc",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Thirteen unproduced measured-claim ideas in docs/niche.md",
+    "title": "How does a swing go higher? Stand at the bottom, squat at the top: past 60 degrees in 8 swings.",
+    "status": "public",
+    "date": "2026-09-14",
+    "url": "https://youtu.be/4MtpXdc6NkA",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Why do these two end up ticking together? On a rolling board: in step in 23 s. On the table: never.",
+    "status": "public",
+    "date": "2026-09-14",
+    "url": "https://youtu.be/owcns7Z0fVk",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Eleven unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

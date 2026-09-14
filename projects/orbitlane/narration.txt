@@ -1,0 +1,3 @@
+Speed up in orbit. Do you pull ahead? Two ships side by side in the same orbit. The gold one fires its engine and gains ten meters per second.
+At first it edges ahead. But the extra speed also lifts it. It climbs, and a higher orbit is a slower orbit. Halfway around, the gold ship is far above and already behind. The white ship, doing nothing, keeps its pace and slides ahead below it. From here on, the gold ship only drops further back.
+Do you pull ahead? No. One lap after speeding up, the gold ship is one hundred sixty seven kilometers behind. Same orbit, same start, one burst.

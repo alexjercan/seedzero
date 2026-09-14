@@ -1,0 +1,41 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.81,
+  "beats_per_minute": 120,
+  "bob_mass_kg": 0.03,
+  "board_mass_kg": 1.6,
+  "board_damping_kg_per_s": 0.2,
+  "swing_deg": 30.0,
+  "escapement": 0.3,
+  "start_gap_beats": 0.25,
+  "lock_beats": 0.05,
+  "dt": 0.001,
+  "check_dt": 0.0005,
+  "check_board_masses_kg": [
+    0.8,
+    3.2,
+    6.4
+  ],
+  "check_start_gaps_beats": [
+    0.5,
+    0.9
+  ],
+  "sim_duration": 60.0,
+  "record_every": 4,
+  "scene_duration": 40.0,
+  "release_t": 1.0,
+  "playback": 1.0,
+  "hold_until": 39.4,
+  "title": "Why do these two|end up ticking together?",
+  "title_until": 2.4,
+  "payoff_t": 27.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "why do they tick together? the board. | on the rolling board: in step after {lock:.0f} s | on the table: still {gap} apart",
+  "loop_fade": 0.6,
+  "music_seed": 50,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same two metronomes | same start | no seed"
+}

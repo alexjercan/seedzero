@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T22:02:32+03:00",
+  "updated_at": "2026-09-14T10:44:11+03:00",
   "channel": {
     "name": "Seed Zero",
     "handle": "@SeedZeroLab",
@@ -7,11 +7,11 @@
     "url": "https://www.youtube.com/@SeedZeroLab"
   },
   "stats": {
-    "subscribers": 9,
-    "views": 15029,
-    "videos": 45,
+    "subscribers": 11,
+    "views": 16477,
+    "videos": 48,
     "revenue_usd": 0
   },
   "goal": "Beat the owner's main channel: 12,000 subs, 378,519 views.",
-  "status": "attention"
+  "status": "ok"
 }

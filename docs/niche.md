@@ -388,7 +388,14 @@ simulation settles with a number):
   170 km behind after one 92-minute lap and 35 km higher at the far
   side, and the same burst fired backward puts it ahead; one orbit is
   exactly periodic so the short loops (peg: JUICE Earth flyby
-  2026-09-30, Sputnik 1957-10-04).
+  2026-09-30, Sputnik 1957-10-04). [produced 2026-09-14: 400 km
+  circular orbit, 10 m/s burst forward; the gold ship leads by at most
+  4.21 km at 638 s after the burst, is level at 1,126 s, is 35.41 km
+  higher and 82.74 km behind at the far side, and is 167.22 km behind
+  and 0.01 km higher when the white ship completes its 92:25 lap; its
+  own lap is 21.8 s longer; the same burst fired backward puts it
+  165.48 km ahead; Clohessy-Wiltshire closed forms give 166.35, 35.30
+  and 4.21 km; https://youtu.be/Mx9chV20aDc, task 20260914-101340]
 - Galilean cannon: a tennis ball on a basketball dropped together from 1
   m beside a tennis ball dropped alone; measure the peak height of the
   tennis ball; expect about 7 m with the 10.7 to 1 mass ratio (9 m in
@@ -430,6 +437,14 @@ simulation settles with a number):
   versus the reversed rhythm; measure the angle after each swing; expect
   the right rhythm to pass 60 degrees in about ten swings and the
   reversed rhythm to shrink toward zero; a swing at rest never starts.
+  [produced 2026-09-14: rope 2.5 m, 10 percent length change, rider
+  stands at each bottom crossing and squats at each end with a 40 ms
+  lag; peaks 6.8, 9.3, 12.7, 17.3, 23.6, 32.3, 44.5, 62.2 degrees,
+  past 60 on swing 8 (62.15 degrees at 25.27 s); the reversed rhythm
+  falls 3.67, 2.70, 1.98, 1.46, 1.07, 0.79, 0.58, 0.43 degrees; a
+  swing at rest never moves; half the step and half the lag also give
+  swing 8; a 5 percent change needs 17 swings;
+  https://youtu.be/4MtpXdc6NkA, task 20260914-101341]
 - Quantum tunnelling: a wave packet with 80 percent of the energy needed
   to top a wall beside a classical ball with the same energy; measure
   the share of the packet that comes out on the far side; expect a few
@@ -449,7 +464,16 @@ simulation settles with a number):
   the time to lock in step; expect the board pair to lock within about a
   minute and the table pair to keep their gap for the whole run
   (Pantaleone 2002 model: escapement pendulums coupled through the
-  moving base).
+  moving base). [produced 2026-09-14: 120 bpm metronomes (24.8 cm, 30
+  g bob, 30 degree swing, van der Pol escapement 0.3) started 0.25
+  beat = 125 ms apart on a 1.6 kg board rolling with 0.2 kg/s drag;
+  the board pair's tick gap falls 125, 98, 68, 49, 32, 20, 15, 6, 1 ms
+  at 0 to 60 s and is in step (under 25 ms) from the tick at 22.83 s
+  while the board moves at most 14.0 mm; the table pair stays at
+  125 ms for the whole minute; 0.8 kg locks at 10.95 s, 3.2 kg at
+  47.69 s, 6.4 kg not within 60 s; starts of 0.5 and 0.9 beat lock at
+  42.22 s and not within 60 s; https://youtu.be/owcns7Z0fVk, task
+  20260914-101333]
 - Rogue wave: sum 200 sine waves with random phases and a spectrum
   peaked at 10 s; run 10,000 waves past a buoy; count crests above twice
   the significant height; expect about 3 (Rayleigh gives 1 in 2,981)
