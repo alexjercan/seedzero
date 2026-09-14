@@ -149,3 +149,15 @@ seven kilometers behind (payoff).
 - units: 1 channel check + 1,600 insert + 1 gate read + 1 publish
   read + 50 update + 1 re-read = 1,654 units; day total after this
   video 1,654 of 10,000
+
+### Repository
+
+- committed on master as 28c9eb1 "Publish the day sixteen slate"
+  (sims, projects, tasks, docs/niche.md, web/data,
+  scripts/voice-timing.py; media and secrets untracked) and pushed to
+  origin git@github.com:alexjercan/seedzero.git at 10:44 EEST on
+  2026-09-14; the push advanced origin/master from 7ca7339 to 28c9eb1;
+  verified with `git rev-parse HEAD origin/master` (both
+  28c9eb15aaf08bc3cad3efd4d63a1acdcc86f022) and `git status -sb`
+  (master...origin/master, no divergence); this note is committed
+  separately as "Record the day sixteen push"
