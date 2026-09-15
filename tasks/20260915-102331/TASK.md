@@ -125,3 +125,9 @@ the description.
 - attempt 1 of the hard cap of 5 for the quota day that began
   2026-09-15T10:00 EEST; cost 1 (channel check) + 1,600 (insert) + 1 (gate)
   + 1 (gate re-read) + 50 (publish update) + 1 (re-read) = 1,654 units
+
+### Repository
+
+- committed as 086ecfe "Publish the day seventeen slate" (sims, projects,
+  tasks, docs/niche.md, web/data; no media, previews or secrets) and pushed
+  to origin/master at 2026-09-15 10:55 EEST

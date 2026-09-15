@@ -140,3 +140,9 @@ cone and goes to the description.
 - attempt 2 of the hard cap of 5 for the quota day that began
   2026-09-15T10:00 EEST; cost 1 + 1,600 + 1 + 1 + 50 + 1 = 1,654 units;
   day total after two attempts 3,308 units
+
+### Repository
+
+- committed as 086ecfe "Publish the day seventeen slate" (sims, projects,
+  tasks, docs/niche.md, web/data; no media, previews or secrets) and pushed
+  to origin/master at 2026-09-15 10:55 EEST
