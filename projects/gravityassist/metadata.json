@@ -1,0 +1,20 @@
+{
+  "title": "Can a planet throw a ship faster, for free? Pass behind it: +4.1 km/s. In front: -5.1 km/s.",
+  "description": "Can a planet throw a ship faster, for free? Two identical ships coast toward an Earth-mass planet (radius 6,371 km) on a circular orbit around the Sun at 29.8 km/s. Both start 1,000,000 km from the planet on its sunward side, moving straight away from the Sun at 5,000 m/s relative to the planet, aimed to pass 12,742 km from the planet's centre (6,371 km above the surface): the gold ship behind the planet, the white ship in front. Everything is integrated in the Sun's frame with RK4 (steps of 0.5 to 20 s, scaled to the distance from the planet): the planet under the Sun's gravity, each ship under the Sun's and the planet's. The Sun's pull bends an approach that long, so each ship's starting offset is found by shooting until its closest approach matches. Deterministic, no seed.\n\nMeasured (speed relative to the Sun, from 1,000,000 km in to 1,000,000 km out):\n- gold, passes behind: 30,201.5 m/s in, 34,349.0 m/s out, +4,147.6 m/s (+4.1 km/s); path turned by 68.67 degrees; closest approach 12,742.0 km\n- white, passes in front: 30,201.5 m/s in, 25,053.3 m/s out, -5,148.1 m/s (-5.1 km/s); turned by 68.69 degrees; closest approach 12,742.0 km\n- relative to the planet each ship leaves as fast as it came: 5,000.0 m/s in, 4,990 m/s out (the small loss is the Sun's pull over the 107 h run)\n- check, half the step: +4,147.6 m/s, the same\n- check, closed form with the planet's velocity held fixed and no Sun: turn 2 asin(1/e) = 67.53 degrees, +4,256.8 m/s behind and -4,964.8 m/s in front; the full run differs by 0.1 to 0.2 km/s because the planet turns 4.4 degrees along its orbit during the 107 h and the ships move through the Sun's field\n- check, recoil: momentum conservation gives the planet (5.972e24 kg) 1,000 kg x 5,635 m/s / 5.972e24 kg = 9.4e-19 m/s, about a billionth of a billionth of a metre per second\n\nWhy: relative to the planet each ship leaves as fast as it came, only turned. But the planet itself moves at 29.8 km/s around the Sun. The ship that passes behind is turned toward the planet's direction of travel, so more of its speed lines up with the planet's; the one that passes in front is turned against it. Speeds add as vectors, which is why the loss in front is a little larger than the gain behind. The energy comes from the planet, which slows by an amount no instrument could measure.\n\nOn screen the flyby runs as a time lapse, 107 hours in 26 seconds, slowest around the closest pass. Positions are drawn relative to the planet; the speeds shown are relative to the Sun. The two runs are independent and drawn on top of each other, so the ships pass through each other where the mirrored paths cross just after the closest pass. The numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "gravity assist",
+    "slingshot",
+    "orbital mechanics",
+    "flyby",
+    "space",
+    "gravity",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

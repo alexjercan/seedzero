@@ -1,0 +1,20 @@
+{
+  "title": "Where is the jet when you hear it? At twice the speed of sound: already 173 m past you.",
+  "description": "Where is the jet when you hear it? Three jets fly at half, once and twice the speed of sound (343 m/s) along three parallel paths. Each one sends out a ring of sound every 0.1 s, starting 0.5 s before the video; every ring is an exact circle growing at the speed of sound around the point where it was emitted. A listener stands 100 m to the side of each path. The jets start 250, 500 and 1,000 m before the listener, so all three pass it at the same moment (1.4577 s). Exact geometry, no time step, no seed.\n\nMeasured (first sound to reach the listener, and where the jet is at that moment):\n- half the speed of sound (171.5 m/s): the first ring arrives at 0.521 s, while the jet is still 161 m away; every ring runs ahead of the jet by 171.5 m per second of age\n- the speed of sound (343 m/s): the first sound arrives at 1.479 s, with the jet 7 m past; the front edges of all 32 rings sit within 0.000000 m of the jet's nose, a wall\n- twice the speed of sound (686 m/s): silence until 1.710 s, 0.2525 s after the jet passes, when the jet is already 173.2 m past the listener; the cone half angle fitted to the drawn rings is 30.00 degrees, exact asin(343/686) = 30.000 degrees; 100 m / tan(30 deg) = 173.2 m\n- check, a listener 1,000 m to the side at twice the speed of sound: the jet is 1,732 m past when the sound arrives (closed form 1,732 m)\n\nWhy: a ring sent from a point ahead of the listener has to cover the diagonal distance to them at the speed of sound. Below the speed of sound the rings stay ahead of the jet, so the listener hears it coming. At the speed of sound no ring gets ahead, so the first sound arrives as the jet passes. Above it the jet outruns its rings, which stack into a cone behind it; the cone's edge (the sonic boom) is the earliest arrival, and the listener hears nothing until it sweeps over them.\n\nThe 161 m and 7 m figures depend on when the sound started (0.5 s before the video) and where the jets started; the 173 m figure does not. On screen the run plays at 1/16 speed. The numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "mach cone",
+    "sonic boom",
+    "speed of sound",
+    "supersonic",
+    "sound waves",
+    "doppler",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -458,7 +458,15 @@ simulation settles with a number):
   before and after; expect about plus 5 km/s behind and minus 5 in
   front, mirror images, with the planet's own speed unchanged to nine
   digits (peg: JUICE Earth flyby 2026-09-30; its 2024 flyby gave minus
-  4.8 km/s).
+  4.8 km/s). [produced 2026-09-15: Sun-frame RK4, two 1,000 kg ships
+  from 1,000,000 km at 5,000 m/s relative to an Earth-mass planet on a
+  29.8 km/s circular orbit, both aimed by shooting at a 12,742 km
+  closest approach; relative to the Sun the ship passing behind goes
+  30,201.5 to 34,349.0 m/s (+4.1 km/s, turned 68.67 deg) and the one
+  in front 30,201.5 to 25,053.3 (-5.1 km/s), not mirror images because
+  speeds add as vectors; closed form with the planet fixed +4.26 and
+  -4.96; recoil 9.4e-19 m/s; https://youtu.be/UzQ_3x5POKo, task
+  20260915-102322]
 - Metronome sync: two metronomes started a quarter beat apart on a board
   that rolls on two cans versus the same two on a fixed table; measure
   the time to lock in step; expect the board pair to lock within about a
@@ -487,10 +495,22 @@ simulation settles with a number):
 - Mach cone: a sound source emitting a ring every 0.1 s at Mach 0.5, 1
   and 2; measure the half angle of the ring envelope; expect no cone at
   0.5, a flat wall at 1 and exactly 30.0 deg at 2; exact circles, loops;
-  the cheap replacement for the Kelvin wake.
+  the cheap replacement for the Kelvin wake. [produced 2026-09-15: three
+  jets at 171.5, 343 and 686 m/s, a ring every 0.1 s from 0.5 s before
+  the video, a listener 100 m to the side of each path, all three pass it
+  at 1.4577 s; first sound at 0.521 s (jet 161 m away), 1.479 s (jet 7 m
+  past; 32 ring fronts within 0.000000 m of the nose) and 1.710 s (jet
+  173.2 m past; cone half angle fitted to the rings 30.00 deg, exact
+  30.000); a listener 1,000 m out hears the Mach 2 jet 1,732 m past;
+  https://youtu.be/OtTBM61o6p4, task 20260915-102333]
 - Dropped versus fired bullet: same 1.5 m height, one dropped and one
   fired level at 360 m/s, in a vacuum and in air with quadratic drag;
   measure the landing times; expect 0.553 s for both in a vacuum and the
   fired one a few hundredths later in air because drag on the fast
   bullet also pushes up; the vacuum tie is the headline, the air gap
-  depends on the drag choice.
+  depends on the drag choice. [produced 2026-09-15: RK4 at 10 us steps,
+  g 9.80665, no air: both hit at 0.55310 s (closed form 0.55310), the
+  fired one 199.11 m out at 360.04 m/s, gap 0.000 ms, heights within
+  0.000 um all the way down; in air (9 mm, 8 g, Cd 0.3) the fired one
+  lands 24.2 ms later at 181.5 m; on Earth-curved ground 0.57 ms later;
+  https://youtu.be/lEWXfXBpJVc, task 20260915-102331]

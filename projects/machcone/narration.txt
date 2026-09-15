@@ -1,0 +1,5 @@
+Where is the jet when you hear it? Three jets, three speeds, each sending out rings of sound. A listener stands one hundred meters to the side of each path.
+Top, half the speed of sound. The rings run ahead of the jet, so the listener hears it coming.
+Middle, the speed of sound. No ring gets ahead. They pile up on the nose, and the listener hears it as it passes.
+Bottom, twice the speed of sound. The jet outruns its sound. The rings stack into a cone behind it, and the listener hears nothing until that edge arrives.
+Where is the jet when you hear it? At twice the speed of sound, already one hundred seventy three meters past you.

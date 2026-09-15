@@ -1,0 +1,29 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "sound_speed_m_per_s": 343.0,
+  "machs": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "ring_every_s": 0.1,
+  "pre_roll_s": 0.5,
+  "listener_side_m": 100.0,
+  "abeam_t": 1.4577,
+  "check_listener_side_m": 1000.0,
+  "scene_duration": 40.0,
+  "slow_motion": 16.0,
+  "m_per_px": 0.6,
+  "title": "Where is the jet|when you hear it?",
+  "title_until": 2.4,
+  "payoff_t": 31.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "where is the jet when you hear it? | half the speed of sound: still coming | twice the speed of sound: | already {past:.0f} m past you",
+  "loop_fade": 0.6,
+  "music_seed": 52,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same sound | same listener | no seed"
+}

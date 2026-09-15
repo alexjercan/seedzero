@@ -1,0 +1,3 @@
+Drop one bullet. Fire one level. Which lands first? Two bullets, one and a half meters up, released at the same instant. On the left, one is simply dropped. On the right, one is fired level, faster than sound, and the camera flies with it.
+Watch the heights. Gravity pulls both down at the same rate. The fired bullet's speed is all sideways, and sideways speed does nothing for falling. So the two heights stay level all the way down, while the fired one streaks across the ground.
+Which lands first? Neither. Both hit at zero point five five three seconds. Same height, same instant, no air.

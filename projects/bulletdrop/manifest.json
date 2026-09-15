@@ -1,0 +1,30 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "height_m": 1.5,
+  "muzzle_m_per_s": 360.0,
+  "dt": 1e-05,
+  "check_dt": 5e-06,
+  "air": {
+    "density_kg_per_m3": 1.225,
+    "drag_coefficient": 0.3,
+    "diameter_m": 0.009,
+    "mass_kg": 0.008
+  },
+  "earth_radius_m": 6371000.0,
+  "scene_duration": 40.0,
+  "slow_motion": 49.0,
+  "px_per_m": 600.0,
+  "title": "Drop one bullet.|Fire one level.|Which lands first?",
+  "title_until": 2.4,
+  "payoff_t": 28.6,
+  "payoff_hold": 0.6,
+  "payoff_text": "which lands first? neither. | dropped: hits at {drop:.3f} s | fired: hits at {fire:.3f} s, {range:.0f} m away",
+  "loop_fade": 0.6,
+  "music_seed": 51,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same height | same instant | no air | no seed"
+}

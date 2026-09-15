@@ -1,0 +1,20 @@
+{
+  "title": "Drop one bullet, fire one level. Which lands first? Neither: both hit at 0.553 s, 199 m apart.",
+  "description": "Drop one bullet. Fire one level. Which lands first? Two bullets start 1.5 m above flat ground at the same instant: the left one is dropped from rest, the right one is fired level at 360 m/s (1,296 km/h, 1.05 times the speed of sound), and the camera flies along with it. Both are integrated with RK4 at 10 microsecond steps in two dimensions with gravity (9.80665 m/s^2) and no air; the landing time is interpolated inside the last step. Deterministic, no seed.\n\nMeasured:\n- dropped bullet: hits the ground at 0.55310 s at 5.42 m/s (closed form sqrt(2h/g) = 0.55310 s)\n- fired bullet: hits the ground at 0.55310 s, 199.11 m from the start, at 360.04 m/s; 0.000 ms after the dropped one\n- over the whole fall the two heights differ by at most 0.000 micrometres\n- check, half the step: 0.55310 s for both, gap 0.000 ms\n- check, in air (1.225 kg/m^3, drag coefficient 0.3, 9 mm bullet of 8 g, quadratic drag along the velocity): dropped 0.5533 s, fired 0.5775 s, 24.2 ms later, 181.5 m out, arriving at 276 m/s. Drag on the fast bullet has a small upward part because the drag force points against its velocity, which tilts down. The size of this gap depends on the drag choice; the vacuum tie does not.\n- check, ground curving away like the Earth (radius 6,371 km): the fired bullet lands 0.57 ms later, the ground having dropped 3.1 mm under it\n\nWhy: gravity pulls both bullets down at the same rate, and the fired bullet's speed is entirely sideways. Sideways speed does nothing for falling, so the two heights stay level all the way down while the fired bullet crosses 199 m of ground.\n\nOn screen the fall runs at 1/49 speed; the bullets are drawn larger than life (about 4x) so they can be seen. The numbers in the narration are the printed outputs of this exact run.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "bullet drop",
+    "fired vs dropped bullet",
+    "projectile motion",
+    "free fall",
+    "gravity",
+    "physics",
+    "mythbusters",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
