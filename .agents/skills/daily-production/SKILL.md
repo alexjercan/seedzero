@@ -23,12 +23,17 @@ read `docs/vision.md`, `docs/niche.md`, `web/data/status.json`,
    QA, metadata, and evidence before any upload.
 4. **Gate.** When local QA finishes before 10:00, wait until 10:00. After the
    boundary, recheck the attempt count before each upload.
-5. **Release.** Run `/upload` for each approved short. Upload private, wait for
-   YouTube processing, inspect the processed result, and publish immediately
-   when it passes. Record the attempt before starting the next upload.
-6. **Close.** Close each video's task after its publication evidence is stored.
-   Refresh `web/data/status.json`, `web/data/slate.json`, and the journal. Report
+5. **Release.** Run `/upload` for each approved short. After its private upload,
+   run `scripts/yt-qa.py NAME VIDEO_ID --wait --publish` in the foreground.
+   Never detach or background a processing wait, QA gate, or publish command.
+   Record the attempt before starting the next upload.
+6. **Close.** Resolve every selected video as published with evidence or slipped
+   with a recorded reason. Close published-video tasks, then refresh
+   `web/data/status.json`, `web/data/slate.json`, and the journal. Report
    published videos, slipped slots, quota attempts, and remaining quota.
 
-A weak claim, failed QA, or exhausted budget slips that slot. The daily target
-never lowers the quality gate.
+A weak claim, failed QA, processing timeout, or exhausted budget slips that
+slot. The daily target never lowers the quality gate. Do not return while work
+is running or while a selected video is unresolved. End the final response with
+`PRODUCTION_STATUS: COMPLETE` only after every selected video is resolved and
+the close step is complete.

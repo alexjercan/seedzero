@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """QA gate for a private Seed Zero upload, then optional publish.
 
-usage: yt-qa.py NAME VIDEO_ID [--publish]
+usage: yt-qa.py NAME VIDEO_ID [--wait] [--publish]
 
 Reads projects/NAME/metadata.json and manifest.json (scene_duration sets
 the accepted PT..S values), fetches the video with videos.list (1 quota
-unit) and runs the 15-point gate. With --publish and a clean
-gate it sets privacyStatus public with videos.update (50 units) and
-re-reads the status 15 s later (1 unit). Appends to media/NAME/publish.log.
+unit) and runs the 15-point gate. With --wait, it polls in the foreground
+until YouTube processing succeeds, fails, or reaches the 30-minute timeout.
+With --publish and a clean gate it sets privacyStatus public with
+videos.update (50 units) and re-reads the status 15 s later (1 unit).
+Appends to media/NAME/publish.log.
 """
 
 from __future__ import annotations
@@ -46,6 +48,42 @@ def fetch(youtube, vid: str) -> dict:
     return items[0]
 
 
+def wait_for_processing(
+    youtube,
+    vid: str,
+    timeout_seconds: int = 1800,
+    poll_seconds: int = 15,
+) -> tuple[dict, int]:
+    """Poll until YouTube finishes processing, or fail within a fixed bound."""
+    deadline = time.monotonic() + timeout_seconds
+    quota = 0
+    while True:
+        video = fetch(youtube, vid)
+        quota += 1
+        status = video.get("status", {})
+        processing = video.get("processingDetails", {})
+        upload_status = status.get("uploadStatus")
+        processing_status = processing.get("processingStatus")
+        failure = (
+            status.get("rejectionReason")
+            or status.get("failureReason")
+            or processing.get("processingFailureReason")
+        )
+        if failure or upload_status in {"failed", "rejected", "deleted"} or processing_status == "failed":
+            raise RuntimeError(
+                "YouTube processing failed: "
+                f"uploadStatus={upload_status}, processingStatus={processing_status}, "
+                f"reason={failure}"
+            )
+        if upload_status == "processed" and processing_status == "succeeded":
+            return video, quota
+        if time.monotonic() >= deadline:
+            raise TimeoutError(
+                f"YouTube processing did not finish within {timeout_seconds} seconds"
+            )
+        time.sleep(poll_seconds)
+
+
 def gate(v: dict, meta: dict, seconds: int) -> tuple[list[tuple[str, bool, str]], dict]:
     sn, st, cd = v["snippet"], v["status"], v["contentDetails"]
     durations = (f"PT{seconds}S", f"PT{seconds + 1}S")
@@ -81,19 +119,38 @@ def gate(v: dict, meta: dict, seconds: int) -> tuple[list[tuple[str, bool, str]]
 
 
 def main() -> int:
-    if len(sys.argv) not in (3, 4):
+    if len(sys.argv) < 3:
         print(__doc__, file=sys.stderr)
         return 2
     name, vid = sys.argv[1], sys.argv[2]
-    publish = len(sys.argv) == 4 and sys.argv[3] == "--publish"
+    options = sys.argv[3:]
+    if len(options) != len(set(options)) or any(
+        option not in {"--wait", "--publish"} for option in options
+    ):
+        print(__doc__, file=sys.stderr)
+        return 2
+    wait = "--wait" in options
+    publish = "--publish" in options
     meta = json.loads((REPO / f"projects/{name}/metadata.json").read_text())
     seconds = int(round(json.loads((REPO / f"projects/{name}/manifest.json").read_text())["scene_duration"]))
     log = REPO / f"media/{name}/publish.log"
-    lines = [f"[{now()}] qa {name} {vid} publish={publish}"]
+    lines = [f"[{now()}] qa {name} {vid} wait={wait} publish={publish}"]
     quota = 0
     youtube = client()
-    v = fetch(youtube, vid)
-    quota += 1
+    try:
+        if wait:
+            v, quota = wait_for_processing(youtube, vid)
+        else:
+            v = fetch(youtube, vid)
+            quota = 1
+    except (RuntimeError, TimeoutError) as error:
+        lines.append(f"processing wait failed: {error}")
+        text = "\n".join(lines) + "\n"
+        log.parent.mkdir(parents=True, exist_ok=True)
+        with log.open("a") as f:
+            f.write(text)
+        print(text, end="")
+        return 1
     checks, extra = gate(v, meta, seconds)
     for label, ok, detail in checks:
         lines.append(f"  [{'ok' if ok else 'FAIL'}] {label}: {detail}")
