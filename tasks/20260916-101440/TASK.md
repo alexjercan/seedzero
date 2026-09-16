@@ -140,3 +140,9 @@ closed form, the half-wall and double-wall runs go to the description.
 - attempt 2 of the hard cap of 5 for the quota day that began
   2026-09-16T10:00 EEST; cost 1 + 1,600 + 1 + 52 = 1,654 units;
   day total after two attempts 3,308 units
+
+### Repository
+
+- committed as ddff1b0 "Publish the day eighteen slate" (sims, projects,
+  tasks, docs/niche.md, web/data; no media, previews or secrets) and pushed
+  to origin/master at 2026-09-16 10:59 EEST

@@ -142,3 +142,9 @@ the hollow ball and the other push go to the description.
 - attempt 3 of the hard cap of 5 for the quota day that began
   2026-09-16T10:00 EEST; cost 1 + 1,600 + 1 + 52 = 1,654 units;
   day total after three attempts 4,962 units
+
+### Repository
+
+- committed as ddff1b0 "Publish the day eighteen slate" (sims, projects,
+  tasks, docs/niche.md, web/data; no media, previews or secrets) and pushed
+  to origin/master at 2026-09-16 10:59 EEST

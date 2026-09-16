@@ -137,3 +137,9 @@ piles and the dark band go to the description.
 - attempt 1 of the hard cap of 5 for the quota day that began
   2026-09-16T10:00 EEST; cost 1 + 1,600 + 1 + 1 + 50 + 1 = 1,654 units;
   day total after one attempt 1,654 units
+
+### Repository
+
+- committed as ddff1b0 "Publish the day eighteen slate" (sims, projects,
+  tasks, docs/niche.md, web/data; no media, previews or secrets) and pushed
+  to origin/master at 2026-09-16 10:59 EEST
