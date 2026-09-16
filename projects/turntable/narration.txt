@@ -1,0 +1,3 @@
+Push a ball across the spinning record. Where does it go? The record turns once every one point eight seconds. Two things get the same push from the center: a puck with no grip, and a ball that rolls.
+The puck slides straight and drops off the edge. The ball curves. The record drags its underside sideways, and that twist keeps bending its path at a steady rate. It never reaches the edge. It comes back to the center, and goes around again, the same circle every time.
+So where does the ball go? In a circle, back to the center every three point five turns of the record.

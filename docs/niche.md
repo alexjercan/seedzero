@@ -452,6 +452,14 @@ simulation settles with a number):
   ball, and halving the wall width to multiply the share by about ten;
   split-step Fourier, no seed (peg: Schrodinger equation centenary 2026,
   Nobel physics 2026-10-06; the 2025 prize was macroscopic tunnelling).
+  [produced 2026-09-16: Gaussian packet (k0 1, sigma 20) with 80.05
+  percent of the energy of a wall of height 0.625 and width 4.44 (kappa
+  a 2.22), split-step Fourier on 32,768 cell-centred points to t 200;
+  3.177 percent past the wall and 96.82 percent reflected (3.176 on
+  twice the grid, 3.161 at half the step); plane-wave closed form 3.000
+  percent, 26.0 percent through half the wall (8.2x) and 0.073 through
+  twice; the ball with the same energy hits at 13.96 s and never passes;
+  https://youtu.be/4hGRhL65ZTo, task 20260916-101440]
 - Gravity assist: the same probe at 5 km/s relative to an Earth-mass
   planet on a 30 km/s orbit, passing behind the planet versus in front
   of it at the same distance; measure the speed relative to the Sun
@@ -491,7 +499,13 @@ simulation settles with a number):
   bounce, red and violet; measure the exit angle where the rays pile up;
   expect 42.4 deg for red and 40.6 for violet and no rays past the pile,
   a dark band, then the two-bounce pile near 51 deg; exact Snell
-  geometry, no seed.
+  geometry, no seed. [produced 2026-09-16: 10,000 rays per colour at
+  evenly spaced heights into one drop, vector Snell with one internal
+  bounce; red (n 1.331) piles at 42.37 deg (closed form 42.370), ray
+  8,619 at 0.862 of the radius reaches it, 1,196 rays within 1 deg and
+  0 past it; violet (n 1.343) at 40.65 deg, 1.72 deg inside; two
+  bounces at 50.37 and 53.48 deg with no rays between the piles;
+  https://youtu.be/ZC1euLz5dXA, task 20260916-100658]
 - Mach cone: a sound source emitting a ring every 0.1 s at Mach 0.5, 1
   and 2; measure the half angle of the ring envelope; expect no cone at
   0.5, a flat wall at 1 and exactly 30.0 deg at 2; exact circles, loops;
@@ -514,3 +528,95 @@ simulation settles with a number):
   0.000 um all the way down; in air (9 mm, 8 g, Cd 0.3) the fired one
   lands 24.2 ms later at 181.5 m; on Earth-curved ground 0.57 ms later;
   https://youtu.be/lEWXfXBpJVc, task 20260915-102331]
+
+Added by trend research 2026-09-16 (evidence in task 20260916-100924;
+selection favoured continuous physical motion, two-panel same-input
+comparisons, one plain question per short, one setup number and one
+payoff number, seamless loops of periodic physics, and numbers that a
+closed form can check):
+
+- Rolling race: a solid ball, a solid cylinder, a hollow ball and a hoop
+  of the same size and mass released together on the same 2 m ramp at
+  20 degrees; measure the arrival times; expect 1.292, 1.337, 1.410 and
+  1.544 s (t = sqrt(2L(1+k)/(g sin theta)) with k = 2/5, 1/2, 2/3, 1;
+  the hoop 19.5 percent behind the ball) and the same order at any mass
+  or size; the race repeats so the short loops; deterministic, no seed.
+- Turntable ball: a solid ball set rolling across a record turning at
+  33 1/3 rpm beside a hollow ball given the same push; measure the path
+  and the loop time; expect both to run in closed circles instead of
+  flying off, the solid ball once every 3.5 table turns (6.30 s, exactly
+  2/7 of the table rate) and the hollow ball every 2.5 turns (4.50 s,
+  2/5), while a frictionless puck slides straight off; exactly periodic
+  so the short loops; deterministic, no seed. [produced 2026-09-16: a 2
+  cm solid ball pushed from the centre at 5 cm/s across a 15 cm record
+  at 33 1/3 rpm (1.800 s a turn), RK4 under the rolling constraint at
+  100 steps per frame; back at the start after 6.3000 s = 3.5000 turns
+  on a circle of radius 5.013 cm (closed form (1 + k) / k = 3.5 turns, v
+  / (c Omega) = 5.013 cm), 6.000 loops in 37.8 s; the puck with no grip
+  leaves the edge at 3.00 s; the hollow ball (measured, not drawn)
+  returns after 4.5000 s = 2.5 turns; https://youtu.be/2TPdAAac0Jc, task
+  20260916-102946]
+- Newton's cradle: five steel balls with Hertz contacts; two balls lifted
+  10 cm and released beside the same cradle with one ball lifted; measure
+  how many balls leave the far side and how high they rise; expect two
+  balls to 10 cm against one ball to 10 cm and never one ball at double
+  speed (that would rise 40 cm and needs twice the energy); check
+  momentum and energy to 1e-9; deterministic, no seed.
+- Coupled pendulum swap: two identical 1 m pendulums joined by a weak
+  spring, one started at 10 degrees and the other hanging still, beside
+  the same pair with no spring; measure when the first pendulum stops
+  dead and the second holds the whole swing; expect the full swap at
+  20.0 s and the swing back at 40.0 s when the spring puts the mode
+  frequencies pi/20 rad/s apart (about ten swings per swap), the
+  unsprung neighbour never moving; the 40 s beat is exactly periodic so
+  the short loops; deterministic, no seed.
+- Monkey and hunter: a dart fired straight at a target hanging 10 m up
+  and 20 m away, the target let go at the shot, at 30 m/s beside 60
+  m/s; measure the miss distance; expect 0.000 m for both (both fall
+  2.72 m by the hit at 0.745 s and 0.68 m at 0.373 s), a shot aimed 1
+  degree high misses by 44 cm, and any speed under 15.7 m/s lets the
+  target reach the ground first; deterministic, no seed.
+- Bead on a spinning hoop: a bead on a 20 cm hoop spun at 60 rpm beside
+  the same hoop at 100 rpm; measure where the bead settles; expect the
+  slow bead to fall back to the bottom and the fast bead to climb and
+  hold at 63.6 degrees (cos theta = g / (omega^2 R), threshold 66.9 rpm;
+  134 rpm gives 75.5 degrees); light damping; deterministic, no seed.
+- Saturn retrograde: Earth and Saturn on circular orbits, the Sun's view
+  beside the sky view from Earth; measure how many days Saturn drifts
+  backward against the stars around opposition and the size of the loop;
+  expect 137 days of backward motion in every 378-day cycle, a 6.7
+  degree loop, 12.65 degrees of net progress per cycle; exactly periodic
+  so the short loops; deterministic, no seed (peg: Saturn at opposition
+  2026-10-04).
+- Halley's comet: the 75.3-year orbit beside Earth's; measure the speed
+  at perihelion and aphelion and the time spent inside Earth's orbit;
+  expect 54.6 against 0.91 km/s (60 to 1, vis-viva) and only 78 days of
+  the 75.3 years inside 1 AU, 792 days inside Jupiter's orbit (Kepler's
+  equation for the check); the orbit is periodic so the time-lapse loops;
+  deterministic, no seed (peg: Orionids peak 2026-10-21, Halley's dust).
+- L2 drift: a probe parked 1,000 km off the Sun-Earth L2 point with no
+  engine beside one parked 1,000 km off L4; measure the offset over a
+  year; expect the L2 offset to double every 16.2 days (e-fold 23.4 days
+  from the CR3BP eigenvalue; 72,000 km at day 100) and the L4 probe to
+  wander a little and never leave; rotating-frame RK4; deterministic, no
+  seed (peg: JWST station keeping every 21 days).
+- Tsunami shoaling: a 1 m wave in 4,000 m of water runs onto a slope
+  that ends at 10 m depth, beside the same wave in a flat 4,000 m tank;
+  measure the speed and the crest height; expect 198 m/s slowing to 9.9
+  m/s (sqrt(g h)) and the crest growing to 4.5 m (Green's law,
+  (4000/10)^(1/4)) with the wavelength 20 times shorter; 1D shallow
+  water solver, no breaking; deterministic, no seed (peg: World Tsunami
+  Awareness Day 2026-11-05).
+- Double slit ripple tank: a 2 cm wave through one slit beside two slits
+  10 cm apart; measure the bright band angles on a screen 60 cm away;
+  expect bands at 11.5, 23.6 and 36.9 degrees (d sin theta = n lambda)
+  with dark bands between them and no bands from the single slit; 2D
+  finite-difference wave solver, steady state so the short loops;
+  deterministic, no seed (peg: Schrodinger centenary 2026, Nobel
+  physics 2026-10-06).
+- Lorenz water wheel: a wheel of leaking buckets under a steady tap
+  beside the same wheel under a faster tap; measure the direction
+  reversals in five minutes and the longest run one way; expect the slow
+  tap to turn steadily and the fast tap to reverse irregularly (the
+  Malkus wheel is the Lorenz system); the count is the payoff, so keep
+  the wheel and the water on screen; RK4; deterministic, no seed.

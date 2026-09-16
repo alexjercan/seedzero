@@ -1,0 +1,20 @@
+{
+  "title": "Push a ball across a spinning record. Where does it go? A circle back to the centre every 3.5 turns.",
+  "description": "Push a ball across a spinning record. Where does it go? A record of radius 15 cm turns at 33 1/3 rpm, once every 1.8 s. Two things get the same push from the centre, 5 cm/s: a puck with no grip, and a solid ball that rolls without slipping. The ball's centre, velocity and spin vector are integrated with RK4 under the rolling constraint: the friction at the contact point is whatever keeps that point moving with the record, and the same force torques the ball. Deterministic, no seed.\n\nMeasured:\n- the puck slides straight and its centre passes the edge of the record at 3.00 s, 1.67 turns of the record\n- the ball runs in a closed circle of radius 5.013 cm, reaching 10.03 cm from the centre of the record, 3.0 cm inside the edge, and is back at the start after 6.3000 s = 3.5000 turns of the record; its velocity turns through a full circle in the same 6.3000 s\n- closed form for a rolling ball with moment of inertia k m r^2: the path is a circle and the loop time is (1 + k) / k turns of the record; for a solid ball k = 2/5, so 3.5 turns, and the circle's radius is v (1 + k) / (k Omega) = 5.013 cm at 5 cm/s\n- the loop time does not depend on the push: pushed at 3 cm/s toward 130 degrees the ball is back after the same 6.3000 s = 3.5000 turns, on a smaller circle of radius 3.008 cm\n- a hollow ball (k = 2/3, measured, not drawn) loops every 4.5000 s = 2.5000 turns, closed form 2.5000, on a circle of radius 3.581 cm\n- no-slip residual under 1e-14 m/s; at half the time step the return is at the same 6.3000 s; 6 loops in the 37.8 s video, 21 turns of the record\n\nWhy: the record drags the bottom of the ball sideways, so friction pushes the ball's centre at right angles to its velocity with a force proportional to the speed, a = (k / (1 + k)) Omega z x v. A force always at right angles to the velocity with constant size per unit speed bends the path into a circle at a fixed rate, 2/7 of the record's rate for a solid ball, whatever the push. Gravity, the ball's mass and its radius drop out.\n\nThe record turns counterclockwise; the ball circles counterclockwise too, on a circle through the centre of the record.\n\nRerun sims/turntable/turntable.py with projects/turntable/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "turntable",
+    "rolling ball",
+    "rotating frame",
+    "coriolis",
+    "friction",
+    "mechanics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

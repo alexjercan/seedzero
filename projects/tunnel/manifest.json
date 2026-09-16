@@ -1,0 +1,30 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "k0": 1.0,
+  "sigma": 20.0,
+  "x0": -80.0,
+  "energy_ratio": 0.8,
+  "wall_width": 4.44,
+  "grid_n": 32768,
+  "steps_per_frame": 8,
+  "t_end": 200.0,
+  "ball_radius": 8.0,
+  "view_x": [
+    -150.0,
+    150.0
+  ],
+  "scene_duration": 40.0,
+  "title": "Can a ball go|through a wall?",
+  "title_until": 2.4,
+  "payoff_t": 29.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "can a ball go through a wall? | the ball: never, 0% | the wave: {t:.1f}% comes out the far side | same wall, same energy",
+  "loop_fade": 0.6,
+  "music_seed": 54,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same wall | same energy | no seed",
+  "wall_cells": 180
+}

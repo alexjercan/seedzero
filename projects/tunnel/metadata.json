@@ -1,0 +1,20 @@
+{
+  "title": "Can a ball go through a wall? With 80% of the energy needed, never. 3.2% of a quantum wave gets out.",
+  "description": "Can a ball go through a wall? Top: a ball with 80% of the energy it needs to get over a wall, rolled at the wall. Bottom: a quantum wave packet with exactly the same energy sent at the same wall. The wave is the Schrodinger equation solved step by step (split-step Fourier, Strang splitting), the ball is plain mechanics. Natural units, no seed.\n\nMeasured:\n- the ball hits the near face of the wall at 13.96 s of video and bounces back; it never passes, 0%\n- the wave packet: mean energy 80.05% of the wall height; at the end of the run 96.823% of it is reflected, 0.0002% is still inside the wall, and 3.177% is past the wall on the far side; total probability 1.0000000000\n- the transmitted share reaches half its final value at 16.2 s of video and 99% of it at 25.5 s\n- checks: 3.161% at half the time step, 3.176% on twice the grid (65,536 points against 32,768); the digit the checks agree on, 3.2%, is the one in the narration\n- closed form for a single-energy wave at 80% of the wall: 3.000% (the packet carries a spread of energies, and transmission grows faster than linearly with energy, so the packet's 3.18% sits above it)\n- half the wall width: 26.02% gets through, 8.2 times more; twice the wall width: 0.0734%, 43 times less\n- the share of the packet's momentum components with enough energy to top the wall classically: 0.0002%, so the 3.2% is not the fast tail of the packet climbing over\n\nSetup: wave number k0 = 1, width sigma = 20, start x = -80, kinetic energy 0.5; wall height 0.625 and width 4.44 (kappa a = 2.22); grid of 32,768 points with the wall tiling exactly 180 cells; 2,400 frames of 8 steps of dt = 0.0104 to t = 200; 5 time units per second of video.\n\nOn screen the wave panel draws the amplitude of the wave (the square root of the probability density), so the small transmitted part is visible; the readout counts probability, the share of the wave past the wall.\n\nThe Schrodinger equation is 100 years old this year (1926).\n\nRerun sims/tunnel/tunnel.py with projects/tunnel/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "quantum tunneling",
+    "quantum mechanics",
+    "schrodinger equation",
+    "wave packet",
+    "tunnelling",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "quantum physics",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
