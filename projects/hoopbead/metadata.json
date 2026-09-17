@@ -1,0 +1,20 @@
+{
+  "title": "Spin the hoop. Where does the bead settle? At 100 turns a minute the bead holds 63.4 degrees up.",
+  "description": "Spin the hoop. Where does the bead settle? A bead slides on a vertical hoop of radius 20 cm that spins about its vertical diameter. Two hoops: the slow one spins up to 60 turns a minute, the fast one to 100. Both start at rest with the bead 2 degrees off the bottom; from 1 s the spin rate ramps up over 6 s. At 22 s both beads get the same nudge, 25 degrees up the hoop. Light damping (0.8 per second). RK4 at 600 steps per second; deterministic, no seed. Real time.\n\nMeasured:\n- tipping rate sqrt(g / R) = 7.00 rad/s = 66.9 turns a minute: below it the only rest point is the bottom; above it the bottom lets go and a new rest angle appears at arccos(g / (omega^2 R))\n- slow hoop (60 turns a minute, 0.90 of the tipping rate): the bead stays within 0.15 degrees of the bottom after the spin-up and holds 0.01 degrees at 40 s\n- fast hoop (100 turns a minute): the bead lifts off (past 5 degrees) at 6.35 s, 1.34 s after the hoop passes the tipping rate, overshoots to 86.5 degrees at 6.96 s, and holds 63.42 degrees at 40 s; closed form 63.44 degrees\n- nudge at 22 s: the slow bead swings from 25 degrees back through the bottom to 17.6 degrees on the other side and is within 0.5 degrees of the bottom by 31.3 s; the fast bead swings from 88.5 degrees back to 35.7 and is within 0.5 degrees of 63.4 by 31.9 s\n- small swings about each rest angle: 2.04 s per swing at the bottom of the slow hoop (closed form 2.03 s), 0.671 s about 63.4 degrees on the fast hoop (closed form 0.671 s)\n- checks: at 134 turns a minute the bead holds 75.58 degrees (closed form 75.58); at half the time step the fast bead lifts off at the same 6.35 s and holds the same 63.42 degrees\n\nWhy: the spin flings the bead outward, away from the axis, while gravity pulls it down toward the bottom. Below the tipping rate gravity wins at every angle and the bead stays put. Above it the outward push near the bottom beats gravity, the bead climbs, and it stops where the two pulls balance along the hoop: cos(angle) = g / (omega^2 R). Faster spin, higher bead. The nudge shows that the balance point is the only place the bead will rest.\n\nRerun sims/hoopbead/hoopbead.py with projects/hoopbead/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "bead on a hoop",
+    "rotating hoop",
+    "centrifugal",
+    "bifurcation",
+    "rotation",
+    "equilibrium",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -1,0 +1,37 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "length_m": 0.9936213855661317,
+  "mass_kg": 0.1,
+  "spring_k_n_per_m": 0.05058172255558296,
+  "pivot_gap_m": 0.95,
+  "start_deg": 10.0,
+  "start_deg_2": 0.0,
+  "small_deg": 1.0,
+  "steps_per_s": 1200,
+  "check_steps_per_s": 2400,
+  "measure_duration": 44.0,
+  "scene_duration": 40.0,
+  "px_per_m": 400.0,
+  "pivot_x_px": [
+    350,
+    730
+  ],
+  "pivot_y_px": [
+    410,
+    950
+  ],
+  "bob_radius_px": 30,
+  "title": "Can a swing pass|its motion to|its neighbour?",
+  "title_until": 2.4,
+  "payoff_t": 29.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "can a swing pass its motion on? | yes, all of it, in {swap:.1f} s | then it comes back | no spring: the neighbour never moves",
+  "loop_fade": 0.6,
+  "music_seed": 57,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same two pendulums | 10 degrees | no seed"
+}

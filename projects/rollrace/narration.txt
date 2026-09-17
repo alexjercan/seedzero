@@ -1,0 +1,3 @@
+Which one rolls down first? Four shapes, the same mass and size, on the same two meter ramp: a solid ball, a solid cylinder, a hollow ball, and a hoop. The solid ball leads at once, and the hoop drops behind.
+Each shape spins as it rolls, and that spin takes a share of the fall. The hoop has all its mass at the rim, so spin takes the biggest share. The solid ball keeps its mass near the center, so spin takes the least.
+So which one rolls down first? The solid ball, at one point two nine seconds. The hoop comes last, at one point five four seconds.

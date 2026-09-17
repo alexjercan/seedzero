@@ -1,0 +1,4 @@
+A bead on a spinning hoop. Where does the bead settle? Same bead, two hoops, one slow, one at one hundred turns a minute. The slow bead stays at the bottom. The fast bead lifts off, swings wide, and settles partway up.
+The spin flings the bead outward, and gravity pulls it down. On the slow hoop, gravity wins. On the fast hoop, the two balance higher up. Now nudge both beads.
+Each bead swings out, and comes straight back to its own spot. The spot depends only on the spin.
+So where does the bead settle? On the slow hoop, at the bottom. On the fast hoop, sixty three point four degrees up, and it holds.

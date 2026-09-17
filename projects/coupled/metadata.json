@@ -1,0 +1,20 @@
+{
+  "title": "Can a swing pass its motion to its neighbour? Start one at 10 degrees: all of it crosses in 20 s.",
+  "description": "Can a swing pass its motion to its neighbour? Two identical pendulums (length 0.9936 m, chosen so the small-swing period is exactly 2.000 s; 100 g point bobs; pivots 0.95 m apart) are joined at bob level by a weak spring (k = 0.0506 N/m, natural length equal to the pivot spacing). The left one starts at 10 degrees, the right one hangs at rest. Below them, the same two pendulums with no spring. Full nonlinear equations, no damping, RK4 at 1,200 steps per second; deterministic, no seed. Real time.\n\nMeasured:\n- the left swing shrinks and the right swing grows, swing by swing: 10.0 and 1.2 degrees after the first swing, 8.2 and 6.7 after five, 4.8 and 9.3 after eight, 1.9 and 10.0 after ten\n- the swap: the left pendulum has its least energy at 20.039 s, when its swing is 0.0001 degrees (at rest at the bottom) and the right pendulum's swing is 10.000 degrees; the linear closed form pi / (omega2 - omega1) gives 20.000 s (a 1 degree start swaps at 20.000 s exactly; the 10 degree start is 0.2 percent later)\n- the return: the right pendulum is back to a 0.0004 degree swing at 40.079 s and the left one holds 9.99 degrees; closed form 40.000 s\n- the two modes: started together the pair swings every 2.0038 s, started opposite every 1.9094 s (linear 2.0000 and 1.9048 s); the spring sets the modes pi / 20 rad/s apart, so the beat takes 40 s and the swap 20 s\n- no spring: the right pendulum's largest angle over 44 s is 0.000 degrees\n- checks: total energy drifts by at most 3e-13 relative over 44 s; at 2,400 steps per second the swap is at the same 20.039 s\n\nWhy: the pair has two natural motions, swinging together (2.000 s per swing) and swinging opposite (1.905 s, the spring adds stiffness). Starting one pendulum alone is half of each. The two motions drift apart by one whole swing every 40 s, so after 20 s they cancel on the left and add on the right: all the motion has crossed. The 40 s beat is periodic, so the short loops.\n\nRerun sims/coupled/coupled.py with projects/coupled/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "coupled pendulums",
+    "pendulum",
+    "resonance",
+    "beats",
+    "energy transfer",
+    "normal modes",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

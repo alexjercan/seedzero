@@ -536,11 +536,17 @@ payoff number, seamless loops of periodic physics, and numbers that a
 closed form can check):
 
 - Rolling race: a solid ball, a solid cylinder, a hollow ball and a hoop
-  of the same size and mass released together on the same 2 m ramp at
-  20 degrees; measure the arrival times; expect 1.292, 1.337, 1.410 and
-  1.544 s (t = sqrt(2L(1+k)/(g sin theta)) with k = 2/5, 1/2, 2/3, 1;
-  the hoop 19.5 percent behind the ball) and the same order at any mass
-  or size; the race repeats so the short loops; deterministic, no seed.
+  of the same size and mass released together on the same 2 m ramp at 20
+  degrees; measure the arrival times; expect 1.292, 1.337, 1.410 and 1.544
+  s (t = sqrt(2L(1+k)/(g sin theta)) with k = 2/5, 1/2, 2/3, 1; the hoop
+  19.5 percent behind the ball) and the same order at any mass or size;
+  the race repeats so the short loops; deterministic, no seed. [produced
+  2026-09-17: 1 kg, 20 cm bodies on a 2 m ramp at 20 degrees, RK4 at 1,000
+  steps per second; solid ball 1.2921 s, solid cylinder 1.3375, hollow
+  ball 1.4098, hoop 1.5444 (closed forms identical to four decimals), the
+  hoop 19.5 percent behind; identical times at 10x the mass and 2x the
+  radius and at half the step; played at 1/4 speed, five races in 40 s;
+  https://youtu.be/Ahe_3vRDMXA, task 20260917-100323]
 - Turntable ball: a solid ball set rolling across a record turning at
   33 1/3 rpm beside a hollow ball given the same push; measure the path
   and the loop time; expect both to run in closed circles instead of
@@ -564,12 +570,18 @@ closed form can check):
   momentum and energy to 1e-9; deterministic, no seed.
 - Coupled pendulum swap: two identical 1 m pendulums joined by a weak
   spring, one started at 10 degrees and the other hanging still, beside
-  the same pair with no spring; measure when the first pendulum stops
-  dead and the second holds the whole swing; expect the full swap at
-  20.0 s and the swing back at 40.0 s when the spring puts the mode
-  frequencies pi/20 rad/s apart (about ten swings per swap), the
-  unsprung neighbour never moving; the 40 s beat is exactly periodic so
-  the short loops; deterministic, no seed.
+  the same pair with no spring; measure when the first pendulum stops dead
+  and the second holds the whole swing; expect the full swap at 20.0 s and
+  the swing back at 40.0 s when the spring puts the mode frequencies pi/20
+  rad/s apart (about ten swings per swap), the unsprung neighbour never
+  moving; the 40 s beat is exactly periodic so the short loops;
+  deterministic, no seed. [produced 2026-09-17: length 0.9936 m (period
+  2.000 s), 100 g bobs, spring k 0.0506 N/m so the modes sit pi/20 rad/s
+  apart, RK4 at 1,200 steps per second, no damping; the left pendulum is
+  at rest (0.0001 degree swing) at 20.039 s while the right holds 10.000
+  degrees, back at 40.079 s (linear closed forms 20.000 and 40.000 s; a 1
+  degree start swaps at 20.000 s); the unsprung neighbour's largest angle
+  0.000 degrees; https://youtu.be/wmkc_zygzXQ, task 20260917-100324]
 - Monkey and hunter: a dart fired straight at a target hanging 10 m up
   and 20 m away, the target let go at the shot, at 30 m/s beside 60
   m/s; measure the miss distance; expect 0.000 m for both (both fall
@@ -578,9 +590,16 @@ closed form can check):
   target reach the ground first; deterministic, no seed.
 - Bead on a spinning hoop: a bead on a 20 cm hoop spun at 60 rpm beside
   the same hoop at 100 rpm; measure where the bead settles; expect the
-  slow bead to fall back to the bottom and the fast bead to climb and
-  hold at 63.6 degrees (cos theta = g / (omega^2 R), threshold 66.9 rpm;
-  134 rpm gives 75.5 degrees); light damping; deterministic, no seed.
+  slow bead to fall back to the bottom and the fast bead to climb and hold
+  at 63.6 degrees (cos theta = g / (omega^2 R), threshold 66.9 rpm; 134
+  rpm gives 75.5 degrees); light damping; deterministic, no seed.
+  [produced 2026-09-17: 20 cm hoop, damping 0.8/s, spin ramped from 1 s
+  over 6 s to 60 and 100 rpm, RK4 at 600 steps per second; tipping rate
+  66.87 rpm; the fast bead lifts off at 6.35 s, overshoots to 86.5 degrees
+  and holds 63.42 degrees at 40 s (closed form 63.44); the slow bead holds
+  0.01 degrees; a 25 degree nudge at 22 s and both back within 0.5 degrees
+  by 31.9 s; 134 rpm check 75.58 against 75.58;
+  https://youtu.be/eAqo0Yif3-8, task 20260917-100309]
 - Saturn retrograde: Earth and Saturn on circular orbits, the Sun's view
   beside the sky view from Earth; measure how many days Saturn drifts
   backward against the stars around opposition and the size of the loop;

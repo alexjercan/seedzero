@@ -1,0 +1,20 @@
+{
+  "title": "Which one rolls down first? Same mass, same size: the solid ball in 1.29 s, the hoop last in 1.54 s.",
+  "description": "Which one rolls down first? Four shapes of the same mass (1 kg) and the same size (20 cm radius) are released together from rest at the top of the same 2 m ramp at 20 degrees and roll without slipping: a solid ball, a solid cylinder, a hollow ball and a hoop. Each clock stops when its shape reaches the bottom. Played at 1/4 speed; the race repeats so the short loops. RK4 at 1,000 steps per second with the arrival interpolated inside the crossing step; deterministic, no seed.\n\nMeasured:\n- solid ball (I = 2/5 m r^2): accelerates at 2.396 m/s^2, arrives at 1.292 s (closed form sqrt(2 L (1 + k) / (g sin theta)) with k = 2/5 gives 1.292 s), 3.10 m/s at the bottom\n- solid cylinder (k = 1/2): 2.236 m/s^2, arrives at 1.338 s (closed form 1.338 s), 2.99 m/s\n- hollow ball (k = 2/3): 2.012 m/s^2, arrives at 1.410 s (closed form 1.410 s), 2.84 m/s\n- hoop (k = 1): 1.677 m/s^2, arrives at 1.544 s (closed form 1.544 s), 2.59 m/s\n- the hoop arrives 0.252 s after the solid ball, 19.5% behind (closed-form ratio sqrt(2 / 1.4) = 1.195); when the ball finishes, the hoop is still 0.60 m from the line\n- check: with 10x the mass (10 kg) and 2x the radius (40 cm) the four arrival times are identical, 1.2921, 1.3375, 1.4098 and 1.5444 s; the mass and the radius cancel\n- check: at half the time step the arrivals are the same four times\n- rolling without slipping needs a friction coefficient of at least k / (1 + k) tan theta, at most 0.182 (the hoop); the ramp's 0.5 keeps all four rolling\n- for comparison: a frictionless block sliding the same ramp (no spin) arrives at 1.092 s at 3.66 m/s\n\nWhy: a rolling shape has to spin as well as fall, and the spin takes a share k / (1 + k) of the energy: 2/7 for the solid ball, 1/3 for the solid cylinder, 2/5 for the hollow ball, 1/2 for the hoop. The more of its mass sits far from the axle, the bigger the share and the slower the roll. Mass and radius appear on both sides and cancel, so any solid ball beats any hoop of any size.\n\nRerun sims/rollrace/rollrace.py with projects/rollrace/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "rolling race",
+    "moment of inertia",
+    "rotational inertia",
+    "ramp",
+    "solid vs hollow",
+    "physics",
+    "physics demo",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

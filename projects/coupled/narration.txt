@@ -1,0 +1,4 @@
+Can a swing pass its motion to its neighbor? Two identical pendulums, joined by a weak spring. The left one starts at ten degrees. The right one hangs at rest. Below, the same two pendulums with no spring.
+Watch the left swing shrink while the right one grows. Each swing, the spring hands a little push across, and the pushes add up.
+At twenty seconds the left one stops dead, and the right one holds the whole swing. Then the motion flows back. Below, with no spring, the neighbor never moves.
+So can a swing pass its motion to its neighbor? Yes, all of it, in twenty seconds. Without the spring, never.
