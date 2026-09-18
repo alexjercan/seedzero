@@ -218,3 +218,9 @@ go to the description; the speeds are on screen as panel labels only.
 - attempt 1 of the hard cap of 5 for the quota day that began
   2026-09-18T10:00 EEST; cost 1 + 1,600 + 3 + 1 + 1 + 1 + 52 = 1,659
   units; day total after one attempt 1,659 units
+
+### Repository
+
+- committed as 2de3568 "Publish the day twenty slate" (sims, projects,
+  tasks, docs/niche.md, scripts/yt-stats.py, web/data; no media, previews
+  or secrets) and pushed to origin/master at 2026-09-18 11:44 EEST
