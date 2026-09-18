@@ -1,0 +1,20 @@
+{
+  "title": "Turn the tap up. Does the wheel spin faster? No. With 3x the water it reversed 6 times in 4 minutes.",
+  "description": "Turn the tap up. Does the wheel spin faster? A vertical wheel of radius 30 cm carries 12 buckets on its rim. A tap at the top pours water into the buckets nearest the top, every bucket leaks 9.5 percent of its water each second, and the wheel turns under the weight of the water against a bearing drag. Two copies of the same wheel start at rest with empty buckets: the slow tap pours 20 g/s, the fast tap 3 times that, 60 g/s. RK4 at 1 ms steps; deterministic, no seed. The video shows 4 minutes of wheel time in 40 s (6x).\n\nMeasured:\n- slow tap: 0 reversals in 4 minutes (and 0 in 8); the wheel settles to a steady 2.36 turns a minute clockwise (one turn every 25.4 s), within 5 percent of that from 208 s, after a start-up swing that peaks at 0.52 rad/s at 43 s\n- fast tap: 6 reversals in 4 minutes, at 25.3, 95.2, 123.2, 137.1, 153.5 and 168.0 s; runs one way of 8.0, 69.9, 28.0, 13.9, 16.4 and 14.5 s, then a run of 72 s still going at the end of the window; 7.74 turns clockwise and 5.69 counterclockwise; peak speed 1.21 rad/s = 11.5 turns a minute at 22.8 s\n- the next 4 minutes: 7 more reversals (258.3, 287.8, 355.9, 421.5, 435.5, 450.1 and 463.8 s), longest run 90.3 s; 13 reversals in 8 minutes\n- a reversal is counted when the wheel's speed crosses zero and then reaches 0.05 rad/s the other way; its time is the zero crossing\n- Lorenz form of the wheel (the first Fourier modes of the water, b = 1): slow tap r = 7.05, sigma = 5.84; fast tap r = 21.16, sigma = 5.69; steady turning is stable below r = 15.0 and unstable above it; closed-form steady speed K sqrt(r - 1) = 0.246 rad/s for the slow tap against 0.247 measured\n- sensitivity: restart the fast wheel with its start angle moved by one millionth of a radian and it drifts 0.001 rad away by 157 s and 0.1 rad by 253 s (the gap e-folds every 21.9 s), keeping the same 6 reversal times inside the window\n- checks: at half the time step the slow speed and all 6 reversal times are unchanged (to 0.001 s); the water on each wheel settles at Q / K, 200 g and 600 g; the fullest bucket holds 259 g\n\nWhy: each bucket fills under the tap and leaks as it goes around, so the wheel turns toward its heavy side. With a slow tap the weight and the leak balance at one steady speed and the wheel keeps its direction. With three times the water the buckets fill faster than the wheel can carry them down: it swings too far, the full buckets ride up the other side, and their weight drags the wheel back. This wheel is the Lorenz system: the first Fourier modes of the water distribution obey the Lorenz equations exactly, so above the Lorenz threshold the wheel does what Lorenz's weather model does. It changes direction at times that never repeat, and a start off by a millionth of a radian would change them.\n\nRerun sims/waterwheel/waterwheel.py with projects/waterwheel/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "lorenz water wheel",
+    "malkus wheel",
+    "lorenz attractor",
+    "chaos",
+    "chaos theory",
+    "water wheel",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

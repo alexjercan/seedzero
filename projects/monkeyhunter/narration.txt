@@ -1,0 +1,4 @@
+A target hangs twenty meters away. Aim straight at it. It drops as you fire. Do you hit? Two darts, same aim, one slow, one fast. The target is released at the shot.
+The dart falls below its aim line. The target falls below its hook. Both fall the same amount, every moment, because gravity pulls both down at the same rate.
+The fast dart arrives sooner and falls less. The slow dart takes longer and falls more. Both darts meet the target.
+So, do you hit? Yes, you hit: by the hit, both had fallen two point seven two meters.

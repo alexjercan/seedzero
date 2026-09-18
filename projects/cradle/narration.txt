@@ -1,0 +1,3 @@
+Five steel balls. Lift two balls. How many fly out? On top, one ball was lifted ten centimeters. Below, two balls were lifted the same. On top, one ball swings in, and one ball flies out the far side. Below, two swing in, and two fly out.
+Each click hands the push to the next ball, and the balls in the middle barely move. Why not one ball at double speed? It would carry the same push, but twice the energy, and that energy is not there.
+So how many fly out? Lift one ball: one flies out, to ten centimeters. Lift two balls: two fly out, to ten centimeters.

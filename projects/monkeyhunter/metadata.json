@@ -1,0 +1,20 @@
+{
+  "title": "Aim straight at it. It drops as you fire. Do you hit? Yes: from 20 m, both fell 2.72 m by the hit.",
+  "description": "Aim straight at it. It drops as you fire. Do you hit? A launcher fires a dart straight along the line of sight at a target hanging 10 m up and 20 m away. The target is let go from rest the instant the dart leaves. Two panels: the same aim at 30 m/s (top) and at 60 m/s (bottom). Gravity only (9.80665 m/s^2), no air; the dart and the target are points for every number and are drawn larger than life. Both bodies are integrated with RK4 at 6000 steps per second and every number is checked against the closed form. Deterministic, no seed. On screen the shots run at 1/5 speed.\n\nMeasured:\n- aim angle atan(10 / 20) = 26.565 degrees; the target's start is 22.361 m from the muzzle along the aim line\n- dart at 30 m/s: reaches the target's x at 0.7454 s (closed form D / (v cos theta) = 0.7454 s); by then the dart is 2.7241 m below its aim line and the target 2.7241 m below its start (closed form g t^2 / 2 = 2.7241 m); both at height 7.2759 m; miss at closest approach 0.000000 m; dart speed at the hit 27.52 m/s\n- dart at 60 m/s: reaches the target's x at 0.3727 s; both had fallen 0.6810 m; both at height 9.3190 m; miss at closest approach 0.000000 m; dart speed at the hit 58.46 m/s\n- over the whole flight the dart's drop below its aim line and the target's drop below its start differ by at most 0.000 micrometres, at both speeds\n- a target let go from 10 m reaches the ground at 1.4281 s; the slowest dart that still hits before that is 15.658 m/s (closed form D / (cos theta sqrt(2 H / g)); a bracketing search gives the same 15.658 m/s); at 15 m/s the dart reaches the ground at 1.3681 s, 1.65 m short of the target's x, with the target still 0.82 m up\n- aimed 1 degree high at 30 m/s: the dart passes 0.4402 m above the target when it reaches the target's x; closest approach 0.3902 m (closed form sqrt(D^2 + H^2) sin(1 degree)); aimed 1 degree low: 0.4326 m below, closest approach 0.3902 m; at 60 m/s the closest approach is the same 0.3902 m: the miss does not depend on the speed\n- if the target did not drop: the 30 m/s dart passes 2.724 m below it (closest approach 2.658 m); the 60 m/s dart 0.681 m below (closest approach 0.625 m)\n- check at half the time step (12000 steps per second): 0.7454 s, 2.7241 m, miss 0.000000 m; differences under 1e-12 m\n\nWhy: gravity pulls the dart and the target down at the same rate, and the aim line points at the target's start. Without gravity the dart would ride the aim line and reach the start point at the same moment it now reaches the target's x. Gravity moves both down by the same g t^2 / 2 in that time, so the dart is exactly as far below the line as the target is below its hook, at every moment, and the two meet. The speed only sets how long the flight takes, and so how far both have fallen by the hit.\n\nRerun sims/monkeyhunter/monkeyhunter.py with projects/monkeyhunter/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "monkey and hunter",
+    "projectile motion",
+    "free fall",
+    "gravity",
+    "physics demo",
+    "kinematics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

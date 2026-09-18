@@ -568,6 +568,13 @@ closed form can check):
   balls to 10 cm against one ball to 10 cm and never one ball at double
   speed (that would rise 40 cm and needs twice the energy); check
   momentum and energy to 1e-9; deterministic, no seed.
+  [produced 2026-09-18: five 1.5 cm steel balls (111 g) on 30 cm strings
+  0.3 mm apart, Hertz contacts softened 51x so a click lasts 0.41 ms,
+  RK4 at 5 us with contact sub-steps; one lifted 10 cm: ball 5 leaves at
+  1.4005 m/s and rises 10.000 cm, the rest under 0.001 cm; two lifted:
+  balls 4 and 5 rise 9.999 and 10.000 cm; energy drift 1e-8 over 40 s; a
+  gapless chain disperses (13.0, 6.4, 0.5 cm), stated in the
+  description; https://youtu.be/qE-8l1rEPRY, task 20260918-100316]
 - Coupled pendulum swap: two identical 1 m pendulums joined by a weak
   spring, one started at 10 degrees and the other hanging still, beside
   the same pair with no spring; measure when the first pendulum stops dead
@@ -588,6 +595,13 @@ closed form can check):
   2.72 m by the hit at 0.745 s and 0.68 m at 0.373 s), a shot aimed 1
   degree high misses by 44 cm, and any speed under 15.7 m/s lets the
   target reach the ground first; deterministic, no seed.
+  [produced 2026-09-18: launcher at the origin, target 10 m up and 20 m
+  away, aim 26.565 degrees, RK4 at 6,000 steps per second; at 30 m/s the
+  dart crosses the target at 0.7454 s with both fallen 2.7241 m, miss
+  0.000000 m; at 60 m/s 0.3727 s and 0.6810 m; slowest hitting dart
+  15.658 m/s; 1 degree high or low misses by 0.3902 m at either speed;
+  shown at 1/5 speed; https://youtu.be/Fb-2BqjEcz4, task
+  20260918-100320]
 - Bead on a spinning hoop: a bead on a 20 cm hoop spun at 60 rpm beside
   the same hoop at 100 rpm; measure where the bead settles; expect the
   slow bead to fall back to the bottom and the fast bead to climb and hold
@@ -639,3 +653,11 @@ closed form can check):
   tap to turn steadily and the fast tap to reverse irregularly (the
   Malkus wheel is the Lorenz system); the count is the payoff, so keep
   the wheel and the water on screen; RK4; deterministic, no seed.
+  [produced 2026-09-18: 30 cm wheel, 12 buckets, leak 0.1/s, drag 0.77,
+  dry inertia 1.3 kg m^2, taps 20 and 60 g/s, RK4 at 1 ms, 240 s shown
+  at 6x; the slow wheel never reverses and holds 2.36 turns a minute
+  (closed form 0.246 rad/s against 0.247), the fast wheel reverses 6
+  times at 25.3 to 168.0 s (13 in 480 s), peak 11.5 turns a minute;
+  Lorenz r 7.05 against 21.16 with the Hopf value 15.0; a 1e-6 rad start
+  change drifts 0.1 rad by 253 s; https://youtu.be/5v7Z2S9ybgA, task
+  20260918-100309]

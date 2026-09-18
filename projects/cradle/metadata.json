@@ -1,0 +1,20 @@
+{
+  "title": "Lift two balls. How many fly out? Two, to 10 cm, and never one ball at double speed.",
+  "description": "Lift two balls. How many fly out? Five steel balls of radius 1.5 cm (111 g each) hang on 30 cm strings, a hair (0.3 mm) apart. Two cradles, same balls: on top one ball is lifted so its centre is 10 cm above rest, below two balls are lifted together to the same height; both are let go at the same moment. Each ball is an exact pendulum; neighbours push with a Hertz contact force F = k delta^1.5 while they overlap. RK4 at a base step of 5 microseconds, cut into sub-steps while any pair touches, with a ramp of tiny steps at every contact onset and offset. Deterministic, no seed. Real time.\n\nMeasured:\n- the lifted ball arrives at the bottom at 1.4004 m/s (closed form sqrt(2 g h) = 1.4005) and the first click begins 0.288 s after release\n- one lifted: four contacts of 0.41 ms each, the click over in 1.67 ms; ball 5 leaves at 1.4005 m/s and rises 10.000 cm; balls 1 to 4 rise under 0.001 cm; one ball out\n- two lifted: six contacts of 0.41 ms, the click over in 1.67 ms; balls 4 and 5 leave at 1.4004 and 1.4005 m/s and rise 9.999 and 10.000 cm; balls 1 to 3 rise under 0.001 cm; two balls out\n- one ball at double speed would rise 4 h = 40 cm, above the pivots, and would need twice the energy: it never happens\n- momentum across the first click 0.15542 to 0.15541 kg m/s (one lifted) and 0.31084 to 0.31082 (two lifted); the 5e-5 change is the strings pulling sideways for 1.7 ms, not a loss; energy 108.831025 mJ before and after (1e-9) and 217.662050 mJ before and after; the energy drifts by 1.3e-8 (one lifted) and 1.1e-8 (two lifted) over the whole 40 s\n- the lifted ball comes back every 1.153 s (closed form 1.150 s for a 48.2 degree swing), so a click every 0.577 s; 68 clicks in the scene\n- the balls that stay put sway at most 1.5 degrees (one lifted) and 3.0 degrees (two lifted), kicked a gap's width at every click; that sway beats slowly against the clicks, so the far ball's peak ranges 9.96 to 10.00 cm (one lifted) and 9.94 to 10.44 cm (two lifted) over the run\n- checks: at half the step every peak and speed repeats to four decimals; at ten times the stiffness the two balls rise 9.9997 and 9.9999 cm\n- stiffness: k = 2.5e8 N/m^1.5 is softened from real steel (1.27e10, E = 200 GPa) by a factor 51 so that a click lasts 0.41 ms with 197 microns of squash instead of 86 microseconds and 41 microns, and the step resolves it; the outcome does not depend on it\n- with no gap at all (balls touching exactly) the same simulation gives a different answer: the whole chain squeezes as one for 1.1 ms and the far ball takes the larger share, 12.990 cm for ball 5 and 6.406 cm for ball 4 (one lifted: 9.777 cm), with energy and momentum still conserved; a real cradle clicks for 86 microseconds, far shorter than the time to cross any hair of a gap, so its clicks come one at a time as in the drawn run\n\nWhy: each click is a head-on hit between two equal balls, and an equal elastic head-on hit swaps their speeds: the mover stops, the hit ball leaves with the mover's speed. The push walks down the line one ball at a time, and the balls in the middle end where they started. Two balls in means two swaps arrive at the far end, one after the other, so two balls leave at the same speed they came in with. One ball at double speed would carry the same momentum but twice the kinetic energy, and that energy was never there.\n\nRerun sims/cradle/cradle.py with projects/cradle/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "newton's cradle",
+    "momentum",
+    "kinetic energy",
+    "elastic collision",
+    "collision",
+    "pendulum",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
