@@ -325,3 +325,6 @@ the checks go to the description.
 - committed as 079736e "Produce the day twenty-one slate as manual upload
   packets" (sims, projects, tasks, docs/niche.md, web/data; no media,
   previews or secrets) and pushed to origin/master at 10:50 EEST
+- committed as 1762ebc "Publish the day twenty-one slate" (tasks,
+  docs/niche.md, web/data; no media, previews or secrets) and pushed
+  to origin/master at 2026-09-19 11:08 EEST
