@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T11:39:22+03:00",
+  "updated_at": "2026-09-19T10:49:29+03:00",
   "channel": {
     "name": "Seed Zero",
     "handle": "@SeedZeroLab",
@@ -13,5 +13,6 @@
     "revenue_usd": 0
   },
   "goal": "Beat the owner's main channel: 12,000 subs, 378,519 views.",
-  "status": "ok"
+  "status": "stale",
+  "note": "stats as of 2026-09-18 11:39 EEST; upload credentials missing since 2026-09-18 21:07 EEST, three day 21 packets await upload"
 }

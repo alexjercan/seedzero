@@ -1,0 +1,3 @@
+Nine hundred fifty cars into one thousand spaces. How far do the last cars go? Each car wants one random spot. On top, a blocked car rolls forward to the next free spot. Below, it tries a fresh random spot.
+On top, taken spots clump into runs. A car that lands in a run drives to its end. The runs grow, and late cars pass more and more spots. Below, the taken spots stay evenly dotted, so most fresh tries find a gap fast.
+So how far do the last cars go? Roll forward: about eighty one spots per car. Fresh random spot: about twelve spots per car.

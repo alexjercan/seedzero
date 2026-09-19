@@ -482,5 +482,23 @@
   {
     "title": "Ten unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
+  },
+  {
+    "title": "A one meter wave at sea. How tall at the shore? 4.4 m tall by the time the water is 10 m deep.",
+    "status": "ready",
+    "date": "2026-09-19",
+    "note": "packet ready, upload blocked: credentials missing"
+  },
+  {
+    "title": "One slit makes a fan. What do two slits 10 cm apart make? 7 bright bands, with dark water between.",
+    "status": "ready",
+    "date": "2026-09-19",
+    "note": "packet ready, upload blocked: credentials missing"
+  },
+  {
+    "title": "950 cars, 1,000 spaces. How far do the last cars go? Roll forward 81 spots per car, random retry 12.",
+    "status": "ready",
+    "date": "2026-09-19",
+    "note": "packet ready, upload blocked: credentials missing"
   }
 ]

@@ -359,7 +359,15 @@ physics is periodic):
   versus a fresh random spot on each retry; measure the spots passed by
   the last fifty cars and the longest run of taken spots; expect about
   fifty against ten at ninety percent full and two hundred against
-  twenty at ninety five.
+  twenty at ninety five. [produced 2026-09-19: 1,000 spaces, 950 cars,
+  seed 0, the same preferred spots in both lots; cars 901 to 950 pass
+  80.9 spots per car with roll forward against 12.4 with a fresh random
+  spot (closed forms 98.0 and 12.8), longest full run 515 against 72 at
+  950 cars; the last car itself is an unlucky draw (2 against 122), so
+  the payoff is the last-fifty average; seeds 1 to 5 give 31.9 to 57.7
+  against 7.9 to 16.1; a 100,000-space lot converges to the closed forms
+  (99.2 / 13.07 over loads 0.90 to 0.95 against 99.5 / 12.86); packet
+  ready, upload pending (credentials missing); task 20260919-100941]
 - Collatz flights: start numbers launched as flights with altitude equal
   to the value; measure steps and peak; expect 27 to take 111 steps and
   climb to 9,232; measure the longest flight under a million in the sim.
@@ -639,14 +647,33 @@ closed form can check):
   m/s (sqrt(g h)) and the crest growing to 4.5 m (Green's law,
   (4000/10)^(1/4)) with the wavelength 20 times shorter; 1D shallow
   water solver, no breaking; deterministic, no seed (peg: World Tsunami
-  Awareness Day 2026-11-05).
+  Awareness Day 2026-11-05). [produced 2026-09-19: 1D linear shallow
+  water on an Arakawa C grid (dx 100 m, dt 0.25 s); a 1.000 m Gaussian
+  hump 100 km wide at half height in 4,000 m of water, a 950 km slope
+  with sqrt(h) linear in x down to 10 m, then a flat shelf; crest 1.0000
+  m at 198.06 m/s at sea, 4.3849 m at 9.900 m/s and 4.93 km wide on the
+  shelf (Green's law 4.472, sqrt(g h) 9.903, width 20.28x shorter);
+  1.4262 / 2.5168 / 3.3872 m at 1,000 / 100 / 30 m against Green 1.4142
+  / 2.5149 / 3.3981; 2.65% of the height sent back out to sea and a
+  -0.17 m trough behind the crest explain the 2% shortfall; energy
+  drift 6e-16; half-step check 4.3847 m; the control hump in a flat
+  tank keeps 1.0000 m; packet ready, upload pending (credentials
+  missing); task 20260919-100938]
 - Double slit ripple tank: a 2 cm wave through one slit beside two slits
   10 cm apart; measure the bright band angles on a screen 60 cm away;
   expect bands at 11.5, 23.6 and 36.9 degrees (d sin theta = n lambda)
   with dark bands between them and no bands from the single slit; 2D
   finite-difference wave solver, steady state so the short loops;
   deterministic, no seed (peg: Schrodinger centenary 2026, Nobel
-  physics 2026-10-06).
+  physics 2026-10-06). [produced 2026-09-19: 2D wave equation on a 1 mm
+  grid, fourth-order Laplacian, 2 cm ripples, slits 1 cm wide, screen
+  40 cm past the wall spanning +-42 degrees; two slits 10 cm apart give
+  7 bright bands at 0, 11.55, 23.63, 36.73 degrees (closed form 11.54,
+  23.58, 36.87) and 6 dark bands at 5.79, 17.57, 30.12 (5.74, 17.46,
+  30.00), dark under 1.6% of bright; one slit gives one smooth fan with
+  no minimum deeper than 0.55%; half-grid check within 0.04 degrees;
+  screens at 20 and 30 cm keep the angles; packet ready, upload pending
+  (credentials missing); task 20260919-100939]
 - Lorenz water wheel: a wheel of leaking buckets under a steady tap
   beside the same wheel under a faster tap; measure the direction
   reversals in five minutes and the longest run one way; expect the slow

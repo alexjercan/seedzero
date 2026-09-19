@@ -1,0 +1,20 @@
+{
+  "title": "A one meter wave at sea. How tall at the shore? 4.4 m tall by the time the water is 10 m deep.",
+  "description": "A one meter wave at sea. How tall at the shore? One wave, one run: a single hump of water exactly 1 m tall and 100 km wide (at half height) travels through 4,000 m deep ocean at 198 m/s, climbs a 950 km slope where the depth falls to 10 m, and runs onto a flat 10 m shelf. Linear shallow water in one dimension (eta_t + (h u)_x = 0, u_t + g eta_x = 0), no breaking, on a grid of 100 m cells stepped every 0.25 s with a staggered leapfrog that conserves the discrete energy exactly. The slope has sqrt(depth) falling in a straight line with distance, so the wave's length shrinks by the same amount per metre travelled all the way down and the floor never changes faster than the wave can follow. Eight hours of sea time shown at 720 times speed. The camera follows the crest and zooms in as the wave shortens. Deterministic, no seed.\n\nMeasured:\n- deep water, 4,000 m: crest 1.0000 m, speed 198.06 m/s (closed form sqrt(g h) = 198.06), width 100.00 km at half height\n- at 1,000 m: crest 1.4262 m (Green's law (4000 / h)^(1/4) gives 1.4142), speed 99.05 m/s (sqrt(g h) = 99.03), width 50.35 km (50.00)\n- at 100 m: crest 2.5168 m (Green 2.5149), speed 31.32 m/s (31.32), width 15.83 km (15.81)\n- at 30 m: crest 3.3872 m (Green 3.3981), speed 17.15 m/s (17.15), width 8.65 km (8.66)\n- at 10 m, the foot of the slope: crest 4.3851 m (Green 4.4721), speed 9.90 m/s (9.90), width 5.02 km (5.00)\n- on the shelf, 20 km past the foot: crest 4.3849 m, speed 9.900 m/s (sqrt(g h) = 9.903), width 4.931 km, 20.28 times shorter than at sea; the crest still 4.3842 m at the end of the run, 93 km onto the shelf\n- the crest takes 4,292 s of sea time to reach the slope, 15,126 s to cross it (closed form 15,126: the slope is 1,000 km divided by 198.06 m/s, times ln 20) and reaches the shelf at 19,417 s, 5 h 24 min\n- control: the same hump in a flat 4,000 m tank for the same time keeps 1.0000 m, 198.06 m/s and 100.00 km\n- the slope sends a long low wave back out to sea: 0.027 m high (2.65 % of 1 m), and the water right behind the hump is drawn down into a trough that Green's law also grows, to -0.17 m on the shelf; the hump itself keeps 20 % of its water, the rest is in the wave sent back and the trough\n- energy (0.5 g eta^2 + 0.5 h u^2, the form the leapfrog conserves) drifts by 6e-16 over the run, largest excursion 3e-15; the water volume is conserved to 7e-16\n- checks: at half the grid step with half the time step the crest on the shelf is 4.3847 m against 4.3849, and every check-depth crest repeats to four decimals; at half the time step alone 4.3849 m\n\nWhy: in shallow water a wave moves at sqrt(g h), so the deeper back of the hump moves faster than its shallower front and catches up: the hump gets shorter. Its energy flux, height squared times speed, stays the same, so a wave 20 times slower must be 4.47 times taller (Green's law, h^(-1/4)). The measured crest is 4.385 m, two percent short, and that shortfall is real: Green's law is exact only for a wave much shorter than the slope, and a single hump also carries very long-period content that the slope cannot pass; that part is sent back out to sea and lags into the trough behind the crest. Rounding the top of the slope changes nothing; a narrower hump loses less. Real tsunamis run onto steeper margins, are not linear in 10 m of water, and break; the growth from a step at sea to a wall at the shore is what this run measures.\n\nRerun sims/tsunami/tsunami.py with projects/tsunami/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "tsunami",
+    "shoaling",
+    "shallow water",
+    "wave",
+    "ocean physics",
+    "simulation",
+    "physics",
+    "physics visualization",
+    "science",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
