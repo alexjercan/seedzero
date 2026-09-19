@@ -366,8 +366,7 @@ physics is periodic):
   950 cars; the last car itself is an unlucky draw (2 against 122), so
   the payoff is the last-fifty average; seeds 1 to 5 give 31.9 to 57.7
   against 7.9 to 16.1; a 100,000-space lot converges to the closed forms
-  (99.2 / 13.07 over loads 0.90 to 0.95 against 99.5 / 12.86); packet
-  ready, upload pending (credentials missing); task 20260919-100941]
+  (99.2 / 13.07 over loads 0.90 to 0.95 against 99.5 / 12.86); published 2026-09-19; https://youtu.be/bt2G-PQK13k]
 - Collatz flights: start numbers launched as flights with altitude equal
   to the value; measure steps and peak; expect 27 to take 111 steps and
   climb to 9,232; measure the longest flight under a million in the sim.
@@ -657,8 +656,7 @@ closed form can check):
   / 2.5149 / 3.3981; 2.65% of the height sent back out to sea and a
   -0.17 m trough behind the crest explain the 2% shortfall; energy
   drift 6e-16; half-step check 4.3847 m; the control hump in a flat
-  tank keeps 1.0000 m; packet ready, upload pending (credentials
-  missing); task 20260919-100938]
+  tank keeps 1.0000 m; published 2026-09-19; https://youtu.be/DlmRoaSp85g]
 - Double slit ripple tank: a 2 cm wave through one slit beside two slits
   10 cm apart; measure the bright band angles on a screen 60 cm away;
   expect bands at 11.5, 23.6 and 36.9 degrees (d sin theta = n lambda)
@@ -672,8 +670,7 @@ closed form can check):
   23.58, 36.87) and 6 dark bands at 5.79, 17.57, 30.12 (5.74, 17.46,
   30.00), dark under 1.6% of bright; one slit gives one smooth fan with
   no minimum deeper than 0.55%; half-grid check within 0.04 degrees;
-  screens at 20 and 30 cm keep the angles; packet ready, upload pending
-  (credentials missing); task 20260919-100939]
+  screens at 20 and 30 cm keep the angles; published 2026-09-19; https://youtu.be/e78W6KshdFg]
 - Lorenz water wheel: a wheel of leaking buckets under a steady tap
   beside the same wheel under a faster tap; measure the direction
   reversals in five minutes and the longest run one way; expect the slow

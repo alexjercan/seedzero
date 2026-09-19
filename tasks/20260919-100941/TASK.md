@@ -1,6 +1,6 @@
 # Produce short: Parking lot probing, roll forward versus random retry
 
-- STATUS: OPEN
+- STATUS: CLOSED
 - PRIORITY: 0
 - TAGS: day21
 
@@ -280,6 +280,54 @@ other seeds and the big lot go to the description.
   `scripts/yt-qa.py parking VIDEO_ID --wait --publish` release it, each
   recorded as a quota attempt on that day. The task stays OPEN until the
   upload and publication evidence are recorded.
+
+### Published
+
+- credentials restored: the owner refreshed secrets/client_secret.json
+  and secrets/token.json at 2026-09-19 11:00 EEST; a channels.list read
+  at 11:02 EEST verified the token sees only the Seed Zero channel
+  (60 videos, newest cradle qE-8l1rEPRY of 2026-09-18); the media/ tree
+  had been rebuilt by the producing run at 10:27 to 10:44 EEST
+- pre-upload check (11:02 EEST): final.mp4 h264 1080x1920 60 fps, aac
+  22050 Hz mono, 40.000 s, moov before mdat; md5
+  39b5df3e4c199cbaec0ae24afa03fea3; title 100 characters (the limit);
+  the 8x5 contact sheet re-inspected by the releasing session: question
+  over the two near-empty lots, both lots filling, the top lot clumping
+  into runs from about 80 percent full while the bottom stays dotted,
+  the readouts climbing to 81 and 12 spots, the card, the crossfade to
+  the title; approved
+- quota check before the insert: clock 2026-09-19T11:04:44+03:00; two upload attempts
+  (tsunami, 11:04:05, private DlmRoaSp85g; slits, 11:04:26, private
+  e78W6KshdFg; both gates pending) recorded since the 2026-09-19 10:00
+  EEST boundary (log entries and media/*/upload.log both checked); this
+  is insert attempt 3 of the hard cap of 5
+- attempt 3 recorded at 2026-09-19T11:04:44+03:00, video name parking, before running
+  `scripts/yt-upload.py parking`
+
+- upload: `scripts/yt-upload.py parking` ran 11:04:44 to 11:04:50 EEST,
+  token verified to see only the Seed Zero channel, video id
+  bt2G-PQK13k, private (`media/parking/upload.log`)
+
+- gate: `scripts/yt-qa.py parking bt2G-PQK13k --wait --publish` ran in
+  the foreground at 11:06:12 EEST after one pre-gate read showed
+  processing succeeded and 10 tags present: 15 of 15 pass (processed,
+  succeeded, hd, 1080x1920, title, description, tags as a set, category
+  27, not for kids, PT41S for the 40.000 s file, private);
+  containsSyntheticMedia reads absent as on every earlier upload
+  (`media/parking/publish.log`)
+- publish: the same run set the video public at 2026-09-19T11:06:15+03:00;
+  the re-read after 15 s shows privacyStatus public, madeForKids false,
+  embeddable true; public at https://youtu.be/bt2G-PQK13k
+- slot resolution: published for the 2026-09-19 quota day; this
+  supersedes the slipped resolution recorded under Release above
+
+### Quota
+
+- attempt 3 of the hard cap of 5 for the quota day that began
+  2026-09-19T10:00 EEST; cost 1 + 1,600 + 1 + 1 + 50 + 1 = 1,654 units
+  (the channels.list verification inside yt-upload.py, the insert, the
+  pre-gate read, the gate read, the update, the re-read); day total
+  after three attempts 4,962 units
 
 ### Repository
 

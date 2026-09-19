@@ -1,6 +1,6 @@
 # Produce short: Double slit ripple tank, one slit versus two
 
-- STATUS: OPEN
+- STATUS: CLOSED
 - PRIORITY: 0
 - TAGS: day21
 
@@ -283,6 +283,53 @@ results go to the description.
   `scripts/yt-qa.py slits VIDEO_ID --wait --publish` release it, each
   recorded as a quota attempt on that day. The task stays OPEN until the
   upload and publication evidence are recorded.
+
+### Published
+
+- credentials restored: the owner refreshed secrets/client_secret.json
+  and secrets/token.json at 2026-09-19 11:00 EEST; a channels.list read
+  at 11:02 EEST verified the token sees only the Seed Zero channel
+  (60 videos, newest cradle qE-8l1rEPRY of 2026-09-18); the media/ tree
+  had been rebuilt by the producing run at 10:27 to 10:44 EEST
+- pre-upload check (11:02 EEST): final.mp4 h264 1080x1920 60 fps, aac
+  22050 Hz mono, 40.000 s, moov before mdat; md5
+  d04e5f2a38bb1a841b572bf56b15ed9e; title 98 characters; the 8x5
+  contact sheet re-inspected by the releasing session: question over
+  the two dark tanks, ripples reaching the wall, one fan above and two
+  fans below, the gold strip building to 1 bright / 0 dark and 7 bright
+  / 6 dark, the card, the crossfade to the title; approved
+- quota check before the insert: clock 2026-09-19T11:04:26+03:00; one upload attempt
+  (tsunami, 11:04:05, uploaded private as DlmRoaSp85g, gate pending)
+  recorded since the 2026-09-19 10:00 EEST boundary (log entries and
+  media/*/upload.log both checked); this is insert attempt 2 of the
+  hard cap of 5
+- attempt 2 recorded at 2026-09-19T11:04:26+03:00, video name slits, before running
+  `scripts/yt-upload.py slits`
+
+- upload: `scripts/yt-upload.py slits` ran 11:04:26 to 11:04:32 EEST,
+  token verified to see only the Seed Zero channel, video id
+  e78W6KshdFg, private (`media/slits/upload.log`)
+
+- gate: `scripts/yt-qa.py slits e78W6KshdFg --wait --publish` ran in
+  the foreground at 11:05:53 EEST after one pre-gate read showed
+  processing succeeded and 10 tags present: 15 of 15 pass (processed,
+  succeeded, hd, 1080x1920, title, description, tags as a set, category
+  27, not for kids, PT41S for the 40.000 s file, private);
+  containsSyntheticMedia reads absent as on every earlier upload
+  (`media/slits/publish.log`)
+- publish: the same run set the video public at 2026-09-19T11:05:55+03:00;
+  the re-read after 15 s shows privacyStatus public, madeForKids false,
+  embeddable true; public at https://youtu.be/e78W6KshdFg
+- slot resolution: published for the 2026-09-19 quota day; this
+  supersedes the slipped resolution recorded under Release above
+
+### Quota
+
+- attempt 2 of the hard cap of 5 for the quota day that began
+  2026-09-19T10:00 EEST; cost 1 + 1,600 + 1 + 1 + 50 + 1 = 1,654 units
+  (the channels.list verification inside yt-upload.py, the insert, the
+  pre-gate read, the gate read, the update, the re-read); day total
+  after two attempts 3,308 units
 
 ### Repository
 
