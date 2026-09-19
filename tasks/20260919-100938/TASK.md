@@ -269,3 +269,9 @@ the checks go to the description.
   `scripts/yt-qa.py tsunami VIDEO_ID --wait --publish` release it, each
   recorded as a quota attempt on that day. The task stays OPEN until the
   upload and publication evidence are recorded.
+
+### Repository
+
+- committed as 079736e "Produce the day twenty-one slate as manual upload
+  packets" (sims, projects, tasks, docs/niche.md, web/data; no media,
+  previews or secrets) and pushed to origin/master at 10:50 EEST
