@@ -20,7 +20,7 @@ import sys
 import tempfile
 import urllib.request
 
-API = os.environ.get("SPEECH_API", "http://localhost:10300")
+STT_API = os.environ.get("STT_API", "http://localhost:10301/inference")
 
 
 def transcribe(path: str) -> str:
@@ -31,7 +31,7 @@ def transcribe(path: str) -> str:
         f"--{boundary}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"p.wav\"\r\n"
         f"Content-Type: audio/wav\r\n\r\n"
     ).encode() + data + f"\r\n--{boundary}--\r\n".encode()
-    req = urllib.request.Request(f"{API}/v1/audio/transcriptions", data=body,
+    req = urllib.request.Request(STT_API, data=body,
                                  headers={"Content-Type": f"multipart/form-data; boundary={boundary}"})
     with urllib.request.urlopen(req, timeout=120) as r:
         return json.load(r)["text"].strip()

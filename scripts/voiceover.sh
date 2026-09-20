@@ -4,7 +4,8 @@ set -euo pipefail
 # Speak a narration file with the local speech API, then round-trip the audio
 # through transcription and fail when the words differ.
 
-api=${SPEECH_API:-http://localhost:10300}
+tts_api=${TTS_API:-http://localhost:10303/v1/audio/speech}
+stt_api=${STT_API:-http://localhost:10301/inference}
 
 if [ $# -ne 2 ]; then
     echo "usage: voiceover.sh NARRATION_FILE OUT_WAV" >&2
@@ -24,10 +25,10 @@ mkdir -p "$(dirname "$out_wav")"
 
 jq -n --arg input "$text" \
     '{model: "piper-1", voice: "en_US-lessac-medium", input: $input, response_format: "wav"}' |
-    curl -sf -X POST "$api/v1/audio/speech" \
+    curl -sf -X POST "$tts_api" \
         -H 'Content-Type: application/json' -d @- -o "$out_wav"
 
-transcript=$(curl -sf -X POST "$api/v1/audio/transcriptions" \
+transcript=$(curl -sf -X POST "$stt_api" \
     -F file=@"$out_wav" -F model=whisper-1 | jq -r .text)
 
 script_dir=$(dirname "$(readlink -f "$0")")

@@ -53,7 +53,7 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 ## Format and cadence
 
 - Vertical 1080x1920, 60 fps, VP9 or H.264 source, 30 to 45 seconds.
-- Voice: local speech API, `piper-1`, `en_US-lessac-medium`.
+- Voice: standalone Piper API, `piper-1`, `en_US-lessac-medium`, with direct whisper.cpp verification.
 - Music and sound: procedural, generated in-repo, no licensed audio.
 - Cadence: target 3 shorts per quota day, released after the 10:00 local quota
   reset. Quality gates may reduce the day's count.
@@ -79,6 +79,10 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 ```sh
 scripts/voiceover.sh projects/<name>/narration.txt media/<name>/voice.wav
 ```
+
+The script uses Piper at `http://localhost:10303/v1/audio/speech` and
+whisper.cpp at `http://localhost:10301/inference`. Set `TTS_API` or `STT_API`
+to override either full endpoint.
 
 ## Channel access
 
