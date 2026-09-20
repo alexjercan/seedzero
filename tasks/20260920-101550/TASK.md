@@ -331,3 +331,7 @@ and the room at the turnaround go to the description.
   units
 
 ### Repository
+
+- committed as e13d192 "Publish the day twenty-two slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-20 10:50 EEST
