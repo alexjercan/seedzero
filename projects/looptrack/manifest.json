@@ -1,0 +1,43 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "loop_radius_m": 1.0,
+  "ramp_angle_deg": 45.0,
+  "dip_radius_m": 1.2,
+  "ramp_top_m": 2.5,
+  "exit_length_m": 2.2,
+  "release_heights_R": {
+    "top": 2.0,
+    "bottom": 2.5
+  },
+  "check_heights_R": [
+    2.25,
+    2.49,
+    2.51
+  ],
+  "rolling_k": 0.4,
+  "rolling_heights_R": [
+    2.0,
+    2.7
+  ],
+  "steps_per_second": 3600,
+  "leave_tol_mg": 1e-07,
+  "slow_factor": 3,
+  "run_period": 10.0,
+  "release_at": 0.0,
+  "reset_dur": 0.5,
+  "scene_duration": 40.0,
+  "px_per_m": 200.0,
+  "title": "Start level with the top|of the loop. Does the|puck make it round?",
+  "title_until": 2.4,
+  "payoff_t": 22.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "does the puck make it round? | level with the top: no, {short:.0f} deg short | {ratio:g} x the radius: yes, all the way round",
+  "loop_fade": 0.5,
+  "music_seed": 62,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same track | no friction | 1/3 speed | no seed"
+}

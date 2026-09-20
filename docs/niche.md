@@ -685,3 +685,87 @@ closed form can check):
   Lorenz r 7.05 against 21.16 with the Hopf value 15.0; a 1e-6 rad start
   change drifts 0.1 rad by 253 s; https://youtu.be/5v7Z2S9ybgA, task
   20260918-100309]
+
+Added by trend research 2026-09-20 (evidence in task 20260920-100347;
+selection favoured continuous physical motion, two-panel same-input
+comparisons, one plain question per short, one setup number and one
+payoff number, seamless loops of periodic physics, and numbers that a
+closed form can check):
+
+- Pi collisions: a small block at rest between a wall and a big block
+  pushed at 1 m/s, mass ratio 100 beside 10,000; count every click of
+  block on block and block on wall until they part for good; expect
+  exactly 31 and 314 (3 at equal mass, 3,141 at a million; the count is
+  the largest N with N atan(sqrt(m/M)) below pi), the small block
+  peaking at 10 and 100 m/s; event-driven, no time step; the run repeats
+  so the short loops; deterministic, no seed. [produced 2026-09-20: a 1 kg block 0.28 m from the wall, the heavy block 0.55 m behind it at 1 m/s, event driven, no seed; 100 to 1 gives exactly 31 clicks (16 block on block, 15 wall) and 10,000 to 1 exactly 314 (157 and 157), the closed form and the sim agree at 1 (3), 100, 10,000 and 1,000,000 (3,141); the light block peaks at 9.997 and 99.996 m/s, fastest intervals 2.79 and 0.028 ms, energy and momentum drift under 2e-15; shown at 1/10 speed; https://youtu.be/OsyugHAfCH4, task 20260920-101550]
+- Loop the loop: a puck on a frictionless track with a 1 m loop released
+  from the height of the loop's top (2R) beside one released from 2.5R;
+  measure where each leaves the track; expect the 2R puck to peel off
+  41.8 degrees above the centre (1.67 R up, 48 degrees short of the top)
+  and the 2.5R puck to pass the top at 3.13 m/s with zero track force
+  (sin theta = 2(h/R - 1)/3; a rolling ball needs 2.7R and peels off at
+  36.0 degrees from 2R); the passing puck circles again and again so the
+  short loops; deterministic, no seed. [produced 2026-09-20: a 45 degree ramp into a 1 m loop, the puck constrained with its speed from energy so the track force is exact, RK4 at 3,600 steps per second, no seed; from 2 R the puck leaves at 41.81 degrees above the centre (48.19 short of the top, closed form 41.81) at 1.667 m and lands on the far wall 0.777 s later; from 2.5 R it passes the top at 3.13 m/s with 0.000000 weights of track force and makes it round; 2.25 R leaves at 56.44, 2.49 R at 83.38, 2.51 R makes it, a rolling ball needs 2.7 R and leaves at 36.03 from 2 R; shown at 1/3 speed; https://youtu.be/Mm_gJO6VKsc, task 20260920-101551]
+- Hinged stick (Galileo's paradox): a 1 m rod hinged at one end with a
+  ball resting on its tip, propped at 30 degrees beside the same rod at
+  60 degrees, both released at once; measure when the rod lies flat and
+  when the ball lands; expect the 30 degree rod flat at 0.281 s with the
+  ball still 11 cm up (the tip starts at 1.125 g and the ball drops into
+  a cup 0.866 L along the rod) and the 60 degree rod flat at 0.481 s
+  after the ball has landed at 0.420 s (tip at 0.375 g); the tip beats
+  the ball below 35.26 degrees (cos^2 theta = 2/3); deterministic, no
+  seed. [produced 2026-09-20 as a race against a free ball released level with the tip beside it, because a ball resting on the tip rides the stick and the stick lands first at every angle; 1 m stick, RK4 at 6,000 steps per second, no seed; at 30 degrees the stick is flat at 0.2811 s and the ball lands at 0.3193 s, still 11.25 cm up (tip 1.125 g at release); at 60 degrees the ball lands at 0.4203 s and the stick is flat at 0.4811 s, its tip still 27.66 cm up (0.375 g); 45 degrees 0.3701 against 0.3797; crossover 47.907 degrees; the cup-on-tip variant and the 35.26 degree threshold are in the description; shown at 1/10 speed; https://youtu.be/XLqgiglIcqo, task 20260920-101552]
+- Torricelli jets: a tank of water 1 m deep on the floor with holes 25,
+  50 and 75 cm below the surface, the jets drawn as particle streams;
+  measure where each jet lands; expect the middle hole to reach exactly
+  1.000 m and the top and bottom holes to tie at 0.866 m (range
+  2 sqrt(h (H - h)); speeds sqrt(2 g h) = 2.21, 3.13, 3.84 m/s), and a
+  second beat where the level drops and the top half of the water
+  leaves in 29.3 percent of the emptying time; deterministic, no seed.
+- Tetherball versus hole: a puck on ice at 1 m/s on a 50 cm string, one
+  string wrapping a 2.5 cm pole beside one pulled through a hole at 10
+  cm/s; measure the speed at half the string; expect the pole puck to
+  keep 1.00 m/s all the way in (3.02 turns, hits the pole at 4.99 s, the
+  string does no work) and the hole puck to double to 2.00 m/s at 25 cm
+  and reach 10 m/s at 5 cm (angular momentum; 14.3 turns in 4.5 s);
+  deterministic, no seed.
+- Big swing versus small swing: the same 2.000 s pendulum released at 10
+  degrees beside 103.0 degrees; measure the periods; expect 2.004
+  against 2.500 s (T/T0 = (2/pi) K(sin(theta0/2)); 90 degrees runs 18.0
+  percent slow, 150 degrees 76 percent, 179 degrees 3.9x), so 20 small
+  swings beat 16 big ones in 40 s and the pair drift out of step and
+  back exactly, a seamless loop; Galileo said equal; deterministic, no
+  seed.
+- Spring pendulum swap: a bob on a spring stretched to 1 m, bouncing 10
+  cm straight up and down with a 0.1 degree tilt, the spring tuned to
+  two bounces per swing (k/m = 4 g/l) beside the same bob on a spring
+  tuned to 1.5; measure the largest sideways swing in a minute; expect
+  the tuned bob to start swinging on its own, past 5 degrees at 18.6 s
+  and 11.4 degrees at 23.8 s while its bounce shrinks to 3 cm, and the
+  detuned bob to stay under 0.3 degrees; RK4; the swing size depends on
+  the tilt and bounce chosen, so the sim sets the claim; deterministic,
+  no seed.
+- Lifeguard path: a lifeguard 20 m up the beach, a swimmer 40 m along
+  and 20 m out, running 5 m/s and swimming 1.25 m/s; the straight line
+  beside the least-time path; measure the arrival times; expect 28.3 s
+  against 24.5 s (enter the water 35.5 m along, not 20; Snell's law,
+  sin a / v equal on both sides; run-then-swim 24.9 s); the race repeats
+  so the short loops; deterministic, no seed.
+- Bounce down a slope: a ball dropped 20 cm onto a 20 degree slope with
+  perfect bounces beside the same ball on a flat floor; measure the gaps
+  between landings and the hang time of each hop; expect gaps of 0.547,
+  1.094, 1.642, 2.189 m (exactly 1:2:3:4, x_n = 8 n h sin beta) and every
+  hop 0.404 s (2 sqrt(2h/g)) while the flat-floor ball lands on the same
+  spot every time; deterministic, no seed.
+- Zeno bounce: a ball dropped 1 m with a 0.8 bounce beside one with 0.9;
+  measure the bounce count and the moment each ball stops; expect
+  infinitely many bounces that end at 4.064 s and 8.580 s (t0 (1 + e) /
+  (1 - e); path 4.56 and 9.53 m), the 16th and 33rd bounces the first
+  under 1 mm; the count is a counter, so the ball stays on screen;
+  deterministic, no seed.
+- Stopping distance: two cars braking at 0.8 g from 50 and 100 km/h at
+  the same line; measure the stopping distances and the fast car's speed
+  at the slow car's stop mark; expect 12.3 against 49.2 m (4x for 2x
+  speed) and the fast car still doing 86.6 km/h where the slow one has
+  stopped (sqrt(v2^2 - v1^2)); deterministic, no seed.

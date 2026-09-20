@@ -1,0 +1,3 @@
+A puck on a loop track. Start level with the top of the loop. Does the puck make it round? Same track, no friction. One puck starts level with the top, the other half a radius higher.
+The track can only push on the puck. Near the top, the puck needs speed to keep that push. The top puck slows too much, the push drops to zero, and it comes off.
+So does the puck make it round? Level with the top, no. Forty eight degrees short of the top, the puck comes off. From two and a half times the radius, yes. All the way round.

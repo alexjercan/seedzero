@@ -1,0 +1,5 @@
+Push a heavy block into a light one. How many clicks before they part?
+On top, one hundred times heavier. Below, ten thousand. The clicks come faster and faster, then slower, and every click counts, on the block and on the wall.
+On top, one last tap, and they part at thirty one. The light block slowed the heavy one, stopped it, and sent it back.
+The heavy block below drives away, and the light block, all alone, crawls back to the wall for one last tap.
+So how many clicks before they part? One hundred to one: thirty one. Ten thousand to one: three hundred fourteen. The digits of pi.

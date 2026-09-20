@@ -1,0 +1,36 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "m_light_kg": 1.0,
+  "m_heavy_kg": [
+    100.0,
+    10000.0
+  ],
+  "check_ratios": [
+    1.0,
+    100.0,
+    10000.0,
+    1000000.0
+  ],
+  "push_speed_mps": 1.0,
+  "wall_gap_m": 0.28,
+  "block_gap_m": 0.55,
+  "light_width_m": 0.25,
+  "heavy_width_m": 0.5,
+  "playback": 0.1,
+  "flash_s": 0.15,
+  "ghosts": 8,
+  "scene_duration": 40.0,
+  "px_per_m": 480.0,
+  "title": "Push a heavy block|into a light one.|How many clicks|before they part?",
+  "title_until": 2.4,
+  "payoff_t": 25.2,
+  "payoff_hold": 0.6,
+  "payoff_text": "how many clicks before they part? | 100 to 1: {top}. 10,000 to 1: {bottom}. | the digits of pi",
+  "loop_fade": 0.5,
+  "music_seed": 62,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same push | same start | two masses | no seed"
+}

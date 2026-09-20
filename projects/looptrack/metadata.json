@@ -1,0 +1,20 @@
+{
+  "title": "Start level with the top of the loop. Does the puck make it round? No: it lets go 48 degrees short.",
+  "description": "Start level with the top of the loop. Does the puck make it round? A frictionless puck on one track: a straight ramp at 45 degrees into a 1.2 m dip, a vertical loop of radius 1 m, then a flat exit. Two panels, the same track, two release heights: the top puck starts from rest level with the top of the loop (2.0 m, twice the radius), the bottom puck half a radius higher (2.5 m). The puck is constrained to the track with its speed from energy, so the track force N = m (v^2 / R + g cos(angle)) is exact; it leaves where N drops to zero and then flies as a projectile. RK4 at 3,600 steps per second; deterministic, no seed. Played at one third speed.\n\nMeasured:\n- closed form: a puck released from height h leaves the loop where sin(theta) = 2 (h/R - 1) / 3, theta measured above the loop's centre; h = 2 R gives 41.81 degrees above the centre, 48.19 degrees short of the top, at a height of 1.667 R; the loop needs h = 2.5 R, where the track force is exactly zero at the top and the speed there is sqrt(g R) = 3.13 m/s\n- level with the top (2.0 m): reaches the loop bottom after 0.975 s at 6.26 m/s with a track force of 5.0 weights; leaves the track at 1.469 s, 41.81 degrees above the centre (48.19 short of the top), 1.667 m up, at 2.56 m/s heading 48 degrees above horizontal; the flight peaks at 1.85 m and meets the loop wall after 0.777 s, 35.4 degrees up the far side, at 5.97 m/s; the run ends at the landing (the impact is not modelled)\n- half a radius higher (2.5 m): reaches the loop bottom after 1.074 s at 7.00 m/s with a track force of 6.0 weights; passes the top at 1.719 s at 3.13 m/s with a track force of 0.000000 weights (smallest sampled value 3e-9); leaves the loop at 2.364 s at 7.00 m/s\n- checks: from 2.25 R the puck leaves at 56.44 degrees above the centre (33.56 short); from 2.49 R at 83.38 degrees (6.62 short) and lands 0.147 s later; from 2.51 R it makes it round with 0.02 weights of track force at the top; a rolling solid ball needs 2.7 R (track force at the top 0.000000) and from 2 R leaves at 36.03 degrees above the centre (53.97 short); energy drift under 1e-8 in every run\n\nWhy: the track can push on the puck toward the centre of the loop, but it cannot hold on to it. Going round a circle needs a centre-pointing force of m v^2 / R. Near the top, gravity supplies part of it and the track supplies the rest, so the track's share is m v^2 / R + m g cos(angle). Starting level with the top means the puck would have zero speed at the top's height, so it runs out of speed on the way up: where 2 g (h - y) / R equals -g cos(angle), the track's share hits zero and the puck leaves. At the top gravity alone supplies m g, so the puck must still move at sqrt(g R) there, which costs exactly half a radius of extra height: 2.5 R is the minimum.\n\nRerun sims/looptrack/looptrack.py with projects/looptrack/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "loop the loop",
+    "roller coaster loop",
+    "vertical loop",
+    "normal force",
+    "centripetal force",
+    "energy conservation",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

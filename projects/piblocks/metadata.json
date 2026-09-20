@@ -1,0 +1,20 @@
+{
+  "title": "Push a heavy block into a light one. How many clicks? 100 to 1: 31. 10,000 to 1: 314. Digits of pi.",
+  "description": "Push a heavy block into a light one. How many clicks before they part? A 1 kg block rests 0.28 m from a wall on a frictionless floor; a heavy block 0.55 m to its right is pushed toward it at 1 m/s. Every collision is elastic. Count every click, block on block and block on wall, until the pair drift apart for good. Two panels on the same push and the same start: 100 kg on top, 10,000 kg below. Played at 1/10 speed. Event driven: the sim solves each next contact time exactly, so there is no time step and every click is counted, including the dozens that fall inside one frame at the turnaround. Deterministic, no seed.\n\nMeasured:\n- 100 to 1: exactly 31 clicks, 16 block on block and 15 on the wall; 10,000 to 1: exactly 314, 157 and 157\n- the count is the largest N with N atan(sqrt(m / M)) below pi: 31 (31 atan = 3.0897, 32 atan = 3.1894) and 314 (314 atan = 3.1399, 315 atan = 3.1499); equal masses give 3 (4 atan(1) = pi exactly, not below it) and a million to one gives 3,141; the sim reproduces all four\n- the light block peaks at 9.997 m/s (100 to 1) and 99.996 m/s (10,000 to 1) at the moment the heavy block stops, at 0.83 s in both runs\n- the heavy block's face comes within 27.8 cm and 25.3 cm of the wall; the light block is 25 cm wide, so it has 2.8 cm and 0.3 cm of room at the turnaround\n- fastest click interval: 2.79 ms (100 to 1) and 0.028 ms (10,000 to 1); up to 54 clicks fall inside one video frame at 1/10 speed, so the frame cannot show each one, but the counter counts them all\n- the last click is a lone straggler: at 100 to 1 the light block leaves click 30 at 1.51 m/s and needs 0.36 s to tap the heavy block once more (click 31 at 1.37 s); at 10,000 to 1 it leaves click 313 at 0.17 m/s and crawls 1.41 s back to the wall for click 314 (at 2.48 s) while the heavy block drives off at 1.00 m/s\n- after the last click both blocks move right, the light one slower (0.478 against 0.999 m/s at 100 to 1; 0.170 against 1.000 m/s at 10,000 to 1), so they never meet again\n- checks: energy stays at 50 J and 5,000 J to within 1.3e-15 relative; momentum is conserved across every block-on-block click to 3.9e-16 relative; the wall takes 200.36 and 20,000.16 kg m/s\n\nWhy: each click of the light block against the heavy one takes a small slice of the heavy block's momentum, and each wall tap turns the light block around to take another. In the velocity plane the state hops around a circle of fixed energy in equal steps of atan(sqrt(m / M)) per click, and the clicks stop once the steps have used up a half turn, pi. So the count is pi over atan(sqrt(m / M)), rounded down. At a mass ratio of 100 to the n that angle is almost exactly 10 to the minus n, and the count spells the first n + 1 digits of pi.\n\nRerun sims/piblocks/piblocks.py with projects/piblocks/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "pi",
+    "colliding blocks",
+    "elastic collision",
+    "digits of pi",
+    "momentum",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "math visualization",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

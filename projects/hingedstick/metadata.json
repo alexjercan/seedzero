@@ -1,0 +1,20 @@
+{
+  "title": "Let go of a stick and a ball. Which hits the table first? At 30 degrees the stick, ball 11 cm up.",
+  "description": "Let go of a stick and a ball together. Which hits the table first? A uniform stick 1 m long is hinged at its left end on a table and propped at an angle. A free ball is held at rest level with the stick's tip, just past the tip's reach (its centre 1 m from the hinge, so the tip, which sweeps outward as the stick falls, never touches it). Both are let go at the same instant. Two panels: the stick at 30 degrees on top and at 60 degrees below. Gravity only (9.80665 m/s^2), no air, no bounce; the stick obeys theta'' = -(3 g / 2 L) cos theta about its hinge and stops flat, the ball falls freely and stops on the table; the ball is a point for every number and is drawn larger than life. RK4 at 6000 steps per second, checked against the exact energy integral for the stick and sqrt(2 h / g) for the ball. Deterministic, no seed. On screen the drops run at 1/10 speed.\n\nMeasured:\n- the tip's starting acceleration is (3/2) g cos^2(angle): 1.125 g at 30 degrees, 0.375 g at 60; it equals g at 35.26 degrees (cos^2 = 2/3), so below that angle the tip sets off faster than a free ball\n- 30 degrees (tip 0.500 m up): the stick lies flat at 0.2811 s (energy integral 0.2811 s), the ball lands at 0.3193 s (sqrt(2 h / g) = 0.3193 s); the stick wins by 0.0382 s with the ball still 11.25 cm up; tip speed on landing 3.835 m/s (closed form 3.835 m/s)\n- 60 degrees (tip 0.866 m up): the ball lands at 0.4203 s (closed form 0.4203 s), the stick lies flat at 0.4811 s (energy integral 0.4811 s); the ball wins by 0.0609 s with the stick still at 16.06 degrees, its tip 27.66 cm up; tip speed on landing 5.048 m/s (closed form 5.048 m/s)\n- 45 degrees (not drawn): stick flat at 0.3701 s, ball at 0.3797 s; the stick still wins, by 0.0097 s, although its tip starts at only 0.750 g\n- crossover: the two land together at 47.907 degrees, both at 0.3890 s; below that angle the stick wins, above it the ball\n- the classic version of the demo puts the ball in a cup on the tip (not drawn): at 30 degrees the stick falls away from under the ball and lies flat while the ball is still 11 cm up; the ball then lands on the stick at 0.3193 s, 0.866 m from the hinge; at 60 degrees the tip starts slower than g, the ball leaves the tip at once and drops back onto the moving stick at 0.3192 s with the stick at 36.23 degrees, then rides it down; in the cup version the stick can never lose, which is why this short races a free ball beside the tip\n- check at half the time step (12000 steps per second): every landing time within 1e-8 s, the heights within 0.001 cm\n\nWhy: the stick turns about its hinge as one piece. Its middle falls slower than free fall, because the hinge carries part of the weight; but the tip is twice as far from the hinge as the middle, so it moves twice as fast as the middle. Near flat, twice a bit less than g is more than g: the tip starts at 1.5 g cos^2(angle), 1.125 g at 30 degrees, and it stays ahead of the ball. Propped steep, gravity's twist on the stick is small at the start, the tip sets off at only 0.375 g, and the ball builds a lead the stick cannot close. The switch is at 47.9 degrees.\n\nRerun sims/hingedstick/hingedstick.py with projects/hingedstick/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "hinged stick",
+    "falling stick",
+    "faster than gravity",
+    "Galileo",
+    "free fall",
+    "rotation",
+    "physics demo",
+    "physics",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
