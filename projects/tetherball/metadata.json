@@ -1,0 +1,20 @@
+{
+  "title": "The string gets shorter. Does the puck speed up? Through a hole: yes, 2 m/s. On a pole: no, 1 m/s",
+  "description": "The string gets shorter. Does the puck speed up? A puck on frictionless ice circles at 1 m/s on a 50 cm string. Two panels, the same puck, released at the same instant and drawn at the same scale. Top: the string runs through a hole in the ice and is pulled in at 10 cm/s until 5 cm are left, then held. Bottom: the string wraps a fixed pole of radius 2.5 cm (tetherball), so the puck runs on the involute of the pole circle. Both runs are drawn from the closed forms and checked by a Cartesian RK4 integration of the puck under the string force at 7,200 steps per second; the puck is a point for every number and is drawn larger than life. Played at 1/3.5 speed; deterministic, no seed.\n\nMeasured:\n- through the hole (r = 0.5 - 0.1 t, r v conserved at 0.5 m^2/s): at half the string (25 cm, 2.50 s) the tangential speed is 2.000 m/s and the full speed 2.0025 m/s, after 1.59 turns; at 5 cm (4.50 s) 10.000 m/s after 14.32 turns, then 31.8 turns per second on the held string; kinetic energy 0.505 J/kg at the start, 2.005 at half, 50.005 at 5 cm, so the string does 49.5 J/kg of work; angular momentum 0.5000 m^2/s throughout\n- around the pole (l^2 = 0.25 - 0.05 t): at half the string (25 cm, 3.75 s) the speed is 1.000 m/s after 1.58 turns; the puck reaches the pole at 5.000 s after 2.94 turns (3.18 turns of string on the pole) at 1.000 m/s; kinetic energy 0.500 J/kg throughout; angular momentum about the pole centre falls from 0.500 to 0 (the string is tangent to the pole, so it has a torque about the centre)\n- RK4 checks: the pole run matches the closed form to 1.2e-12 m in string length and 7.6e-14 m/s in speed; the hole run matches to 2.6e-11 m in radius, 2.4e-9 m/s in radial speed and 1.0e-9 m^2/s in angular momentum\n\nWhy: a string can only pull along itself. Around the pole the string leaves the pole at a tangent, and the puck moves at a right angle to it at every instant: the pull turns the puck but has no part along the motion, so it does no work and the speed stays 1 m/s while the circles shrink. Through the hole the string pulls toward the hole, and the puck is moving toward the hole as well, so the pull has a part along the motion and does work. That pull also passes through the hole, so it has no torque about the hole and r times v stays fixed: halve the string and the speed doubles, cut it to a tenth and the speed is 10 m/s.\n\nRerun sims/tetherball/tetherball.py with projects/tetherball/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "tetherball",
+    "angular momentum",
+    "conservation of angular momentum",
+    "puck on a string",
+    "circular motion",
+    "work and energy",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

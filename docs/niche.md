@@ -722,21 +722,21 @@ closed form can check):
   1.000 m and the top and bottom holes to tie at 0.866 m (range
   2 sqrt(h (H - h)); speeds sqrt(2 g h) = 2.21, 3.13, 3.84 m/s), and a
   second beat where the level drops and the top half of the water
-  leaves in 29.3 percent of the emptying time; deterministic, no seed.
+  leaves in 29.3 percent of the emptying time; deterministic, no seed. [produced 2026-09-21 as the constant-level claim only (the draining beat is a note in the description): tank 1 m kept full, holes 0.25, 0.50 and 0.75 m down, stepped particles at 3,600 steps per second checked against 2 sqrt(h (H - h)), no seed; exit speeds 2.214, 3.132 and 3.835 m/s, fall times 0.391, 0.319 and 0.226 s, landings 0.8660, 1.0000 and 0.8660 m (closed forms match to 1e-7 m), the middle wins by 13.4 cm and the top and bottom tie; shown at 1/4 speed; https://youtu.be/oNbFaWeSD44, task 20260921-100307]
 - Tetherball versus hole: a puck on ice at 1 m/s on a 50 cm string, one
   string wrapping a 2.5 cm pole beside one pulled through a hole at 10
   cm/s; measure the speed at half the string; expect the pole puck to
   keep 1.00 m/s all the way in (3.02 turns, hits the pole at 4.99 s, the
   string does no work) and the hole puck to double to 2.00 m/s at 25 cm
   and reach 10 m/s at 5 cm (angular momentum; 14.3 turns in 4.5 s);
-  deterministic, no seed.
+  deterministic, no seed. [produced 2026-09-21: 0.50 m string at 1.00 m/s, pole radius 2.5 cm, hole reel-in 0.10 m/s, closed forms with RK4 at 7,200 steps per second agreeing to 1e-9, no seed; through the hole 2.000 m/s tangential (2.0025 full) at 25 cm after 1.59 turns at 2.50 s and 10.000 m/s at 5 cm after 14.32 turns at 4.50 s, angular momentum 0.5000 constant, energy 0.505 to 50.005 per unit mass; around the pole 1.000 m/s at 25 cm after 1.58 turns at 3.75 s, hits the pole at 5.000 s after 2.94 turns, energy constant; shown at 1/3.5 speed; https://youtu.be/X58adh7gsmc, task 20260921-100309]
 - Big swing versus small swing: the same 2.000 s pendulum released at 10
   degrees beside 103.0 degrees; measure the periods; expect 2.004
   against 2.500 s (T/T0 = (2/pi) K(sin(theta0/2)); 90 degrees runs 18.0
   percent slow, 150 degrees 76 percent, 179 degrees 3.9x), so 20 small
   swings beat 16 big ones in 40 s and the pair drift out of step and
   back exactly, a seamless loop; Galileo said equal; deterministic, no
-  seed.
+  seed. [produced 2026-09-21: length 0.9898 m so the 10 degree swing takes exactly 2.000 s, big release solved at 103.415 degrees for exactly 2.500 s (K(k) check 2.500000000), RK4 at 3,600 steps per second, no seed; 20 swings against 16 at 40.000 s, both turnarounds at 40.000 s so the loop closes with no crossfade; bottom speeds 0.543 and 4.891 m/s, the big bob rises 22.96 cm above the pivot and spends 0.879 s of each swing above horizontal; energy drift under 5e-14; real speed; https://youtu.be/AO0xsAawEUw, task 20260921-100306]
 - Spring pendulum swap: a bob on a spring stretched to 1 m, bouncing 10
   cm straight up and down with a 0.1 degree tilt, the spring tuned to
   two bounces per swing (k/m = 4 g/l) beside the same bob on a spring

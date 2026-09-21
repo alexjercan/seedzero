@@ -1,0 +1,41 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "tank_depth_m": 1.0,
+  "hole_depths_m": {
+    "top": 0.25,
+    "middle": 0.5,
+    "bottom": 0.75
+  },
+  "check_depths_m": [
+    0.1,
+    0.4,
+    0.6,
+    0.9
+  ],
+  "steps_per_second": 3600,
+  "emit_interval_s": 0.0125,
+  "slow_factor": 4,
+  "scene_duration": 40.0,
+  "px_per_m": 700.0,
+  "particle_r_px": 6.5,
+  "close_at": 14.0,
+  "open_at": {
+    "bottom": 17.0,
+    "top": 19.8,
+    "middle": 22.5
+  },
+  "mark_flash": 0.5,
+  "title": "Three holes in a full tank.|Which jet lands farthest?",
+  "title_until": 2.4,
+  "payoff_t": 25.4,
+  "payoff_hold": 0.6,
+  "payoff_text": "which jet lands farthest? | middle: {mid:.2f} m | top and bottom: {tie:.2f} m, a tie",
+  "loop_fade": 0.5,
+  "music_seed": 72,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "tank kept full | no air drag | 1/4 speed | no seed"
+}

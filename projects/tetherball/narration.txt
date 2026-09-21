@@ -1,0 +1,3 @@
+A puck on the ice, one meter a second, fifty centimeters of string. The string gets shorter. Does the puck speed up? On top, the string is pulled in through a hole. Below, the string wraps around a pole.
+Through the hole, the string tugs inward, and the puck moves inward, so the string does work. Around the pole, the string tugs at a right angle to the motion. A sideways tug turns the puck, but never changes the speed.
+So does the puck speed up? At half the string: through the hole, yes. Two meters a second, double. Wrapping the pole, no. One meter a second, the same.

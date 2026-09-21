@@ -1,0 +1,41 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "small_angle_deg": 10.0,
+  "small_period_s": 2.0,
+  "big_period_s": 2.5,
+  "solved": {
+    "length_m": 0.9898421547,
+    "big_angle_deg": 103.414844378
+  },
+  "table_angles_deg": [
+    10,
+    30,
+    45,
+    60,
+    90,
+    120,
+    150,
+    170,
+    179
+  ],
+  "steps_per_second": 3600,
+  "sim_t_max": 41.0,
+  "scene_duration": 40.0,
+  "rod_px": 300,
+  "flash_decay": 0.18,
+  "title": "Same pendulum,|bigger swing.|Does it take longer?",
+  "title_until": 2.4,
+  "payoff_t": 25.8,
+  "payoff_hold": 0.6,
+  "payoff_text": "does it take longer? yes | {t_small:.1f} s a swing on top, {t_big:.1f} s below | {n_small} swings against {n_big} in {dur:.0f} s",
+  "slow_mark_t": 19.4,
+  "loop_fade": 0.5,
+  "motion_fade_frames": 4,
+  "music_seed": 71,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same pendulum | real speed | no seed"
+}

@@ -276,7 +276,7 @@
     "status": "public",
     "date": "2026-09-10",
     "url": "https://youtu.be/rkux49qUSzg",
-    "views": 829,
+    "views": 830,
     "likes": 8
   },
   {
@@ -340,7 +340,7 @@
     "status": "public",
     "date": "2026-09-13",
     "url": "https://youtu.be/d2ET4XCc_TY",
-    "views": 774,
+    "views": 772,
     "likes": 8
   },
   {
@@ -412,7 +412,7 @@
     "status": "public",
     "date": "2026-09-16",
     "url": "https://youtu.be/ZC1euLz5dXA",
-    "views": 76,
+    "views": 75,
     "likes": 1
   },
   {
@@ -420,7 +420,7 @@
     "status": "public",
     "date": "2026-09-16",
     "url": "https://youtu.be/4hGRhL65ZTo",
-    "views": 955,
+    "views": 884,
     "likes": 9
   },
   {
@@ -428,7 +428,7 @@
     "status": "public",
     "date": "2026-09-16",
     "url": "https://youtu.be/2TPdAAac0Jc",
-    "views": 1042,
+    "views": 973,
     "likes": 9
   },
   {
@@ -436,7 +436,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/Ahe_3vRDMXA",
-    "views": 1010,
+    "views": 950,
     "likes": 6
   },
   {
@@ -444,7 +444,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/wmkc_zygzXQ",
-    "views": 1082,
+    "views": 1046,
     "likes": 12
   },
   {
@@ -452,7 +452,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/eAqo0Yif3-8",
-    "views": 982,
+    "views": 925,
     "likes": 7
   },
   {
@@ -468,7 +468,7 @@
     "status": "public",
     "date": "2026-09-18",
     "url": "https://youtu.be/5v7Z2S9ybgA",
-    "views": 934,
+    "views": 923,
     "likes": 12
   },
   {
@@ -476,7 +476,7 @@
     "status": "public",
     "date": "2026-09-18",
     "url": "https://youtu.be/qE-8l1rEPRY",
-    "views": 958,
+    "views": 962,
     "likes": 2
   },
   {
@@ -484,51 +484,75 @@
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/DlmRoaSp85g",
-    "views": 271,
-    "likes": 6
+    "views": 929,
+    "likes": 14
   },
   {
     "title": "One slit makes a fan. What do two slits 10 cm apart make? 7 bright bands, with dark water between.",
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/e78W6KshdFg",
-    "views": 248,
-    "likes": 5
+    "views": 448,
+    "likes": 8
   },
   {
     "title": "950 cars, 1,000 spaces. How far do the last cars go? Roll forward 81 spots per car, random retry 12.",
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/bt2G-PQK13k",
-    "views": 266,
-    "likes": 4
+    "views": 447,
+    "likes": 5
   },
   {
     "title": "Push a heavy block into a light one. How many clicks? 100 to 1: 31. 10,000 to 1: 314. Digits of pi.",
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/OsyugHAfCH4",
-    "views": 0,
-    "likes": 0
+    "views": 933,
+    "likes": 9
   },
   {
     "title": "Start level with the top of the loop. Does the puck make it round? No: it lets go 48 degrees short.",
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/Mm_gJO6VKsc",
-    "views": 0,
-    "likes": 0
+    "views": 755,
+    "likes": 6
   },
   {
     "title": "Let go of a stick and a ball. Which hits the table first? At 30 degrees the stick, ball 11 cm up.",
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/XLqgiglIcqo",
+    "views": 460,
+    "likes": 4
+  },
+  {
+    "title": "Same pendulum, bigger swing. Does it take longer? Yes: 2.0 s a swing at 10 degrees, 2.5 s at 103.",
+    "status": "public",
+    "date": "2026-09-21",
+    "url": "https://youtu.be/AO0xsAawEUw",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Fifteen unproduced measured-claim ideas in docs/niche.md",
+    "title": "Three holes in a full tank. Which jet lands farthest? The middle: 1.00 m. Top and bottom: 0.87 m.",
+    "status": "public",
+    "date": "2026-09-21",
+    "url": "https://youtu.be/oNbFaWeSD44",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "The string gets shorter. Does the puck speed up? Through a hole: yes, 2 m/s. On a pole: no, 1 m/s",
+    "status": "public",
+    "date": "2026-09-21",
+    "url": "https://youtu.be/X58adh7gsmc",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Twelve unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]
