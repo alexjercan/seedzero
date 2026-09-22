@@ -1,0 +1,20 @@
+{
+  "title": "A ball dropped on a slope. How far apart does it land? 40, 80, 120, 160 cm apart: exactly 1:2:3:4",
+  "description": "A ball dropped on a slope. How far apart does it land? A ball is dropped 20 cm onto a slope with perfect bounces (elastic, no friction), beside the same ball dropped 20 cm onto a flat floor. Two panels, the same ball, released at the same instant and drawn at the same scale. The slope has sin(beta) = 1/4 (14.48 degrees; it drops 1 m in every 4 m along it), chosen so the first gap is exactly 40 cm. The slope run is an event-driven flight: the time to the plane is the root of a quadratic, the velocity into the slope is reversed at each bounce and the velocity along the slope is untouched; it is checked by an RK4 free-flight integration at 6,000 steps per second with plane-crossing interpolation. The ball is a point for every number and is drawn larger than life. Played at 1/5 speed; deterministic, no seed.\n\nMeasured:\n- impact speed sqrt(2 g h) = 1.9806 m/s after a 0.2020 s drop (g = 9.80665 m/s^2); every hop lasts 2 v0 / g = 0.4039 s, on the slope and on the flat floor alike; hop height above the slope h cos(beta) = 0.1936 m (0.2000 m on the floor)\n- landing gaps along the slope 0.4000, 0.8000, 1.2000, 1.6000 m, exactly 1 : 2 : 3 : 4 (x_n = 8 n h sin(beta)); the fourth landing is 4.0000 m along the slope, 3.873 m across and 1.000 m down, at 1.8177 s\n- speed along the slope at the landings 0.495, 1.485, 2.476, 3.466, 4.456 m/s (it grows by g sin(beta) T = 0.990 m/s every hop and no bounce changes it); full speed 1.98, 2.43, 3.13, 3.96, 4.85 m/s; energy 1.9613 J/kg at every landing\n- flat floor: every landing on the same spot (gaps 0.0000 m), full speed 1.9806 m/s and hop time 0.4039 s at every landing\n- RK4 check: landing times within 3.8e-7 s and landing positions within 1.7e-6 m of the event-driven flight, energy within 1.6e-6 J/kg of g h\n\nWhy: a perfect bounce only reverses the part of the velocity that points into the surface; the part along the surface passes through untouched. On the flat floor the whole velocity points into the floor, so the ball goes straight up and comes straight down on the same spot, every 0.40 s. On the slope, every bounce resets the part across the slope to the same value, so every hop lasts the same 0.40 s, but gravity also has a part along the slope, and that keeps adding speed along the slope through every hop and every bounce. The speed along the slope at the start of each hop goes 1, 3, 5, 7 times 0.495 m/s, so the average over each hop goes 2, 4, 6, 8 times, and the ground covered goes 1, 2, 3, 4 times the first gap: 40, 80, 120, 160 cm.\n\nRerun sims/bounceslope/bounceslope.py with projects/bounceslope/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "bouncing ball",
+    "ball on a slope",
+    "projectile motion",
+    "elastic bounce",
+    "inclined plane",
+    "kinematics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

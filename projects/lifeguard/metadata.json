@@ -1,0 +1,20 @@
+{
+  "title": "Straight to the swimmer, or run farther first? Run farther first: 24.5 s. Straight line: 28.3 s",
+  "description": "Straight to the swimmer, or run farther first? A lifeguard chair sits 20 m up the beach from the waterline; a swimmer is in trouble 40 m along the shore and 20 m out in the water. The lifeguard runs at 5 m/s on sand and swims at 1.25 m/s, four times slower, both speeds constant. Two rescuers leave the chair at the same instant: one takes the straight line to the swimmer, which enters the water 20 m along; the other takes the least-time path, found by minimising T(x) = sqrt(20^2 + x^2)/5 + sqrt(20^2 + (40 - x)^2)/1.25 over the entry point x with a golden-section search to 1e-9 m. Both rescuers are points advanced by exact arc length per frame at 60 fps and checked against the closed forms. Played in real time; deterministic, no seed.\n\nMeasured:\n- straight line (enters the water 20.0 m along): 28.28 m of sand in 5.66 s plus 28.28 m of water in 22.63 s = 28.28 s over 56.57 m\n- least-time path (enters the water 35.54 m along, 4.46 m short of the swimmer): 40.78 m of sand in 8.16 s plus 20.49 m of water in 16.39 s = 24.55 s over 61.27 m, 4.70 m longer and 3.74 s faster than the straight line\n- run-then-swim (run to level with the swimmer at 40 m, then swim straight out): 44.72 m of sand in 8.94 s plus 20.00 m of water in 16.00 s = 24.94 s, 0.40 s slower than the least-time path\n- time against the entry point: 0 m 39.78 s, 10 m 33.32 s, 20 m 28.28 s, 30 m 25.10 s, 35.5 m 24.55 s, 40 m 24.94 s\n- at the least-time entry the path leaves the shore normal at 60.63 deg on sand and 12.58 deg in water; sin(60.63 deg)/5 = sin(12.58 deg)/1.25 = 0.1743 (Snell's law), and sin(60.63 deg)/sin(12.58 deg) = 4.00, the speed ratio\n- the per-frame stepper matches the closed-form entry and arrival times to 2e-13 s\n\nWhy: a second on the sand covers 5 m and a second in the water covers 1.25 m, so every metre of water costs four times what a metre of sand costs. The straight line splits the trip evenly, 28 m of each. Bending the path toward the shore adds sand and removes water: the least-time path runs 12.5 m farther on sand (2.5 s more) but swims 7.8 m less (6.2 s less), and the trade pays until the extra sand costs as much as the water it saves. That balance point is Snell's law: the sine of the angle from the shore normal, divided by the speed, is the same on both sides. Light does the same thing when it crosses from air into water or glass. It bends at the surface because it takes the path of least time, and that is why refraction obeys the same rule as the lifeguard.\n\nRerun sims/lifeguard/lifeguard.py with projects/lifeguard/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "lifeguard problem",
+    "Snell's law",
+    "Fermat's principle",
+    "least time path",
+    "refraction",
+    "optimization",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

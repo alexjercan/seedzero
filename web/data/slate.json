@@ -316,7 +316,7 @@
     "status": "public",
     "date": "2026-09-12",
     "url": "https://youtu.be/L8qbh5LHRso",
-    "views": 773,
+    "views": 774,
     "likes": 11
   },
   {
@@ -340,7 +340,7 @@
     "status": "public",
     "date": "2026-09-13",
     "url": "https://youtu.be/d2ET4XCc_TY",
-    "views": 772,
+    "views": 773,
     "likes": 8
   },
   {
@@ -388,7 +388,7 @@
     "status": "public",
     "date": "2026-09-15",
     "url": "https://youtu.be/lEWXfXBpJVc",
-    "views": 83,
+    "views": 84,
     "likes": 1
   },
   {
@@ -412,7 +412,7 @@
     "status": "public",
     "date": "2026-09-16",
     "url": "https://youtu.be/ZC1euLz5dXA",
-    "views": 75,
+    "views": 79,
     "likes": 1
   },
   {
@@ -460,7 +460,7 @@
     "status": "public",
     "date": "2026-09-18",
     "url": "https://youtu.be/Fb-2BqjEcz4",
-    "views": 962,
+    "views": 963,
     "likes": 10
   },
   {
@@ -468,7 +468,7 @@
     "status": "public",
     "date": "2026-09-18",
     "url": "https://youtu.be/5v7Z2S9ybgA",
-    "views": 923,
+    "views": 922,
     "likes": 12
   },
   {
@@ -476,7 +476,7 @@
     "status": "public",
     "date": "2026-09-18",
     "url": "https://youtu.be/qE-8l1rEPRY",
-    "views": 962,
+    "views": 958,
     "likes": 2
   },
   {
@@ -484,7 +484,7 @@
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/DlmRoaSp85g",
-    "views": 929,
+    "views": 940,
     "likes": 14
   },
   {
@@ -492,7 +492,7 @@
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/e78W6KshdFg",
-    "views": 448,
+    "views": 456,
     "likes": 8
   },
   {
@@ -500,7 +500,7 @@
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/bt2G-PQK13k",
-    "views": 447,
+    "views": 458,
     "likes": 5
   },
   {
@@ -508,7 +508,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/OsyugHAfCH4",
-    "views": 933,
+    "views": 939,
     "likes": 9
   },
   {
@@ -516,7 +516,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/Mm_gJO6VKsc",
-    "views": 755,
+    "views": 963,
     "likes": 6
   },
   {
@@ -524,35 +524,59 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/XLqgiglIcqo",
-    "views": 460,
-    "likes": 4
+    "views": 690,
+    "likes": 6
   },
   {
     "title": "Same pendulum, bigger swing. Does it take longer? Yes: 2.0 s a swing at 10 degrees, 2.5 s at 103.",
     "status": "public",
     "date": "2026-09-21",
     "url": "https://youtu.be/AO0xsAawEUw",
-    "views": 0,
-    "likes": 0
+    "views": 366,
+    "likes": 4
   },
   {
     "title": "Three holes in a full tank. Which jet lands farthest? The middle: 1.00 m. Top and bottom: 0.87 m.",
     "status": "public",
     "date": "2026-09-21",
     "url": "https://youtu.be/oNbFaWeSD44",
-    "views": 0,
-    "likes": 0
+    "views": 94,
+    "likes": 4
   },
   {
     "title": "The string gets shorter. Does the puck speed up? Through a hole: yes, 2 m/s. On a pole: no, 1 m/s",
     "status": "public",
     "date": "2026-09-21",
     "url": "https://youtu.be/X58adh7gsmc",
+    "views": 116,
+    "likes": 3
+  },
+  {
+    "title": "A ball dropped on a slope. How far apart does it land? 40, 80, 120, 160 cm apart: exactly 1:2:3:4",
+    "status": "public",
+    "date": "2026-09-22",
+    "url": "https://youtu.be/hlBy6yci8_U",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Twelve unproduced measured-claim ideas in docs/niche.md",
+    "title": "Twice the speed. How much farther to stop? Four times: 12.3 m from 50 km/h, 49.2 m from 100 km/h",
+    "status": "public",
+    "date": "2026-09-22",
+    "url": "https://youtu.be/faJeNRiCo5Y",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Straight to the swimmer, or run farther first? Run farther first: 24.5 s. Straight line: 28.3 s",
+    "status": "public",
+    "date": "2026-09-22",
+    "url": "https://youtu.be/Vd3AJDhZgiM",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Nine unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

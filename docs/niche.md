@@ -751,13 +751,13 @@ closed form can check):
   beside the least-time path; measure the arrival times; expect 28.3 s
   against 24.5 s (enter the water 35.5 m along, not 20; Snell's law,
   sin a / v equal on both sides; run-then-swim 24.9 s); the race repeats
-  so the short loops; deterministic, no seed.
+  so the short loops; deterministic, no seed. [produced 2026-09-22: run 5 m/s, swim 1.25 m/s, no seed; the straight line enters the water 20 m along and takes 28.2843 s (5.6569 s on sand, 22.6274 s in water); the least-time path enters at 35.5355 m and takes 24.5492 s (8.1554 s on sand, 16.3938 s in water), 3.7351 s faster; Snell sin a / 5 = sin b / 1.25 = 0.17429, a 60.63 and b 12.58 degrees; run-then-swim 24.9443 s; the total at entries 0, 10, 20, 30, 40 m is 39.78, 33.32, 28.28, 25.10, 24.94 s; one race played in real time; https://youtu.be/Vd3AJDhZgiM, task 20260922-100403]
 - Bounce down a slope: a ball dropped 20 cm onto a 20 degree slope with
   perfect bounces beside the same ball on a flat floor; measure the gaps
   between landings and the hang time of each hop; expect gaps of 0.547,
   1.094, 1.642, 2.189 m (exactly 1:2:3:4, x_n = 8 n h sin beta) and every
   hop 0.404 s (2 sqrt(2h/g)) while the flat-floor ball lands on the same
-  spot every time; deterministic, no seed.
+  spot every time; deterministic, no seed. [produced 2026-09-22 with sin beta = 1/4 (14.48 degrees) so four gaps fit the panel width and the numbers are round: 20 cm drop, g 9.80665, event-driven flight with an RK4 check at 6,000 steps per second agreeing to 3.8e-7 s, no seed; gaps 0.4000, 0.8000, 1.2000, 1.6000 m, exactly 1:2:3:4 (8 n h sin beta), every hop 0.4039 s in both panels, hop height 0.1936 m, along-slope speed at the landings 0.495 to 4.456 m/s, energy constant to 2e-15; the flat-floor ball lands on the same spot every hop; shown at 1/5 speed; https://youtu.be/hlBy6yci8_U, task 20260922-100401]
 - Zeno bounce: a ball dropped 1 m with a 0.8 bounce beside one with 0.9;
   measure the bounce count and the moment each ball stops; expect
   infinitely many bounces that end at 4.064 s and 8.580 s (t0 (1 + e) /
@@ -768,4 +768,4 @@ closed form can check):
   the same line; measure the stopping distances and the fast car's speed
   at the slow car's stop mark; expect 12.3 against 49.2 m (4x for 2x
   speed) and the fast car still doing 86.6 km/h where the slow one has
-  stopped (sqrt(v2^2 - v1^2)); deterministic, no seed.
+  stopped (sqrt(v2^2 - v1^2)); deterministic, no seed. [produced 2026-09-22: 0.8 g = 7.8453 m/s^2, no reaction time, closed forms checked by RK4 at 6,000 steps per second to 1e-11 m, no seed; 50 km/h stops in 12.2940 m after 1.7703 s and 100 km/h in 49.1761 m after 3.5407 s, ratio 4.0000; the fast car passes the slow car's stop mark at 0.4744 s doing 86.60 km/h, and when the slow car stops the fast one is doing exactly 50.00 km/h with 12.29 m to go; 30, 70 and 130 km/h give 4.43, 24.10 and 83.11 m; shown at 1/3 speed; https://youtu.be/faJeNRiCo5Y, task 20260922-100402]

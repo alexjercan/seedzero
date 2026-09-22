@@ -1,0 +1,3 @@
+A ball dropped on a slope. How far apart does it land? The ball is dropped twenty centimeters, on a slope and on a flat floor. On the flat floor, it lands on the same spot every time.
+Every hop takes the same time, on the slope and on the flat floor. But on the slope, the ball keeps gaining speed along the slope, so each hop covers more ground.
+So how far apart does it land? The gaps grow: one, then two, then three, then four times the first gap. The first gap is forty centimeters. The fourth gap is one point six meters along the slope.
