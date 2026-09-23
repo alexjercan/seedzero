@@ -389,3 +389,9 @@ and the narration says "until it almost stops".
   channels.list verification inside yt-upload.py, the insert, the gate
   run's reads, update and re-read as printed by yt-qa.py); day total
   after one attempt 1,655 units
+
+### Repository
+
+- committed as 93c0496 "Publish the day twenty-five slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-23 10:44 EEST

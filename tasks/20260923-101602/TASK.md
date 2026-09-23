@@ -385,3 +385,9 @@ number contradicted the claim; the claim text is left as written.
   channels.list verification inside yt-upload.py, the insert, the gate
   run's reads, update and re-read as printed by yt-qa.py); day total
   after three attempts 4,966 units, target of three met
+
+### Repository
+
+- committed as 93c0496 "Publish the day twenty-five slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-23 10:44 EEST
