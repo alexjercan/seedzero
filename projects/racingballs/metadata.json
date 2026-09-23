@@ -1,0 +1,20 @@
+{
+  "title": "Same speed, same finish. Does the dip slow it down? No: dip ball 1.56 s, flat ball 2.00 s",
+  "description": "Same speed, same finish. Does the dip slow it down? Two equal solid balls leave the same start line at 1 m/s toward a finish line 2 m away. The top track is flat. The bottom track is flat for 0.3 m, drops 20 cm on a cosine ramp 0.5 m long, runs a flat floor 0.4 m long, climbs a matching ramp back to the same height and runs flat to the finish. Each ball rolls without slipping and without losses (a solid ball, I = 2/5 m r^2, so along the track v = sqrt(v0^2 + 2 g depth / (1 + 2/5))); the ball centre follows the track profile. Both balls are integrated with RK4 at 10,000 steps per second and checked against the energy closed form at every step. Played at quarter speed, four races; deterministic, no seed.\n\nMeasured:\n- flat track: arrives at 2.0000 s (L / v0), speed 1.00 m/s throughout\n- dip track: arrives at 1.5637 s (quadrature of ds / v(s): 1.5637 s); the track is 2.0924 m long, 4.6 percent longer than the flat track; top speed 1.9498 m/s along the floor of the dip; speed at the finish 1.0000 m/s, the launch speed\n- the dip ball wins by 0.4363 s and is 0.4363 m ahead when it arrives; it is never behind the flat ball at any moment: its horizontal speed never drops below 1.00 m/s\n- track force on the dip ball: minimum 0.594 of its weight at the ramp crests (no lift-off), maximum 2.53 of its weight at the foot of the entry ramp\n- a sliding bead (no spin) on the same dip would arrive at 1.4823 s with a top speed of 2.2187 m/s\n- the RK4 arrival time changes by 2e-9 s at half the time step; the speed matches the energy closed form to 2e-8 m/s\n- a profile with steeper 0.3 m ramps was rejected: at 1 m/s the ball would lift off at the crests (track force -0.12 of the weight)\n\nWhy: going down into the dip, gravity speeds the ball up. Coming back up, it slows the ball by exactly the same amount, so the ball leaves the dip at the launch speed. Inside the dip it is always faster than 1 m/s, never slower. The dip track is 9 cm longer, but the extra length is covered at up to 1.95 m/s, and at every instant the dip ball has moved at least as far along its track as the flat ball has along its own. A ball that is never slower cannot arrive later, so it must arrive first, even on the longer track. The dip does not slow it down. It makes it faster. A rolling ball gains less speed than a sliding one, because part of the fall goes into spin, so its win is smaller, but it still wins.\n\nRerun sims/racingballs/racingballs.py with projects/racingballs/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "racing balls",
+    "energy conservation",
+    "rolling ball",
+    "which ball wins",
+    "physics race",
+    "kinetic energy",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

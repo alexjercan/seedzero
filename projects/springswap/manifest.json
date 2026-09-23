@@ -1,0 +1,31 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "length_m": 1.0,
+  "bounce_m": 0.1,
+  "tilt_deg": 0.1,
+  "panels": [
+    {"name": "tuned", "label": "2 bounces a swing", "bounces_per_swing": 2.0},
+    {"name": "detuned", "label": "1.5 bounces a swing", "bounces_per_swing": 1.5}
+  ],
+  "steps_per_s": 1200,
+  "check_steps_per_s": 2400,
+  "measure_duration": 60.0,
+  "scene_duration": 40.0,
+  "px_per_m": 700.0,
+  "panel_x_px": [270, 810],
+  "pivot_y_px": 400,
+  "bob_radius_px": 30,
+  "title": "Bounce it up and down.|Does it start to swing?",
+  "title_until": 2.4,
+  "payoff_t": 23.2,
+  "payoff_hold": 0.6,
+  "payoff_text": "bounce it up and down. | does it start to swing? | 2 bounces a swing: yes, {peak_tuned:.1f} deg | 1.5 bounces a swing: no, {peak_detuned:.2f} deg",
+  "loop_fade": 0.5,
+  "music_seed": 77,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same bob, same bounce | real time | no seed"
+}

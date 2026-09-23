@@ -1,0 +1,3 @@
+A bob on a spring. Bounce it up and down. Does it start to swing? Ten centimeters up, ten down, on two springs. The left is tuned to two bounces a swing, the right to one point five. The release is a tenth of a degree off straight.
+For ten seconds, nothing. Then the left bob starts to swing. Each bounce lands in step and pushes the swing. The bounce fades, until it almost stops. It leans eleven point four degrees. The right bob never joins in. A quarter degree at most.
+So, bounce it up and down. Does it start to swing? Only when the spring is tuned.

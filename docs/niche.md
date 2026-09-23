@@ -737,15 +737,24 @@ closed form can check):
   swings beat 16 big ones in 40 s and the pair drift out of step and
   back exactly, a seamless loop; Galileo said equal; deterministic, no
   seed. [produced 2026-09-21: length 0.9898 m so the 10 degree swing takes exactly 2.000 s, big release solved at 103.415 degrees for exactly 2.500 s (K(k) check 2.500000000), RK4 at 3,600 steps per second, no seed; 20 swings against 16 at 40.000 s, both turnarounds at 40.000 s so the loop closes with no crossfade; bottom speeds 0.543 and 4.891 m/s, the big bob rises 22.96 cm above the pivot and spends 0.879 s of each swing above horizontal; energy drift under 5e-14; real speed; https://youtu.be/AO0xsAawEUw, task 20260921-100306]
-- Spring pendulum swap: a bob on a spring stretched to 1 m, bouncing 10
-  cm straight up and down with a 0.1 degree tilt, the spring tuned to
-  two bounces per swing (k/m = 4 g/l) beside the same bob on a spring
-  tuned to 1.5; measure the largest sideways swing in a minute; expect
-  the tuned bob to start swinging on its own, past 5 degrees at 18.6 s
-  and 11.4 degrees at 23.8 s while its bounce shrinks to 3 cm, and the
-  detuned bob to stay under 0.3 degrees; RK4; the swing size depends on
-  the tilt and bounce chosen, so the sim sets the claim; deterministic,
-  no seed.
+- Spring pendulum swap: a bob on a spring stretched to 1 m, bouncing 10 cm
+  straight up and down with a 0.1 degree tilt, the spring tuned to two
+  bounces per swing (k/m = 4 g/l) beside the same bob on a spring tuned to
+  1.5; measure the largest sideways swing in a minute; expect the tuned
+  bob to start swinging on its own, past 5 degrees at 18.6 s and 11.4
+  degrees at 23.8 s while its bounce shrinks to 3 cm, and the detuned bob
+  to stay under 0.3 degrees; RK4; the swing size depends on the tilt and
+  bounce chosen, so the sim sets the claim; deterministic, no seed.
+  [produced 2026-09-23: stretched length 1 m, 10 cm bounce, 0.1 degree
+  tilt, RK4 at 1 ms, k/m = 39.2266 s^-2 (2 bounces a swing) beside 22.0650
+  (1.5), no seed; the tuned swing passes 1 degree at 11.59 s and 5 degrees
+  at 18.63 s and peaks at 11.37 degrees at 23.82 s while the vertical
+  bounce readout falls to 2.33 cm at the peak and bottoms at 0.85 cm at
+  24.83 s (the research's 3.09 cm was the largest spring stretch in the
+  swing period before the peak, so the narration says the bounce almost
+  stops and gives no number); the detuned bob never passes 0.141 degrees
+  in 60 s; half step agrees to 2.2e-7 s, energy drift 3.4e-12 J/kg; real
+  time; https://youtu.be/utBc09NZWUk, task 20260923-101601]
 - Lifeguard path: a lifeguard 20 m up the beach, a swimmer 40 m along
   and 20 m out, running 5 m/s and swimming 1.25 m/s; the straight line
   beside the least-time path; measure the arrival times; expect 28.3 s
@@ -760,12 +769,101 @@ closed form can check):
   spot every time; deterministic, no seed. [produced 2026-09-22 with sin beta = 1/4 (14.48 degrees) so four gaps fit the panel width and the numbers are round: 20 cm drop, g 9.80665, event-driven flight with an RK4 check at 6,000 steps per second agreeing to 3.8e-7 s, no seed; gaps 0.4000, 0.8000, 1.2000, 1.6000 m, exactly 1:2:3:4 (8 n h sin beta), every hop 0.4039 s in both panels, hop height 0.1936 m, along-slope speed at the landings 0.495 to 4.456 m/s, energy constant to 2e-15; the flat-floor ball lands on the same spot every hop; shown at 1/5 speed; https://youtu.be/hlBy6yci8_U, task 20260922-100401]
 - Zeno bounce: a ball dropped 1 m with a 0.8 bounce beside one with 0.9;
   measure the bounce count and the moment each ball stops; expect
-  infinitely many bounces that end at 4.064 s and 8.580 s (t0 (1 + e) /
-  (1 - e); path 4.56 and 9.53 m), the 16th and 33rd bounces the first
-  under 1 mm; the count is a counter, so the ball stays on screen;
-  deterministic, no seed.
+  infinitely many bounces that end at 4.064 s and 8.580 s (t0 (1 + e) / (1
+  - e); path 4.56 and 9.53 m), the 16th and 33rd bounces the first under 1
+  mm; the count is a counter, so the ball stays on screen; deterministic,
+  no seed. [produced 2026-09-23: 1 m drop, g 9.80665, no air, a 0.8 bounce
+  beside 0.9, event-driven flights with closed forms checked by RK4 to
+  2.6e-7 s, no seed; t0 0.451601 s; the 0.8 ball is under 1 mm from bounce
+  16 (0.7923 mm, leaving the floor at 3.9373 s), 15 bounces above 1 mm,
+  its counter stops at bounce 31 at the 0.001 mm floor (4.0599 s) and the
+  series ends at 4.064407 s = 9 t0 (path 4.5556 m); the 0.9 ball is under
+  1 mm from bounce 33, 32 above, counter stops at 66 (8.5718 s), series
+  ends at 8.580414 s = 19 t0 (path 9.5263 m); the narration answers "more
+  than the counter shows" and the limit is in the description; shown at
+  1/4 speed; https://youtu.be/mgoguyVzOmU, task 20260923-100424]
 - Stopping distance: two cars braking at 0.8 g from 50 and 100 km/h at
   the same line; measure the stopping distances and the fast car's speed
   at the slow car's stop mark; expect 12.3 against 49.2 m (4x for 2x
   speed) and the fast car still doing 86.6 km/h where the slow one has
   stopped (sqrt(v2^2 - v1^2)); deterministic, no seed. [produced 2026-09-22: 0.8 g = 7.8453 m/s^2, no reaction time, closed forms checked by RK4 at 6,000 steps per second to 1e-11 m, no seed; 50 km/h stops in 12.2940 m after 1.7703 s and 100 km/h in 49.1761 m after 3.5407 s, ratio 4.0000; the fast car passes the slow car's stop mark at 0.4744 s doing 86.60 km/h, and when the slow car stops the fast one is doing exactly 50.00 km/h with 12.29 m to go; 30, 70 and 130 km/h give 4.43, 24.10 and 83.11 m; shown at 1/3 speed; https://youtu.be/faJeNRiCo5Y, task 20260922-100402]
+
+Added by trend research 2026-09-23 (evidence in task 20260923-101345;
+selection favoured continuous physical motion, two-panel same-input
+comparisons, one plain question per short, one setup number and one
+payoff number, path races and collisions with an exact ratio, viral
+debates a number settles, and numbers that a closed form can check):
+
+- Racing balls: two equal balls launched at 1 m/s on a flat 2 m track
+  beside a track that dips 20 cm on cosine ramps and comes back up;
+  measure the arrival times and the track lengths; expect the dip to win
+  by 0.46 s (1.54 against 2.00 s) on a track 7 percent longer (v =
+  sqrt(v0^2 + 2 g depth) along the track, flat time L / v0; a rolling ball
+  wins by 0.38 s), never slower than the flat ball at any point;
+  bead-on-wire RK4 like the brachistochrone; the race repeats so the short
+  loops; deterministic, no seed. [produced 2026-09-23 as a rolling solid
+  ball (k 2/5, no slip, no losses) on 0.5 m cosine ramps with a 0.4 m
+  floor, because the research's 0.3 m ramps lift the ball off the crests
+  at 1 m/s (track force -0.118 of the weight); RK4 along the track, no
+  seed; the dip ball arrives at 1.5637 s (quadrature of ds/v the same)
+  against 2.0000 s, a 0.4363 s win on a 2.0924 m track (4.6 percent
+  longer); top speed 1.9498 m/s (closed form 1.9498), finish speed 1.0000
+  m/s, horizontal speed never below 1.0000 m/s, track force 0.5939 to
+  2.5305 of the weight; half step 2.3e-9 s; a sliding bead would arrive at
+  1.4823 s; four races of 10 s at 1/4 speed; https://youtu.be/KYBHKNWUuI4,
+  task 20260923-101602]
+- Ballistic pendulum: a 20 g ball at 20 m/s into a 200 g block on a 1 m
+  string, a ball that sticks beside a ball that bounces; measure the
+  swing height and angle; expect 16.9 cm (33.8 degrees) against 67.4 cm
+  (71.0 degrees), exactly 4 times higher when it bounces at any mass
+  ratio ((2m/(M+m))^2 against (m/(M+m))^2), the stuck pair keeping 9.1
+  percent of the energy; the swing periods differ (2.05 against 2.22
+  s), so repeat the shot rather than loop the swing; RK4; deterministic,
+  no seed.
+- Bathtub drain: Shapiro's 6 ft tank with a leftover swirl of one turn
+  every 10 minutes, at 42 N beside 42 S, surface parcels spiralling into
+  a 2 cm plughole with their absolute spin conserved; measure the drain
+  spin and its direction; expect both to whirl the leftover way, 0.9
+  percent apart (21.99 against 21.79 rad/s), and only water stiller than
+  one turn every 36 h to turn with the hemisphere (still water: north
+  counterclockwise, south clockwise, one turn per 3.85 s at a 5 mm
+  drain, Shapiro's 3 to 4 s); closed form (omega0 + f/2)(R/r)^2 - f/2
+  with f = 2 Omega sin(latitude); the inviscid model gives fast spin at a
+  small drain, so state the model; deterministic, no seed (peg: the 1962
+  MIT and 1965 Sydney experiments).
+- Superball under a table: a rough bouncy ball beside a smooth ball, both
+  thrown from 40 cm at 2.5 m/s forward and 2.5 m/s down under a 70 cm
+  table; measure where the third bounce lands; expect the rough ball
+  back 0.68 m behind the throw after floor, table, floor (Garwin's
+  rough-elastic map: the contact-point velocity reverses, angular
+  momentum about the contact point kept, alpha 2/5) and the smooth ball
+  1.7 m ahead at 2.5 m/s; deterministic, no seed.
+- Merry-go-round throw: a 2 m platform at 10 rpm, a 4 m/s throw straight
+  at the rider opposite, the ground view beside the rider's view; measure
+  the miss; expect a 2.0 m chord (the target moves 60 degrees in the
+  1.000 s flight; 2 R sin(omega R / v)) with the ball straight from above
+  and curving in the rider's view; exactly periodic so the short loops;
+  deterministic, no seed.
+- Corner reflector: a puck fired into a 90 degree corner beside an 80
+  degree corner at several entry angles; measure the return direction;
+  expect 0.0 degrees off the incoming line from every angle against
+  20.0 degrees off (deviation 2 alpha); a tie-like payoff, so rank it
+  low; deterministic, no seed.
+- Dam break: a 1 m wall of water released onto a dry channel beside a 4 m
+  wall; measure the front speed and the level at the dam; expect 6.26 and
+  12.53 m/s (2 sqrt(g h0), twice the wave speed) and the dam site holding
+  4/9 of the wall, 0.444 and 1.778 m, flowing at 2.09 and 4.18 m/s
+  (Ritter); 1D nonlinear shallow water with a dry front, a heavier build
+  than RK4 (one to two hours); deterministic, no seed.
+- Basketball arc: the same free throw (release 2.0 m, rim 3.05 m, 4.19 m
+  out) at a 35 degree launch beside 52 degrees; measure the entry angle
+  and how wide the 45.7 cm hoop looks to the 24.0 cm ball; expect entries
+  of 11.3 and 37.9 degrees, the hoop looking 8.9 against 28.1 cm wide
+  (D sin(entry); 30 degrees of entry is the first clean angle), and the 52
+  degree shot the slowest at 7.26 m/s; the payoff is a width, so rank it
+  low; deterministic, no seed (peg: NBA opening, late October 2026).
+- Moon clock: a pendulum clock and a spring clock on Earth beside the
+  same pair on the Moon; measure the tick; expect the pendulum 2.46 times
+  slower (sqrt(9.807 / 1.62); a 1.000 s swing takes 2.460 s) and the
+  spring exactly 1.000 s in both; periodic so the short loops; mild
+  surprise, so rank it low; deterministic, no seed.

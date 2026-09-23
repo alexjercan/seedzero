@@ -12,7 +12,7 @@
     "status": "public",
     "date": "2026-08-30",
     "url": "https://youtu.be/BU_j-UbPR7k",
-    "views": 1161,
+    "views": 1162,
     "likes": 16
   },
   {
@@ -372,7 +372,7 @@
     "status": "public",
     "date": "2026-09-14",
     "url": "https://youtu.be/4MtpXdc6NkA",
-    "views": 7,
+    "views": 11,
     "likes": 1
   },
   {
@@ -388,7 +388,7 @@
     "status": "public",
     "date": "2026-09-15",
     "url": "https://youtu.be/lEWXfXBpJVc",
-    "views": 84,
+    "views": 85,
     "likes": 1
   },
   {
@@ -508,7 +508,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/OsyugHAfCH4",
-    "views": 939,
+    "views": 943,
     "likes": 9
   },
   {
@@ -524,7 +524,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/XLqgiglIcqo",
-    "views": 690,
+    "views": 729,
     "likes": 6
   },
   {
@@ -532,51 +532,75 @@
     "status": "public",
     "date": "2026-09-21",
     "url": "https://youtu.be/AO0xsAawEUw",
-    "views": 366,
-    "likes": 4
+    "views": 976,
+    "likes": 6
   },
   {
     "title": "Three holes in a full tank. Which jet lands farthest? The middle: 1.00 m. Top and bottom: 0.87 m.",
     "status": "public",
     "date": "2026-09-21",
     "url": "https://youtu.be/oNbFaWeSD44",
-    "views": 94,
-    "likes": 4
+    "views": 265,
+    "likes": 6
   },
   {
     "title": "The string gets shorter. Does the puck speed up? Through a hole: yes, 2 m/s. On a pole: no, 1 m/s",
     "status": "public",
     "date": "2026-09-21",
     "url": "https://youtu.be/X58adh7gsmc",
-    "views": 116,
-    "likes": 3
+    "views": 191,
+    "likes": 6
   },
   {
     "title": "A ball dropped on a slope. How far apart does it land? 40, 80, 120, 160 cm apart: exactly 1:2:3:4",
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/hlBy6yci8_U",
-    "views": 0,
-    "likes": 0
+    "views": 324,
+    "likes": 8
   },
   {
     "title": "Twice the speed. How much farther to stop? Four times: 12.3 m from 50 km/h, 49.2 m from 100 km/h",
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/faJeNRiCo5Y",
-    "views": 0,
-    "likes": 0
+    "views": 599,
+    "likes": 13
   },
   {
     "title": "Straight to the swimmer, or run farther first? Run farther first: 24.5 s. Straight line: 28.3 s",
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/Vd3AJDhZgiM",
+    "views": 392,
+    "likes": 8
+  },
+  {
+    "title": "Bounce it up and down. Does it start to swing? 2 bounces a swing: yes, 11.4 deg. 1.5: no, 0.14 deg",
+    "status": "public",
+    "date": "2026-09-23",
+    "url": "https://youtu.be/utBc09NZWUk",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Nine unproduced measured-claim ideas in docs/niche.md",
+    "title": "How many bounces before it stops? More than the counter shows. 80%: at rest by 4.06 s, 90%: 8.58 s",
+    "status": "public",
+    "date": "2026-09-23",
+    "url": "https://youtu.be/mgoguyVzOmU",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Same speed, same finish. Does the dip slow it down? No: dip ball 1.56 s, flat ball 2.00 s",
+    "status": "public",
+    "date": "2026-09-23",
+    "url": "https://youtu.be/KYBHKNWUuI4",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Fifteen unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

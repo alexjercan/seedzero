@@ -1,0 +1,3 @@
+A one meter drop. How many bounces before it stops? Two balls, the same drop, at quarter speed. The left ball keeps eighty percent of its speed on every bounce. The right ball keeps ninety percent. Each bounce is lower and quicker than the one before.
+By bounce sixteen, the left ball is under a millimeter. The counter stops at a thousandth of a millimeter, and the ball lies at rest at four point zero six seconds. The right ball bounces longer, and shrinks the same way.
+So, how many bounces before it stops? More than the counter shows. The right ball keeps going, and then lies at rest at eight point five eight seconds.
