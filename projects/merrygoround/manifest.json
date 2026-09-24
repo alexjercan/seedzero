@@ -1,0 +1,44 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "platform_radius_m": 2.0,
+  "rpm": 10.0,
+  "throw_speed_m_s": 2.0,
+  "friend_angle_deg": 90.0,
+  "throw_period": 3.0,
+  "first_throw_at": -0.4,
+  "steps_per_second": 10000,
+  "exit_fade_m": 0.2,
+  "aim_lead": 0.4,
+  "marker_fade": 0.4,
+  "ball_radius_m": 0.1,
+  "friend_radius_m": 0.13,
+  "scene_duration": 42.0,
+  "px_per_m": 105.0,
+  "top_centre": [
+    540,
+    640
+  ],
+  "bottom_centre": [
+    540,
+    1190
+  ],
+  "sectors": 8,
+  "ground_ticks": 12,
+  "description_speeds_m_s": [
+    1.0,
+    2.0,
+    4.0
+  ],
+  "title": "Merry-go-round:|do you hit your friend?",
+  "title_until": 2.4,
+  "payoff_t": 30.3,
+  "payoff_hold": 0.6,
+  "payoff_text": "merry-go-round: | do you hit your friend? | no: the ball misses by {chord:.2f} m | your friend moves {angle:.0f} degrees in {flight:.2f} s",
+  "loop_fade": 0.5,
+  "music_seed": 82,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "radius 2 m | 10 rpm | flat toss 2 m/s | no seed"
+}

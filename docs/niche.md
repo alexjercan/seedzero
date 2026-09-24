@@ -813,13 +813,21 @@ debates a number settles, and numbers that a closed form can check):
   1.4823 s; four races of 10 s at 1/4 speed; https://youtu.be/KYBHKNWUuI4,
   task 20260923-101602]
 - Ballistic pendulum: a 20 g ball at 20 m/s into a 200 g block on a 1 m
-  string, a ball that sticks beside a ball that bounces; measure the
-  swing height and angle; expect 16.9 cm (33.8 degrees) against 67.4 cm
-  (71.0 degrees), exactly 4 times higher when it bounces at any mass
-  ratio ((2m/(M+m))^2 against (m/(M+m))^2), the stuck pair keeping 9.1
-  percent of the energy; the swing periods differ (2.05 against 2.22
-  s), so repeat the shot rather than loop the swing; RK4; deterministic,
-  no seed.
+  string, a ball that sticks beside a ball that bounces; measure the swing
+  height and angle; expect 16.9 cm (33.8 degrees) against 67.4 cm (71.0
+  degrees), exactly 4 times higher when it bounces at any mass ratio
+  ((2m/(M+m))^2 against (m/(M+m))^2), the stuck pair keeping 9.1 percent of
+  the energy; the swing periods differ (2.05 against 2.22 s), so repeat the
+  shot rather than loop the swing; RK4; deterministic, no seed. [produced
+  2026-09-24: a 20 g ball at 20 m/s into a 200 g block on a 1 m string, the
+  hit instantaneous with momentum conserved, the swing by RK4 at 10,000
+  steps a second, g 9.80665, no air, no seed; the stuck pair leaves at
+  1.8182 m/s and peaks at 16.85 cm and 33.75 degrees, the block hit by the
+  bouncing ball leaves at 3.6364 m/s and peaks at 67.42 cm and 70.99
+  degrees, 4.0000 times the height (closed forms agree to 1e-6 cm, energy
+  drift 2e-14); the pair keeps 9.09 percent of the energy; periods 2.0508
+  against 2.2177 s, so the short repeats the shot, four shots of 10 s at
+  quarter speed; https://youtu.be/bEni27RJgM4, task 20260924-100905]
 - Bathtub drain: Shapiro's 6 ft tank with a leftover swirl of one turn
   every 10 minutes, at 42 N beside 42 S, surface parcels spiralling into
   a 2 cm plughole with their absolute spin conserved; measure the drain
@@ -832,18 +840,42 @@ debates a number settles, and numbers that a closed form can check):
   small drain, so state the model; deterministic, no seed (peg: the 1962
   MIT and 1965 Sydney experiments).
 - Superball under a table: a rough bouncy ball beside a smooth ball, both
-  thrown from 40 cm at 2.5 m/s forward and 2.5 m/s down under a 70 cm
-  table; measure where the third bounce lands; expect the rough ball
-  back 0.68 m behind the throw after floor, table, floor (Garwin's
-  rough-elastic map: the contact-point velocity reverses, angular
-  momentum about the contact point kept, alpha 2/5) and the smooth ball
-  1.7 m ahead at 2.5 m/s; deterministic, no seed.
-- Merry-go-round throw: a 2 m platform at 10 rpm, a 4 m/s throw straight
-  at the rider opposite, the ground view beside the rider's view; measure
-  the miss; expect a 2.0 m chord (the target moves 60 degrees in the
-  1.000 s flight; 2 R sin(omega R / v)) with the ball straight from above
-  and curving in the rider's view; exactly periodic so the short loops;
-  deterministic, no seed.
+  thrown from 40 cm at 2.5 m/s forward and 2.5 m/s down under a 70 cm table;
+  measure where the third bounce lands; expect the rough ball back 0.68 m
+  behind the throw after floor, table, floor (Garwin's rough-elastic map:
+  the contact-point velocity reverses, angular momentum about the contact
+  point kept, alpha 2/5) and the smooth ball 1.7 m ahead at 2.5 m/s;
+  deterministic, no seed. [produced 2026-09-24: two 3 cm balls released 0.4
+  m up at 2.5 m/s forward and 2.5 m/s down under a 0.7 m table spanning -0.5
+  to 1.5 m, the rough ball by Garwin's map solved as a 2 x 2 system (alpha
+  2/5, the contact-point velocity reversed, angular momentum about the
+  contact kept; within 6e-17 of (3, -4; -10, -3) / 7 on the floor and (3, 4;
+  10, -3) / 7 on the underside), exact parabolas with event-driven bounces,
+  no seed; the rough ball bounces at 0.300, 0.594 and 0.159 m with vx 2.5,
+  1.0714, -1.5816, -2.4271 m/s, the floor-table-floor product (1/343)
+  [[-333, 52], [130, 333]], and rises back through the release height 13.2
+  cm behind the hand at 0.790 s, backward at 2.4271 m/s, 97.08 percent of
+  the forward throw speed (the research's 0.68 m behind and its second and
+  third speeds did not conserve energy; the short is scripted on the return
+  to the hand); the smooth ball keeps 2.5 m/s and bounces at 0.300, 0.987
+  and 1.675 m, beyond the far edge; five throws of 8 s at 1/6 speed;
+  https://youtu.be/l-MyYaMlxc8, task 20260924-100908]
+- Merry-go-round throw: a 2 m platform at 10 rpm, a 4 m/s throw straight at
+  the rider opposite, the ground view beside the rider's view; measure the
+  miss; expect a 2.0 m chord (the target moves 60 degrees in the 1.000 s
+  flight; 2 R sin(omega R / v)) with the ball straight from above and
+  curving in the rider's view; exactly periodic so the short loops;
+  deterministic, no seed. [produced 2026-09-24 with the thrower at the
+  centre, because a rim thrower moves with the platform and the research's
+  rim-to-rim setup was not the throw aimed at the friend: a 2 m platform at
+  10 rpm, a 2 m/s toss aimed at the friend on the rim, the ground view
+  beside the ride view, the ride view by RK4 at 10,000 steps a second in the
+  turning frame (within 2.7e-13 m of the rotated straight line), no seed;
+  flight 1.0000 s, the friend moves 60.00 degrees, the chord miss 2.0000 m
+  (2 R sin(omega R / 2 v), an equilateral triangle, so the miss equals the
+  radius), the ball curving to its right in the ride view; real time, one
+  throw every 3 s, 14 throws in exactly 7 turns of 42 s so it loops;
+  https://youtu.be/z_YTpx0EntM, task 20260924-100911]
 - Corner reflector: a puck fired into a 90 degree corner beside an 80
   degree corner at several entry angles; measure the return direction;
   expect 0.0 degrees off the incoming line from every angle against

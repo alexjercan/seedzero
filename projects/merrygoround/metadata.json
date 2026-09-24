@@ -1,0 +1,20 @@
+{
+  "title": "Merry-go-round: do you hit your friend? No, the ball misses by 2.0 m at 10 rpm",
+  "description": "Merry-go-round: do you hit your friend? A round platform 2 m from centre to rim turns at 10 rpm, one turn every 6 s. You stand at the centre, the one point of the platform that does not move, and your friend rides the rim. A ball leaves your hand at 2 m/s aimed exactly at your friend: a flat toss, so seen from above its horizontal motion is a straight line at constant speed (no air). The top view is the view from above. The bottom view turns with the platform, so the platform and your friend stand fixed and every position is rotated by -omega t. The ride view is also integrated in the turning frame with the Coriolis and centrifugal terms (RK4 at 10,000 steps per second) as a check on the rotated straight line. Real time, one throw every 3 s, 14 throws and 7 turns in 42 s; deterministic, no seed.\n\nMeasured:\n- the ball crosses the rim after 1.0000 s (R / v); in that time your friend moves 60.00 degrees (omega R / v = 1.0472 rad), 2.0944 m along the rim\n- the miss is the chord between your friend and the crossing point: 2.0000 m (2 R sin(omega R / (2 v))); the centre, your friend and the crossing point form an equilateral triangle, so the miss equals the radius exactly\n- the ball crosses the rim at the ground point where your friend was at the throw, 60 degrees behind them, opposite to the turn\n- your friend's rim speed is 2.0944 m/s (omega R), faster than the 2 m/s ball\n- in the ride view the ball follows r = v t at angle -omega t: 0.500 m out and 15 degrees off the aim line after 0.25 s, 1.000 m and 30 degrees after 0.50 s, 1.500 m and 45 degrees after 0.75 s, the rim and 60 degrees after 1.00 s; it curves to its right, opposite to the counterclockwise turn; the sideways (Coriolis) acceleration in the turning frame is 2 omega v = 4.19 m/s^2 throughout the flight and the outward (centrifugal) term grows from 0 to 2.19 m/s^2 at the rim\n- the RK4 path in the turning frame stays within 2.7e-13 m of the rotated straight line; the half-step check moves the crossing time by 9e-15 s\n- the same throw at 1 m/s: 2.000 s of flight, 120.0 degrees, a 3.464 m miss; at 4 m/s: 0.500 s, 30.0 degrees, a 1.035 m miss\n\nWhy: your friend is moving and the ball is not moving with them. Seen from above the ball goes exactly where you aimed, in a straight line, and reaches the rim at the spot where your friend was when you let go. But in that one second the rim has carried your friend 60 degrees further round, two full meters away. Seen from the ride it looks as if the ball bends away from your friend, because your seat turns while the ball keeps its direction: the curve is the platform turning under a straight throw. Physicists call that apparent sideways push the Coriolis effect. The faster the platform turns, or the slower the throw, the bigger the miss.\n\nRerun sims/merrygoround/merrygoround.py with projects/merrygoround/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "merry-go-round",
+    "coriolis effect",
+    "rotating frame",
+    "do you hit your friend",
+    "thrown ball",
+    "reference frames",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

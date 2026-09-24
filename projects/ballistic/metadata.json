@@ -1,0 +1,20 @@
+{
+  "title": "Sticky ball or bouncy ball: which block swings higher? The bouncy ball: 67 cm against 17 cm",
+  "description": "Sticky ball or bouncy ball: which block swings higher? A 20 g ball at 20 m/s hits a 200 g block that hangs at rest at the bottom of a 1 m string, horizontally through the block's centre, in an instant. Top panel: a sticky ball (a perfectly inelastic hit) stays in the block and the pair swings up together. Bottom panel: a bouncy ball (a perfectly elastic hit) comes back and the block swings up alone. Same masses, same speed, same string; only the ball differs. After the hit the swinging mass is a point mass on a taut string (theta'' = -(g / L) sin theta), integrated with RK4 at 10,000 steps per second; no air, no losses. The string is drawn to scale (400 px per metre); the ball and the block are drawn larger than scale. Played at quarter speed, four shots; deterministic, no seed.\n\nMeasured:\n- sticky ball: the 220 g pair leaves at 1.8182 m/s (m u / (M + m)), keeps 9.09 percent of the energy, and rises 16.855 cm (closed form v^2 / 2 g: 16.855 cm) to 33.75 degrees, peaking 0.5127 s after the hit; back at the bottom at 1.0254 s\n- bouncy ball: the block leaves at 3.6364 m/s (2 m u / (M + m)), exactly twice the speed, carries 33.06 percent of the energy, and rises 67.419 cm (closed form 67.419 cm) to 70.99 degrees, peaking 0.5544 s after the hit; back at the bottom at 1.1089 s; the ball comes back at 16.36 m/s with 66.94 percent of the energy\n- height ratio 4.0000 (closed form (2 m / (M + m))^2 / (m / (M + m))^2 = 4 at every mass ratio: 10 g at 300 m/s into 2 kg gives 11.36 against 45.43 cm; 50 g at 15 m/s into 500 g gives 9.48 against 37.92 cm)\n- string tension at the bottom 1.34 and 2.35 times the swinging weight (2.88 and 4.61 N); the smallest tension over the swing 0.83 and 0.33 of the weight, at the peaks, so the string stays taut and the height closed form holds (the block never passes 90 degrees)\n- momentum 0.4000 kg m/s and energy 4.0000 J before and after each hit; the RK4 peak matches the closed form to 1e-6 cm and changes by less than 1e-6 cm at half the time step; energy drift 2e-14\n- swing periods 2.0508 and 2.2177 s (elliptic closed form), so the shot is repeated rather than the swing looped\n\nWhy: the block only cares about the push it gets at the hit. A sticky ball stops in the block and hands over its momentum once. A bouncy ball comes back the way it came, so the block has to stop the ball and then throw it back: it is pushed twice as hard and leaves at twice the speed. A block moving twice as fast carries four times the energy, and the string turns that energy into height, so it climbs four times as high. It is not that the bouncy ball gives away more energy: the stuck pair keeps 9 percent of the ball's energy, the block hit by the bouncy ball keeps 33 percent, and the bouncy ball takes the remaining 67 percent away with it.\n\nRerun sims/ballistic/ballistic.py with projects/ballistic/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "ballistic pendulum",
+    "momentum",
+    "elastic collision",
+    "inelastic collision",
+    "which swings higher",
+    "pendulum",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Throw a bouncy ball under a table. So where does it go? Back to your hand, 97% of its forward speed",
+  "description": "Throw a bouncy ball under a table. So where does it go? Two balls of radius 3 cm leave the same point, 40 cm above the floor, with the same throw: 2.5 m/s forward and 2.5 m/s down, under a table whose underside is 70 cm above the floor (a 4 cm slab from 0.5 m behind the hand to 1.5 m ahead). The top ball is rough and perfectly elastic (Garwin's superball, a solid rubber ball, I = 2/5 m R^2, no air): at every bounce the normal velocity reverses, the velocity of the contact point along the surface reverses, and the angular momentum about the contact point is kept. The bottom ball is smooth and perfectly elastic: no friction, no spin, its forward speed never changes. Flights are exact parabolas with the bounce instants solved exactly (event driven, no time step); the bounce map is solved from the two rules as a 2 x 2 linear system and checked against the closed form. Played at 1/6 speed, five throws; deterministic, no seed.\n\nMeasured:\n- rough ball: floor at x = 0.300 m (0.120 s), forward speed 2.50 to 1.07 m/s, spin 0 to 18.9 turns/s (top spin); table underside at x = 0.594 m (0.395 s), forward speed 1.07 to -1.58 m/s (backward), spin reversed to 16.2 turns/s; floor again at x = 0.159 m (0.670 s), backward speed 1.58 to 2.43 m/s, spin down to 5.0 turns/s\n- return: it rises back through the release height at 0.790 s, 13 cm behind the hand, moving backward at 2.43 m/s (97.1 percent of the 2.5 m/s forward throw) and up at 2.50 m/s; full speed 3.48 m/s, 98.6 percent of the 3.54 m/s throw speed\n- the product of the three bounce maps is (1/343) [[-333, 52], [130, 333]] on (vx, R omega), so the ball comes back at 333/343 of its forward speed with little spin (Garwin 1969)\n- horizontal plus spin energy (vx^2 + 2/5 (R omega)^2) / 2 = 3.125 J/kg after every bounce, deviation 4e-16; total energy 10.173 J/kg, deviation 0\n- smooth ball: keeps 2.50 m/s forward through floor (0.300 m), table (0.987 m) and floor (1.675 m, 0.670 s), passes under the far edge of the table at 26 cm height and leaves the frame at 0.766 s\n- bounce map solved from the rules: floor vx' = (3 vx - 4 R omega) / 7, R omega' = (-10 vx - 3 R omega) / 7; table underside vx' = (3 vx + 4 R omega) / 7, R omega' = (10 vx - 3 R omega) / 7; difference from the closed-form fractions 6e-17\n\nWhy: a rough ball cannot slide on the surface it hits, so the bounce grabs its forward motion and turns most of it into spin: after the floor it moves forward at only 1.07 m/s but spins at 19 turns a second. At the underside of the table the contact point is on top of the ball, so the same grab acts the other way: the spin is thrown back into motion, the ball leaves the table moving backward, and its spin reverses. The third bounce, on the floor again, drains that spin into backward speed. Each bounce keeps the ball's energy (speed plus spin) and reverses its up-and-down motion, so after floor, table, floor the ball climbs back through the release height almost as fast as it left, 13 cm behind the hand. The smooth ball has nothing to grab: its forward speed never changes, so floor, table, floor carry it 1.7 m ahead and out the far side.\n\nRerun sims/superball/superball.py with projects/superball/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "superball",
+    "bouncy ball",
+    "under a table",
+    "spin",
+    "elastic collision",
+    "angular momentum",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
