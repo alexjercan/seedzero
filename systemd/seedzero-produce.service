@@ -1,0 +1,6 @@
+[Unit]
+Description=Produce and publish today's Seed Zero slate
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/seedzero-produce

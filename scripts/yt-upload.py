@@ -44,6 +44,16 @@ def main() -> int:
     if len(meta["title"]) > 100:
         print(f"error: title is {len(meta['title'])} characters; YouTube allows 100", file=sys.stderr)
         return 1
+    if len(meta["description"]) > 5000:
+        print(f"error: description is {len(meta['description'])} characters; YouTube allows 5,000", file=sys.stderr)
+        return 1
+    for field in ("title", "description"):
+        if "<" in meta[field] or ">" in meta[field]:
+            # videos.insert rejects the whole request with invalidTitle or
+            # invalidDescription before any media is sent (2026-09-24: the
+            # "->" arrows in a description cost an insert attempt).
+            print(f"error: {field} contains < or >, which YouTube rejects", file=sys.stderr)
+            return 1
 
     youtube = client()
     channels = youtube.channels().list(part="id", mine=True).execute()["items"]

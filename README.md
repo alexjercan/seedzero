@@ -67,6 +67,7 @@ See `docs/niche.md` for pillars, audience notes, and the idea backlog.
 - `projects/` — per-video production data: script, manifest, metadata.
 - `media/` — rendered output, ignored by git.
 - `scripts/` — production helpers (voice-over, music, composition).
+- `systemd/` - user service and timer for the daily production run.
 - `tasks/` — Tatr-tracked work.
 - `web/` - static status page: stats, the video and idea slate, and a work log.
   Data lives in JSON and JSONL under `web/data/`. Run `python -m http.server -d web` to
@@ -83,6 +84,39 @@ scripts/voiceover.sh projects/<name>/narration.txt media/<name>/voice.wav
 The script uses Piper at `http://localhost:10303/v1/audio/speech` and
 whisper.cpp at `http://localhost:10301/inference`. Set `TTS_API` or `STT_API`
 to override either full endpoint.
+
+## Daily production run
+
+`scripts/seedzero-produce` runs Claude in this repository with Fable at xhigh
+effort and invokes `/daily-production`. It streams progress, requires the
+final `PRODUCTION_STATUS: COMPLETE` line, and writes each report under
+`${XDG_STATE_HOME:-~/.local/state}/automation/seedzero-produce/`.
+
+```sh
+scripts/seedzero-produce
+scripts/seedzero-produce --open
+scripts/seedzero-produce --detach
+scripts/seedzero-produce --open-last
+scripts/seedzero-produce --logs
+```
+
+`--open` runs production, then opens that run's report. `--detach` starts the
+run in a transient user service. `--open-last` opens the newest saved
+`result.html` without starting a run. `--logs` follows the scheduled
+`seedzero-produce.service` with `journalctl --user -fu`. Use only one mode at a
+time.
+
+Install the command and enable the 10:00 local systemd timer:
+
+```sh
+./install.sh
+```
+
+Run the launcher tests with:
+
+```sh
+python3 -m unittest scripts/test_seedzero_produce.py
+```
 
 ## Channel access
 

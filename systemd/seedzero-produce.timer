@@ -1,0 +1,10 @@
+[Unit]
+Description=Produce Seed Zero videos every morning
+
+[Timer]
+OnCalendar=*-*-* 10:00:00
+Persistent=true
+Unit=seedzero-produce.service
+
+[Install]
+WantedBy=timers.target

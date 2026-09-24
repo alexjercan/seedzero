@@ -1,0 +1,288 @@
+#!/usr/bin/env python3
+
+import argparse
+import datetime
+import html
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
+import time
+
+COMPLETION_MARKER = "PRODUCTION_STATUS: COMPLETE"
+SERVICE = "seedzero-produce.service"
+RUN_TIMESTAMP = "%Y%m%dT%H%M%S.%fZ"
+MODEL = "Fable"
+THINKING = "xhigh"
+REPO = Path(__file__).resolve().parent.parent
+PROMPT = """Produce and publish today's Seed Zero slate.
+
+Use `/daily-production` as the authority for the workflow. Follow its steps,
+gates, and quota rules exactly. This prompt only fixes the shape of the final
+report. Where this prompt and `/daily-production` disagree about the work
+itself, `/daily-production` wins.
+
+Return one Markdown report with exactly these sections, in this order:
+
+## Outcome
+
+Two to four sentences on what the run did and where it stopped.
+
+## Published
+
+One list item per video that reached the channel. Give each video as a
+descriptive Markdown link, with the title as the link text and the watch URL as
+the target, for example `[Title of the short](https://youtu.be/VIDEO_ID)`. Never
+paste a bare URL and never use "here" or "link" as the link text. Say `None` if
+nothing was published.
+
+## Slipped
+
+One list item per planned video that did not publish, with the reason and the
+gate it stopped at. Say `None` if nothing slipped.
+
+## Quota
+
+Units spent, units remaining against the 10,000 unit day, and the cost of the
+largest single operation.
+
+## Technical record
+
+Files written, scripts run, errors seen, and anything a later run must know.
+Reference videos here as descriptive Markdown links too.
+
+End the report with this exact line and nothing after it:
+
+PRODUCTION_STATUS: COMPLETE
+
+Write that line only when the run really finished. If any gate failed or any
+step is still pending, describe the state in the sections above and do not write
+the line.
+"""
+
+
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Produce and publish today's Seed Zero slate"
+    )
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument(
+        "-d", "--detach", action="store_true", help="run in a transient user service"
+    )
+    mode.add_argument(
+        "--open", action="store_true", help="open the generated HTML report"
+    )
+    mode.add_argument(
+        "--open-last", action="store_true", help="open the newest saved HTML report"
+    )
+    mode.add_argument(
+        "--logs", action="store_true", help=f"follow the {SERVICE} logs"
+    )
+    return parser.parse_args(argv)
+
+
+def detach():
+    timestamp = datetime.datetime.now(datetime.UTC).strftime("%Y%m%dT%H%M%SZ")
+    unit = f"seedzero-produce-{timestamp}"
+    script = Path(__file__).resolve()
+    result = subprocess.run(
+        [
+            "systemd-run",
+            "--user",
+            "--quiet",
+            "--collect",
+            f"--unit={unit}",
+            "--property=Type=exec",
+            f"--setenv=PATH={os.environ.get('PATH', '')}",
+            str(script),
+        ],
+        check=False,
+    )
+    if result.returncode == 0:
+        print(f"Started {unit}")
+        print(f"Logs: journalctl --user -fu {unit}")
+        print(f"Stop: systemctl --user stop {unit}")
+    return result.returncode
+
+
+def follow_logs():
+    # Replace this process so journalctl gets the signals and sets the exit status.
+    os.execvp("journalctl", ["journalctl", "--user", "-fu", SERVICE])
+
+
+def state_root():
+    state_home = os.environ.get("XDG_STATE_HOME")
+    if state_home:
+        root = Path(state_home)
+    else:
+        home = os.environ.get("HOME")
+        if not home:
+            raise RuntimeError("cannot resolve state directory: set XDG_STATE_HOME or HOME")
+        root = Path(home) / ".local" / "state"
+    return root / "automation" / "seedzero-produce"
+
+
+def state_dir():
+    timestamp = datetime.datetime.now(datetime.UTC).strftime(RUN_TIMESTAMP)
+    path = state_root() / timestamp
+    path.mkdir(parents=True)
+    return path
+
+
+def run_time(path):
+    try:
+        return datetime.datetime.strptime(path.name, RUN_TIMESTAMP)
+    except ValueError:
+        return None
+
+
+def last_result():
+    root = state_root()
+    if not root.is_dir():
+        raise RuntimeError(f"no production state at {root}")
+    reports = [
+        path
+        for path in root.glob("*/result.html")
+        if path.is_file() and run_time(path.parent)
+    ]
+    if not reports:
+        raise RuntimeError(f"no result.html under {root}")
+    return max(reports, key=lambda path: run_time(path.parent))
+
+
+def open_report(path):
+    return subprocess.run(["xdg-open", path], check=False).returncode
+
+
+def show_event(kind, text):
+    label = "tool" if kind == "tool" else "claude"
+    for line in text.splitlines():
+        print(f"[{label}] {line}", file=sys.stderr)
+
+
+def run_claude(project):
+    started = time.monotonic()
+    show_event("status", f"started claude {MODEL} {THINKING}")
+    command = [
+        "claude",
+        "--print",
+        "--no-session-persistence",
+        "--model",
+        MODEL,
+        "--effort",
+        THINKING,
+        "--permission-mode",
+        "bypassPermissions",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--",
+        PROMPT,
+    ]
+    environment = os.environ.copy()
+    environment["CLAUDE_CODE_DISABLE_BACKGROUND_TASKS"] = "1"
+    environment["CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS"] = "0"
+    protocol_errors = []
+    output = ""
+
+    with tempfile.TemporaryFile() as stderr_file:
+        try:
+            process = subprocess.Popen(
+                command,
+                cwd=project,
+                env=environment,
+                stdout=subprocess.PIPE,
+                stderr=stderr_file,
+                text=True,
+            )
+        except OSError as error:
+            show_event("status", f"failed: {error}")
+            return "", str(error), 127
+
+        for line in process.stdout:
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                protocol_errors.append(line)
+                continue
+            event_type = event.get("type")
+            if event_type == "assistant":
+                for block in event.get("message", {}).get("content", []):
+                    if block.get("type") == "tool_use":
+                        show_event("tool", block.get("name", "unknown").lower())
+                    elif block.get("type") == "text" and block.get("text", "").strip():
+                        show_event("text", block["text"].strip())
+            elif event_type == "result":
+                output = event.get("result", "")
+
+        return_code = process.wait()
+        stderr_file.seek(0)
+        error = stderr_file.read().decode(errors="replace") + "".join(protocol_errors)
+
+    show_event("status", f"finished in {int(time.monotonic() - started)}s")
+    return output, error, return_code
+
+
+def production_complete(output):
+    return any(line.strip() == COMPLETION_MARKER for line in output.splitlines())
+
+
+def render_html(markdown):
+    escaped = html.escape(markdown)
+    return f"""<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seed Zero Production</title>
+<style>
+:root {{ color-scheme: dark; background: #181818; color: #e4e4ef; }}
+body {{ margin: 0 auto; max-width: 52rem; padding: 2rem; }}
+pre {{ white-space: pre-wrap; font: 16px/1.6 monospace; }}
+</style>
+<body><pre>{escaped}</pre></body>
+</html>
+"""
+
+
+def main(argv=None):
+    args = parse_args(argv)
+    if args.detach:
+        return detach()
+    if args.logs:
+        return follow_logs()
+    if args.open_last:
+        return open_report(last_result())
+
+    run_dir = state_dir()
+    output, error, return_code = run_claude(REPO)
+    if return_code == 0 and not production_complete(output):
+        return_code = 1
+        error += "production run ended without its completion marker\n"
+
+    if output:
+        print(output, flush=True)
+    if error:
+        print(error, end="", file=sys.stderr)
+
+    markdown_path = run_dir / "result.md"
+    html_path = run_dir / "result.html"
+    markdown_path.write_text(output)
+    (run_dir / "stderr.log").write_text(error)
+    html_path.write_text(render_html(output))
+    print(f"Saved to {html_path}", file=sys.stderr)
+
+    if args.open:
+        opened = open_report(html_path)
+        if opened != 0:
+            return opened
+    return return_code
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except (OSError, RuntimeError) as error:
+        print(f"seedzero-produce: {error}", file=sys.stderr)
+        raise SystemExit(1)
