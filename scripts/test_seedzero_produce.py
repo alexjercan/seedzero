@@ -40,7 +40,7 @@ class StateTest(unittest.TestCase):
         patcher = mock.patch.dict(os.environ, {"XDG_STATE_HOME": temporary.name})
         patcher.start()
         self.addCleanup(patcher.stop)
-        self.root = self.state_home / "automation" / "seedzero-produce"
+        self.root = self.state_home / "seedzero"
 
     def write_report(self, timestamp):
         path = self.root / timestamp / "result.html"
@@ -53,7 +53,7 @@ class StateTest(unittest.TestCase):
             del os.environ["XDG_STATE_HOME"]
             self.assertEqual(
                 MODULE.state_root(),
-                Path("/home/test/.local/state/automation/seedzero-produce"),
+                Path("/home/test/.local/state/seedzero"),
             )
 
     def test_last_result_picks_newest_timestamp(self):

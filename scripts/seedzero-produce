@@ -121,7 +121,7 @@ def state_root():
         if not home:
             raise RuntimeError("cannot resolve state directory: set XDG_STATE_HOME or HOME")
         root = Path(home) / ".local" / "state"
-    return root / "automation" / "seedzero-produce"
+    return root / "seedzero"
 
 
 def state_dir():

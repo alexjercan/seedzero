@@ -90,7 +90,7 @@ to override either full endpoint.
 `scripts/seedzero-produce` runs Claude in this repository with Fable at xhigh
 effort and invokes `/daily-production`. It streams progress, requires the
 final `PRODUCTION_STATUS: COMPLETE` line, and writes each report under
-`${XDG_STATE_HOME:-~/.local/state}/automation/seedzero-produce/`.
+`${XDG_STATE_HOME:-~/.local/state}/seedzero/`.
 
 ```sh
 scripts/seedzero-produce
