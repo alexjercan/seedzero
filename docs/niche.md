@@ -899,3 +899,105 @@ debates a number settles, and numbers that a closed form can check):
   slower (sqrt(9.807 / 1.62); a 1.000 s swing takes 2.460 s) and the
   spring exactly 1.000 s in both; periodic so the short loops; mild
   surprise, so rank it low; deterministic, no seed.
+
+Added by trend research 2026-09-25 (evidence in task 20260925-101408;
+selection favoured tabletop motion with a "which way" or "which first"
+debate, two panels on the same input that end differently, an exact
+fraction or angle a closed form checks, and builds of about 25 minutes
+with RK4 or closed forms; space, counters, drawings and tie payoffs
+rejected):
+
+- Pulled spool: a spool with a 3 cm wheel and a 1.5 cm axle on a table,
+  the string off the bottom of the axle pulled with 0.2 N at 30 degrees
+  beside 80 degrees above the table; measure which way it rolls and how
+  far in one second; expect toward the hand below 60.0 degrees (cos =
+  axle over wheel) and away above it, 22.9 cm toward at 30 degrees
+  against 20.4 cm away at 80 (a = F (R cos theta - r) / ((k + 1) m R)
+  about the contact point, I = 0.6 m R^2, no slip needs mu 0.15 or
+  more); repeat the pull so the short loops; deterministic, no seed.
+  [produced 2026-09-25 with a 200 g spool so the 1.00 s pull fits the
+  frame: 0.2 N at 30 degrees rolls 11.44 cm toward the hand (0.2288
+  m/s^2), at 80 degrees 10.20 cm away (0.2040 m/s^2), switch acos(r / R)
+  = 60.00 degrees; the string line meets the table 2.20 cm behind the
+  touch point at 30 degrees and 0.99 cm ahead at 80 (behind: toward,
+  ahead: away, the reverse of the rule in the brief); no slip needs mu
+  0.068 and 0.043 against 0.3; task 20260925-102415]
+- Cue ball follow: two cue balls at 2.0 m/s into a still ball head-on,
+  one sliding with no spin and one rolling; measure the cue ball's speed
+  after the hit; expect the sliding ball to stop dead and the rolling
+  ball to creep forward to exactly 2/7 of its speed (0.571 m/s) once the
+  cloth friction turns its kept spin back into rolling, the struck ball
+  settling at 5/7 (1.429 m/s) in both panels (mu 0.2 sets only the
+  settling distances, 8.3 and 50 cm; the fractions are exact); a stripe
+  on the ball shows the spin; repeat the shot; deterministic, no seed.
+  [produced 2026-09-25: two cue balls at 2 m/s into a ball at rest 30 cm
+  ahead, the no-spin ball a stun shot launched at 2.24 m/s with 20.8
+  rad/s of backspin that the cloth wears off exactly at the hit, exact
+  piecewise integration between the events against the closed forms, no
+  seed; the no-spin cue ball stops dead (drift 0), the rolling one rolls
+  again at 0.5714 m/s = 2/7 of its speed after 0.2913 s and 8.3 cm of
+  creep, the struck ball at 1.4286 m/s = 5/7 after 49.9 cm in both
+  panels; shown at 1/8 speed, five shots in 42 s; task 20260925-102416]
+- Bucket over the head: a bucket of water on a 1 m arm turned at a
+  steady 36 rpm beside 24 rpm, the water as parcels that fly free the
+  moment the bucket stops pushing them; measure the slowest turn that
+  keeps the water in and where it spills; expect 29.9 rpm (one turn
+  every 2.006 s, omega = sqrt(g / r)), the 36 rpm water pressing on the
+  bucket with 0.45 g at the top and the 24 rpm water leaving 49.9
+  degrees before the top at 2.51 m/s and landing 0.69 m past the pivot
+  line 0.90 s later; say the arm is driven at constant rpm; the fast
+  panel is periodic so the short loops; deterministic, no seed.
+  [produced 2026-09-25 at 36 rpm above and 21 rpm below (at 24 rpm the
+  water grazed the drawn head by 6 mm and landed just past you; at 21
+  rpm all of it comes down on you): limit sqrt(g / r) = 29.9 rpm, one
+  turn every 2.006 s, 30 rpm holds with 0.006 g at the top and 29
+  spills; 36 rpm presses the water in with 0.45 g at the top; 21 rpm
+  lets go 60.5 degrees before the top at 2.20 m/s and comes down on your
+  body 0.67 s later, 1.06 m above the floor; 25 parcels stepped at
+  10,000 steps a second within 2e-7 degrees and 3e-13 m of the closed
+  forms; task 20260925-102417]
+- Falling folded chain: a 1 m chain folded in half with one end held,
+  the free end let go beside a ball dropped from the same height;
+  measure the time each takes to fall 1 m; expect the chain tip at 0.383
+  s against the ball's 0.452 s (84.7 percent, a 69 ms lead), the ball
+  still 28 cm up when the tip arrives, the tip at 3.8 m/s halfway down
+  against the ball's 3.1 (v^2 = g x (2L - x) / (L - x), Calkin and
+  March; RK4 to 0.9 L matches to four decimals); the tip speed runs away
+  in the last centimetres, so cap the drawing at the fold and say the
+  real chain whips; repeat the drop; deterministic, no seed.
+- Tarzan release: a rider on a 6 m rope let go from 60 degrees, the
+  water 3 m below the low point, one rider letting go at the bottom
+  beside one letting go 31 degrees past it; measure the landing
+  distance; expect 6.00 m against 10.26 m (the scan's best release is
+  30.9 degrees past the bottom; 45 degrees gives 9.14 m and hanging on
+  to the far top only 5.20 m); v^2 = 2 g L (cos theta - cos 60) then a
+  parabola; RK4 pendulum plus closed-form flight; the swing repeats so
+  the short loops; deterministic, no seed.
+- Balance a broom: a 1.2 m stick beside a 15 cm pencil balanced on a
+  fingertip, both let go 1 degree off vertical; measure the time to fall
+  flat; expect 1.50 s against 0.53 s (45 degrees at 1.29 against 0.46
+  s), exactly sqrt(8) = 2.83 times longer for the broom because the fall
+  time scales with sqrt(L) (theta'' = 3 g sin theta / 2L); RK4; the
+  answer is half known, so rank it mid; repeat the release;
+  deterministic, no seed.
+- Bat sweet spot: a free 85 cm, 0.9 kg stiff stick struck by a 145 g
+  ball at 30 m/s, 57 cm from the handle end beside a hit at the tip;
+  measure the handle end's speed after the hit; expect 0.00 m/s at 56.7
+  cm (two thirds of the length, the centre of percussion of a uniform
+  rod) and the handle end kicking back at 8.8 m/s from a tip hit (11.8
+  m/s if elastic), handle speed (J / m)(1 - 6 d / L); a real bat's sweet
+  spot is also set by its bending nodes, so say "stiff stick"; rigid
+  impulse, closed form; repeat the hit; deterministic, no seed (peg:
+  World Series, late October 2026).
+- Weight on a spring: a 1 kg weight lowered gently onto a spring that
+  sags 5 cm under it, beside the same weight let go from the spring's
+  rest height; measure the deepest squash; expect 5.00 cm against 10.00
+  cm, exactly double (m g x = k x^2 / 2), bouncing between 0 and 10 cm
+  every 0.449 s for ever; from 5 cm above the spring 13.7 cm; RK4
+  matches; periodic so the short loops; deterministic, no seed.
+- Atwood drop: a 1.1 kg weight dropped beside the same weight on a
+  string over a pulley against 1.0 kg; measure the time to fall 1 m;
+  expect 0.452 s against 2.069 s, 4.58 times slower, the acceleration
+  g / 21 (0.467 m/s^2) because both weights must speed up, not g / 11
+  (1.50 s) as the weight difference alone suggests; closed form; mild
+  surprise, so rank it low; repeat the drop; deterministic, no seed.

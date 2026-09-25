@@ -1,0 +1,57 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "wheel_radius_m": 0.03,
+  "axle_radius_m": 0.015,
+  "mass_kg": 0.2,
+  "inertia_k": 0.6,
+  "pull_N": 0.2,
+  "angles_deg": [
+    30.0,
+    80.0
+  ],
+  "mu": 0.3,
+  "g": 9.81,
+  "pull_duration": 1.0,
+  "pull_period": 3.0,
+  "first_pull_at": -0.4,
+  "hold": 1.6,
+  "reset_fade": 0.1,
+  "steps_per_second": 10000,
+  "string_m": 0.045,
+  "scene_duration": 42.0,
+  "px_per_cm": 40.0,
+  "start_x": [
+    240,
+    700
+  ],
+  "panel_rows": [
+    380,
+    900
+  ],
+  "panel_tables": [
+    780,
+    1300
+  ],
+  "description_angles_deg": [
+    0,
+    15,
+    30,
+    45,
+    60,
+    75,
+    80,
+    90
+  ],
+  "title": "Pull the string:|which way does the spool roll?",
+  "title_until": 2.4,
+  "payoff_t": 25.6,
+  "payoff_hold": 0.6,
+  "payoff_text": "which way does the spool roll? | below {switch:.0f} degrees: toward the hand | above {switch:.0f} degrees: away from the hand | {switch:.0f} degrees: the line hits the touch point",
+  "loop_fade": 0.5,
+  "music_seed": 83,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "wheel 3 cm | axle 1.5 cm | 0.2 N pull | no seed"
+}

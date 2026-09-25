@@ -1,0 +1,63 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g_m_s2": 9.81,
+  "arm_m": 1.0,
+  "water_depth_m": 0.1,
+  "parcel_rows": 5,
+  "parcel_columns": 5,
+  "parcel_half_span_m": 0.075,
+  "parcel_radius_m": 0.02,
+  "bucket_rim_half_width_m": 0.105,
+  "bucket_floor_half_width_m": 0.09,
+  "bucket_rim_r_m": 0.965,
+  "bucket_floor_r_m": 1.115,
+  "pivot_height_m": 1.5,
+  "head_center_m": [
+    0.0,
+    0.21
+  ],
+  "head_radius_m": 0.11,
+  "torso_half_width_m": 0.14,
+  "shoulder_y_m": 0.03,
+  "fast_rpm": 36.0,
+  "slow_rpm": 21.0,
+  "fast_top_at": 0.0,
+  "slow_leave_at": 1.142857,
+  "steps_per_second": 10000,
+  "trail_s": 0.1,
+  "scene_duration": 40.0,
+  "px_per_m": 200.0,
+  "top_pivot": [
+    600,
+    564
+  ],
+  "bottom_pivot": [
+    600,
+    1118
+  ],
+  "floor_half_width_m": 1.5,
+  "ring_dashes": 36,
+  "description_rpms": [
+    15,
+    20,
+    21,
+    24,
+    26,
+    28,
+    29,
+    30,
+    36
+  ],
+  "title": "Bucket over your head:|how slow before it spills?",
+  "title_until": 3.0,
+  "payoff_t": 29.2,
+  "payoff_hold": 0.6,
+  "payoff_text": "bucket over your head: | how slow before it spills? | {rpm_hold} turns a minute, one every {period_c:.1f} s | limit {rpm_c:.1f} rpm: {rpm_spill} spills, {rpm_hold} holds",
+  "loop_fade": 0.5,
+  "music_seed": 85,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "arm 1 m | 36 rpm above, 21 below | no seed"
+}

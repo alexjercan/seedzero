@@ -1,0 +1,20 @@
+{
+  "title": "Hit a ball dead on at 2 m/s: does the cue ball stop? No spin: dead stop. Rolling: 2/7 of its speed",
+  "description": "Hit a ball dead on: does the cue ball stop? Two cue balls hit a ball at rest dead on at 2 m/s, seen from the side one above the other. The top cue ball arrives sliding with no spin: a stun shot, struck with the little backspin (20.8 rad/s, launched at 2.24 m/s 31.4 cm behind the ball) that the cloth wears off exactly at the hit. The bottom cue ball arrives rolling (spin v / R = 69.9 rad/s). Equal masses, a solid sphere (I = 2/5 m R^2, radius 28.6 mm), an elastic head-on hit with no friction between the balls, so the hit swaps the balls' forward speeds and leaves each ball's spin as it was. The cloth acts on any slipping contact with sliding friction mu = 0.2 (g = 9.80665 m/s^2), no rolling resistance. Each panel is integrated as exact constant-acceleration pieces between the events (a slip closing, the hit) and checked against the closed forms. Shown at 1/8 speed, one shot every 8.4 s, 5 shots in 42 s; deterministic, no seed.\n\nMeasured:\n- at the hit both cue balls arrive at 2.0000 m/s, the top one with spin 0.0000 rad/s and the bottom one with 69.930 rad/s; right after the hit both have 0.0000 m/s and the struck ball 2.0000 m/s with no spin (momentum and energy 2.0000 = 2.0000 per unit mass across the hit)\n- the top cue ball stays on the hit point to the end of the shot: drift 0, speed 0, spin 1e-14 rad/s (no slip, so the cloth has nothing to act on)\n- the bottom cue ball, at rest but spinning, is dragged forward by the cloth and rolls again at 0.5714 m/s after 0.2913 s and 8.3 cm of creep: exactly 2/7 of its arrival speed (closed forms 2 v / 7, v / (7/2 mu g) and 1/2 mu g t^2, all matched within 1e-16); its spin falls from 69.930 to 19.980 rad/s\n- the struck ball leaves sliding at 2.0000 m/s with no spin and rolls at 1.4286 m/s, 5/7 of the arrival speed, after the same 0.2913 s and 49.9 cm, in both panels\n- the fractions do not depend on the cloth: at mu 0.1 the creep takes 0.5827 s and 16.6 cm, at mu 0.3 it takes 0.1942 s and 5.5 cm, and the speeds stay 0.5714 and 1.4286 m/s; at 1 m/s the cue ball rolls on at 0.2857 m/s after 2.1 cm of creep, at 3 m/s at 0.8571 m/s after 18.7 cm\n\nWhy: the hit only trades speed. A ball with no spin hands all its speed to the ball it hits and has nothing left, so it stops dead and stays there. A rolling ball hands over its speed too, but it keeps its spin: for an instant it sits on the cloth spinning like a wheel. The cloth rubs on that spinning surface, pushes the ball forward and slows the spin, until the forward speed and the spin match again and the ball rolls. The push comes from the point where the ball touches the cloth, so it cannot change the ball's turning motion about that point: the spin it kept is worth 2/5 of a rolling ball's, a rolling ball's turning is worth 7/5, and the share that comes back as forward speed is 2/7 of the arrival speed, whatever the cloth. The friction only sets how long the creep takes. Pool players know the three cases as stop, stun and follow.\n\nRerun sims/cueball/cueball.py with projects/cueball/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "cue ball",
+    "stop shot",
+    "follow shot",
+    "pool physics",
+    "billiards",
+    "does the cue ball stop",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -1,0 +1,40 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "ball_radius_m": 0.0286,
+  "mu": 0.2,
+  "g": 9.80665,
+  "hit_speed_m_s": 2.0,
+  "object_ahead_m": 0.3,
+  "object_x_m": 0.38,
+  "slow": 8.0,
+  "shot_period": 8.4,
+  "first_shot_at": -0.4,
+  "reset_fade": 0.8,
+  "scene_duration": 42.0,
+  "px_per_m": 1200.0,
+  "top_cloth_y": 700,
+  "bottom_cloth_y": 1240,
+  "cloth_tick_m": 0.1,
+  "description_mus": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "description_speeds_m_s": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "title": "Hit a ball dead on:|does the cue ball stop?",
+  "title_until": 2.4,
+  "payoff_t": 28.9,
+  "payoff_hold": 0.6,
+  "payoff_text": "hit a ball dead on: | does the cue ball stop? | no spin: yes, it stops dead | rolling: no, it rolls on at 2/7 of its speed | {v_roll:.2f} m/s after {t_roll:.2f} s and {creep_cm:.1f} cm of creep",
+  "loop_fade": 0.5,
+  "music_seed": 84,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "two cue balls 2 m/s | head on | mu 0.2 | no seed"
+}

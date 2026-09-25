@@ -172,7 +172,7 @@
     "status": "public",
     "date": "2026-09-06",
     "url": "https://youtu.be/IEzd2tJSBXU",
-    "views": 132,
+    "views": 133,
     "likes": 1
   },
   {
@@ -348,7 +348,7 @@
     "status": "public",
     "date": "2026-09-13",
     "url": "https://youtu.be/wN82zmHFM5c",
-    "views": 385,
+    "views": 386,
     "likes": 2
   },
   {
@@ -452,7 +452,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/eAqo0Yif3-8",
-    "views": 925,
+    "views": 926,
     "likes": 7
   },
   {
@@ -508,7 +508,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/OsyugHAfCH4",
-    "views": 991,
+    "views": 994,
     "likes": 9
   },
   {
@@ -516,7 +516,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/Mm_gJO6VKsc",
-    "views": 965,
+    "views": 967,
     "likes": 6
   },
   {
@@ -524,7 +524,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/XLqgiglIcqo",
-    "views": 731,
+    "views": 734,
     "likes": 6
   },
   {
@@ -532,7 +532,7 @@
     "status": "public",
     "date": "2026-09-21",
     "url": "https://youtu.be/AO0xsAawEUw",
-    "views": 990,
+    "views": 997,
     "likes": 6
   },
   {
@@ -556,7 +556,7 @@
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/hlBy6yci8_U",
-    "views": 669,
+    "views": 675,
     "likes": 10
   },
   {
@@ -564,15 +564,15 @@
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/faJeNRiCo5Y",
-    "views": 1012,
-    "likes": 17
+    "views": 1010,
+    "likes": 16
   },
   {
     "title": "Straight to the swimmer, or run farther first? Run farther first: 24.5 s. Straight line: 28.3 s",
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/Vd3AJDhZgiM",
-    "views": 653,
+    "views": 681,
     "likes": 9
   },
   {
@@ -580,51 +580,75 @@
     "status": "public",
     "date": "2026-09-23",
     "url": "https://youtu.be/utBc09NZWUk",
-    "views": 44,
-    "likes": 2
+    "views": 625,
+    "likes": 9
   },
   {
     "title": "How many bounces before it stops? More than the counter shows. 80%: at rest by 4.06 s, 90%: 8.58 s",
     "status": "public",
     "date": "2026-09-23",
     "url": "https://youtu.be/mgoguyVzOmU",
-    "views": 138,
-    "likes": 3
+    "views": 616,
+    "likes": 6
   },
   {
     "title": "Same speed, same finish. Does the dip slow it down? No: dip ball 1.56 s, flat ball 2.00 s",
     "status": "public",
     "date": "2026-09-23",
     "url": "https://youtu.be/KYBHKNWUuI4",
-    "views": 95,
-    "likes": 2
+    "views": 675,
+    "likes": 10
   },
   {
     "title": "Sticky ball or bouncy ball: which block swings higher? The bouncy ball: 67 cm against 17 cm",
     "status": "public",
     "date": "2026-09-24",
     "url": "https://youtu.be/bEni27RJgM4",
-    "views": 1,
-    "likes": 0
+    "views": 335,
+    "likes": 3
   },
   {
     "title": "Throw a bouncy ball under a table. So where does it go? Back to your hand, 97% of its forward speed",
     "status": "public",
     "date": "2026-09-24",
     "url": "https://youtu.be/l-MyYaMlxc8",
-    "views": 0,
-    "likes": 0
+    "views": 340,
+    "likes": 6
   },
   {
     "title": "Merry-go-round: do you hit your friend? No, the ball misses by 2.0 m at 10 rpm",
     "status": "public",
     "date": "2026-09-24",
     "url": "https://youtu.be/z_YTpx0EntM",
+    "views": 1,
+    "likes": 1
+  },
+  {
+    "title": "Which way does the spool roll? Axle half the wheel: toward the hand below 60 degrees, away above",
+    "status": "public",
+    "date": "2026-09-25",
+    "url": "https://youtu.be/5xhaVWmicBI",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Twelve unproduced measured-claim ideas in docs/niche.md",
+    "title": "Hit a ball dead on at 2 m/s: does the cue ball stop? No spin: dead stop. Rolling: 2/7 of its speed",
+    "status": "public",
+    "date": "2026-09-25",
+    "url": "https://youtu.be/pcnwZnIKhh0",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Bucket over your head: how slow before it spills? 30 turns a minute on a 1 m arm",
+    "status": "public",
+    "date": "2026-09-25",
+    "url": "https://youtu.be/xPS0hhN56p4",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Eighteen unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

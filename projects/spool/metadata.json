@@ -1,0 +1,20 @@
+{
+  "title": "Which way does the spool roll? Axle half the wheel: toward the hand below 60 degrees, away above",
+  "description": "Pull the string: which way does the spool roll? A 200 g spool with a 3 cm wheel and a 1.5 cm axle (the axle is half the wheel) rests on a table. The string is wound on the axle and leaves its bottom toward the hand on the right. The hand holds the string at a fixed angle above the table and pulls with a constant 0.2 N; it moves with the spool, so the angle and the pull stay fixed. The top panel pulls at 30 degrees, the bottom panel at 80 degrees, each pull for 1.00 s. The spool rolls without slipping (the sim checks that mu = 0.3 is enough) and is integrated with RK4 at 10,000 steps per second about the touch point, the torque taken from the string geometry at every step. One pull every 3 s, 14 pulls in 42 s; deterministic, no seed.\n\nMeasured:\n- pull at 30 degrees: the spool rolls toward the hand, 0.2288 m/s^2, 11.44 cm in 1.00 s (closed form F (R cos theta - r) / ((k + 1) m R) with I = 0.6 m R^2: 11.44 cm, within 7e-15 m); the string line meets the table 2.20 cm behind the touch point\n- pull at 80 degrees: the spool rolls away from the hand, 0.2040 m/s^2, 10.20 cm in 1.00 s (closed form 10.20 cm, within 5e-15 m); the string line meets the table 0.99 cm ahead of the touch point, between it and the hand\n- the switch is at acos(r / R) = acos(1/2) = 60.00 degrees: there the string line passes through the touch point, the torque about it is zero and the spool does not roll\n- other angles, the same spool and pull, 1.00 s: 0 degrees 15.62 cm toward; 15 degrees 14.56 cm toward; 45 degrees 6.47 cm toward; 60 degrees no roll; 75 degrees 7.54 cm away; 90 degrees 15.62 cm away\n- checks: the pull lifts nothing (F sin theta = 0.197 N at 80 degrees against the 1.962 N weight); rolling without slipping needs a friction coefficient of 0.068 at 30 degrees and 0.043 at 80 degrees, below the table's 0.3; the axle winds in 5.72 cm of string at 30 degrees and pays out 5.10 cm at 80 degrees\n\nWhy: the spool turns about the point where the wheel touches the table, because that point holds fixed for an instant. Draw the string on as a straight line down to the table. When the string is low, that line lands behind the touch point, on the far side from the hand, so the pull turns the spool over toward the hand. When the string is steep, the line lands in front of the touch point, between it and the hand, so the same pull turns the spool the other way and it rolls away. The switch is the angle where the line runs straight through the touch point: its cosine is the axle radius over the wheel radius, one half here, so 60 degrees. A thinner axle moves the switch toward the vertical; an axle as wide as the wheel would switch at 0 degrees and always roll away.\n\nRerun sims/spool/spool.py with projects/spool/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "pulled spool",
+    "spool paradox",
+    "which way does it roll",
+    "rolling without slipping",
+    "torque",
+    "physics demo",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
