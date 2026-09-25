@@ -486,3 +486,8 @@ cm and 49.9 cm at mu 0.2).
   channels.list verification inside yt-upload.py, the insert, the gate
   run's reads, update and re-read as printed by yt-qa.py); day total after
   two attempts 3,312 units plus 5 for the 10:18 stats refresh
+
+### Repository
+- committed as 2f677a4 "Publish the day twenty-seven slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-25 11:17 EEST

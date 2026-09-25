@@ -388,3 +388,8 @@ directions and the 60 degree switch hold as claimed.
   channels.list verification inside yt-upload.py, the insert, the gate
   run's reads, update and re-read as printed by yt-qa.py); day total after
   one attempt 1,656 units plus 5 for the 10:18 stats refresh
+
+### Repository
+- committed as 2f677a4 "Publish the day twenty-seven slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-25 11:17 EEST
