@@ -515,3 +515,8 @@ the drops sit under the words; task 20260926-100742]
   channels.list verification inside yt-upload.py, the insert, the gate
   run's reads, update and re-read as printed by yt-qa.py); day total
   after one attempt 1,655 units plus 5 for the 10:03 stats refresh
+
+### Repository
+- committed as 36e0764 "Publish the day twenty-eight slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-26 10:55 EEST

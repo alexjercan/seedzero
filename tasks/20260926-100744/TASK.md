@@ -525,3 +525,8 @@ re-run. The claim and every narrated number stand as briefed.
   run's single read, update and re-read as printed by yt-qa.py); day total
   after three attempts 1,655 + 1,655 + 1,653 = 4,963 units plus 5 for the
   10:03 stats refresh, target of three met
+
+### Repository
+- committed as 36e0764 "Publish the day twenty-eight slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-26 10:55 EEST
