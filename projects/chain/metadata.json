@@ -1,0 +1,20 @@
+{
+  "title": "Drop a folded chain beside a ball, 1 m: which lands first? The chain, the ball still 28 cm up",
+  "description": "Drop a folded chain beside a ball: which lands first? A uniform 1.00 m chain (40 links of 2.5 cm) hangs folded in half from a peg: one end is held at the top, the free end starts level with it and the fold hangs 0.5 m below. A ball (radius 3 cm, a point mass measured at its center) sits beside it at the same start line. Both are let go at the same instant and measured to the same finish line 1.00 m below; no air; g = 9.81 m/s^2. The chain follows the energy-conserving model (Calkin and March 1989, the model that experiments confirm): with the free end fallen x, the held side is a straight hanging length (L + x) / 2 and the free side a straight length (L - x) / 2 rising from the fold, the fold moves at half the tip speed, and the tip speed obeys v^2 = g x (2L - x) / (L - x), so the tip acceleration a = g (1 + x (2L - x) / (2 (L - x)^2)) is g at release and grows without bound as x nears L. The fall time is the quadrature t = integral dx / v; an RK4 run at 10,000 steps a second to 0.9 L is checked against it. The ball is y = g t^2 / 2. Shown at 1/8 speed, five drops in 40 s; deterministic, no seed.\n\nMeasured:\n- the chain tip reaches 1.00 m in 0.3825 s and the ball in 0.4515 s (sqrt(2 L / g)): the chain takes 84.7 percent of the ball's time, a 69 ms lead\n- when the tip lands the ball has fallen 0.718 m and is 0.282 m up (28 cm)\n- at the same depth the tip is always the faster: 0.25 m tip 2.39 m/s against the ball's 2.21 m/s; 0.50 m 3.84 against 3.13; 0.75 m 6.07 against 3.84; 0.90 m 9.85 against 4.20; 0.99 m 31.3 against 4.41; the tip acceleration halfway down is 24.5 m/s^2 = 2.50 g; when the tip passes halfway (0.3027 s) the ball has fallen 0.449 m and is 5 cm behind, moving 2.97 m/s against the tip's 3.84\n- times: 0.9 L in 0.3758 s, 0.99 L in 0.3823 s, L in 0.3825 s; the last centimeter takes 0.21 ms because v grows like 1 / sqrt(L - x)\n- RK4 at 10,000 steps a second from rest to 0.9 L matches the closed form to four decimals: the speed stays within 1e-9 m/s of it along the way, 0.5 L at 0.30268 s and 0.9 L at 0.37579 s against the quadrature within 2e-8 s; the ball stepped the same way lands within 2e-9 s of sqrt(2 L / g)\n- the drawing is capped: once the free side is shorter than one link (x over 0.975 m, from 0.3817 s, 0.84 ms before the tip lands) the chain is drawn fully hung; the model's tip speed there is 19.8 m/s and runs away in the last centimeters, where a real chain whips and loses energy, so take the tail with care: the fall time to 0.99 L (0.3823 s) is within a millisecond of the time to L (0.3825 s)\n\nWhy: the chain tip beats the ball because it is not in free fall. Only the free side of the chain moves; the held side hangs at rest. As the fold moves down, link after link crosses the fold and comes to rest on the held side, so the moving side gets shorter and lighter while the energy released by the fall stays with it. That energy is shared by less and less chain, so the moving side goes faster than gravity alone would take it: the tip's acceleration is g at release, 2.5 g halfway down, and it runs away near the end. In the model the extra push comes through the fold, which drags the moving side down with a tension of a quarter of the chain's mass per meter times v squared. The ball has nothing but gravity, so it is still 28 cm up when the tip lands. The lead does not depend on the chain's weight or thickness, only on its length: every folded chain beats a ball dropped beside it.\n\nRerun sims/chain/chain.py with projects/chain/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "falling chain",
+    "folded chain",
+    "chain drop",
+    "which lands first",
+    "faster than free fall",
+    "free fall",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

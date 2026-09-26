@@ -1,0 +1,20 @@
+{
+  "title": "Rope swing: when should you let go to fly farthest? 31 deg past the bottom, 10.26 m against 6 m",
+  "description": "Rope swing: when should you let go to fly farthest? A rider on a 6 m rope from a fixed pivot starts from rest with the rope 60 degrees from the vertical and swings down; the water is 3 m below the low point of the swing. The upper rider lets go at the bottom, the lower rider 31 degrees past it: the same swing, two moments to let go. The rider is a point mass on a massless rope; the swing is theta'' = -(g / L) sin theta integrated by RK4 at 10,000 steps a second and checked against v^2 = 2 g L (cos theta - cos 60); at the release the rider leaves along the tangent, at theta above the horizontal, and flies as a parabola with no air until the water; the landing distance is measured from the spot on the water directly below the low point. Half speed, 5 cycles of swing, flight, splash and reset in 40 s; deterministic, no seed.\n\nMeasured:\n- at the bottom: 7.67 m/s, level, 3.00 m above the water; 0.782 s in the air; lands 6.00 m out (the fastest point of the swing, but the flight starts level and from the lowest point)\n- 31 degrees past the bottom: 6.48 m/s pointed 31 degrees up (84.5 % of the bottom speed), from 3.86 m above the water (0.86 m higher) and 3.09 m out; apex 4.43 m above the water; 1.290 s in the air, 1.65 times longer; lands 10.26 m out, 4.26 m farther (71 % farther)\n- the scan of the release angle: 0 deg 6.00 m, 10 deg 8.03 m, 20 deg 9.60 m, 25 deg 10.06 m, 30 deg 10.26 m, 31 deg 10.26 m, 35 deg 10.16 m, 40 deg 9.78 m, 45 deg 9.14 m, 50 deg 8.27 m, 55 deg 7.17 m; the peak is at 30.9 degrees with 10.26 m (30 and 31 degrees both give 10.26 m to two decimals); hanging on to the far top (60 degrees, speed zero) drops you straight down from 6.00 m up, 5.20 m out\n- the swing: 1.318 s from the start to the bottom, 1.765 s to 31 degrees past it, 2.637 s to the far top; the full period is 5.273 s (the elliptic closed form 5.273 s; a small-angle pendulum would take 4.914 s)\n- checks: the RK4 speeds at the bottom and at 31 degrees match v^2 = 2 g L (cos theta - cos 60) within 2e-8 m/s; the energy drifts by at most 1e-12 J/kg over 7.4 s; the Verlet flights land within 2e-8 m and 2e-9 s of the parabola\n\nWhy: two things set how far you fly: how fast you leave, and how long you stay in the air. At the bottom you are at your fastest, but you leave level and from the lowest point, so the water comes up fast: 0.78 s. Let the rope carry you a little past the bottom and you trade some speed for a launch that points upward from a higher point: at 31 degrees you are 15.5 % slower, but you go up first and come down from higher, so the flight lasts 1.29 s, and the slower rider covers 10.26 m against 6.00 m. Go too far past the bottom and the rope has taken back most of your speed: at 45 degrees you land 9.14 m out, and hanging on to the far top drops you straight down at 5.20 m. The best moment on this swing is 31 degrees past the bottom, well under 45 degrees, because you start above the water and because the rope takes speed back on the way up.\n\nRerun sims/tarzan/tarzan.py with projects/tarzan/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "rope swing",
+    "tarzan swing",
+    "when to let go",
+    "projectile motion",
+    "pendulum",
+    "rope swing physics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

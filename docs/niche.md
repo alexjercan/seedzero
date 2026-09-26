@@ -965,6 +965,18 @@ rejected):
   March; RK4 to 0.9 L matches to four decimals); the tip speed runs away
   in the last centimetres, so cap the drawing at the fold and say the
   real chain whips; repeat the drop; deterministic, no seed.
+  [produced 2026-09-26 with the spoken hook "Chain beside a ball. Which
+  lands first?" (the title keeps "Drop a folded chain beside a ball."):
+  the chain tip reaches 1.00 m in 0.3825 s against the ball's 0.4515 s
+  (84.7 percent, a 69 ms lead), the ball 0.282 m up (28 cm) when the tip
+  lands; halfway down the tip moves 3.84 m/s against the ball's 3.13
+  with the ball 5 cm behind, the tip acceleration there 2.50 g; RK4 at
+  10,000 steps a second to 0.9 L within 1e-9 m/s and 2e-8 s of the
+  closed form; the drawing capped from 0.3817 s (the free side shorter
+  than one link, tip speed 19.8 m/s), the time to 0.99 L within a
+  millisecond of the time to L; five drops in 40 s at 1/8 speed on a
+  release list so the drops sit under the words;
+  https://youtu.be/hDic9PCXFKs, task 20260926-100742]
 - Tarzan release: a rider on a 6 m rope let go from 60 degrees, the
   water 3 m below the low point, one rider letting go at the bottom
   beside one letting go 31 degrees past it; measure the landing
@@ -973,6 +985,16 @@ rejected):
   to the far top only 5.20 m); v^2 = 2 g L (cos theta - cos 60) then a
   parabola; RK4 pendulum plus closed-form flight; the swing repeats so
   the short loops; deterministic, no seed.
+  [produced 2026-09-26 as projects/tarzan, day 28 second slot: 6.00 m
+  letting go at the bottom (7.67 m/s level from 3.00 m, 0.782 s) against
+  10.26 m letting go 31 degrees past it (6.48 m/s at 31 degrees up from
+  3.86 m, 1.290 s), 4.26 m farther, the fine scan peaking at 30.9
+  degrees with 10.26 m, 45 degrees 9.14 m and the far top 5.20 m, all as
+  the entry expected (RK4 within 2e-8 m/s of the closed form); the
+  question became "When should you let go to fly farthest?" because
+  whisper dropped "do" from "When do you let go" in five of five passes;
+  half speed, 8 s cycles, five in 40 s, the last frame equal to the
+  first; no seed; https://youtu.be/f-ZLd4-azw0, task 20260926-100743]
 - Balance a broom: a 1.2 m stick beside a 15 cm pencil balanced on a
   fingertip, both let go 1 degree off vertical; measure the time to fall
   flat; expect 1.50 s against 0.53 s (45 degrees at 1.29 against 0.46
@@ -995,6 +1017,18 @@ rejected):
   cm, exactly double (m g x = k x^2 / 2), bouncing between 0 and 10 cm
   every 0.449 s for ever; from 5 cm above the spring 13.7 cm; RK4
   matches; periodic so the short loops; deterministic, no seed.
+  [produced 2026-09-26 as "Lowered or dropped: how far does the spring
+  squash?", the hand lowering over 4 s (1.25 cm/s on average, easing to
+  a stop so the release leaves no wobble; a 2 cm/s release would leave
+  1.43 mm) beside the same weight let go at the free top, shown 4.46x
+  slow so a bounce fills 2 s: lowered 5.00 cm (the hand's share falls
+  from 100 % to 0 % there), dropped 10.00 cm at 0.2243 s, exactly double
+  (2.0000 times the sag), bouncing between 0 and 10 cm every 0.4486 s
+  for ever, 0.700 m/s through the 5 cm mark, RK4 at 10,000 steps a
+  second within 2e-13 m of the closed form; from 5 cm above the spring
+  13.66 cm, from 10 cm above 16.18 cm; the 2 kg sag is 10.00 cm; the
+  title is three lines because the question measures 1036 px at 56 px;
+  https://youtu.be/3jzgy7G2whs, task 20260926-100744]
 - Atwood drop: a 1.1 kg weight dropped beside the same weight on a
   string over a pulley against 1.0 kg; measure the time to fall 1 m;
   expect 0.452 s against 2.069 s, 4.58 times slower, the acceleration

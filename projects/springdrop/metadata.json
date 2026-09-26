@@ -1,0 +1,20 @@
+{
+  "title": "Lowered or dropped: how far does the spring squash? 5 cm lowered, 10 cm dropped, exactly double",
+  "description": "Lowered or dropped: how far does the spring squash? A 1 kg weight on a vertical massless spring with no friction and no damping; the spring's stiffness is set so it sags exactly 5 cm under the weight at rest (k = m g / 0.05 m = 196.2 N/m, g = 9.81 m/s^2). Left, lowered: a hand lowers the weight from the spring's free top over 4 s along a smooth profile that eases to a stop (1.25 cm/s on average, 2.34 cm/s at most); the spring takes the load as k x and the hand carries the rest, which reaches zero at 5 cm; the hand stays a moment carrying nothing, moves away, and later lifts the weight back to the top, a 20 s cycle in real time. Right, dropped: the same weight let go from rest touching the free top, integrated by RK4 at 10,000 steps per second against the closed form x(t) = (m g / k)(1 - cos omega t), shown 4.46x slow so one bounce fills 2 s. 2 lowering cycles and 20 bounces in 40 s; deterministic, no seed.\n\nMeasured:\n- static sag: m g / k = 5.00 cm; the spring pushes with 9.81 N there (the weight) and with 19.62 N at 10 cm (twice the weight); under 2 kg the sag is 10.00 cm\n- lowered: the hand's share of the load falls from 100 % at the free top to 0 % at 5.00 cm (80 % at 1 cm, 60 % at 2, 40 % at 3, 20 % at 4) and never goes negative; the inertia of the smooth profile is at most 0.18 % of the weight; after the hand lets go at 5.00 cm with zero speed the weight moves 0.0 mm (the sag is the equilibrium); a hand that let go while still moving at 2 cm/s would leave a 1.43 mm wobble (u / omega; RK4 1.43 mm)\n- dropped: deepest squash 10.00 cm at 0.2243 s (closed form 2 m g / k = 10.00 cm at a half period), 2.0000 times the static sag; back to the top at 0.4486 s and again every 0.4486 s (2 pi sqrt(m / k)) for ever; through the 5 cm resting point at 0.700 m/s (omega x); RK4 at 10,000 steps per second stays within 2e-13 m of the closed form over 20 bounces; energy m g x = 0.981 J = k x^2 / 2\n- dropped from 5 cm above the spring: 13.66 cm; from 10 cm above: 16.18 cm (m g (h + x) = k x^2 / 2; RK4 within 3e-7 cm)\n\nWhy: the spring pushes back harder the deeper it goes, k x. Lowered, the hand carries whatever the spring cannot yet carry, so the weight arrives at the resting point, 5 cm, with no speed and stays. Dropped, nothing carries it: gravity does work m g x all the way down and the spring only stores k x^2 / 2, so the weight is moving fast at 5 cm (0.70 m/s) and goes on until the stored energy equals the work, at x = 2 m g / k = 10 cm, exactly double, where it stops for an instant. With no damping it bounces between 0 and 10 cm every 0.449 s for ever. The doubling holds for any weight and any spring.\n\nRerun sims/springdrop/springdrop.py with projects/springdrop/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "spring",
+    "weight on a spring",
+    "lowered or dropped",
+    "how far does the spring squash",
+    "spring compression",
+    "energy conservation",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
