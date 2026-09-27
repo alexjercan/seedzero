@@ -1,0 +1,58 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "mu_cloth": 0.2,
+  "mu_table": 0.4,
+  "cloth_under_glass_m": 0.3,
+  "edge_from_glass_m": 0.4,
+  "glass_width_m": 0.07,
+  "glass_height_m": 0.09,
+  "pull_speeds_m_s": [
+    1.0,
+    3.0
+  ],
+  "description_speeds_m_s": [
+    1.1,
+    2.0,
+    4.0
+  ],
+  "description_lengths_m": [
+    0.15,
+    0.6
+  ],
+  "description_mus": [
+    0.1,
+    0.4
+  ],
+  "steps_per_second": 10000,
+  "sim_end_s": 2.0,
+  "slow": 8.0,
+  "cycle_s": 8.4,
+  "pull_at": 0.6,
+  "first_cycle_at": -0.6,
+  "reset_fade": 0.8,
+  "fall_spin_rad_s": 5.0,
+  "scene_duration": 42.0,
+  "px_per_m": 1000.0,
+  "table_x0_px": 40,
+  "bare_left_m": 0.1,
+  "band_y": [
+    340,
+    880,
+    1420
+  ],
+  "pattern_m": 0.05,
+  "cloth_px": 8,
+  "title": "Pull the tablecloth:|how fast must you pull?",
+  "title_until": 3.0,
+  "payoff_t": 22.9,
+  "payoff_hold": 0.6,
+  "payoff_text": "pull the tablecloth: | how fast must you pull? | faster than {vstar:.1f} m/s with this cloth | at {v_slow:g} m/s the glass rides off the table | at {v_fast:g} m/s it moves {tot_cm:.1f} cm",
+  "loop_fade": 0.5,
+  "music_seed": 91,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "30 cm of cloth | mu 0.2 cloth, 0.4 table | no seed"
+}

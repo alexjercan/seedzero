@@ -268,7 +268,7 @@
     "status": "public",
     "date": "2026-09-10",
     "url": "https://youtu.be/WJMYAZP0YGw",
-    "views": 948,
+    "views": 949,
     "likes": 3
   },
   {
@@ -444,7 +444,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/wmkc_zygzXQ",
-    "views": 1047,
+    "views": 1050,
     "likes": 12
   },
   {
@@ -500,7 +500,7 @@
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/bt2G-PQK13k",
-    "views": 460,
+    "views": 461,
     "likes": 5
   },
   {
@@ -556,7 +556,7 @@
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/hlBy6yci8_U",
-    "views": 675,
+    "views": 676,
     "likes": 10
   },
   {
@@ -564,7 +564,7 @@
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/faJeNRiCo5Y",
-    "views": 1010,
+    "views": 1011,
     "likes": 16
   },
   {
@@ -580,7 +580,7 @@
     "status": "public",
     "date": "2026-09-23",
     "url": "https://youtu.be/utBc09NZWUk",
-    "views": 836,
+    "views": 835,
     "likes": 9
   },
   {
@@ -588,7 +588,7 @@
     "status": "public",
     "date": "2026-09-23",
     "url": "https://youtu.be/mgoguyVzOmU",
-    "views": 636,
+    "views": 638,
     "likes": 6
   },
   {
@@ -596,7 +596,7 @@
     "status": "public",
     "date": "2026-09-23",
     "url": "https://youtu.be/KYBHKNWUuI4",
-    "views": 744,
+    "views": 743,
     "likes": 10
   },
   {
@@ -604,7 +604,7 @@
     "status": "public",
     "date": "2026-09-24",
     "url": "https://youtu.be/bEni27RJgM4",
-    "views": 554,
+    "views": 591,
     "likes": 9
   },
   {
@@ -612,7 +612,7 @@
     "status": "public",
     "date": "2026-09-24",
     "url": "https://youtu.be/l-MyYaMlxc8",
-    "views": 928,
+    "views": 935,
     "likes": 8
   },
   {
@@ -628,23 +628,23 @@
     "status": "public",
     "date": "2026-09-25",
     "url": "https://youtu.be/5xhaVWmicBI",
-    "views": 301,
-    "likes": 2
+    "views": 522,
+    "likes": 4
   },
   {
     "title": "Hit a ball dead on at 2 m/s: does the cue ball stop? No spin: dead stop. Rolling: 2/7 of its speed",
     "status": "public",
     "date": "2026-09-25",
     "url": "https://youtu.be/pcnwZnIKhh0",
-    "views": 412,
-    "likes": 4
+    "views": 957,
+    "likes": 5
   },
   {
     "title": "Bucket over your head: how slow before it spills? 30 turns a minute on a 1 m arm",
     "status": "public",
     "date": "2026-09-25",
     "url": "https://youtu.be/xPS0hhN56p4",
-    "views": 522,
+    "views": 936,
     "likes": 6
   },
   {
@@ -652,27 +652,51 @@
     "status": "public",
     "date": "2026-09-26",
     "url": "https://youtu.be/hDic9PCXFKs",
-    "views": 0,
-    "likes": 0
+    "views": 353,
+    "likes": 3
   },
   {
     "title": "Rope swing: when should you let go to fly farthest? 31 deg past the bottom, 10.26 m against 6 m",
     "status": "public",
     "date": "2026-09-26",
     "url": "https://youtu.be/f-ZLd4-azw0",
-    "views": 0,
-    "likes": 0
+    "views": 120,
+    "likes": 2
   },
   {
     "title": "Lowered or dropped: how far does the spring squash? 5 cm lowered, 10 cm dropped, exactly double",
     "status": "public",
     "date": "2026-09-26",
     "url": "https://youtu.be/3jzgy7G2whs",
+    "views": 462,
+    "likes": 3
+  },
+  {
+    "title": "Cut the ball: do the two balls split at a right angle? No spin: 90 degrees. Rolling: 63.7 degrees",
+    "status": "public",
+    "date": "2026-09-27",
+    "url": "https://youtu.be/aEgJbsPwqeo",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Fifteen unproduced measured-claim ideas in docs/niche.md",
+    "title": "Coin around a coin: how many times does it turn? 2 turns around, 1 turn along a flat strip",
+    "status": "public",
+    "date": "2026-09-27",
+    "url": "https://youtu.be/myMUuK-p_L8",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Pull the tablecloth: how fast must you pull? Above 1.1 m/s: 1 m/s rides off, 3 m/s moves 1.6 cm",
+    "status": "public",
+    "date": "2026-09-27",
+    "url": "https://youtu.be/-ry3tM_rZ98",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Twenty-one unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

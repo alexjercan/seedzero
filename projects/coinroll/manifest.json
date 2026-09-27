@@ -1,0 +1,34 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "coin_radius_px": 100,
+  "fixed_radius_ratio": 1.0,
+  "lap_s": 10.0,
+  "roll_s": 6.4,
+  "laps": 4,
+  "lap_at": 5.0,
+  "counters_from": 5.0,
+  "substeps": 100,
+  "rim_ticks": 12,
+  "description_ratios": [
+    2.0,
+    3.0
+  ],
+  "scene_duration": 40.0,
+  "fixed_centre_px": [
+    540,
+    700
+  ],
+  "strip_y": 1331,
+  "title": "Coin around a coin.|How many times|does it turn?",
+  "title_until": 3.0,
+  "payoff_t": 29.2,
+  "payoff_hold": 0.6,
+  "payoff_text": "coin around a coin: | how many times does it turn? | {around:.0f} turns around, {along:.0f} turn along the strip | upright again halfway around | 4 turns around a coin 3 times as big",
+  "loop_fade": 0.5,
+  "music_seed": 90,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "same coin, same speed | no slipping | no seed"
+}

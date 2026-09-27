@@ -1,0 +1,21 @@
+{
+  "title": "Coin around a coin: how many times does it turn? 2 turns around, 1 turn along a flat strip",
+  "description": "Coin around a coin: how many times does it turn? A coin of radius r rolls without slipping around a fixed coin of the same radius R = r (top panel), and the same coin rolls along a flat strip exactly as long as the fixed coin's rim, 2 pi R, drawn as that rim unrolled (bottom panel). The contact point advances along the rim or the strip at the same speed on both panels, so both rolls take 6.4 s; the arrow on the coin's face counts the turns, the red is the rim already rolled, the teal line is the path of the coin's centre. Each lap holds 3.6 s at the end with the counters lit, then the strip coin goes back to the start; 4 laps in 40 s; kinematics only, deterministic, no seed.\n\nMeasured:\n- around: over one lap the arrow turns 12.5664 rad = 4.0000 pi = 2.0000 turns (closed form 2 pi (R / r + 1) = 4 pi); it is upright again 2 times per lap: first at s = 3.1416 r = 0.5000 of the rim, theta = 180.00 degrees, halfway, on the far side (closed form s = 2 pi R r / (R + r) = pi R), then at the start; relative to the line of centres the coin turns 1.0000 turn per lap and the line of centres itself turns 1.0000 turn, 2.0000 in all\n- along the strip (2 pi R = 6.2832 r): the arrow turns 6.2832 rad = 2.0000 pi = 1.0000 turn (closed form s / r = 2 pi); upright again 1 time, at the end of the strip\n- no slip: the arc of the rolling rim that has touched, r (phi - theta), matches the arc covered on the fixed rim, R theta, within 4.0e-12 r at every sample (along the strip within 2.0e-12 r); the material point of the coin at the contact moves at most 2.7e-08 v around and 4.5e-09 v along (central differences over 3.3e-04 s): it rolls, it does not slide; at the end of a lap the whole rim of the rolling coin has touched, 1.0000 times its own rim\n- centre: the coin's centre travels 12.5664 r per lap around the coin (2 pi (R + r)), 2.0000 times the coin's own circumference 6.2832 r, at 1.9635 r/s; along the strip 6.2832 r, 1.0000 times, at 0.9817 r/s (the contact speed on both panels, v = 0.9817 r/s)\n- other sizes: around a coin of 2 times the radius, 3.0000 turns (upright 3 times, first at 120.00 degrees) against 2.0000 along a strip as long as that rim; 3 times the radius, 4.0000 turns (upright 4 times, first at 90.00 degrees) against 3.0000; the count is R / r + 1\n\nWhy: rolling without slipping means the coin turns once about its centre for every one of its own circumferences that its centre travels. Along the strip the centre travels 2 pi r, one circumference: one turn. Around the other coin the centre does not travel the rim; it travels a circle of radius R + r = 2 r, 2 pi (R + r) = 4 pi r, two circumferences: two turns. The extra turn is the centre's own lap around the fixed coin, which is why the arrow is already upright again halfway around. In general the count is R / r + 1. The 1982 SAT asked this for a coin of three times the radius and keyed 3; the answer is 4, none of the five choices was right, and the question was voided.\n\nRerun sims/coinroll/coinroll.py with projects/coinroll/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "coin rotation paradox",
+    "coin around a coin",
+    "how many times does it turn",
+    "rolling without slipping",
+    "SAT coin problem",
+    "rolling",
+    "geometry",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

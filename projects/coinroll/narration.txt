@@ -1,0 +1,2 @@
+Coin around a coin. How many times does it turn? Same coin, same size. Watch the arrow. Halfway around, the arrow points up again. That is one turn already. Back at the start, it points up again. Two turns. Now the same coin rolls along a flat strip, exactly as long as the rim it went around. Same speed, same distance. It turns once, and that is all. Around the coin, the center travels twice as far, so the coin turns twice.
+So, coin around a coin. How many times does it turn? It makes two turns, not one. Along the flat strip, one turn.

@@ -1,0 +1,20 @@
+{
+  "title": "Pull the tablecloth: how fast must you pull? Above 1.1 m/s: 1 m/s rides off, 3 m/s moves 1.6 cm",
+  "description": "Pull the tablecloth: how fast must you pull? A short glass (7 cm wide, 9 cm tall) stands on a tablecloth 30 cm from the cloth's far edge and 40 cm from the table edge on the puller's side; sliding friction 0.2 between glass and cloth and 0.4 between glass and table, g = 9.80665 m/s^2, the cloth thin and massless. At t = 0 the cloth is pulled toward the table edge at a steady speed (a jerk to V, then held). Top, 1.0 m/s; bottom, 3.0 m/s; the same cloth and the same glass on the same clock, integrated by RK4 at 10,000 steps per second with the friction switches (zero slip, the cloth's edge, zero speed, the table edge) located inside the step and checked against the closed forms, shown at 1/8 speed; the pull repeats every 8.4 s of video, 5 pulls in 42 s. The glass slides and never tips: a block tips under friction only if mu exceeds its width over its height, and 7 / 9 = 0.78 is above both 0.2 and 0.4. Deterministic, no seed.\n\nMeasured:\n- threshold: the cloth clears the glass only if V^2 / (2 mu g) is at least the length of cloth under it, i.e. above sqrt(2 mu g L) = 1.085 m/s with this cloth (mu 0.2, 30 cm); it scales with the square root of the cloth length (15 cm: 0.767 m/s, 60 cm: 1.534 m/s) and of the cloth friction (mu 0.1: 0.767 m/s, mu 0.4: 1.534 m/s); the table friction only sets how far the glass slides afterwards\n- 1.0 m/s (below the threshold): the glass gains 1.961 m/s^2 on the cloth and reaches cloth speed at 0.510 s after 25.5 cm (V / (mu g) and V^2 / (2 mu g)); the cloth has moved 51.0 cm by then, 25.5 cm of it out from under the glass, so 4.5 cm of cloth is still under it and the cloth never clears; the glass rides with the cloth at 1 m/s and its centre passes the table edge, 40 cm from its start, at 0.655 s; the cloth's far edge leaves the table at 0.700 s\n- 3.0 m/s (above the threshold): the cloth is clear of the glass in 103.5 ms with the glass at 0.203 m/s having moved 1.05 cm; on the bare table it slows at 3.923 m/s^2 and stops 51.8 ms later after 0.53 cm more: 1.58 cm in all (1.576 cm), 38.4 cm short of the edge; the cloth's far edge leaves the table at 0.233 s\n- other pull speeds on the same cloth: 1.1 m/s: the cloth is clear in 468 ms with the glass at 0.918 m/s after 21.5 cm, it slides 10.7 cm more and stops after 32.2 cm, 7.8 cm short of the edge; 2.0 m/s: clear in 163 ms, 2.61 + 1.30 = 3.91 cm; 4.0 m/s: clear in 76 ms, 0.57 + 0.29 = 0.86 cm\n- tipping check: width over height 7 / 9 = 0.778, above 0.2 and 0.4, so the glass slides on both surfaces; a 7 cm wide glass taller than 17.5 cm would tip on the table\n- RK4 at 10,000 steps per second stays within 3e-14 m of the closed forms on both panels\n\nWhy: while the cloth slips under the glass, friction drags the glass along at mu g = 1.96 m/s^2 no matter how fast the cloth goes; what the pull speed changes is how long the cloth stays under the glass. Pulled at 1 m/s the glass catches up with the cloth after 25.5 cm, before the 30 cm of cloth has run out, and from then on it is carried along like a passenger, right over the edge. Pulled at 3 m/s the 30 cm of cloth is gone in a tenth of a second, the glass has only reached 0.2 m/s and 1 cm, and the rougher bare table stops it half a centimeter later. The dividing line is where the catch-up distance V^2 / (2 mu g) equals the cloth length: 1.085 m/s here. A longer or rougher cloth raises it as the square root; a shorter or smoother one lowers it.\n\nRerun sims/tablecloth/tablecloth.py with projects/tablecloth/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "tablecloth trick",
+    "tablecloth pull",
+    "how fast must you pull",
+    "friction",
+    "sliding friction",
+    "inertia",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

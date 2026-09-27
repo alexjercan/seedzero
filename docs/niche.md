@@ -1035,3 +1035,125 @@ rejected):
   g / 21 (0.467 m/s^2) because both weights must speed up, not g / 11
   (1.50 s) as the weight difference alone suggests; closed form; mild
   surprise, so rank it low; repeat the drop; deterministic, no seed.
+
+Added by trend research 2026-09-27 (evidence in task 20260927-102520;
+selection favoured everyday "which way", "which first" and "does it
+stop" debates with an exact fraction, angle or threshold, two panels on
+the same input that end differently, closed-form checks and builds of
+about 25 minutes with RK4 or closed forms; space, counters, drawings,
+tie payoffs, fitted constants and rider models rejected):
+
+- Cut shot: two cue balls at 2.0 m/s into a still ball half-ball (a 30
+  degree cut), one sliding with no spin beside one rolling; measure the
+  angle between the two paths once both balls roll; expect exactly 90.0
+  degrees for the sliding cue ball (the tangent line, 5/7 of 1.0 m/s
+  after 12.5 cm of slip) against 63.7 degrees for the rolling one, whose
+  kept spin bends it from 60 to 33.7 degrees off its line at 1.116 m/s
+  after 26 cm (v_final = (5/7) v_after + (2/7) v0 along the original
+  line; the 30 degree rule, about 27 degrees for 1/4 and 3/4 ball hits),
+  the object ball at 5/7 of 1.732 m/s in both; repeat the shot;
+  deterministic, no seed.
+  [produced 2026-09-27 as "Cut the ball: do the two balls split at a right
+  angle?", two cue balls at 2.0 m/s hitting a ball at rest half on (a 30
+  degree cut, sin 0.5) on mu 0.2 cloth, the top one with no spin at the hit
+  and the bottom one rolling, shown 8x slow, 6 shots in 42 s: with no spin
+  the two paths meet at exactly 90.00 degrees, the cue ball slowing along
+  the tangent line to 0.7143 m/s (5/7) after 0.1457 s and 12.49 cm; rolling,
+  the kept spin bends the cue ball 26.33 degrees back from the tangent line
+  to 33.67 degrees off its old line at 1.1157 m/s after 0.2523 s and 26.23
+  cm of curve, the paths meeting at 63.67 degrees; the object ball leaves at
+  1.7321 m/s and rolls at 1.2372 m/s after 37.46 cm; three-quarter, half and
+  quarter ball cuts give 42.10, 63.67 and 75.86 degrees rolling and 90.00 at
+  every cut with no spin; the angles do not change with speed; the title is
+  three lines because the question is about 1300 px at 56 px;
+  https://youtu.be/aEgJbsPwqeo, task 20260927-103222]
+- Coin rotation: a coin rolled without slipping around an identical coin
+  beside the same coin rolled along a flat strip as long as the other
+  rim; measure the turns of a marked point per lap; expect exactly 2
+  around the coin (R / r + 1; upright again halfway) against exactly 1
+  along the strip, 4 around a coin of three times the radius (the 1982
+  SAT keyed 3); one lap is exactly periodic so the short loops;
+  deterministic, no seed.
+  [produced 2026-09-27 as "Coin around a coin: how many times does it turn?
+  2 turns around, 1 turn along a flat strip"; measured 2.0000 turns per lap
+  around a coin of the same size (4.0000 pi, upright again halfway at theta
+  = 180.00 degrees) against 1.0000 along a strip as long as the rim, centre
+  path 2 pi (R + r) = 2.0000 times the circumference, no-slip arc match
+  within 4.0e-12 r; 3 against 2 for twice the radius and 4 against 3 for
+  three times (the 1982 SAT keyed 3); https://youtu.be/myMUuK-p_L8, task
+  20260927-103223]
+- Tablecloth: a glass 30 cm from the far edge of a cloth (glass on cloth
+  mu 0.2, glass on table 0.4, 40 cm from the table edge), the cloth
+  pulled at a steady 1.0 m/s beside 3.0 m/s; measure how far the glass
+  moves; expect the slow glass to reach cloth speed after 25 cm and ride
+  off the table at 0.66 s, the fast glass to move 1.05 cm on the cloth
+  plus 0.53 cm on the table, 1.6 cm, the cloth clear in 104 ms; the
+  threshold sqrt(2 mu g L) = 1.08 m/s (4 m/s gives 0.9 cm); repeat the
+  pull; deterministic, no seed.
+  [produced 2026-09-27 as "Pull the tablecloth: how fast must you pull?",
+  two stacked panels of the same 30 cm of cloth (mu 0.2) under the same 7 by
+  9 cm glass 40 cm from the table edge (mu 0.4 on the bare table), pulled at
+  1 m/s and 3 m/s at 1/8 speed on an 8.4 s cycle, five pulls in 42 s: the
+  threshold is sqrt(2 mu g L) = 1.0848 m/s and scales with the square root
+  of the cloth length and of the cloth friction (15 cm 0.767 m/s, 60 cm
+  1.534 m/s); at 1 m/s the glass reaches cloth speed at 0.5099 s after 25.49
+  cm with 4.51 cm of cloth still under it and rides over the edge at 0.6549
+  s; at 3 m/s the cloth is clear in 103.5 ms with the glass at 0.2030 m/s
+  after 1.051 cm, it slides 0.525 cm more on the table and stops at 155.3 ms
+  after 1.576 cm, 38.4 cm short of the edge; 1.1 m/s stops 7.8 cm short
+  after 32.21 cm, 2 m/s after 3.91 cm, 4 m/s after 0.86 cm; the glass (7 / 9
+  = 0.778, above both mu) slides and never tips; RK4 at 10,000 steps a
+  second within 3e-14 m of the closed form; whisper drops "do" from "how
+  fast do you need to pull" in 3 of 5 takes, so the question is "how fast
+  must you pull"; https://youtu.be/-ry3tM_rZ98, task 20260927-103224]
+- Inertia ball: a 1 kg ball hung by a string with a second string below,
+  both snapping at 20 N with 1 cm of stretch (k 2,000 N/m), the lower
+  end pulled at 5 cm/s beside jerked at 2 m/s; measure which string
+  snaps and when; expect the slow pull to snap the top string at 0.22 s
+  after the ball sinks 5.1 mm (bottom at 11.5 N) and the jerk to snap
+  the bottom in 5 ms with the ball moved 0.085 mm (top 9.98 N); x'' +
+  (2 k / m) x = (k V / m) t, tensions k x + m g and k (V t - x); the
+  0.41 m/s threshold depends on the stiffness and break chosen, so
+  narrate the two outcomes; repeat; deterministic, no seed.
+- Pendulum and peg: a 1 m pendulum released from horizontal with a peg
+  halfway down the string beside a peg 70 percent down; measure whether
+  the bob loops the peg; expect the halfway string to go slack 41.8
+  degrees above the peg (48.2 short of the top) at 1.81 m/s, the bob to
+  fly 0.55 s and be caught 35 degrees from the bottom on the far side
+  keeping 10 percent of its energy, and the 70 percent peg to loop at
+  2.80 m/s over the top (needs 1.72) with 1.67 weights of tension, lap
+  0.528 s; the peg must be at least 3/5 down (5 d = 3 L; slack angle
+  asin(2 d / 3 r)); RK4 with a slack event and a parabola; the looping
+  panel is periodic; deterministic, no seed.
+- Head-on crash: two 1,000 kg cars at 50 km/h head-on beside one car
+  into a wall at 50 and one at 100, the crumple a 1e6 N/m spring;
+  measure the crush of each car; expect 43.9 cm per car in the head-on,
+  the contact plane never moving, exactly the wall at 50 (43.9 cm, 44.8
+  g, 99 ms) and half the wall at 100 (87.8 cm); crush v sqrt(m / k); a
+  constant-force crumple gives 4x instead of 2x, so say "a car that
+  crumples like a spring"; the equality with the 50 wall holds for any
+  crumple law; repeat the crash; deterministic, no seed.
+- Fridge tip: an 80 kg fridge 0.7 m wide and 1.8 m tall on mu 0.3,
+  pushed with 1.05 times the friction (247 N) at 0.9 m up beside 1.4 m;
+  measure whether it slides or tips; expect the low push to slide at
+  0.147 m/s^2 (7 cm in 1 s, 29 in 2) and the high push to pass the
+  no-return angle atan(w / H) = 21.3 degrees at 0.81 s and lie flat at
+  1.27 s; threshold h* = m g w / (2 F) = 1.11 m (w / (2 mu) = 1.17 m at
+  the limit push); rotation about the front bottom edge with I = m (w^2
+  + H^2) / 3; tune the push so the slide is visible; repeat;
+  deterministic, no seed.
+- Rod on ice: a 1 m rod let go 10 degrees off vertical on ice beside the
+  same rod with its foot pinned; measure the time to lie flat and where
+  the tip lands; expect the ice rod flat at 0.517 s with its tip 0.50 m
+  from its start line (the centre falls straight down) against 0.768 s
+  and 1.00 m pinned, 1.49 times faster, both at 5.38 rad/s at the floor;
+  theta'^2 = 12 g (sin 80 - sin theta) / (L (1 + 3 cos^2 theta))
+  against 3 g (sin 80 - sin theta) / L; mild, so rank it low; repeat;
+  deterministic, no seed.
+- Yo-yo drop: a 3 cm yo-yo on a 0.5 cm axle dropped on its string beside
+  a ball dropped from the same 1 m; measure the time to the bottom;
+  expect 1.969 s against 0.452 s, 4.36 times slower (a = g / 19 = 0.516
+  m/s^2), the string holding 94.7 percent of the weight all the way
+  down, 1.016 m/s and 203 rad/s at the bottom, then back up to the hand
+  every 3.94 s with no loss; periodic so the short loops; mild, so rank
+  it low; deterministic, no seed.

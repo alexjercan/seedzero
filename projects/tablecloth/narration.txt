@@ -1,0 +1,2 @@
+Pull the tablecloth. How fast must you pull? Same cloth, same glass, two speeds. On top, pulled at one meter a second. The cloth drags the glass. It speeds up, catches the cloth, and rides with it, over the edge. On the bottom, pulled at three meters a second. The cloth is gone before the glass gets going. It slides a little on the bare table, and stops.
+So, how fast must you pull? You must pull faster than one point one meters a second, with this cloth. At one meter a second, the glass rides off the table. At three, it moves one point six centimeters.
