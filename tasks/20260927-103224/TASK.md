@@ -547,3 +547,9 @@ stand as briefed.
   run's single read, update and re-read as printed by yt-qa.py); day total
   after three attempts 1,655 + 1,655 + 1,653 = 4,963 units plus 5 for the
   10:02 stats refresh and 5 for the 11:17 refresh, target of three met
+
+### Repository
+- committed as 042e398 "Publish the day twenty-nine slate" (sims,
+  projects, tasks, docs/niche.md, web/data; no media, previews or
+  secrets) and pushed to origin/master at 2026-09-27 11:18 EEST on top of
+  21b9197
