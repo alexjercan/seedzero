@@ -1,0 +1,47 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "string_m": 1.0,
+  "peg_fractions": [
+    0.5,
+    0.7
+  ],
+  "panel_labels": [
+    "peg halfway down",
+    "peg 70 % down"
+  ],
+  "check_fractions": [
+    0.59,
+    0.6,
+    0.61
+  ],
+  "steps_per_second": 20000,
+  "slack_tol_weights": 1e-06,
+  "sim_end_s": 4.0,
+  "slow": 2.5,
+  "cycle_s": 8.8,
+  "release_at": 0.3,
+  "first_cycle_at": -2.55,
+  "reset_fade": 0.6,
+  "trail_s": 0.3,
+  "scene_duration": 44.0,
+  "px_per_m": 400.0,
+  "pivot_dy": 80,
+  "band_y": [
+    340,
+    880,
+    1420
+  ],
+  "title": "Will the ball swing|round the peg?",
+  "title_until": 3.0,
+  "payoff_t": 32.3,
+  "payoff_hold": 0.6,
+  "payoff_text": "will the ball swing round the peg? | halfway: no, slack {short:.0f}\u00b0 short of the top | flies off at {v_slack:.1f} m/s, drops onto the string | 70 % down: yes, {v_top:.1f} m/s over the top | {T_top:.2f} weights at the top, one lap {lap:.3f} s | the peg must be at least 3/5 down",
+  "loop_fade": 0.5,
+  "music_seed": 93,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "1 m string, let go level | thin peg | no seed"
+}

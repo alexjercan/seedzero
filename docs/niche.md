@@ -1125,6 +1125,17 @@ tie payoffs, fitted constants and rider models rejected):
   0.528 s; the peg must be at least 3/5 down (5 d = 3 L; slack angle
   asin(2 d / 3 r)); RK4 with a slack event and a parabola; the looping
   panel is periodic; deterministic, no seed.
+  [produced 2026-09-28 as "Will the ball swing round the peg? Halfway down:
+  no, slack 48 deg short. 70 % down: yes. Needs 3/5"; measured, peg halfway
+  down (r = 0.5 m): the string pull reaches zero 48.19 degrees short of the
+  top at 1.8080 m/s, the ball flies 0.5608 s (peak 0.4259 m above the peg,
+  crosses the vertical 0.2813 m above it, inside the circle) and drops onto
+  the straight string 17.65 degrees from the bottom on the near side at 4.3232
+  m/s keeping 0.1104 m/s, 0.062 percent of the bottom energy (not the
+  research's 35 degrees far side and 10 percent); peg 70 percent down (r = 0.3
+  m): over the top at 2.8009 m/s (needs 1.7152), 1.6667 weights, lap 0.5283 s,
+  periodic; threshold 3 L / 5: 0.59 L slack 16.39 degrees short, 0.60 L zero
+  pull at the top, 0.61 L loops at 2.0772 m/s; task 20260928-101834]
 - Head-on crash: two 1,000 kg cars at 50 km/h head-on beside one car
   into a wall at 50 and one at 100, the crumple a 1e6 N/m spring;
   measure the crush of each car; expect 43.9 cm per car in the head-on,
@@ -1133,6 +1144,15 @@ tie payoffs, fitted constants and rider models rejected):
   constant-force crumple gives 4x instead of 2x, so say "a car that
   crumples like a spring"; the equality with the 50 wall holds for any
   crumple law; repeat the crash; deterministic, no seed.
+  [produced 2026-09-28 as "Head-on at 50: same as a wall at 100? No. 44 cm of
+  crush each, like a wall at 50. At 100: 88 cm"; measured two 1,000 kg cars
+  with a 1e6 N/m spring crumple head-on at 50 + 50 km/h crushing 43.92 cm each
+  in 49.67 ms at 44.79 g with the contact plane displaced 0.0000 mm, exactly
+  one car into a wall at 50 (43.92 cm, ratio 1.0000); one car into the wall at
+  100, 87.84 cm, ratio 2.0000, the same 49.67 ms, 89.57 g; the head-on's two
+  cars together crush 87.84 cm, the wall-at-100 figure; a constant-force
+  crumple would give 4.0000 (175.68 cm); 26.35 cm at 30 km/h, 61.49 at 70; RK4
+  within 8.6e-15 m of the closed forms; task 20260928-101832]
 - Fridge tip: an 80 kg fridge 0.7 m wide and 1.8 m tall on mu 0.3,
   pushed with 1.05 times the friction (247 N) at 0.9 m up beside 1.4 m;
   measure whether it slides or tips; expect the low push to slide at
@@ -1142,6 +1162,13 @@ tie payoffs, fitted constants and rider models rejected):
   the limit push); rotation about the front bottom edge with I = m (w^2
   + H^2) / 3; tune the push so the slide is visible; repeat;
   deterministic, no seed.
+  [checked 2026-09-28 by the orchestrator, not produced: the low push slides
+  the fridge before the high push can tip it, so the tip threshold for a block
+  that is already sliding is h* = (m g w / 2 + (F - mu m g) H / 2) / F = 1.154
+  m, not the 1.11 m above, and the rotate-about-the-front-edge model with I =
+  m (w^2 + H^2) / 3 gives a negative normal force part way through the fall,
+  so the edge cannot hold and the fall needs a slide-and-tip treatment; the
+  day 30 slate took rod on ice instead; recheck the model before producing]
 - Rod on ice: a 1 m rod let go 10 degrees off vertical on ice beside the
   same rod with its foot pinned; measure the time to lie flat and where
   the tip lands; expect the ice rod flat at 0.517 s with its tip 0.50 m
@@ -1150,6 +1177,16 @@ tie payoffs, fitted constants and rider models rejected):
   theta'^2 = 12 g (sin 80 - sin theta) / (L (1 + 3 cos^2 theta))
   against 3 g (sin 80 - sin theta) / L; mild, so rank it low; repeat;
   deterministic, no seed.
+  [produced 2026-09-28 as "Stick on ice: where does the tip land? 41 cm on
+  ice, 83 cm pinned in a hinge, exactly half"; measured the tip 41.32 cm along
+  on ice ((L / 2)(1 - cos 80), the foot back 41.32 cm, the centre fixed at
+  8.68 cm) against 82.64 cm pinned in a hinge, ratio 2.0000 at any lean; flat
+  at 0.5166 s on ice against 0.7680 s hinged (1.487 times), both 5.3836 rad/s
+  at the floor; ice foot push at least 0.169 weights at 27.4 degrees; hinge
+  vertical force down to 0.0075 weights at 19.2 degrees, horizontal to
+  vertical up to 93.4; 1 and 5 degrees off vertical 0.811 / 1.368 s and 0.603
+  / 0.948 s; RK4 at 12,000 steps a second within 1e-10 s of the quadrature;
+  task 20260928-101835]
 - Yo-yo drop: a 3 cm yo-yo on a 0.5 cm axle dropped on its string beside
   a ball dropped from the same 1 m; measure the time to the bottom;
   expect 1.969 s against 0.452 s, 4.36 times slower (a = g / 19 = 0.516

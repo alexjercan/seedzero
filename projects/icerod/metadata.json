@@ -1,0 +1,21 @@
+{
+  "title": "Stick on ice: where does the tip land? 41 cm on ice, 83 cm pinned in a hinge, exactly half",
+  "description": "Stick on ice: where does the tip land? A uniform 1 m stick stands with its foot at x = 0, leaning 10 degrees off vertical (80 degrees from the floor), and is let go from rest, g = 9.81 m/s^2. Top, ice: the floor is frictionless, so no horizontal force acts, the centre of mass falls straight down and the foot slides back; theta'^2 = 12 g (sin 80 - sin theta) / (L (1 + 3 cos^2 theta)). Bottom, the same stick with its foot pinned in a hinge; theta'^2 = 3 g (sin 80 - sin theta) / L. Both integrated by RK4 at 12,000 steps per second with the landing located by bisection inside the step, checked against the energy forms and the quadrature of the time to lie flat, shown at 1/5 speed; the drop repeats every 8 s of video, 5 drops in 40 s. Deterministic, no seed.\n\nMeasured:\n- on ice the tip travels (L / 2)(1 - cos 80) = 41.32 cm sideways and lands 58.68 cm from the foot's start; the foot slides back the same 41.32 cm; the centre stays at x = (L / 2) cos 80 = 8.68 cm and drops 49.24 cm straight down\n- hinged the tip travels L (1 - cos 80) = 82.64 cm and lands 100.00 cm from the foot; the ratio is 2.0000, exactly 2 at any lean (1 degree: 49.13 against 98.25 cm; 5 degrees: 45.64 against 91.28 cm; a 1.2 m stick at 10 degrees: 49.58 against 99.16 cm)\n- the ice stick lies flat at 0.5166 s (quadrature of the energy form 0.5166 s, diff -8.8e-11 s), the hinged stick at 0.7680 s (quadrature 0.7680 s, diff -1.7e-10 s): 1.487 times longer, 0.2514 s apart\n- both reach the floor at 5.3836 rad/s (closed form sqrt(3 g sin 80 / L) = 5.3836), the tip coming down at 5.384 m/s and the centre at 2.692 m/s on both panels: at theta = 0 both kinetic energies are m L^2 theta'^2 / 6\n- the floor's push on the ice foot, N = m (g + y_c''), is 0.917 weights at the release, at least 0.169 weights (at 27.4 degrees) and 0.250 weights at the floor, never zero: the foot never leaves the floor; it slides fastest at 1.299 m/s at 50.5 degrees and stops (0.000 m/s) as the tip lands\n- the hinge force: vertical 0.977 weights at the release, at least 0.0075 weights (at 19.2 degrees) and 0.250 at the floor; horizontal 0.698 weights at that angle and 1.477 at the floor, pulling the stick back; the horizontal to vertical ratio reaches 93.4 at 18.8 degrees, so no friction could hold this foot: it must be pinned\n- other leans (ice against hinged): 1 degree off vertical 0.811 against 1.368 s (1.686 times longer), 5 degrees 0.603 against 0.948 s (1.572 times); a 1.2 m stick at 10 degrees 0.566 against 0.841 s (sqrt(1.2) = 1.0954 times the 1 m times)\n- checks: theta'^2 stays within 7.5e-14 (ice) and 2.2e-13 (hinged) rad^2/s^2 of the energy forms, the energy drifts by 2.4e-15 and 7.7e-15 of the energy released over 6199 and 9216 steps, and halving the time step moves the landing times by 1.6e-15 and 8.3e-15 s\n\nWhy: the stick's tip is L cos theta to the right of its foot, so as the stick goes from 80 degrees to flat the stick \"unfolds\" by L (1 - cos 80) = 82.64 cm. Pinned in a hinge the foot cannot move, so the tip takes all of that unfolding. On ice nothing can push the stick sideways, so its centre of mass keeps its x and falls straight down; the unfolding is shared equally, 41.32 cm forward by the tip and 41.32 cm back by the foot. That is exactly half at any lean. The ice stick is flat sooner (0.517 against 0.768 s) because the same weight has less to turn (about the centre, m L^2 / 12, instead of about the foot, m L^2 / 3), yet both arrive at the floor turning at the same 5.38 rad/s, because at theta = 0 the two motions carry the same energy in the same way.\n\nRerun sims/icerod/icerod.py with projects/icerod/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "falling stick",
+    "stick on ice",
+    "where does the tip land",
+    "frictionless floor",
+    "hinged rod",
+    "rigid body",
+    "center of mass",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Head-on at 50: same as a wall at 100? No. 44 cm of crush each, like a wall at 50. At 100: 88 cm",
+  "description": "Head-on at 50: same as a wall at 100? Three crashes on one clock, side view, the same horizontal scale. A car is a rigid body of 1,000 kg with a 1 m crumple zone at its front that acts as a linear spring of k = 1,000,000 N/m while it compresses and locks at maximum compression (a car does not spring back; the crushed cars stay where they stop). Top: two identical cars at 50 km/h (13.8889 m/s) head-on, bumpers touching at t = 0, the two crumple springs in series between the two bodies with the massless contact plane where their forces balance. Middle: one car at 50 km/h into a rigid wall. Bottom: one car at 100 km/h (27.7778 m/s) into the same wall. All three impacts start at the same instant; each lane is integrated by RK4 at 100,000 steps per second with the lock located by bisection inside the step and checked against the closed forms x_max = v sqrt(m / k), t_max = (pi / 2) sqrt(m / k), a_peak = v sqrt(k / m). Shown at 1/40 speed; the crash repeats every 14 s of video, 3 times in 42 s. Deterministic, no seed.\n\nMeasured:\n- head-on at 50 + 50 km/h: the crumple springs lock at 49.67 ms with each car crushed 43.92 cm (87.84 cm of crush in all); the contact plane's largest displacement is 0.0000 mm; both cars stop; peak deceleration 439.2 m/s^2 = 44.79 g; the kinetic energy of both cars, 192.90 kJ, is stored in the two springs at the lock (192.90 kJ)\n- one car at 50 km/h into the wall: locks at 49.67 ms with the car crushed 43.92 cm; peak deceleration 439.2 m/s^2 = 44.79 g; 96.45 kJ stored in the spring\n- one car at 100 km/h into the wall: locks at 49.67 ms (the same time) with the car crushed 87.84 cm; peak deceleration 878.4 m/s^2 = 89.57 g; 385.80 kJ stored in the spring\n- head-on per car against the wall at 50: 43.92 against 43.92 cm, ratio 1.0000; the wall at 100 against the wall at 50: ratio 2.0000; the two cars of the head-on together crush 87.84 cm, the same as the one car into the wall at 100 (ratio 1.0000)\n- other speeds into the wall (a head-on at the same speed crushes each car the same): 30 km/h, 26.35 cm in 49.7 ms, peak 26.9 g; 70 km/h, 61.49 cm in 49.7 ms, peak 62.7 g\n- constant-force crumple, for comparison: with a constant crumple force of 219.6 kN, chosen so that 50 km/h gives the same 43.92 cm, 100 km/h gives 175.68 cm, ratio 4.0000 (4 times, not 2), in 63.2 and 126.5 ms at a constant 22.4 g; the head-on equality does not depend on the crumple law\n- RK4 at 100,000 steps per second stays within 8.6e-15 m (50 km/h) and 1.7e-14 m (100 km/h) of the closed form x = (v / omega) sin(omega t); the lock times match (pi / 2) sqrt(m / k) within 4.6e-12 ms; total momentum in the head-on stays within 0.0e+00 kg m/s of zero\n\nWhy: in the head-on the two cars are mirror images, so the plane where their bumpers meet cannot move: each car meets what is, for it, an immovable wall at its own 50 km/h, and crushes exactly as it would into that wall. The closing speed is 100 km/h, and the total crush, 87.84 cm, is indeed what one car crushes into a wall at 100, but it is shared by two crumple zones, so each car takes 43.92 cm. A car that crumples like a spring crushes in proportion to its speed (x = v sqrt(m / k)), so the wall at 100 is exactly twice the wall at 50, and every crash here takes the same 49.67 ms to stop, a quarter period of the spring. A crumple zone that resists with a constant force would crush in proportion to the speed squared, 4 times; the 44 cm against 44 cm of the head-on and the wall at 50 holds for any crumple law, by symmetry.\n\nRerun sims/crash/crash.py with projects/crash/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "head-on collision",
+    "car crash physics",
+    "crumple zone",
+    "head-on at 50",
+    "wall at 100",
+    "crash simulation",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "kinetic energy",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
