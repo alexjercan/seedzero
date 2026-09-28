@@ -433,3 +433,8 @@ steps a second within 1e-10 s of the quadrature; task 20260928-101835]
   single read, update and re-read as printed by yt-qa.py); day total after
   three attempts 1,655 + 1,656 + 1,655 = 4,966 units plus 5 for the 10:05
   stats refresh and 5 for the 11:35 refresh, target of three met
+
+### Repository
+- committed as 3a82f2e "Publish the day thirty slate" (sims, projects,
+  tasks, docs/niche.md, web/data; no media, previews or secrets) and pushed
+  to origin/master at 2026-09-28 11:36 EEST on top of 76e0f46
