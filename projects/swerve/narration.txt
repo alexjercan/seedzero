@@ -1,0 +1,2 @@
+Wall ahead. Brake or swerve? Two cars at fifty kilometers an hour, with the same grip. The right car steers away as hard as it can, and hits the wall at fifty. The left car is braking as hard as it can, and stops short. The wall spans the whole road, so a swerve must turn all the way. The dashed line is that turn. It reaches past the wall. The swerving car keeps all its speed. The braking car loses speed the whole way.
+So, wall ahead. Brake or swerve? Brake. Braking needs only twelve meters. A full swerve needs twenty five, twice as far.

@@ -1,0 +1,59 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "ball_radius_m": 0.0286,
+  "mu": 0.2,
+  "g": 9.80665,
+  "strike_speed_m_s": 2.0,
+  "tip_offset_R": 0.5,
+  "near_object_m": 0.3,
+  "far_object_m": 1.2,
+  "stepped_dts": [
+    1e-05,
+    1e-06
+  ],
+  "sweep_m": [
+    0.1,
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9,
+    1.2,
+    1.5
+  ],
+  "description_mus": [
+    0.15,
+    0.25
+  ],
+  "description_tips_R": [
+    0.3,
+    0.4
+  ],
+  "description_speeds_m_s": [
+    1.5,
+    3.0
+  ],
+  "slow": 5.0,
+  "cycle_s": 10.0,
+  "strike_at": 1.6,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.5,
+  "scene_duration": 40.0,
+  "px_per_m": 680.0,
+  "start_x_px": 150,
+  "stick_speed_m_s": 1.5,
+  "stick_ready_m": 0.04,
+  "stick_follow_m": 0.03,
+  "title": "Hit it low.|Does the cue ball|come back?",
+  "title_until": 3.4,
+  "payoff_t": 28.2,
+  "payoff_hold": 0.6,
+  "payoff_text": "hit it low: does the cue ball come back? | only if the other ball is closer than | {d_star_cm:.1f} cm: there the backspin runs out | 30 cm: back {v_back:.2f} m/s, {spin_left:.2f} m/s spin left | 1.2 m: follows {v_follow:.2f} m/s | cloth mu {mu_lo:g}: {d_mu_lo:.0f} cm, mu {mu_hi:g}: {d_mu_hi:.0f} cm | tip {tip_lo:g} R low instead of {tip:g} R: {d_tip_lo:.0f} cm",
+  "loop_fade": 0.5,
+  "music_seed": 97,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "2 m/s | tip half a radius low | mu 0.2 | no seed"
+}

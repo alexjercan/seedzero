@@ -1,0 +1,21 @@
+{
+  "title": "Which climbs higher, ice cube or ball? The ball, 64 cm against 46, 1.4 times as high",
+  "description": "Which climbs higher, ice cube or ball? The same ramp twice: a flat run-in, a circular fillet of radius 0.3 m and a straight 20 degree slope. Top, an ice cube (12 cm) slides with no friction. Bottom, a solid ball (radius 6 cm, I = (2/5) m r^2) rolls without slipping on a grippy ramp. Both cross the same start mark on the flat at 3 m/s, the ball spinning at 50.0 rad/s. Along the path of the centre, (1 + k) s'' = -g sin alpha, with k = 0 for the cube and 2/5 for the ball, g = 9.80665 m/s^2; integrated by RK4 at 12,000 steps per second with the top located by bisection inside the step, checked against the energy and a half-step rerun; shown at 1/3 speed; the run repeats every 10 s of video, 4 runs in 40 s. Deterministic, no seed.\n\nMeasured:\n- the ice cube's centre rises 45.89 cm (v0^2 / 2 g = 45.89 cm), the ball's 64.24 cm ((1 + 2/5) v0^2 / 2 g = 64.24 cm): 1.4000 times as high, 18.35 cm higher\n- the tops come 0.9916 s (cube) and 1.3494 s (ball) after the mark, 0.9083 and 1.2661 s after the foot of the fillet (on a plain slope with no fillet: 0.8944 and 1.2522 s, 134.17 and 187.83 cm along the slope); both are back at the mark at 3.000000 m/s, at 1.9832 and 2.6988 s\n- to roll without slipping the ball needs a friction force of up to 0.0977 of its weight, at most 0.1040 of the normal force ((2/7) tan 20 degrees; at most 0.0209 on the fillet); the ramp's friction coefficient is set to 0.6, so it never slips; the normal force stays between 0.940 and 4.824 weights\n- the ball's spin falls from 50.0 rad/s at the mark to 0.0 at the top; at the mark 2/7 (0.2857) of its energy is spin\n- other shapes on the same ramp at the same 3 m/s: a solid cylinder rises 68.83 cm (1.5000 times the cube), a hollow ball 76.48 cm (1.6667 times), a hoop 91.77 cm (2.0000 times); they need friction of 0.1213, 0.1456 and 0.1820 of the normal force\n- the same rolling ball meeting an ice slope: no friction, so nothing slows its spin; its centre rises only 45.89 cm, like the cube, and it is still spinning at 50.0 rad/s (7.96 turns a second) at the top\n- checks: the energy drifts by 2.5e-13 (cube) and 3.2e-13 (ball) of the starting kinetic energy; the rises match the closed forms within 1.1e-11 cm; halving the time step moves the tops by 4.1e-13 and 3.5e-13 s\n\nWhy: at the same speed the ball carries more energy than the cube: its motion, plus its spin (2/5 as much again, 2/7 of the total). The ice cube can only turn its motion into height, so it stops at v0^2 / 2 g. On the grippy ramp, friction slows the ball's spin as it climbs, and the spin energy lifts it too, so it climbs 1 + 2/5 = 1.4 times as high. The same ball on an ice slope keeps its spin and stops as low as the cube. A hoop, with all its mass at the rim, carries as much energy in spin as in motion and climbs twice as high.\n\nRerun sims/uphill/uphill.py with projects/uphill/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "ice cube or ball",
+    "which climbs higher",
+    "rolling ball",
+    "rolling without slipping",
+    "frictionless slide",
+    "moment of inertia",
+    "rotational energy",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

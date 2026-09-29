@@ -1194,3 +1194,101 @@ tie payoffs, fitted constants and rider models rejected):
   down, 1.016 m/s and 203 rad/s at the bottom, then back up to the hand
   every 3.94 s with no loss; periodic so the short loops; mild, so rank
   it low; deterministic, no seed.
+
+Added by trend research 2026-09-29 (evidence in task 20260929-100144;
+selection favoured everyday "which first", "which higher" and "does it
+make it" debates with an exact factor, fraction or threshold, road and
+pool subjects like the strongest recent shorts, two panels on the same
+input that end visibly differently, closed-form checks and builds of
+about 25 minutes with RK4 or closed forms; space, counters, drawings,
+tie payoffs, fitted constants and rider models rejected):
+
+- Brake or swerve: two cars at 50 km/h with the same 0.8 g of grip, a
+  wide wall 15 m ahead, one braking straight beside one steering away
+  at full grip; measure where each stops or hits; expect the braking
+  car to stop in 12.29 m after 1.77 s, 2.71 m short, and the turning
+  car to need a 24.59 m radius, exactly twice as far (v^2 / (2 mu g)
+  against v^2 / (mu g)), hitting the wall at 50 km/h at 1.16 s turned
+  37.6 degrees (asin(d / R)); braking first then turning is never
+  shorter; a narrow obstacle (2 m sidestep, 9.71 m) can favour the
+  swerve, so say "a wide wall"; top-down view; repeat the run;
+  deterministic, no seed.
+  [produced 2026-09-29 as "Wall ahead. Brake or swerve? Braking needs
+  12.3 m, a full swerve 24.6 m, twice as far"; measured at 50 km/h with
+  the same 0.8 g grip: braking stops in 12.2940 m after 1.7703 s, 2.7060
+  m short of a wall across the road at 15 m; the swerve keeps 50.00 km/h
+  on a 24.5881 m radius, a full quarter turn needs 24.5881 m, 2.0000
+  times; it hits at 1.1616 s turned 37.59 degrees, 5.105 m to the side,
+  39.62 km/h square to the wall; brake then turn least at u = 0; 70 km/h
+  24.0963 against 48.1926 m; a 2 m sidestep 9.7135 m (narrow obstacles
+  can favour the swerve); RK4 at 12,000 steps a second within 2.5e-12 m
+  of the closed forms; https://youtu.be/MFVd3MiPsUI, task
+  20260929-101914]
+- Ice cube or ball uphill: an ice cube sliding on ice beside a solid
+  ball rolling, both at 3 m/s at the foot of the same 20 degree slope;
+  measure how high each climbs; expect 45.9 cm against 64.2 cm, the
+  ball 1.400 times higher because its spin climbs too (h = (1 + k) v^2 /
+  2g, k = 2/5; cylinder 1.5x, hollow ball 1.667x, hoop exactly 2x), tops
+  at 0.894 and 1.252 s; rolling needs mu 0.104 or more ((2/7) tan
+  theta); a rolling ball that meets an ice slope stops at 45.9 cm still
+  spinning; V valley so each panel repeats (periods 3.91 and 5.34 s with
+  a 0.5 m flat); deterministic, no seed.
+  [produced 2026-09-29 as "Which climbs higher, ice cube or ball? The
+  ball, 64 cm against 46, 1.4 times as high"; measured the ice cube's
+  centre rising 45.89 cm against the rolling ball's 64.24 cm at 3 m/s on
+  a 20 degree slope, ratio 1.4000; tops 0.9916 and 1.3494 s after the
+  mark; rolling needs friction 0.1040 of the normal force; cylinder
+  68.83 cm (1.5x), hollow ball 76.48 cm (1.667x), hoop 91.77 cm (2x);
+  ball on an ice slope 45.89 cm still spinning at 50 rad/s; RK4 at
+  12,000 steps a second, energy within 3.2e-13;
+  https://youtu.be/rLaOH8SOh4U, task 20260929-101915]
+- Draw shot: two identical low hits (2.0 m/s, tip half a radius below
+  centre, 2.5 m/s of backspin, cloth mu 0.2), the object ball 30 cm
+  away beside 1.2 m away; measure where the cue ball goes after the
+  head-on hit; expect the backspin to run out at 76.5 cm (d* = (v0^2 -
+  (v0 - 0.4 R w0)^2) / (2 mu g), at 1.000 m/s), the 30 cm cue ball to
+  come back at 0.486 m/s (2/7 of the 1.70 m/s of spin left) and the 1.2
+  m cue ball to follow at 0.204 m/s (2/7 of the 0.714 m/s rolling
+  speed, reached after 89 cm); the 76.5 cm depends on mu and the tip
+  offset, so state both; builds on sims/cueball; repeat the shot;
+  deterministic, no seed.
+  [produced 2026-09-29 as "Hit it low at 2 m/s: does the cue ball come
+  back? Only if the other ball is closer than 76.5 cm"; measured a level
+  hit half a radius low at 2 m/s (2.5000 m/s backspin, mu 0.2): the
+  backspin is gone after 76.48 cm at 0.5099 s (1.0000 m/s); the other
+  ball 30 cm away: hit at 1.6802 m/s with 1.7006 m/s spin left, the cue
+  ball comes back at 0.4859 m/s (2/7); 1.2 m away: rolls in at 0.7143
+  m/s and follows at 0.2041 m/s (2/7); at 76.48 cm it stops dead; the
+  line at mu 0.15 / 0.25 is 101.97 / 61.18 cm, at a 0.3 / 0.4 R tip
+  52.01 / 65.26 cm, at 1.5 / 3 m/s 43.02 / 172.08 cm; exact pieces
+  within 1.7e-06 s of a stepped integration at dt 1e-06;
+  https://youtu.be/G1HkDcfYGNM, task 20260929-101917]
+- Car over a hump: the same car at a steady 40 and 60 km/h over a
+  cosine hump 1.5 m high and 24 m long (crest radius 19.45 m); measure
+  whether the wheels leave the road; expect the threshold sqrt(g R) =
+  49.7 km/h, 40 km/h holding with 0.35 of the weight on the road, 60
+  km/h leaving 3.0 m before the top and flying 12.8 m in 0.77 s, at
+  most 32 cm above the road (55 km/h: 9.4 m, 10 cm); point car, no
+  suspension; draw the gap clearly or use a sharper hump; repeat;
+  deterministic, no seed.
+- Swim to the flag: two swimmers at 1.0 m/s across a 50 m river running
+  0.8 m/s, one always heading at the flag beside one aiming 53.1
+  degrees upstream; measure the crossing times; expect 83.3 s straight
+  across (w / sqrt(v^2 - u^2)) against 138.9 s (w v / (v^2 - u^2)),
+  1.67 times longer, the flag swimmer swept 16.9 m downstream first;
+  at a current equal to the swim speed the flag swimmer ends exactly
+  half the width (25.0 m) downstream and never lands; RK4; play it
+  fast; deterministic, no seed.
+- Sliding ladder: a 4 m ladder let go at 75 degrees on a frictionless
+  wall and floor; measure where the top leaves the wall; expect exactly
+  2/3 of the starting height (sin theta = (2/3) sin theta0, 2.58 of 3.86
+  m, at 0.99 s), the floor push staying above 0.19 weights, flat at 1.34
+  s with the top 0.22 m from the wall; the second panel is weak, so
+  rank it low; deterministic, no seed.
+- Falling chimney: a brick stack and a concrete stack toppling from the
+  same lean; measure where the brick one snaps; expect a third of the
+  height (bending moment (1/4) m g H sin theta (r/H)(1 - r/H)^2, peak
+  1/27 at r = H/3; a 60 m stack from 0.5 degrees passes 30 degrees at
+  9.68 s and lies flat at 12.00 s); the break angle is a chosen
+  strength and the two-piece fall is a 40-minute build, so rank it
+  low; deterministic, no seed.

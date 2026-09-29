@@ -1,0 +1,22 @@
+{
+  "title": "Hit it low at 2 m/s: does the cue ball come back? Only if the other ball is closer than 76.5 cm",
+  "description": "Hit it low: does the cue ball come back? Two cue balls get the same low hit, seen from the side one above the other: a level cue strikes each ball half a radius below its centre, and it leaves at 2 m/s with 2.5000 m/s of backspin at its surface (R omega = (5/2)(h / R) v0, omega = 87.413 rad/s). On top the other ball waits 30 cm ahead, below it waits 1.2 m ahead (the travel of the cue ball's centre to the hit). Equal masses, a solid sphere (I = 2/5 m R^2, radius 28.6 mm), an elastic head-on hit with no friction between the balls, so the cue ball hands over its speed and keeps its spin. The cloth acts on any slipping contact with sliding friction mu = 0.2 (g = 9.80665 m/s^2), no rolling resistance, no cushion. Each ball is integrated as exact constant-acceleration pieces between the events (a slip closing, the hit) and checked against the closed forms and a stepped integration. Shown at 1/5 speed, one shot every 10 s, 4 shots in 40 s; deterministic, no seed.\n\nMeasured:\n- the backspin is gone 0.5099 s after the strike, after 76.48 cm, with the ball at 1.0000 m/s (closed form d = v0^2 h (2 - h) / (2 mu g) = 76.48 cm); from there the spin turns forward and the ball rolls at 0.7143 m/s after 0.6555 s and 88.97 cm\n- other ball 30 cm away: the cue ball hits it at 0.1630 s at 1.6802 m/s with 1.7006 m/s of backspin left; it stops, the cloth drags it back, and it rolls back at 0.4859 m/s after 0.2477 s and 6.02 cm of slip, 2/7 of the spin it had left; the other ball leaves at 1.6802 m/s and rolls at 1.2002 m/s\n- other ball 1.2 m away: the cue ball rolls into it at 1.0900 s at 0.7143 m/s; it stops, keeps its forward spin, and follows at 0.2041 m/s after 0.1041 s and 1.06 cm of slip, 2/7 of 0.7143 m/s; the other ball rolls on at 0.5102 m/s\n- the same strike with the other ball at other distances (the cue ball's final speed, + forward): 10 cm -0.6424 m/s, 30 cm -0.4859, 50 cm -0.3056, 70 cm -0.0856, 76.48 cm 0.0000 (it stops dead), 80 cm +0.0512, 90 cm and farther +0.2041 m/s\n- the line moves with the cloth, the tip and the speed: mu 0.15 gives 101.97 cm and mu 0.25 gives 61.18 cm; a tip 0.3 R low gives 52.01 cm and 0.4 R low 65.26 cm; 1.5 m/s gives 43.02 cm and 3 m/s 172.08 cm\n- checks: a stepped integration at dt 1e-06 s moves the hit times by at most 1.7e-06 s, the speeds and spins by at most 4.7e-07 m/s, and the point where the backspin is gone by 3.9e-05 cm\n\nWhy: a low hit gives the ball backspin. At the start its bottom slides forward over the cloth, and the cloth rubs back on it. That rub slows the ball, and it takes away the backspin 5/2 times as fast. After 76.48 cm the backspin is gone; then the spin turns forward until the ball rolls. The hit gives all of the cue ball's forward speed to the other ball but leaves its spin as it was. If the other ball is closer than 76.48 cm, the cue ball stops with backspin still on it, and the cloth rubs on the spinning ball and pushes it back until it rolls back at 2/7 of the spin it had left: a draw shot. If the other ball is farther, the backspin has run out, the cue ball arrives with forward spin, and the same cloth pulls it forward: a follow. Right at 76.48 cm it has no spin at the hit and stops dead. The line grows with the square of the speed and shrinks as the cloth grips harder, so a long draw needs a hard, low hit.\n\nRerun sims/drawshot/drawshot.py with projects/drawshot/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "draw shot",
+    "backspin",
+    "cue ball",
+    "does the cue ball come back",
+    "pool physics",
+    "billiards",
+    "stop shot",
+    "follow shot",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
