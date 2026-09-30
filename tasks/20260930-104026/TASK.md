@@ -355,3 +355,8 @@ whisper hears "two seventh"; task 20260930-104026]
   update and re-read as printed by yt-qa.py); day total after two
   attempts 1,664 + 1,654 = 3,318 units plus 5 for the 10:02 stats
   refresh, 3,323 of 10,000 used, 6,677 remaining
+
+## Push
+- committed as 5710175 "Publish the day thirty-two slate" and pushed to
+  origin/master at 2026-09-30T11:25:56+03:00 (ec85030..5710175; the push also carried
+  the unpushed day 31 commit 3b58b88); media/ and secrets/ not committed

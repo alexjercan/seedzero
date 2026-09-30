@@ -528,3 +528,8 @@ Coulomb at 1e-6 s within 2.0e-12 s of the closed forms, half step
   update and re-read as printed by yt-qa.py); day total after this
   attempt 1,664 + 5 for the 10:02 stats refresh = 1,669 of 10,000 used,
   8,331 remaining
+
+## Push
+- committed as 5710175 "Publish the day thirty-two slate" and pushed to
+  origin/master at 2026-09-30T11:25:56+03:00 (ec85030..5710175; the push also carried
+  the unpushed day 31 commit 3b58b88); media/ and secrets/ not committed

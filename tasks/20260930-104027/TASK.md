@@ -475,3 +475,8 @@ second, half step within 1e-7 degrees; task 20260930-104027]
   attempts 1,664 + 1,654 + 1,656 = 4,974 units plus 5 for the 10:02
   stats refresh, 4,979 of 10,000 used, 5,021 remaining before the
   closing stats refresh; target of three met
+
+## Push
+- committed as 5710175 "Publish the day thirty-two slate" and pushed to
+  origin/master at 2026-09-30T11:25:56+03:00 (ec85030..5710175; the push also carried
+  the unpushed day 31 commit 3b58b88); media/ and secrets/ not committed
