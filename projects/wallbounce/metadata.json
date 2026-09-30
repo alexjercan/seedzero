@@ -1,0 +1,22 @@
+{
+  "title": "Which one comes back, the ball or the ring? The ball, at 3/7 of its speed; the ring stops dead",
+  "description": "Which one comes back, the ball or the ring? The same table twice (sliding friction mu 0.3) and the same smooth vertical wall 1 m from the start line. Top, a solid ball (radius 3 cm, I = 0.4 m r^2). Bottom, a thin ring of the same radius (I = 1 m r^2, all its mass on the rim). Both roll without slipping at 1 m/s, spinning at 33.33 rad/s, and hit the wall at 1.000 s. The wall is smooth with a perfect bounce: the centre's velocity reverses and the spin is unchanged, so the contact point slides on the table at 2.00 m/s and friction acts toward the wall until the slip closes. The slip is integrated by a stepped Coulomb model at 1e-06 s and checked against the closed forms, the angular momentum about the contact line and a half-step rerun; shown at 1/3 speed; the run repeats every 12 s of video, 3 runs in 36 s. Deterministic, no seed.\n\nMeasured:\n- the ball slides for 0.1942 s after the bounce (closed form (1 + e) v0 k / ((1 + k) mu g) = 0.1942 s), stops sliding 13.87 cm from the wall and rolls back at 0.4286 m/s: 3/7 of its speed (v0 (k - e) / (1 + k) with k = 0.4, e = 1); it keeps (3/7)^2 = 0.1837 of its energy; its spin goes from 33.33 rad/s the old way to 14.29 rad/s the new way\n- the ring slides for 0.3399 s, 17.00 cm, and stops dead: 0.0000 m/s, no spin, 0.0000 of its energy left (k = 1: its spin held exactly as much as its motion)\n- the angular momentum about the table contact line, (v + k r omega) / v0, is -0.6000 for the ball and 0.0000 for the ring right after the hit and the same after the slip (drift 8.4e-12 and 1.6e-11): friction acts on that line and cannot change it\n- timeline: both hit at 1.000 s; the ball rolls again at 1.194 s and its leading edge is back on the start line at 3.204 s; the ring stops at 1.340 s\n- other shapes on the same table at the same 1 m/s: a solid cylinder rolls back at 1/3 (0.3333 m/s; slip 0.2266 s, 15.11 cm), a hollow ball at 1/5 (0.2000 m/s; 0.2719 s, 16.32 cm), a spinless puck on ice at the full 1.0000 m/s\n- a bounce of e = 0.8: the ball rolls back at 2/7 (0.2857 m/s, 9.49 cm from the wall); the ring ends up rolling toward the wall at 0.1000 m/s (it creeps back to the wall)\n- mu 0.15 and 0.6 change only the slip: the ball still rolls back at 0.4286 m/s, after 27.75 cm and 6.94 cm\n- two identical rolling balls meeting head on each roll back at 0.4286 m/s (3/7): the frictionless contact swaps their velocities and leaves both spins, the same state as the wall\n- a grippy wall would stop the wall contact from sliding and kick the ball upward at 2/7 v0 (0.2857 m/s) and the ring at 1/2 v0 (0.5000 m/s), so the claim needs a smooth wall\n- checks: the stepped model at 1e-06 s matches the closed forms within 2.0e-12 s, 2.1e-10 cm and 7.1e-12 m/s; halving the step moves the slip times by 2.9e-12 s (ball) and 1.6e-12 s (ring)\n\nWhy: the wall only pushes on the centre. It flips the motion and leaves the spin, so right after the bounce the body moves away from the wall but still spins the way it did going in. The contact slides, and the table's grip pushes toward the wall: it slows the return while it unwinds the spin. What survives is the angular momentum about the contact line, motion minus spin on the way back. A solid ball's spin holds 0.4 as much as its motion, so 3/7 of the speed comes back. A ring's spin holds exactly as much as its motion; they cancel and it stops dead.\n\nRerun sims/wallbounce/wallbounce.py with projects/wallbounce/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "ball or ring",
+    "which one comes back",
+    "rolling ball",
+    "bouncing off a wall",
+    "rolling without slipping",
+    "moment of inertia",
+    "angular momentum",
+    "friction",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

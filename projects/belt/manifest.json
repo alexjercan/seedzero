@@ -1,0 +1,51 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "belt_speed_m_s": 1.0,
+  "belt_length_m": 2.0,
+  "mu": 0.4,
+  "box_side_m": 0.08,
+  "ball_radius_m": 0.04,
+  "k_ball": 0.4,
+  "description_shapes": [
+    [
+      "ring",
+      1.0
+    ],
+    [
+      "solid cylinder",
+      0.5
+    ],
+    [
+      "hollow ball",
+      0.6666666666666666
+    ]
+  ],
+  "description_mus": [
+    0.1,
+    1.0
+  ],
+  "car_g": 0.3,
+  "step_s": 1e-06,
+  "cycle_s": 8.0,
+  "place_at": 0.2,
+  "first_cycle_at": -0.2,
+  "reset_fade": 0.4,
+  "scene_duration": 40.0,
+  "px_per_m": 480.0,
+  "start_x_px": 50,
+  "belt_lead_m": 0.05,
+  "texture_period_m": 0.1,
+  "title": "Which rides along,|the box or the ball?",
+  "title_until": 3.0,
+  "payoff_t": 23.8,
+  "payoff_hold": 0.6,
+  "payoff_text": "which rides along, the box or the ball? | box: belt speed, off the belt at {t_off_box:.2f} s | ball: 2/7 of it, {v_ball:.2f} m/s, off at {t_off_ball:.2f} s | box slips {t_box:.2f} s and {d_box:.1f} cm, then rides | ball slips {t_ball:.2f} s and {d_ball:.1f} cm, then rolls | ring 1/2, cylinder 1/3, hollow ball 2/5",
+  "loop_fade": 0.5,
+  "music_seed": 99,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "belt 1 m/s | grip 0.4 | real time | no seed"
+}

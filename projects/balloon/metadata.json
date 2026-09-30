@@ -1,0 +1,21 @@
+{
+  "title": "Which way does the balloon lean when the car speeds up? Forward, 15.8 degrees, the dice 15.8 back",
+  "description": "Which way does the balloon lean when the car speeds up? Side view inside a car that pulls away from rest at 100 km/h per 10 s = 2.7778 m/s^2 (0.2833 g) after a 0.5 s throttle ramp. A dice hangs from the ceiling on a 50 cm string. A helium balloon 30 cm across (6.4 g with its gas, displacing 17.02 g of air at 1.204 kg/m^3) is tied to the floor, its centre 50 cm above the anchor. In the car's frame the effective gravity is (-a, -g): backward and down, tilted 15.82 degrees. Dice: theta'' = (a cos theta - g sin theta) / L - c theta'. Balloon: the cabin air is at rest in the car's frame, so the buoyancy is the displaced air's weight along the tilted gravity, up and forward; with an added mass of half the displaced air and no drag, (m_b + m_add) L phi'' = (m_air - m_b)(a cos phi - g sin phi) - (m_b + m_add) L c phi'. Damping c = 2 per second, a chosen number. Both are integrated with the car by RK4 at 10,000 steps per second, checked against atan(a / g), the closed-form car motion and a half-step rerun; the launch repeats every 10 s of video, 4 runs in 40 s. Deterministic, no seed.\n\nMeasured:\n- both settle where tan(angle) = a / g: atan(a / g) = 15.82 degrees; the dice 15.82 degrees back, the balloon 15.82 degrees forward; at 9.5 s the RK4 angles are 15.8162 (dice) and 15.8159 (balloon); the angle does not depend on the masses, the string length or the damping\n- with damping 2 per second the dice peaks at 22.04 degrees at 0.987 s after the throttle and the balloon at 21.58 degrees at 1.128 s; at 4 s they read 16.09 and 15.60 degrees, at 6 s 15.77 and 15.83; last more than 0.2 degrees from 15.82 at 4.08 s (dice) and 4.02 s (balloon)\n- small-swing periods at rest 1.419 s (dice, 2 pi sqrt(L / g)) and 1.681 s (balloon, 2 pi sqrt(L / (k g)) with k = (m_air - m_b) / (m_b + m_add) = 0.712); the RK4 peak-to-peak times are 1.428 s and 1.709 s (the damped periods about the tilted equilibrium: 1.427 s and 1.709 s)\n- with no damping and a sudden start both peak at 31.63 degrees = 2 atan(a / g) (RK4 within 3.3e-07 degrees) and never settle; with damping 1 per second the peaks are 24.76 and 24.75 degrees\n- other pulls, same strings, same damping: 0.3 g settles at 16.70 degrees (peaks 23.3 and 22.8), 0.5 g at 26.57 (peaks 37.1 and 36.4), 1 g at 45.00 (peaks 63.4 and 62.6)\n- the car: 57.50 km/h and 45.95 m at 6 s with the 0.5 s ramp (60.00 km/h and 50.00 m with no ramp); it passes 60 km/h at 6.25 s and would reach 100 km/h at 10.25 s; 81.5 km/h and 92.3 m when each run fades\n- checks: the car matches its closed form within 3.0e-11 m; halving the time step moves the peaks by 4.4e-08 and 9.3e-08 degrees and the 6 s angles by 9.5e-15 and 5.1e-14 degrees\n\nWhy: the balloon is lighter than the air it displaces, so it goes where the air is not. When the car speeds up, the cabin air is thrown back like everything else and piles up at the back of the cabin: the pressure is higher at the back than at the front. That pressure difference is the buoyancy, and it pushes the balloon forward, along the same tilted \"down\" that pulls the dice back. In the car's frame gravity is tilted back by atan(a / g); the dice hangs along it and the balloon floats against it, so both settle at the same angle, opposite ways, whatever their masses. The damping, 2 per second, is a chosen number: it sets how far they overshoot and how fast they settle, not where.\n\nRerun sims/balloon/balloon.py with projects/balloon/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "balloon in a car",
+    "which way does the balloon lean",
+    "helium balloon",
+    "buoyancy",
+    "pendulum",
+    "acceleration",
+    "car physics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

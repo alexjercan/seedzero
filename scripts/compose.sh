@@ -33,7 +33,8 @@ voice_dur=$(ffprobe -v error -show_entries format=duration \
     -of default=noprint_wrappers=1:nokey=1 "$med/voice.wav")
 
 python3 "$root/scripts/music.py" "$music_seed" "$duration" "$med/music.wav"
-python3 "$root/scripts/captions.py" "$proj/narration.txt" "$voice_dur" \
+python3 "$root/scripts/captions.py" --voice "$med/voice.wav" \
+    "$proj/narration.txt" "$voice_dur" \
     "$voice_offset" "$overlay" "$caption_y" >"$med/captions.filter"
 
 offset_ms=$(python3 -c "print(round($voice_offset * 1000))")

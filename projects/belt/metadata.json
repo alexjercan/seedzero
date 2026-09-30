@@ -1,0 +1,21 @@
+{
+  "title": "Which rides along, the box or the ball? The box, at belt speed; the ball crawls at 2/7 of it",
+  "description": "Which rides along, the box or the ball? The same belt twice: 2 m from the start line to the exit line, running at 1 m/s. At the release a box (8 cm) and a solid ball (radius 4 cm, I = (2/5) m r^2) are set down at rest at the start line, both with a sliding friction coefficient of 0.4 against the belt. While the bottom of an object lags the belt, the belt drags it forward with mu m g = 3.9227 m/s^2; the drag also spins the ball, at mu g / (k r) = 245.17 rad/s^2. Once the bottom point matches the belt nothing slips and no friction acts. The slip is stepped as a Coulomb slip at 1e-06 s and checked against the closed forms and a half-step rerun; g = 9.80665 m/s^2; real time; the run repeats every 8 s of video, 5 runs in 40 s. No rolling resistance and no air in the model (a real ball would creep up to the belt speed). Deterministic, no seed.\n\nMeasured:\n- the box reaches belt speed after 0.2549 s (V / (mu g)) and 12.75 cm of slip (V^2 / (2 mu g)); it then rides at 1.0000 m/s, 0 m/s on the belt, and its centre crosses the exit line at 2.1275 s\n- the ball's slip ends after 0.0728 s (V k / (mu g (1 + k))) and 1.04 cm; it then rolls at 0.2857 m/s over the ground, 2/7 of the belt speed (V k / (1 + k)), spinning at 17.86 rad/s (2.84 turns a second); its bottom point moves at 1.000000 m/s, the belt's speed, so nothing slips\n- on the belt the ball moves backward at 0.7143 m/s (5/7 of the belt speed) for the rest of the run; its centre crosses the exit line at 7.0364 s, 3.31 times as long on the belt as the box\n- angular momentum about the belt surface line stays within 4.5e-13 of zero (in m r V) through the slip, so m v (1 + k) = k m V: 0.4000 = 0.4000\n- other rolling shapes on the same belt: a ring (k = 1) settles at 0.5000 of the belt speed after 0.1275 s and 3.19 cm, off at 4.064 s; a solid cylinder (k = 1/2) at 0.3333 after 0.0850 s and 1.42 cm, off at 6.042 s; a hollow ball (k = 2/3) at 0.4000 after 0.1020 s and 2.04 cm, off at 5.051 s\n- the grip does not change the share: the solid ball with grip 0.1 settles at 0.2857 of the belt speed after 0.2913 s and 4.16 cm (off at 7.146 s), with grip 1 after 0.0291 s and 0.42 cm (off at 7.015 s)\n- the same physics in a car pulling 0.3 g (2.9420 m/s^2): a footwell ball rolls back at 5/7 of the car's acceleration, 2.1014 m/s^2, 1 m in 0.9756 s, rolling without slipping if the grip is at least 0.0857; a box with grip 0.4 stays put\n- checks: the stepped slip matches the closed forms within 1.1e-12 s (box) and 7.4e-14 s (ball); halving the time step moves the slip times by 4.3e-13 and 6.7e-14 s\n\nWhy: the belt pushes both with the same friction. The box only gains speed, so the push lasts until it matches the belt, then it rides along. The ball gains speed and spin from the same push, and the spin catches the belt first: after 0.07 s its bottom point already moves with the belt, so the friction switches off while the centre has only 2/7 of the belt speed. With no rolling resistance nothing else acts on it, so it rolls backward on the belt at 5/7 of the belt speed for ever. Angular momentum about the belt line fixes the share: v (1 + k) = k V, so k / (1 + k) of the belt speed, 2/7 for a solid ball, 1/2 for a ring. The grip only sets how fast the slip ends.\n\nRerun sims/belt/belt.py with projects/belt/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "box or ball",
+    "which rides along",
+    "conveyor belt",
+    "rolling ball",
+    "sliding friction",
+    "moment of inertia",
+    "angular momentum",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

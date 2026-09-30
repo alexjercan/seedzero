@@ -1292,3 +1292,136 @@ tie payoffs, fitted constants and rider models rejected):
   9.68 s and lies flat at 12.00 s); the break angle is a chosen
   strength and the two-piece fall is a 40-minute build, so rank it
   low; deterministic, no seed.
+
+Added by trend research 2026-09-30 (evidence in task 20260930-100404;
+selection favoured tabletop "which comes back", "does it make it" and
+"which way" debates with an exact fraction or threshold, two panels on
+the same input that end visibly differently, closed-form checks and
+builds of about 25 minutes with RK4, stepped Coulomb friction or closed
+forms; space, counters, drawings, tie payoffs, fitted constants, rider
+models and siblings of produced shorts rejected):
+
+- Ball or ring into a wall: a solid ball and a ring (hoop) rolling at
+  1.0 m/s on a table with mu 0.3 into a smooth wall 1 m away with a
+  perfect bounce; measure the speed each rolls back at; expect the ball
+  to slide 13.9 cm for 0.194 s and roll back at exactly 3/7 = 0.4286
+  m/s (v (1 - k) / (1 + k): the kept spin fights the return; energy
+  kept 9/49) and the ring to slide 17.0 cm and stop dead (k = 1, 0.000
+  m/s, all its energy gone) while a spinless puck on ice comes back at
+  the full 1.0 m/s; cylinder 1/3, hollow ball 1/5; mu only sets the
+  slip distance (0.15: 27.7 cm, 0.6: 6.9 cm); a ramp variant brings the
+  ball back to 9/49 of its release height (3.67 of 20 cm); a bounce of
+  0.8 gives 2/7 for the ball and the ring creeps back toward the wall
+  at 0.1; two rolling balls meeting head-on each come back at 3/7; a
+  grippy wall would also kick the ball up (2/7 v0), so say "smooth
+  wall"; the ball crosses its start line at 3.20 s; stepped Coulomb
+  slip within 1e-4 of the closed forms; repeat the roll; deterministic,
+  no seed.
+  [produced 2026-09-30 as "Which one comes back, the ball or the ring?
+  The ball, at 3/7 of its speed; the ring stops dead"; measured a solid
+  ball and a thin ring (r 3 cm) rolling at 1 m/s on mu 0.3 into a smooth
+  wall 1 m away with e = 1: the ball slides 0.1942 s and 13.87 cm and
+  rolls back at 0.4286 m/s (3/7, energy kept 0.1837), the ring slides
+  0.3399 s and 17.00 cm and stops dead (0.0000 m/s); angular momentum
+  about the contact line -0.6000 and 0.0000 before and after the slip;
+  hit 1.000 s, the ball rolls again 1.194 s and is back at the start
+  line 3.204 s, the ring stops 1.340 s; cylinder 1/3, hollow ball 1/5,
+  spinless puck 1.0; e 0.8 gives 2/7 (ball) and 0.1 toward the wall
+  (ring); mu 0.15 and 0.6 give 27.75 and 6.94 cm at the same 3/7; two
+  balls head on 3/7 each; a grippy wall would kick the ball up at 0.2857
+  m/s; stepped Coulomb at 1e-6 s within 2.0e-12 s of the closed forms,
+  half step 2.9e-12 s; task 20260930-104024]
+- Ball or box on a moving belt: a box (mu 0.4) and a solid ball placed
+  at rest at the start of a 2 m belt running at 1.0 m/s; measure the
+  speed each settles at and when each leaves the belt; expect the box
+  to reach belt speed in 0.255 s after sliding 12.7 cm and leave at
+  2.13 s, and the ball to stop slipping after 0.073 s and 1.0 cm at
+  exactly 2/7 of the belt speed (0.2857 m/s, V k / (1 + k); angular
+  momentum about the belt line), rolling backward on the belt at 5/7 V
+  for ever and leaving at 7.04 s; ring 1/2, cylinder 1/3, hollow ball
+  2/5; any mu > 0 works; the same physics in a car pulling 0.3 g rolls
+  a footwell ball back at 5/7 of the car's acceleration (2.10 m/s^2, 1
+  m in 0.98 s, needs mu 0.086) while a box with mu 0.4 stays put; no
+  rolling resistance, say so; the belt is periodic so the short loops;
+  deterministic, no seed.
+  [produced 2026-09-30 as "Which rides along, the box or the ball? The
+  box, at belt speed; the ball crawls at 2/7 of it"; measured the box at
+  belt speed after 0.2549 s and 12.75 cm, off the 2 m belt at 2.1275 s;
+  the solid ball's slip ending after 0.0728 s and 1.04 cm at 0.2857 m/s
+  (2/7 V), 0.7143 m/s backward on the belt, off at 7.0364 s, 3.31 times
+  as long on the belt; ring 1/2 (off 4.064 s), cylinder 1/3 (6.042 s),
+  hollow ball 2/5 (5.051 s); grips 0.1 and 1 give the same 2/7; a car at
+  0.3 g rolls a footwell ball back at 2.1014 m/s^2, 1 m in 0.9756 s,
+  needing grip 0.0857; stepped Coulomb slip at 1e-6 s within 1e-11 of
+  the closed forms, half step within 1e-9; narrated "less than a third
+  of it" because whisper hears "two seventh"; task 20260930-104026]
+- Kerb hop: a football (R 11 cm) rolling at 0.7 m/s beside 1.0 m/s
+  into a 3 cm kerb, the ball grabbing the edge without slip and
+  pivoting about it; measure whether it climbs; expect the threshold
+  0.805 m/s (sqrt(2 g h / (1 + k)) / (1 - h / ((1 + k) R)); the edge
+  keeps 0.805 of the spin), the 0.7 m/s ball to rise 2.27 of the 3 cm,
+  drop back onto the floor at 0.344 s and roll back at 0.454 m/s, and
+  the 1.0 m/s ball to be on top at 0.142 s rolling on at 0.478 m/s
+  with the edge force never below 0.126 weights; above 1.10 m/s the
+  edge force is negative at the first touch and the model ends (a real
+  ball bounces off the kerb), and a 5 cm kerb has no window at all for
+  this ball (needs 1.24 m/s but flies above 1.14); a bike-wheel ring
+  (R 33 cm) takes a 10 cm kerb from 1.17 m/s; the floor landing kills
+  the vertical speed; RK4 pivot plus stepped Coulomb slip; repeat the
+  roll; deterministic, no seed.
+- Necklace over the desk edge: a 1 m chain on a desk with mu 0.25, 18
+  cm hanging beside 22 cm; measure whether it slides off and when;
+  expect the threshold at exactly 20 percent hanging (mu / (1 + mu)),
+  the 18 cm chain to hold for ever and the 22 cm chain to run away as a
+  cosh (the excess over the threshold e-folds every 0.286 s, rate
+  sqrt((1 + mu) g / L)) and be all off the desk at 1.252 s with the
+  last link at 2.80 m/s (21 cm: 1.450 s, 25 cm: 0.990 s, 30 cm: 0.791
+  s); frictionless, 1 cm hanging leaves at 1.69 s; mu 0.4 needs 28.6
+  percent, mu 0.1 9.1; RK4 within 1e-4 s of the closed form; repeat
+  the drop; deterministic, no seed.
+- Balloon or dice in a car: a helium balloon (30 cm, 6.4 g against
+  17.3 g of air) and a hanging dice, each on a 50 cm string, in a car
+  pulling 0.3 g for 4 s with a 0.5 s throttle ramp; measure which way
+  each leans and how far; expect both to settle at atan(a / g) = 16.70
+  degrees, the dice backward and the balloon forward, with 2/s damping
+  reading 17.06 back and 16.39 forward at 3.9 s after overshooting to
+  23.3 and 22.8 (an undamped sudden start peaks at 33.4); 0.5 g gives
+  26.57, 1.0 g 45.00; buoyancy as the displaced air's weight in the
+  tilted effective gravity, added mass half the air, no drag; the
+  swing size depends on the damping chosen, so narrate the direction
+  and the settled angle; repeat the launch; deterministic, no seed.
+  [produced 2026-09-30 as "Which way does the balloon lean when the car
+  speeds up? Forward, 15.8 degrees, the dice 15.8 back"; measured both a
+  hanging dice and a floor-tied helium balloon (6.4 g against 17.02 g of
+  displaced air, added mass half the air, no drag) on 50 cm strings
+  settling at atan(a / g) = 15.82 degrees in a car pulling 100 km/h per
+  10 s (2.7778 m/s^2), the dice back and the balloon forward; with the
+  chosen damping 2/s peaks 22.04 and 21.58 degrees, within 0.3 by 4 s
+  and 0.05 by 6 s; periods 1.419 and 1.681 s; undamped sudden start
+  31.63 = 2 atan(a / g); 0.3 g 16.70, 0.5 g 26.57, 1 g 45.00; RK4 at
+  10,000 steps a second, half step within 1e-7 degrees; task
+  20260930-104027]
+- Rope round a post: a 20 kg load on a rope wrapped one turn beside
+  two turns round a post with mu 0.3, a hand holding 20 N (2 kg);
+  measure whether the load holds; expect one turn to hold at most 6.59
+  times the pull (131.7 N, e^(mu theta)), so the 20 kg slips and falls
+  1 m in 0.79 s at 3.22 m/s^2, and two turns to hold 43.4 times (867
+  N, 88 kg); 1.21 turns is the limit for 20 kg, three turns hold 286
+  times; the factor depends on mu (0.2: 12.3, 0.4: 152 at two turns),
+  so state the rope; closed form; repeat; deterministic, no seed.
+- Coin on a 45 or a 78: a coin 10 cm from the centre of a record with
+  mu 0.3 at 45 rpm beside 78 rpm; measure whether it stays and where it
+  leaves; expect 45 rpm to need 0.226 g against 0.3 available (stays,
+  out to 13.25 cm) and 78 rpm to need 0.680 g, the coin sliding on a
+  spiral to the 15 cm edge in 0.180 s, 69 degrees round, at 0.876 m/s
+  while the disc turns 84 degrees; threshold 51.8 rpm at 10 cm (sqrt(mu
+  g / r)); 33 1/3 rpm holds out to 24 cm; RK4 with Coulomb friction
+  against the disc; the turntable prop was used on 2026-09-16 and the
+  threshold depends on mu, so rank it low; deterministic, no seed.
+- Two springs, stacked or side by side: the same 1 kg weight on two
+  100 N/m springs side by side beside the same two stacked end to end;
+  measure the sag and the bounce period; expect 4.90 cm against 19.61
+  cm (exactly 4x) and 0.444 s against 0.889 s (exactly 2x, k 200
+  against 50 N/m); the pair loop every 0.889 s (one stacked bounce,
+  two side by side); both keep bouncing, so the panels differ in rate,
+  not in outcome; rank it low; deterministic, no seed.
