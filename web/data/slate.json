@@ -436,7 +436,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/Ahe_3vRDMXA",
-    "views": 950,
+    "views": 951,
     "likes": 6
   },
   {
@@ -604,7 +604,7 @@
     "status": "public",
     "date": "2026-09-24",
     "url": "https://youtu.be/bEni27RJgM4",
-    "views": 591,
+    "views": 592,
     "likes": 9
   },
   {
@@ -644,7 +644,7 @@
     "status": "public",
     "date": "2026-09-25",
     "url": "https://youtu.be/xPS0hhN56p4",
-    "views": 939,
+    "views": 940,
     "likes": 6
   },
   {
@@ -684,7 +684,7 @@
     "status": "public",
     "date": "2026-09-27",
     "url": "https://youtu.be/myMUuK-p_L8",
-    "views": 257,
+    "views": 258,
     "likes": 4
   },
   {
@@ -700,23 +700,23 @@
     "status": "public",
     "date": "2026-09-28",
     "url": "https://youtu.be/Hxfc-VeBVko",
-    "views": 218,
-    "likes": 6
+    "views": 225,
+    "likes": 5
   },
   {
     "title": "Stick on ice: where does the tip land? 41 cm on ice, 83 cm pinned in a hinge, exactly half",
     "status": "public",
     "date": "2026-09-28",
     "url": "https://youtu.be/ixDyblhn3ag",
-    "views": 584,
-    "likes": 8
+    "views": 622,
+    "likes": 7
   },
   {
     "title": "Will the ball swing round the peg? Halfway down: no, slack 48 deg short. 70 % down: yes. Needs 3/5",
     "status": "public",
     "date": "2026-09-28",
     "url": "https://youtu.be/ApHSHT_MgzU",
-    "views": 83,
+    "views": 85,
     "likes": 1
   },
   {
@@ -724,23 +724,23 @@
     "status": "public",
     "date": "2026-09-29",
     "url": "https://youtu.be/MFVd3MiPsUI",
-    "views": 247,
-    "likes": 5
+    "views": 660,
+    "likes": 8
   },
   {
     "title": "Which climbs higher, ice cube or ball? The ball, 64 cm against 46, 1.4 times as high",
     "status": "public",
     "date": "2026-09-29",
     "url": "https://youtu.be/rLaOH8SOh4U",
-    "views": 731,
-    "likes": 9
+    "views": 974,
+    "likes": 10
   },
   {
     "title": "Hit it low at 2 m/s: does the cue ball come back? Only if the other ball is closer than 76.5 cm",
     "status": "public",
     "date": "2026-09-29",
     "url": "https://youtu.be/G1HkDcfYGNM",
-    "views": 30,
+    "views": 78,
     "likes": 4
   },
   {
@@ -748,27 +748,51 @@
     "status": "public",
     "date": "2026-09-30",
     "url": "https://youtu.be/vC17_o8y_y4",
-    "views": 0,
-    "likes": 0
+    "views": 475,
+    "likes": 6
   },
   {
     "title": "Which rides along, the box or the ball? The box, at belt speed; the ball crawls at 2/7 of it",
     "status": "public",
     "date": "2026-09-30",
     "url": "https://youtu.be/mYyXLCyecNA",
-    "views": 0,
-    "likes": 0
+    "views": 261,
+    "likes": 5
   },
   {
     "title": "Which way does the balloon lean when the car speeds up? Forward, 15.8 degrees, the dice 15.8 back",
     "status": "public",
     "date": "2026-09-30",
     "url": "https://youtu.be/910Al8RGRNU",
+    "views": 936,
+    "likes": 8
+  },
+  {
+    "title": "Will the chain slide off the desk? 18 cm holds, 22 cm is gone in 1.25 s. The line: 20 cm, one fifth",
+    "status": "public",
+    "date": "2026-10-01",
+    "url": "https://youtu.be/12ESwWxQ9Ws",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Twenty-seven unproduced measured-claim ideas in docs/niche.md",
+    "title": "Can two kilos hold twenty kilos? One turn round a post slips; two turns hold 86 kg",
+    "status": "public",
+    "date": "2026-10-01",
+    "url": "https://youtu.be/aByGt6B3gh0",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Does the car leave the road? 40 km/h no, 60 km/h yes: 16 m in the air; the limit is 49.7 km/h",
+    "status": "public",
+    "date": "2026-10-01",
+    "url": "https://youtu.be/UIGCz7tcivw",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Twenty-four unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

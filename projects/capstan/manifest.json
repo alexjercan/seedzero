@@ -1,0 +1,57 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "big_kg": 20.0,
+  "small_kg": 2.0,
+  "mu": 0.3,
+  "post_radius_m": 0.06,
+  "post_draw_radius_px": 40,
+  "turns_per_panel": [
+    1,
+    2
+  ],
+  "fall_m": 1.0,
+  "steps_per_second": 10000,
+  "scan_loads_kg": {
+    "one": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "two": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89
+    ]
+  },
+  "description_mus": [
+    0.2,
+    0.4
+  ],
+  "hand_N": 20.0,
+  "slow": 4.0,
+  "cycle_s": 8.0,
+  "release_at": 0.6,
+  "first_cycle_at": -2.8,
+  "reset_fade": 0.4,
+  "latch_slide_s": 0.3,
+  "hold_event_after_s": 2.0,
+  "scene_duration": 40.0,
+  "px_per_m": 280.0,
+  "title": "Can two kilos|hold twenty kilos?",
+  "title_until": 3.0,
+  "payoff_t": 28.8,
+  "payoff_hold": 0.6,
+  "payoff_text": "can two kilos hold twenty kilos? | one turn: no, it holds {M_one:.1f} kg at most | two turns: yes, up to {M_two:.1f} kg | each turn multiplies the grip by {K1:.1f} | exactly 20 kg needs {n_star:.2f} turns | three turns {M_three:.0f} kg; grip {mu_hi:g}: {K2_hi:.0f} times",
+  "loop_fade": 0.5,
+  "music_seed": 102,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "2 kg vs 20 kg | grip 0.3 | 1/4 speed | no seed"
+}

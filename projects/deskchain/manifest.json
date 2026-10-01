@@ -1,0 +1,48 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "chain_m": 1.0,
+  "mu": 0.25,
+  "hang_m": {
+    "hold": 0.18,
+    "slide": 0.22
+  },
+  "description_hangs_m": [
+    0.21,
+    0.25,
+    0.3,
+    0.5
+  ],
+  "description_mus": [
+    0.4,
+    0.1
+  ],
+  "description_chain_m": 2.0,
+  "frictionless_hang_m": 0.01,
+  "link_m": 0.025,
+  "steps_per_second": 10000,
+  "slow": 3.0,
+  "cycle_s": 8.0,
+  "release_at": 0.4,
+  "first_cycle_at": -0.4,
+  "reset_fade": 0.6,
+  "hold_event_after_s": 2.0,
+  "clamp_lift_s": 0.3,
+  "scene_duration": 40.0,
+  "px_per_m": 380.0,
+  "desk_x0_px": 50,
+  "edge_x_px": 680,
+  "desk_top_dy": 150,
+  "title": "Will the chain|slide off the desk?",
+  "title_until": 3.0,
+  "payoff_t": 22.9,
+  "payoff_hold": 0.6,
+  "payoff_text": "will the chain slide off the desk? | 18 cm holds, 22 cm is gone in {t_off:.2f} s | the line is {xs_cm:.0f} cm, exactly one fifth | 21 cm {t21:.2f} s, 25 cm {t25:.2f} s, 30 cm {t30:.2f} s | grip 0.4 needs {pct4:.1f} %, 0.1 needs {pct1:.1f} % | no grip: 1 cm hanging is off in {t_free:.2f} s",
+  "loop_fade": 0.5,
+  "music_seed": 101,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "1 m chain | grip 0.25 | 1/3 speed | no seed"
+}

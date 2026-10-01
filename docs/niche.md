@@ -1271,6 +1271,20 @@ tie payoffs, fitted constants and rider models rejected):
   most 32 cm above the road (55 km/h: 9.4 m, 10 cm); point car, no
   suspension; draw the gap clearly or use a sharper hump; repeat;
   deterministic, no seed.
+  [produced 2026-10-01 as "Does the car leave the road? 40 km/h no, 60
+  km/h yes: 16 m in the air; the limit is 49.7 km/h"; on a bigger hump
+  2.5 m high and 31 m long (crest radius 19.4739 m, the same limit
+  sqrt(g R) = 13.8193 m/s = 49.75 km/h) so the gap shows; measured at 40
+  km/h the push bottoms at 0.3535 of the weight at the crest and the
+  wheels stay down; at 60 km/h the wheels leave 3.859 m before the
+  crest, the car is in the air for 16.206 m and 0.9877 s, at most 0.5060
+  m above the road, and lands 12.347 m past the crest with 6.757 m/s
+  down; 50 km/h on the limit (N -0.0101 g at the crest, 2.633 m of
+  weightless rolling, gap 0.0004 m); 55 km/h 11.820 m, 0.7812 s, 16.0
+  cm; 70 km/h 22.195 m, 1.1676 s, 139.6 cm; this entry's 1.5 m / 24 m
+  hump: limit 49.72 km/h, 60 km/h in the air 12.779 m and 0.7742 s, 32.4
+  cm; leave point equal to N = 0 by bisection, half-step rerun
+  unchanged; task 20261001-101159]
 - Swim to the flag: two swimmers at 1.0 m/s across a 50 m river running
   0.8 m/s, one always heading at the flag beside one aiming 53.1
   degrees upstream; measure the crossing times; expect 83.3 s straight
@@ -1379,6 +1393,22 @@ models and siblings of produced shorts rejected):
   s); frictionless, 1 cm hanging leaves at 1.69 s; mu 0.4 needs 28.6
   percent, mu 0.1 9.1; RK4 within 1e-4 s of the closed form; repeat
   the drop; deterministic, no seed.
+  [produced 2026-10-01 as "Will the chain slide off the desk? 18 cm
+  holds, 22 cm is gone in 1.25 s. The line: 20 cm, one fifth"; measured
+  a 1 m chain (40 links of 2.5 cm) on the same desk with mu 0.25 and g
+  9.80665 over a smooth rounded edge, 18 cm hanging on top and 22 cm
+  below, RK4 at 10,000 steps/s with bisection at the edge: the line x* =
+  mu L / (1 + mu) = 20.00 cm = 20.00 percent, exactly one fifth whatever
+  the chain weighs or how long it is (2 m needs 40.0 cm, the same
+  fifth); 18 cm holds for ever (grip needed 0.2195, net -0.0250 lambda
+  g), 22 cm slides (needed 0.2821): all off at 1.2515 s with the last
+  link at 2.80 m/s (closed form within 1.6e-15 s, half step within
+  2.2e-15 s), k 3.5012/s, e-fold 0.2856 s, the excess doubles at 0.3761
+  s, 30/50/75 cm at 0.6548/0.9711/1.1445 s; 21 cm 1.4495 s, 25 cm 0.9896
+  s, 30 cm 0.7908 s, 50 cm 0.4675 s (the brief said 0.471); no friction
+  with 1 cm hanging 1.6919 s; mu 0.4 needs 28.57 percent, mu 0.1 9.09;
+  shown at 1/3 speed on an 8 s cycle, 5 drops in 40 s; task
+  20261001-101157]
 - Balloon or dice in a car: a helium balloon (30 cm, 6.4 g against
   17.3 g of air) and a hanging dice, each on a 50 cm string, in a car
   pulling 0.3 g for 4 s with a 0.5 s throttle ramp; measure which way
@@ -1409,6 +1439,18 @@ models and siblings of produced shorts rejected):
   N, 88 kg); 1.21 turns is the limit for 20 kg, three turns hold 286
   times; the factor depends on mu (0.2: 12.3, 0.4: 152 at two turns),
   so state the rope; closed form; repeat; deterministic, no seed.
+  [produced 2026-10-01 as "Can two kilos hold twenty kilos? One turn
+  round a post slips; two turns hold 86 kg"; measured with a hanging
+  2 kg instead of the hand: e^(0.3 x 2 pi) = 6.5861, so one turn holds
+  at most 129.17 N = 13.172 kg and the 20 kg slips at 2.0185 m/s^2,
+  1 m in 0.99540 s at 2.0092 m/s; e^(0.3 x 4 pi) = 43.3762, so two
+  turns hold up to 850.75 N = 86.752 kg (654.62 N spare) and nothing
+  moves; load scan 86 kg holds, 87 kg slips; exactly 20 kg needs 1.2216
+  turns; three turns 571.4 kg; grip 0.2 gives 12.345 and grip 0.4 gives
+  152.406 with two turns; a steady 20 N hand would let the 20 kg fall
+  at 3.2206 m/s^2, 1 m in 0.7880 s; RK4 at 10,000 steps a second within
+  1e-10 s of the closed form, half step within 5e-11 s; task
+  20261001-101158]
 - Coin on a 45 or a 78: a coin 10 cm from the centre of a record with
   mu 0.3 at 45 rpm beside 78 rpm; measure whether it stays and where it
   leaves; expect 45 rpm to need 0.226 g against 0.3 available (stays,

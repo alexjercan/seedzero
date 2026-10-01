@@ -1,0 +1,21 @@
+{
+  "title": "Can two kilos hold twenty kilos? One turn round a post slips; two turns hold 86 kg",
+  "description": "Can two kilos hold twenty kilos? A massless, unstretchable rope is wrapped round a fixed horizontal round post, one full turn (top panel, angle 2 pi) or two full turns (bottom panel, angle 4 pi). On one side hangs 20 kg (196.13 N), on the other 2 kg (19.613 N); g = 9.80665 m/s^2. The friction coefficient between rope and post is 0.3, the same at rest and sliding (a chosen number for a rope on a wooden post). The rope holds while the big tension is at most e^(mu theta) times the small one (the capstan equation); the post's radius (6 cm) does not enter the factor, so the post is drawn larger than scale. The floor is 1 m under the 20 kg. A latch carries the 20 kg until the release, then slides away. While the rope slides both weights move with it: the small side carries m (g + a), the big side M g - M a, and the ratio of the two tensions is e^(mu theta). The 1 m fall is integrated by RK4 at 10000 steps per second (dt = 1e-04 s) and checked against the closed forms and a half-step rerun; the run ends at the landing. Shown at 1/4 speed on an 8 s cycle, 5 cycles in 40 s. Deterministic, no seed.\n\nMeasured:\n- one turn: e^(0.3 x 2 pi) = 6.5861, so the 2 kg side holds at most 129.17 N = 13.172 kg; the 20 kg is 1.518 times that (66.96 N short): the rope slips\n- two turns: e^(0.3 x 4 pi) = 43.3762, so the 2 kg side holds at most 850.75 N = 86.752 kg; the 20 kg is 0.2305 of that (4.338 times to spare, 654.62 N spare): the rope holds, nothing moves; it also holds the other way round (the 2 kg cannot pull the 20 kg up)\n- one turn, sliding: the small tension is 23.650 N, the big one 6.5861 times that = 155.76 N, leaving 40.370 N to accelerate the 20 kg: a = 2.0185 m/s^2 (0.2058 g); the 20 kg reaches the floor 1 m down after 0.99540 s at 2.0092 m/s, the rope sliding round the post at that speed and the 2 kg rising 1 m in the same time\n- the limit: exactly 20 kg needs ln(20 / 2) / (2 pi x 0.3) = 1.2216 turns (439.8 degrees); each full turn multiplies the holding power by 6.5861; three turns: factor 285.68, up to 5603.1 N = 571.4 kg\n- load scan with the 2 kg side: one turn: 12 kg holds, 13 kg holds, 14 kg slips (a = 0.2988 m/s^2), 15 kg slips (0.6363 m/s^2); two turns: 84, 85 and 86 kg hold, 87 kg slips (0.0140 m/s^2), 88 kg slips (0.0700 m/s^2), 89 kg slips (0.1254 m/s^2)\n- the factor depends on the grip: grip 0.2 gives 3.514 with one turn and 12.345 with two; grip 0.4 gives 12.345 with one turn and 152.406 with two\n- a hand holding a steady 20 N instead of the 2 kg weight: one turn holds up to 131.7 N = 13.43 kg, and the 20 kg falls at 3.2206 m/s^2, 1 m in 0.7880 s\n- checks: the RK4 landing time is within 9.6e-11 s of the closed form sqrt(2 L / a) and the landing speed within 1.9e-10 m/s of a t (9955 steps); the half-step rerun (dt = 5e-05 s) moves them by 4.9e-11 s and 9.8e-11 m/s\n\nWhy: every bit of rope touching the post is pressed onto it by the rope's own tension, and the friction that press makes grows the tension along the wrap. The growth is proportional to the tension already there, so it compounds: each turn multiplies the holding power by the same factor, e^(2 pi mu) = 6.5861 for this grip. One turn turns 2 kg into 13 kg of holding power, not enough for 20 kg, so the rope slides and the 20 kg falls while the 2 kg rides up. Two turns turn 2 kg into 87 kg, more than four times what 20 kg needs, so nothing moves. The post's thickness cancels out: a thicker post has more rope on it, but the rope presses on each bit of it less.\n\nRerun sims/capstan/capstan.py with projects/capstan/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "can two kilos hold twenty kilos",
+    "rope round a post",
+    "capstan equation",
+    "rope friction",
+    "belay friction",
+    "exponential grip",
+    "Euler-Eytelwein",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Will the chain slide off the desk? 18 cm holds, 22 cm is gone in 1.25 s. The line: 20 cm, one fifth",
+  "description": "Will the chain slide off the desk? The same desk twice: a uniform chain of 1 m (40 links of 2.5 cm; its mass per length cancels) lies straight on a level desk and hangs straight down over a smooth rounded edge (no friction and no momentum loss at the corner). Friction on the desk part mu = 0.25, the same at rest and sliding, a chosen number for a metal chain on a wooden desk; g = 9.80665 m/s^2. A clamp holds each chain until the release. Top panel: 18 cm over the edge. Bottom panel: 22 cm. At rest the chain holds while the hanging weight lambda g x is at most the grip mu lambda g (L - x), so the line is x* = mu L / (1 + mu). Sliding, x'' = k^2 (x - x*) with k = sqrt((1 + mu) g / L), so x = x* + (x0 - x*) cosh(k t) from rest; after the edge the whole chain falls freely. The slide is integrated by RK4 at 10000 steps per second (dt = 1e-04 s) with the edge crossing located by bisection inside the step and checked against the cosh form and a half-step rerun. Shown at 1/3 speed; the run repeats every 8 s of video, 5 runs in 40 s. Deterministic, no seed.\n\nMeasured:\n- the line: x* = mu L / (1 + mu) = 0.2000 m = 20.00 cm = 20.00 percent of the chain, exactly one fifth at mu = 0.25; it does not depend on the chain's length or weight\n- 18 cm over the edge: hanging weight 0.1800 lambda g against a grip of 0.2050 lambda g, net -0.0250 lambda g; the grip needed is 0.2195 of the weight on the desk, under 0.25: the chain never moves\n- 22 cm over the edge: hanging weight 0.2200 lambda g against a grip of 0.1950 lambda g, net +0.0250 lambda g; the grip needed is 0.2821, over 0.25: it slides; all off the desk at 1.2515 s with the last link at 2.8001 m/s (closed form 1.2515 s and 2.8001 m/s; diffs 1.6e-15 s and 6.7e-15 m/s)\n- the excess over the line grows as cosh(k t) with k = 3.5012 per second: it e-folds every 0.2856 s and doubles at 0.3761 s; the hanging part passes 30 cm at 0.6548 s (0.343 m/s), 50 cm at 0.9711 s (1.048 m/s), 75 cm at 1.1445 s (1.924 m/s) and 100 cm at 1.2515 s (2.800 m/s)\n- other starts, same chain and grip: 21 cm over the edge is off at 1.4495 s, 25 cm at 0.9896 s, 30 cm at 0.7908 s, 50 cm at 0.4675 s\n- no friction with 1 cm over the edge: off at 1.6919 s at 3.13 m/s\n- other grips: 0.4 needs 28.57 percent over the edge, 0.1 needs 9.09 percent; grip 0.25 with 2 m of chain needs 40.0 cm, the same 20.00 percent\n- checks: RK4 (12516 steps) stays within 4.8e-15 m of the cosh form; the half-step rerun (dt = 5e-05 s) moves the off time by 2.2e-15 s\n\nWhy: the hanging part pulls the chain over the edge with its own weight; the part on the desk resists with the grip, mu times its weight. Both are proportional to the chain's mass per length, so it cancels: the chain holds when the hanging fraction is at most mu times the desk fraction, which puts the line at mu / (1 + mu) of the chain, one fifth at mu 0.25. Below the line the grip wins and nothing moves. Above it, every link that goes over the edge adds pull and removes grip, so the excess over the line grows exponentially: it doubles every 0.3761 s, and 2 cm of excess becomes the whole chain in 1.2515 s.\n\nRerun sims/deskchain/deskchain.py with projects/deskchain/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "will the chain slide off the desk",
+    "chain over the desk edge",
+    "chain on a table",
+    "sliding chain",
+    "friction",
+    "static friction",
+    "one fifth",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
