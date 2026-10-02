@@ -1,0 +1,21 @@
+{
+  "title": "Pull slowly or jerk it. Which string snaps? Slow: the top at 0.217 s. Jerked: the bottom at 0.005 s",
+  "description": "Pull slowly or jerk it. Which string snaps? The same ball and the same strings twice: a ball of m = 1 kg hangs from a fixed hook on a string of stiffness k = 2000 N/m; an identical string hangs from the ball's underside down to a hand. Each string is a massless linear spring that carries tension only (slack when shorter than its free length) and snaps the instant its tension reaches F = 20 N (10 mm of stretch), chosen numbers for a thin cord, 2.04 times the ball's weight. A small damping c = 1 N s/m acts on the ball while it hangs from the top string (chosen); g = 9.80665 m/s^2. x is the ball's downward displacement from rest and the hand moves down at a steady V from t = 0, so the top tension is f1 = m g + k x, the bottom tension f2 = k (V t - x), and m x'' = k V t - 2 k x - c x'. Top panel: pulled at V = 0.05 m/s (5 cm/s). Bottom panel: jerked at V = 2 m/s. The pull is integrated by RK4 at 100000 steps per second (dt = 1e-05 s) with the snap located by bisection inside the step and checked against the quasi-static estimate 2 (F - m g) / (k V), the jerk's F / (k V) and the cubic k V t^3 / (6 m), a half-step rerun and a no-damping rerun. Shown at 1/10 speed with the stretch drawn 20x; the run repeats every 8 s of video, 5 runs in 40 s. Deterministic, no seed.\n\nMeasured:\n- at rest the top string carries m g = 9.807 N, stretched 4.903 mm, and the bottom string is just taut at 0 N; the top string snaps when x = (F - m g) / k = 5.0967 mm, the bottom when V t - x = F / k = 10.000 mm\n- pulled at 0.05 m/s: the top string snaps at 217.027 ms with the ball 5.0967 mm down and the bottom string at 11.509 N (quasi-static estimate 2 (F - m g) / (k V) = 203.867 ms; the ball lags V t / 2 by 0.329 mm at the snap); half-step rerun 217.0266 ms; no damping 219.048 ms with the bottom string at 11.711 N; after the snap the bottom string pulls the falling ball (its tension peaks at 11.564 N, so it never snaps) until it goes slack 26.06 ms later, then the ball falls freely\n- jerked at 2 m/s: the bottom string snaps at 5.042 ms with the ball 0.0849 mm down and the top string at 9.977 N (closed form with the ball still F / (k V) = 5.000 ms; the cubic k V t^3 / (6 m) = 0.0833 mm at 5.000 ms); half-step rerun 5.0425 ms; no damping 5.043 ms with the ball 0.0850 mm down; after the snap the ball wobbles on the top string with amplitude 1.111 mm and period 140.51 ms (closed form 2 pi sqrt(m / k) = 140.50 ms), the top tension peaking at 12.029 N\n- other speeds, same strings: 0.1 m/s top at 113.959 ms; 0.2 m/s top at 50.579 ms; 0.4 m/s top at 37.033 ms (the bottom string at 19.433 N, a near miss); 0.41 m/s top at 36.660 ms (bottom 19.868 N); 0.42 m/s bottom at 34.502 ms (ball 4.4909 mm); 0.5 m/s bottom at 24.155 ms (ball 2.0775 mm); 1 m/s bottom at 10.362 ms (ball 0.3621 mm); 5 m/s bottom at 2.003 ms (ball 0.0134 mm)\n- the crossover sits between 0.41 and 0.42 m/s, bisected to 0.4130 m/s with c = 1 N s/m (0.4154 m/s with no damping); it depends on k, F and c\n- the ball's natural period on both strings 2 pi sqrt(m / 2 k) = 99.35 ms; the jerk's 5.042 ms is 505 RK4 steps and 3.03 frames of video at 1/10 speed\n\nWhy: the top string carries the ball's weight before the pull even starts, so it begins 9.807 N ahead of the bottom string. Pull slowly and the ball follows the hand at about half its speed; both strings stretch together, and the top one, already ahead, reaches 20 N first. Jerk and the bottom string stretches its full 10 mm in 5 ms, while the ball's inertia keeps it almost still (it moves 0.0849 mm): the bottom string reaches 20 N while the top string is still under 10 N.\n\nRerun sims/twostrings/twostrings.py with projects/twostrings/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "which string snaps",
+    "inertia ball",
+    "pull slowly or jerk it",
+    "inertia demonstration",
+    "inertia",
+    "first law of motion",
+    "string snaps",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

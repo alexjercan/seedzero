@@ -1,0 +1,64 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "stick_length_m": 0.85,
+  "stick_mass_kg": 0.9,
+  "ball_mass_kg": 0.145,
+  "ball_speed_m_s": 30.0,
+  "restitution": 0.5,
+  "hit_fraction": {
+    "sweet": 0.6666666666666666,
+    "tip": 1.0
+  },
+  "description_hits_cm": [
+    0.0,
+    42.5,
+    56.0,
+    57.0
+  ],
+  "description_restitutions": [
+    1.0,
+    0.0
+  ],
+  "description_speeds_m_s": [
+    15.0,
+    45.0
+  ],
+  "description_ball_masses_kg": [
+    0.05,
+    0.5
+  ],
+  "handle_speed_times_s": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "handle_jump_times_s": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "scan_step_cm": 1.0,
+  "slow": 20.0,
+  "cycle_s": 8.0,
+  "hit_at": 1.2,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.6,
+  "scene_duration": 40.0,
+  "px_per_m": 400.0,
+  "stick_x_px": 400,
+  "centre_dy": 292,
+  "ball_radius_px": 22,
+  "hand_ring_px": 56,
+  "title": "Where is the sweet spot|on a bat?",
+  "title_until": 3.0,
+  "payoff_t": 22.9,
+  "payoff_hold": 0.6,
+  "payoff_text": "where is the sweet spot on a bat? | hit 2/3 along: handle end {vh_sweet:.2f} m/s | hit the tip: handle end {vh_tip:.1f} m/s back | 2/3 of the stick, any ball, any speed | hit the middle: {vc_mid:.1f} m/s, no spin | bouncier ball, e = 1: {vh_e1:.1f} m/s back",
+  "loop_fade": 0.5,
+  "music_seed": 106,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "stick 85 cm | ball 30 m/s | 1/20 speed | no seed"
+}

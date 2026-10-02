@@ -1,0 +1,51 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.80665,
+  "lean_deg": 1.0,
+  "sticks": {
+    "broom": {
+      "length_m": 1.2,
+      "label": "1.2 m broom"
+    },
+    "pencil": {
+      "length_m": 0.15,
+      "label": "15 cm pencil, drawn 8x"
+    }
+  },
+  "description_leans_deg": [
+    0.5,
+    2.0,
+    5.0
+  ],
+  "description_lengths_m": [
+    0.3,
+    1.0,
+    0.1,
+    4.8
+  ],
+  "steps_per_second": 10000,
+  "sim_end_s": 4.0,
+  "slow": 3.0,
+  "cycle_s": 8.0,
+  "release_at": 0.8,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.6,
+  "reset_hold": 0.2,
+  "land_flash": 0.35,
+  "scene_duration": 40.0,
+  "stick_px": 350,
+  "foot_x_px": 360,
+  "foot_dy": 520,
+  "title": "Which is easier to balance,|a pencil or a broom?",
+  "title_until": 3.0,
+  "payoff_t": 22.9,
+  "payoff_hold": 0.6,
+  "payoff_text": "which is easier to balance? the broom | broom flat at {t_broom:.3f} s, pencil at {t_pencil:.3f} s | {ratio:.3f} times longer: exactly root 8 | 8x the length, root 8 = 2.83x the time | 45 degrees at {t45_broom:.3f} s and {t45_pencil:.3f} s | 30 cm ruler {t_ruler:.3f} s, 4.8 m pole {t_pole:.2f} s",
+  "loop_fade": 0.5,
+  "music_seed": 105,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "each stick drawn to fit | 1/3 speed | no seed"
+}

@@ -1002,6 +1002,23 @@ rejected):
   time scales with sqrt(L) (theta'' = 3 g sin theta / 2L); RK4; the
   answer is half known, so rank it mid; repeat the release;
   deterministic, no seed.
+  [produced 2026-10-02 as "Which is easier to balance, a pencil or a
+  broom? Broom flat at 1.50 s, pencil 0.53 s, 2.83x: root 8"; measured
+  a uniform stick hinged at its foot on a fingertip, let go from rest 1
+  degree off vertical with g 9.80665, theta'' = (3 g / (2 L)) sin theta,
+  RK4 at 10,000 steps/s with bisection at 45 and 90 degrees: the 1.2 m
+  broom lies flat at 1.4985 s (45 degrees at 1.2889 s, 4.9510 rad/s and
+  tip 5.94 m/s at the floor, growth rate 3.5012/s, e-fold 0.2856 s), the
+  15 cm pencil at 0.5298 s (45 degrees at 0.4557 s, 14.0037 rad/s, tip
+  2.10 m/s, rate 9.9029/s); the ratio 2.82843 = sqrt(8) within 2.1e-14
+  at the floor and at 45 degrees because every time scales with sqrt(L);
+  quadrature of the energy form within 9.2e-14 s, half step within
+  3.4e-15 s; the foot's push reverses at 48.2 degrees and the sideways
+  push exceeds the vertical from 54.1 degrees, so the foot must be held;
+  the broom from 0.5 / 2 / 5 degrees 1.6964 / 1.3005 / 1.0390 s; a 30 cm
+  ruler 0.7492 s (half the broom), 1 m 1.3679 s, 10 cm 0.4326 s, a 4.8 m
+  pole 2.9969 s (twice); shown at 1/3 speed on an 8 s cycle, 5 drops in
+  40 s; task 20261002-101234]
 - Bat sweet spot: a free 85 cm, 0.9 kg stiff stick struck by a 145 g
   ball at 30 m/s, 57 cm from the handle end beside a hit at the tip;
   measure the handle end's speed after the hit; expect 0.00 m/s at 56.7
@@ -1011,6 +1028,29 @@ rejected):
   spot is also set by its bending nodes, so say "stiff stick"; rigid
   impulse, closed form; repeat the hit; deterministic, no seed (peg:
   World Series, late October 2026).
+  [produced 2026-10-02 as "Where is the sweet spot on a bat? Hit 2/3
+  along: handle end 0.00 m/s. Hit the tip: 8.8 m/s back"; measured a
+  uniform stiff stick of 85 cm and 0.9 kg free on frictionless ice, hit
+  square by a 145 g ball at 30 m/s with restitution 0.5 (rigid impulse
+  and free motion in closed form, no seed): hit two thirds along (56.667
+  cm from the handle end) J 5.3712 N s, centre 5.968 m/s, spin 14.04
+  rad/s, the ball back at 7.043 m/s, the handle end +0.0000 m/s at the
+  hit, the tip end 11.94 m/s, then a cycloid cusp (1.67 / 4.10 / 7.71
+  m/s after 20 / 50 / 100 ms); hit at the tip J 3.9679 N s, centre 4.409
+  m/s, spin 31.12 rad/s, the ball on at 2.635 m/s, the handle end 8.818
+  m/s back (twice the centre's speed), the tip end 17.64 m/s, then a
+  loop (4.4 / 8.6 / 16.0 cm back after 5 / 10 / 20 ms, 22.6 cm at most);
+  the sweet spot at exactly 2 L / 3 for any ball, speed or restitution
+  ((J / M)(4 - 6 d / L); the scan changes sign between 56 cm +0.282 and
+  57 cm -0.140 m/s; 15 / 45 m/s, 50 / 500 g, e 0 / 1 within 1.8e-15
+  m/s); middle hit 6.244 m/s with no spin; one third along the tip end
+  stays still (the brief's handle-end hit is the mirror of the tip hit:
+  handle +17.635, tip -8.818); e = 1 at the tip 11.757 m/s back, e = 0
+  5.878; momentum 4.350000 kg m/s and angular momentum 0.616250 /
+  1.848750 kg m^2/s balance exactly; energy lost 40.284 J (61.7 percent)
+  and 29.759 J (45.6 percent) = (1 - e^2) of the relative-motion energy;
+  shown at 1/20 speed on an 8 s cycle, 5 hits in 40 s; task
+  20261002-101235]
 - Weight on a spring: a 1 kg weight lowered gently onto a spring that
   sags 5 cm under it, beside the same weight let go from the spring's
   rest height; measure the deepest squash; expect 5.00 cm against 10.00
@@ -1115,6 +1155,25 @@ tie payoffs, fitted constants and rider models rejected):
   (2 k / m) x = (k V / m) t, tensions k x + m g and k (V t - x); the
   0.41 m/s threshold depends on the stiffness and break chosen, so
   narrate the two outcomes; repeat; deterministic, no seed.
+  [produced 2026-10-02 as "Pull slowly or jerk it. Which string snaps?
+  Slow: the top at 0.217 s. Jerked: the bottom at 0.005 s"; measured a
+  1 kg ball on two identical strings (k 2000 N/m, snapping at 20 N = 1 cm
+  of stretch, 2.04 times the weight; damping 1 N s/m on the hanging ball;
+  g 9.80665), RK4 at 100,000 steps/s with bisection at the snap: pulled
+  at 5 cm/s the top string snaps at 217.027 ms with the ball 5.0967 mm
+  down and the bottom string at 11.509 N (quasi-static 203.867 ms, the
+  ball lags V t / 2 by 0.329 mm; no damping 219.048 ms; half step within
+  3.4e-12 ms), then the bottom string pulls the falling ball (peak 11.564
+  N) until slack 26.06 ms later; jerked at 2 m/s the bottom string snaps
+  at 5.042 ms with the ball 0.0849 mm down and the top string at 9.977 N
+  (F / (k V) = 5.000 ms, cubic 0.0833 mm; no damping 5.043 ms, 0.0850 mm;
+  half step within 3.5e-15 ms), then the ball wobbles 1.111 mm at 140.51
+  ms (closed form 140.50) with the top string peaking at 12.029 N; other
+  speeds 0.1 / 0.2 / 0.4 / 0.41 m/s top at 113.959 / 50.579 / 37.033 /
+  36.660 ms, 0.42 / 0.5 / 1 / 5 m/s bottom at 34.502 / 24.155 / 10.362 /
+  2.003 ms; crossover between 0.41 and 0.42 m/s, bisected to 0.4130 m/s
+  (0.4154 with no damping); shown at 1/10 speed with the stretch drawn
+  20x on an 8 s cycle, 5 pulls in 40 s; task 20261002-101233]
 - Pendulum and peg: a 1 m pendulum released from horizontal with a peg
   halfway down the string beside a peg 70 percent down; measure whether
   the bob loops the peg; expect the halfway string to go slack 41.8

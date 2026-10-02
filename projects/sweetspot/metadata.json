@@ -1,0 +1,22 @@
+{
+  "title": "Where is the sweet spot on a bat? Hit 2/3 along: handle end 0.00 m/s. Hit the tip: 8.8 m/s back",
+  "description": "Where is the sweet spot on a bat? The same ice twice, seen from above: a uniform stiff stick of 85 cm and 0.9 kg lies at rest on frictionless ice, so after the hit it moves as a free rigid body (its centre at a constant velocity, a constant spin; I = M L^2 / 12 = 0.054187 kg m^2). A ball of 145 g at 30 m/s hits it square at a distance d from the handle end in an instantaneous frictionless hit with restitution e = 0.5, a chosen value for a ball on wood (the sweet spot is the same for any e). Impulse J = (1 + e) v0 / (1 / m_b + 1 / M + r^2 / I) with r = d - L / 2; after the hit the centre moves at J / M, the spin is J r / I, the ball keeps v0 - J / m_b, and the handle end's velocity is J / M - (J r / I)(L / 2) = (J / M)(4 - 6 d / L): zero at d = 2 L / 3 for any ball, any speed and any restitution. Top panel: the hit two thirds along, 56.67 cm from the handle end. Bottom panel: the hit at the tip, 85 cm. The free motion after the hit is closed form, no ODE. Shown at 1/20 speed; the hit repeats every 8 s of video, 5 hits in 40 s. Deterministic, no seed.\n\nMeasured:\n- hit two thirds along (56.667 cm): J = 5.3712 N s; the centre 5.968 m/s, the spin 14.04 rad/s, the ball bounces back at 7.043 m/s; the handle end 0.0000 m/s at the hit, the tip end 11.94 m/s\n- hit at the tip (85 cm): J = 3.9679 N s; the centre 4.409 m/s, the spin 31.12 rad/s, the ball carries on at 2.635 m/s; the handle end 8.818 m/s back toward where the ball came from (twice the centre's speed), the tip end 17.64 m/s\n- the sweet spot: (J / M)(4 - 6 d / L) = 0 at d = 2 L / 3 = 56.667 cm; a scan of d in 1 cm steps changes sign once, between 56 cm (+0.282 m/s) and 57 cm (-0.140 m/s); the handle end's velocity at the two-thirds hit stays zero for a ball at 15 or 45 m/s, a 50 g or a 500 g ball, restitution 0 or 1\n- after the two-thirds hit the handle end stands still at the instant and the spin then sweeps it along a cycloid cusp: 1.67 m/s after 20 ms, 4.10 after 50 ms, 7.71 after 100 ms (2 (J / M) sin(omega t / 2)); after the tip hit the handle end is 4.4 cm back after 5 ms, 8.6 cm after 10 ms, 16.0 cm after 20 ms, reaches 22.6 cm back and the spin brings it round in a loop\n- other hits, same ball: in the middle (42.5 cm) J 5.620 N s, the whole stick moves at 6.244 m/s with no spin; at 56 cm the handle end +0.282 m/s, at 57 cm -0.140 m/s; one third along (28.333 cm) the tip end stays still (the mirror); at the handle end itself the handle end takes 17.635 m/s and the tip end goes back at 8.818 m/s (the mirror of the tip hit)\n- tip hit with restitution 1: the handle end 11.757 m/s back; restitution 0: 5.878 m/s back\n- checks: momentum (4.350000 kg m/s) and angular momentum about the stick's centre (0.616250 and 1.848750 kg m^2/s) balance before and after each hit with a printed difference of 0.0; kinetic energy 65.250 J before, 24.966 J after the two-thirds hit (40.284 J lost, 61.7 percent) and 35.491 J after the tip hit (29.759 J lost, 45.6 percent), each equal to (1 - e^2) of the relative-motion energy\n\nWhy: the ball gives the stick one shove at the hit point. The shove moves the whole stick along and, unless it lands on the centre, spins it. At the handle end the two add up: the whole-stick motion forward, the spin backward when the hit is beyond the centre. Hit two thirds along, the spin exactly cancels the forward motion at the handle end, so a hand there feels no jolt: that is the centre of percussion, and for a uniform rod it sits at 2 L / 3 from the end you hold, whatever ball hits it and however fast. Hit the tip, the spin wins and the handle end kicks back at twice the centre's speed.\n\nA real bat is not a stiff stick: it also bends, and its felt sweet spot is set by its bending nodes as well as by the centre of percussion.\n\nRerun sims/sweetspot/sweetspot.py with projects/sweetspot/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "where is the sweet spot on a bat",
+    "sweet spot",
+    "centre of percussion",
+    "baseball bat physics",
+    "bat sweet spot",
+    "rigid body",
+    "impulse",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts",
+    "world series"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
