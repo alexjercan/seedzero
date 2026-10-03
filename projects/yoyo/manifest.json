@@ -1,0 +1,48 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "drop_m": 1.0,
+  "disc_radius_m": 0.03,
+  "axle_radius_m": 0.005,
+  "ball_radius_m": 0.03,
+  "steps_per_second": 10000,
+  "description_axle_radii_m": [
+    0.0025,
+    0.01
+  ],
+  "table_step_s": 0.25,
+  "sample_times_s": [
+    0.5,
+    1.0,
+    1.5
+  ],
+  "slow": 2.0,
+  "cycle_s": 10.0,
+  "release_at": 0.6,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.6,
+  "scene_duration": 40.0,
+  "px_per_m": 740.0,
+  "hand_y": 460,
+  "yoyo_x": 400,
+  "ball_x": 700,
+  "scale_x": 230,
+  "line_x0": 280,
+  "line_x1": 820,
+  "sector_fade_turns_per_s": [
+    1.5,
+    3.0
+  ],
+  "title": "Drop a yo-yo beside a ball.|Which lands first?",
+  "title_until": 3.0,
+  "payoff_t": 30.4,
+  "payoff_hold": 0.6,
+  "payoff_text": "drop a yo-yo beside a ball: | which lands first? the ball | ball {t_ball:.2f} s, yo-yo {t_yo:.2f} s: {ratio:.2f}x = root 19 | yo-yo {x_cm:.1f} cm down when the ball lands | the string holds {tension_pct:.1f} % of the weight | {rpm} rpm; back in the hand at {t_back:.2f} s",
+  "loop_fade": 0.5,
+  "music_seed": 109,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "yo-yo and ball, 1 m drop | 1/2 speed | no seed"
+}

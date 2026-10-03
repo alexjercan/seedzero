@@ -116,7 +116,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/-Jkxs7kNpCg",
-    "views": 319,
+    "views": 320,
     "likes": 2
   },
   {
@@ -436,7 +436,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/Ahe_3vRDMXA",
-    "views": 951,
+    "views": 952,
     "likes": 6
   },
   {
@@ -556,7 +556,7 @@
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/hlBy6yci8_U",
-    "views": 676,
+    "views": 677,
     "likes": 10
   },
   {
@@ -628,7 +628,7 @@
     "status": "public",
     "date": "2026-09-25",
     "url": "https://youtu.be/5xhaVWmicBI",
-    "views": 571,
+    "views": 572,
     "likes": 4
   },
   {
@@ -652,7 +652,7 @@
     "status": "public",
     "date": "2026-09-26",
     "url": "https://youtu.be/hDic9PCXFKs",
-    "views": 987,
+    "views": 990,
     "likes": 8
   },
   {
@@ -660,7 +660,7 @@
     "status": "public",
     "date": "2026-09-26",
     "url": "https://youtu.be/f-ZLd4-azw0",
-    "views": 319,
+    "views": 320,
     "likes": 4
   },
   {
@@ -692,7 +692,7 @@
     "status": "public",
     "date": "2026-09-27",
     "url": "https://youtu.be/-ry3tM_rZ98",
-    "views": 297,
+    "views": 296,
     "likes": 2
   },
   {
@@ -700,7 +700,7 @@
     "status": "public",
     "date": "2026-09-28",
     "url": "https://youtu.be/Hxfc-VeBVko",
-    "views": 225,
+    "views": 224,
     "likes": 5
   },
   {
@@ -708,7 +708,7 @@
     "status": "public",
     "date": "2026-09-28",
     "url": "https://youtu.be/ixDyblhn3ag",
-    "views": 622,
+    "views": 619,
     "likes": 7
   },
   {
@@ -748,7 +748,7 @@
     "status": "public",
     "date": "2026-09-30",
     "url": "https://youtu.be/vC17_o8y_y4",
-    "views": 511,
+    "views": 514,
     "likes": 5
   },
   {
@@ -780,7 +780,7 @@
     "status": "public",
     "date": "2026-10-01",
     "url": "https://youtu.be/aByGt6B3gh0",
-    "views": 3,
+    "views": 4,
     "likes": 0
   },
   {
@@ -796,27 +796,51 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/yD8XL-OnEz4",
-    "views": 0,
-    "likes": 0
+    "views": 42,
+    "likes": 1
   },
   {
     "title": "Which is easier to balance, a pencil or a broom? Broom flat at 1.50 s, pencil 0.53 s, 2.83x: root 8",
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/vpn_dIASulU",
-    "views": 0,
-    "likes": 0
+    "views": 40,
+    "likes": 1
   },
   {
     "title": "Where is the sweet spot on a bat? Hit 2/3 along: handle end 0.00 m/s. Hit the tip: 8.8 m/s back",
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/lqFSVLtReYs",
+    "views": 39,
+    "likes": 0
+  },
+  {
+    "title": "Does the coin stay on the record? At 45 rpm it stays; at 78 rpm it is off the rim in 0.18 s",
+    "status": "public",
+    "date": "2026-10-03",
+    "url": "https://youtu.be/P6pelJ2izjA",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Twenty-one unproduced measured-claim ideas in docs/niche.md",
+    "title": "Aim at the flag, or aim upstream? Aim upstream: 83 s. Aim at the flag: 139 s, nearly twice as long",
+    "status": "public",
+    "date": "2026-10-03",
+    "url": "https://youtu.be/bmuZD5MV7gk",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Drop a yo-yo beside a ball. Which lands first? The ball at 0.45 s; the yo-yo 1.97 s, 4.36x later",
+    "status": "public",
+    "date": "2026-10-03",
+    "url": "https://youtu.be/709U5Wfu1H4",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Eighteen unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

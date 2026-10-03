@@ -1,0 +1,41 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "width_m": 50.0,
+  "current_m_s": 0.8,
+  "swim_m_s": 1.0,
+  "dt_s": 0.001,
+  "stop_m": 0.001,
+  "description_currents_m_s": [
+    0.5,
+    0.9,
+    1.0
+  ],
+  "never_lands_run_s": 1200.0,
+  "table_step_s": 5.0,
+  "heading_marks_deg": [
+    30.0,
+    45.0,
+    60.0,
+    75.0,
+    85.0,
+    89.0
+  ],
+  "speedup": 5.0,
+  "release_at": 1.0,
+  "scene_duration": 40.0,
+  "px_per_m": 11.0,
+  "chevron_period_m": 5.0,
+  "chevron_columns": 5,
+  "title": "Aim at the flag,|or aim upstream?",
+  "title_until": 3.0,
+  "payoff_t": 27.8,
+  "payoff_hold": 0.6,
+  "payoff_text": "aim at the flag, or aim upstream? | aim upstream {t_b:.0f} s, aim at the flag {t_a:.0f} s | {ratio:.1f}x longer, swept {ymax:.1f} m downstream | upstream {theta:.0f} degrees: sin = {sinth:.1f}, no drift | {u1:g} m/s: {tb1:.0f} and {ta1:.0f} s, {u2:g}: {tb2:.0f} and {ta2:.0f} s | current = swim speed: never lands",
+  "loop_fade": 0.5,
+  "music_seed": 108,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "river 50 m | current 0.8 m/s | 5x speed | no seed"
+}

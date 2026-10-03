@@ -1,0 +1,49 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "mu": 0.3,
+  "coin_radius_m": 0.10,
+  "record_radius_m": 0.15,
+  "coin_diameter_m": 0.024,
+  "rpm": {
+    "top": 45,
+    "bottom": 78
+  },
+  "description_rpm_static": [
+    33.333333333333336
+  ],
+  "description_rpm_slide": [
+    52,
+    60,
+    100
+  ],
+  "description_mus": [
+    0.2,
+    0.5
+  ],
+  "dt_s": 1e-05,
+  "table_step_s": 0.01,
+  "trail_step_s": 0.001,
+  "slow": 10.0,
+  "cycle_s": 10.0,
+  "release_at": 1.0,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.6,
+  "hold_event_after_s": 1.0,
+  "finger_lift_s": 0.3,
+  "scene_duration": 40.0,
+  "px_per_m": 1200.0,
+  "record_centre_px": [460, 304],
+  "title": "Does the coin stay|on the record?",
+  "title_until": 3.0,
+  "payoff_t": 26.9,
+  "payoff_hold": 0.6,
+  "payoff_text": "does the coin stay on the record? | 45: stays, needs {need45:.2f} of its {mu:.2f} grip | 78: off the record in {t_off:.2f} s, needs {need78:.2f} | the limit at 10 cm: {rpm_star:.0f} turns a minute | 45 holds out to {r45:.0f} cm, 78 only to {r78:.1f} cm | 33 1/3 holds out to {r33:.0f} cm",
+  "loop_fade": 0.5,
+  "music_seed": 107,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "coin at 10 cm | grip 0.3 | 1/10 speed | no seed"
+}

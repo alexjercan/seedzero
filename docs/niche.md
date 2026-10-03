@@ -1253,6 +1253,25 @@ tie payoffs, fitted constants and rider models rejected):
   down, 1.016 m/s and 203 rad/s at the bottom, then back up to the hand
   every 3.94 s with no loss; periodic so the short loops; mild, so rank
   it low; deterministic, no seed.
+  [produced 2026-10-03 as "Drop a yo-yo beside a ball. Which lands
+  first? The ball at 0.45 s; the yo-yo 1.97 s, 4.36x later"; measured a
+  uniform solid 6 cm disc (R = 3 cm) on a 1 cm axle (r = 0.5 cm, R / r =
+  6, I = m R^2 / 2) let go from rest on a 1 m string beside a 6 cm ball
+  dropped from the same height at the same instant, g = 9.807 m/s^2, no
+  drag, no slip, a lossless turnaround (RK4 at 1e-4 s with compensated
+  summation against the closed forms, no seed): the ball lands at 0.4516
+  s at 4.43 m/s; the yo-yo is 5.26 cm down by then (0.233 m/s, 445 rpm),
+  reaches the end of its string at 1.9684 s, 1.517 s after the ball and
+  4.3589 times later (exactly sqrt(19), a = g / 19 = 0.5162 m/s^2), at
+  1.016 m/s and 203.21 rad/s = 1,940 turns a minute (31.83 turns), the
+  string holding 0.947368 = 94.74 percent of the weight down and up,
+  5.26 percent of the energy in the fall and 94.74 in the spin (balance
+  within 1.4e-14 J/kg, no-slip within 1.6e-15 m), back at the hand at
+  rest at 3.9369 s (half-step rerun +0.0e+00 s); 6.5 / 25.8 / 58.1 cm
+  down at 0.5 / 1.0 / 1.5 s; a 0.5 cm axle g / 73, 3.858 s, 8.54 times,
+  98.6 percent; a 2 cm axle g / 5.5, 1.059 s, 2.35 times, 81.8 percent;
+  a hollow ring g / 37, 2.747 s, 6.08 times, 97.3 percent; shown at 1/2
+  speed on a 10 s cycle, 4 drops in 40 s; task 20261003-101705]
 
 Added by trend research 2026-09-29 (evidence in task 20260929-100144;
 selection favoured everyday "which first", "which higher" and "does it
@@ -1352,6 +1371,18 @@ tie payoffs, fitted constants and rider models rejected):
   at a current equal to the swim speed the flag swimmer ends exactly
   half the width (25.0 m) downstream and never lands; RK4; play it
   fast; deterministic, no seed.
+  [produced 2026-10-03 as "Aim at the flag, or aim upstream? Aim
+  upstream: 83 s. Aim at the flag: 139 s, nearly twice as long";
+  measured a 50 m river with a uniform 0.8 m/s current and two swimmers
+  at 1.0 m/s (RK4 at 1e-3 s with a half-step rerun, no seed): aim 53.130
+  degrees upstream lands at 83.333333 s (closed form 83.3333 s, 0.0 m
+  off the line); aim at the flag lands at 138.888889 s (closed form
+  138.888889 s), 1.6667 times longer, swept 16.8852 m downstream at
+  42.7368 s with heading 53.130 degrees there, at 49.13 m across and
+  11.09 m downstream when the other lands; 0.5 m/s: 57.74 against 66.67
+  s, swept 9.62 m; 0.9 m/s: 114.71 against 263.16 s, swept 20.11 m;
+  current = swim speed: never lands, within 1 mm of (50, 25) from 283.0
+  s; the drifter 40.0 m after 50.0 s; task 20261003-101704]
 - Sliding ladder: a 4 m ladder let go at 75 degrees on a frictionless
   wall and floor; measure where the top leaves the wall; expect exactly
   2/3 of the starting height (sin theta = (2/3) sin theta0, 2.58 of 3.86
@@ -1519,6 +1550,22 @@ models and siblings of produced shorts rejected):
   g / r)); 33 1/3 rpm holds out to 24 cm; RK4 with Coulomb friction
   against the disc; the turntable prop was used on 2026-09-16 and the
   threshold depends on mu, so rank it low; deterministic, no seed.
+  [produced 2026-10-03 as "Does the coin stay on the record? At 45 rpm
+  it stays; at 78 rpm it is off the rim in 0.18 s"; measured a coin 10 cm
+  from the centre of a 30 cm record with grip 0.3 on the record and the
+  still deck round it (g 9.807, RK4 at 1e-05 s in the deck frame, the rim
+  crossing by bisection, no seed): 45 rpm needs 0.2264 of grip and rides
+  round (holds a coin out to 13.25 cm); 78 rpm needs 0.6803 (holds only
+  to 4.41 cm) and is off the rim 0.1797 s after the fingertip lifts, 69.2
+  degrees round the centre, at 0.8758 m/s (0.689 m/s relative to the
+  record) while the record turns 84.1 degrees (the coin lags by 14.8
+  degrees), then skids 13.0 cm on the deck in 0.298 s and rests 0.477 s
+  after the release; the limit at 10 cm sqrt(mu g / r) = 51.80 rpm; 33
+  1/3 rpm needs 0.1242 and holds out to 24.15 cm; 52 rpm off at 0.9514 s
+  (289.7 degrees round), 60 rpm at 0.3199 s (103.2 degrees, 0.7598 m/s,
+  a 9.8 cm skid), 100 rpm at 0.1241 s (1.0737 m/s, 19.6 cm); the
+  half-step rerun within 7.4e-15 s; shown at 1/10 speed on a 10 s cycle,
+  4 cycles in 40 s; task 20261003-101703]
 - Two springs, stacked or side by side: the same 1 kg weight on two
   100 N/m springs side by side beside the same two stacked end to end;
   measure the sag and the bounce period; expect 4.90 cm against 19.61
