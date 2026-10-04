@@ -15,7 +15,7 @@ COMPLETION_MARKER = "PRODUCTION_STATUS: COMPLETE"
 SERVICE = "seedzero-produce.service"
 RUN_TIMESTAMP = "%Y%m%dT%H%M%S.%fZ"
 MODEL = "Fable"
-THINKING = "xhigh"
+THINKING = "high"
 REPO = Path(__file__).resolve().parent.parent
 PROMPT = """Produce and publish today's Seed Zero slate.
 
