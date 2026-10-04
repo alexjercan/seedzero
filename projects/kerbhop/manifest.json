@@ -1,0 +1,47 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "radius_m": 0.11,
+  "step_m": 0.03,
+  "k": 0.4,
+  "v0_m_s": {
+    "slow": 0.7,
+    "fast": 0.9
+  },
+  "description_speeds_m_s": [
+    1.0,
+    0.8,
+    1.1
+  ],
+  "hollow_k": 0.6666666666666666,
+  "description_step_m": 0.05,
+  "ring": {
+    "radius_m": 0.33,
+    "step_m": 0.1,
+    "k": 1.0
+  },
+  "dt_s": 0.00001,
+  "table_step_s": 0.02,
+  "slow": 10.0,
+  "cycle_s": 10.0,
+  "touch_at": 3.0,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.6,
+  "scene_duration": 40.0,
+  "px_per_m": 1000.0,
+  "edge_x_px": 640,
+  "floor_dy": 470,
+  "slab_dy": 520,
+  "title": "Roll a ball at a step.|Does it get up?",
+  "title_until": 3.0,
+  "payoff_t": 25.6,
+  "payoff_hold": 0.6,
+  "payoff_text": "roll a ball at a step: does it get up? | 0.7 m/s: no, 0.9 m/s: yes, limit {vstar:.2f} m/s | 0.7: rose {rise:.1f} of 3 cm, back at {t_back:.2f} s | 0.9: over at {t_over:.2f} s, rolls on at {v_top:.2f} m/s | the catch keeps {keep:.2f} of the spin | above {v_zero:.2f} m/s it bounces off the edge",
+  "loop_fade": 0.5,
+  "music_seed": 110,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "22 cm ball | 3 cm step | 1/10 speed | no seed"
+}

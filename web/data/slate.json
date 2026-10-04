@@ -116,7 +116,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/-Jkxs7kNpCg",
-    "views": 320,
+    "views": 321,
     "likes": 2
   },
   {
@@ -588,7 +588,7 @@
     "status": "public",
     "date": "2026-09-23",
     "url": "https://youtu.be/mgoguyVzOmU",
-    "views": 640,
+    "views": 642,
     "likes": 6
   },
   {
@@ -628,7 +628,7 @@
     "status": "public",
     "date": "2026-09-25",
     "url": "https://youtu.be/5xhaVWmicBI",
-    "views": 572,
+    "views": 574,
     "likes": 4
   },
   {
@@ -668,7 +668,7 @@
     "status": "public",
     "date": "2026-09-26",
     "url": "https://youtu.be/3jzgy7G2whs",
-    "views": 928,
+    "views": 929,
     "likes": 8
   },
   {
@@ -724,7 +724,7 @@
     "status": "public",
     "date": "2026-09-29",
     "url": "https://youtu.be/MFVd3MiPsUI",
-    "views": 735,
+    "views": 734,
     "likes": 8
   },
   {
@@ -732,7 +732,7 @@
     "status": "public",
     "date": "2026-09-29",
     "url": "https://youtu.be/rLaOH8SOh4U",
-    "views": 974,
+    "views": 973,
     "likes": 10
   },
   {
@@ -740,7 +740,7 @@
     "status": "public",
     "date": "2026-09-29",
     "url": "https://youtu.be/G1HkDcfYGNM",
-    "views": 79,
+    "views": 80,
     "likes": 4
   },
   {
@@ -748,7 +748,7 @@
     "status": "public",
     "date": "2026-09-30",
     "url": "https://youtu.be/vC17_o8y_y4",
-    "views": 514,
+    "views": 512,
     "likes": 5
   },
   {
@@ -756,7 +756,7 @@
     "status": "public",
     "date": "2026-09-30",
     "url": "https://youtu.be/mYyXLCyecNA",
-    "views": 348,
+    "views": 347,
     "likes": 4
   },
   {
@@ -796,7 +796,7 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/yD8XL-OnEz4",
-    "views": 42,
+    "views": 45,
     "likes": 1
   },
   {
@@ -804,7 +804,7 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/vpn_dIASulU",
-    "views": 40,
+    "views": 43,
     "likes": 1
   },
   {
@@ -812,7 +812,7 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/lqFSVLtReYs",
-    "views": 39,
+    "views": 51,
     "likes": 0
   },
   {
@@ -820,27 +820,51 @@
     "status": "public",
     "date": "2026-10-03",
     "url": "https://youtu.be/P6pelJ2izjA",
-    "views": 0,
-    "likes": 0
+    "views": 183,
+    "likes": 3
   },
   {
     "title": "Aim at the flag, or aim upstream? Aim upstream: 83 s. Aim at the flag: 139 s, nearly twice as long",
     "status": "public",
     "date": "2026-10-03",
     "url": "https://youtu.be/bmuZD5MV7gk",
-    "views": 0,
-    "likes": 0
+    "views": 88,
+    "likes": 1
   },
   {
     "title": "Drop a yo-yo beside a ball. Which lands first? The ball at 0.45 s; the yo-yo 1.97 s, 4.36x later",
     "status": "public",
     "date": "2026-10-03",
     "url": "https://youtu.be/709U5Wfu1H4",
+    "views": 124,
+    "likes": 2
+  },
+  {
+    "title": "Two 1.1 kg weights. Which lands first? Dropped: 0.45 s. On a pulley vs 1.0 kg: 2.07 s, 4.6x later",
+    "status": "public",
+    "date": "2026-10-04",
+    "url": "https://youtu.be/YPXH-ht0gEo",
+    "views": 14,
+    "likes": 0
+  },
+  {
+    "title": "Roll a ball at a 3 cm step. Does it get up? 0.7 m/s: no, 0.9 m/s: yes. The limit is 0.81 m/s",
+    "status": "public",
+    "date": "2026-10-04",
+    "url": "https://youtu.be/jx6LnUOl1Aw",
+    "views": 8,
+    "likes": 0
+  },
+  {
+    "title": "Carry a weight, then stop. Does it swing? Stop at 1 s: 18.4 degrees; stop at 2 s: it hangs still",
+    "status": "public",
+    "date": "2026-10-04",
+    "url": "https://youtu.be/EEpe7RdbNAs",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Eighteen unproduced measured-claim ideas in docs/niche.md",
+    "title": "Nineteen unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

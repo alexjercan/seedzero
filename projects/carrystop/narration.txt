@@ -1,0 +1,11 @@
+Does it swing? Carry a weight on a string, then stop.
+The string swings once in two seconds. Walk at half a meter a second.
+On top, stop after one second. Below, after two.
+At first the weight hangs back.
+After half a swing it moves ahead of the hand.
+Stop then, and the stop throws it into a bigger swing.
+A full swing later it moves back toward the hand at the hand's own speed.
+Stop then, and it arrives at rest.
+So, carry a weight on a string, then stop. Does it swing?
+Stop after one second: yes, eighteen degrees.
+Stop after two seconds: no, it hangs still.

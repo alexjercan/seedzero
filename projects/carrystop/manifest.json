@@ -1,0 +1,54 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "period_s": 2.0,
+  "speed_m_s": 0.5,
+  "stop_s": {
+    "half": 1.0,
+    "full": 2.0
+  },
+  "steps_per_second": 10000,
+  "table_step_s": 0.1,
+  "table_end_s": 5.0,
+  "description_stops_s": [
+    0.5,
+    1.5
+  ],
+  "description_speed_m_s": 1.0,
+  "description_ramps_s": [
+    0.1,
+    0.3
+  ],
+  "description_crane_m": 10.0,
+  "description_crane_speed_m_s": 1.0,
+  "description_string_m": 1.0,
+  "slow": 2.0,
+  "cycle_s": 10.0,
+  "start_at": 0.6,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.6,
+  "scene_duration": 40.0,
+  "px_per_m": 300.0,
+  "rail_ticks_m": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "event_after_swings": {
+    "half": 1.0,
+    "full": 0.5
+  },
+  "trail_s": 1.0,
+  "title": "Carry a weight, then stop.|Does it swing?",
+  "title_until": 3.0,
+  "payoff_t": 30.5,
+  "payoff_hold": 0.6,
+  "payoff_text": "carry a weight, then stop: does it swing? | stop at 1 s: {amp_half:.1f} deg, stop at 2 s: {amp_full:.1f} deg | the string swings once in {T0:.1f} s ({L_cm:.0f} cm) | half a swing: the stop throws it on | a whole swing: it arrives back at rest | at 1 m/s: {amp1_v1:.1f} deg against {amp2_v1:.2f} deg",
+  "loop_fade": 0.5,
+  "music_seed": 112,
+  "music_gain": 0.18,
+  "voice_offset": 1.4,
+  "caption_y": 0.75,
+  "overlay": "2.0 s swing | 0.5 m/s | 1/2 speed | no seed"
+}

@@ -1075,6 +1075,11 @@ rejected):
   g / 21 (0.467 m/s^2) because both weights must speed up, not g / 11
   (1.50 s) as the weight difference alone suggests; closed form; mild
   surprise, so rank it low; repeat the drop; deterministic, no seed.
+  [produced 2026-10-04 as "Two 1.1 kg weights. Which lands first?
+  Dropped: 0.45 s. On a pulley vs 1.0 kg: 2.07 s, 4.6x later"; measured
+  a = g / 21 = 0.4670 m/s^2, the dropped weight lands at 0.4516 s, the
+  pulley side at 2.0695 s, 4.5826x = sqrt(21), 4.76 cm down when the
+  free weight lands, tension 10.274 N; task 20261004-101249]
 
 Added by trend research 2026-09-27 (evidence in task 20260927-102520;
 selection favoured everyday "which way", "which first" and "does it
@@ -1473,6 +1478,13 @@ models and siblings of produced shorts rejected):
   (R 33 cm) takes a 10 cm kerb from 1.17 m/s; the floor landing kills
   the vertical speed; RK4 pivot plus stepped Coulomb slip; repeat the
   roll; deterministic, no seed.
+  [produced 2026-10-04 as "Roll a ball at a 3 cm step. Does it get up?
+  0.7 m/s: no, 0.9 m/s: yes. The limit is 0.81 m/s" with a solid ball (k
+  = 2/5) and 0.7 against 0.9 m/s (1.0 m/s needs a grip of 1.55 at the
+  edge); measured threshold 0.8052 m/s, the catch keeps 0.8052 of the
+  spin, 0.7 m/s rises 2.2676 cm and is back on the floor at 0.3443 s
+  rolling back at 0.4538 m/s, 0.9 m/s is over at 0.1845 s rolling on at
+  0.3238 m/s, edge-force limit 1.1000 m/s; task 20261004-101248]
 - Necklace over the desk edge: a 1 m chain on a desk with mu 0.25, 18
   cm hanging beside 22 cm; measure whether it slides off and when;
   expect the threshold at exactly 20 percent hanging (mu / (1 + mu)),
@@ -1573,3 +1585,70 @@ models and siblings of produced shorts rejected):
   against 50 N/m); the pair loop every 0.889 s (one stacked bounce,
   two side by side); both keep bouncing, so the panels differ in rate,
   not in outcome; rank it low; deterministic, no seed.
+
+Added by trend research 2026-10-04 (evidence in task 20261004-101250;
+selection favoured carried, slid and swung tabletop motion with one
+exact threshold or factor, two panels on the same input that end
+visibly differently, closed-form checks and builds of about 25 minutes
+with RK4 or closed forms; the hopping hoop, the tilted door, the sled
+pendulum and Feynman's plate rejected on model, sibling or
+readability grounds; the spinning glass kept low as a rigid-rotation
+closed form, not a fluid grid):
+
+- Carry and stop: a weight on a 99.4 cm string (period 2.000 s, g
+  9.807) carried at 0.5 m/s by a hand that starts and stops instantly,
+  one stopping after 1.0 s beside one stopping after 2.0 s; measure
+  the swing left after the stop; expect the weight to lag 9.19 degrees
+  during the carry, the 1.0 s stop (half a period, 50 cm moved) to
+  leave an 18.43 degree swing (31 cm sideways; linear 2 V / sqrt(g L)
+  = 18.35) and the 2.0 s stop (one period, 100 cm moved) to leave it
+  hanging still at 0.093 degrees (0.2 cm; 0.001 at the exact
+  nonlinear period 2.0032 s); 0.5 and 1.5 s leave 12.9 and 13.0, 3.0 s
+  18.43 again, 4.0 s 0.19; 0.1 s hand ramps change the pair to 18.35
+  and 0.091, 0.3 s ramps to 17.73 and 0.080; at 1.0 m/s the pair is
+  37.4 against 0.75; a 10 m crane hook (6.345 s) stopped at half and
+  full period leaves 11.6 and 0.02 degrees, the crane operator's trick
+  (NIST and AJP 2022); string tension never below 0.949 of the weight;
+  RK4 at 1e-4 s against the linear closed form, half step identical to
+  1e-6 degrees; the stopped weight repeats so the short loops; taken
+  for the day 36 third slot; deterministic, no seed.
+  [produced 2026-10-04 as "Carry a weight, then stop. Does it swing?
+  Stop at 1 s: 18.4 degrees; stop at 2 s: it hangs still"; measured
+  9.187 degree carrying swing, 18.434 degrees after the 1.0 s stop (31.4
+  cm, 2.006 times), 0.093 degrees after the 2.0 s stop (0.16 cm, hangs
+  still), ratio 198.7, exact zero at 2.0032 s; task 20261004-180827]
+- Block on a wedge, fixed or free: a 1 kg block sliding down a 30
+  degree wedge of 1 kg from 30 cm up (60 cm of slope), the wedge
+  bolted down beside the same wedge free on ice, all frictionless;
+  measure which block reaches the floor first; expect the free wedge
+  to win, the block down in 0.391 s against 0.495 s (acceleration
+  along the slope (M + m) g sin a / (M + m sin^2 a) = 7.845 against
+  4.903 m/s^2, exactly 1.6x, time 1.265x = sqrt 1.6), the wedge
+  sliding back 26.0 cm while the block goes 26.0 cm forward in the lab
+  (equal masses split the 52 cm run), the block pressing only 0.693 of
+  its weight; a wedge of 2x, 5x and 0.5x the block gives 1.333x,
+  1.143x and 2.000x; RK4 of the two-body system within 1e-4 s of the
+  closed form, horizontal momentum 1e-13, energy 2.942 J both ways;
+  repeat the drop; deterministic, no seed.
+- Stick or string: a 1 m uniform stick on a pin beside a weight on a 1
+  m string, both let go from 20 degrees; measure the periods and the
+  count in 30 s; expect 1.651 against 2.022 s, ratio exactly sqrt(2/3)
+  = 0.8165 (the stick swings like a 66.7 cm string), 18.17 against
+  14.84 swings in 30 s, the stick a full swing ahead at 9.0 s so the
+  pair fall back in step every 9.0 s; closed form with the exact
+  large-angle period (AGM for K); both keep swinging, so the panels
+  differ in rate, not in outcome, like the two springs; rank it low;
+  deterministic, no seed.
+- Spinning glass, 4 cm or 6 cm: a 7 cm glass 10 cm tall with 4 cm of
+  water beside the same glass with 6 cm, both spun up slowly on a
+  turntable; measure which happens first, the bottom showing or the
+  water spilling; expect the 4 cm glass to show a dry spot at 341.8
+  rpm (the rim then at 8.0 cm) and spill at 427.2 rpm, and the 6 cm
+  glass to spill at the same 341.8 rpm (centre then at 2.0 cm) and
+  show its bottom only at 418.6 rpm; the two events swap sides at
+  half full, where both come at once at 382.1 rpm (the paraboloid
+  depth w^2 R^2 / (4 g) equals the fill; dry radius and rim height
+  closed form, volume check to 1e-6 L); the water takes about 8 s to
+  catch up with the glass at 342 rpm (Ekman spin-up), so ramp over 30
+  s or more and narrate the rpm, not the time; a fluid, but rigid
+  rotation closed form, no grid; rank it low; deterministic, no seed.
