@@ -116,7 +116,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/-Jkxs7kNpCg",
-    "views": 321,
+    "views": 322,
     "likes": 2
   },
   {
@@ -348,7 +348,7 @@
     "status": "public",
     "date": "2026-09-13",
     "url": "https://youtu.be/wN82zmHFM5c",
-    "views": 387,
+    "views": 388,
     "likes": 2
   },
   {
@@ -700,7 +700,7 @@
     "status": "public",
     "date": "2026-09-28",
     "url": "https://youtu.be/Hxfc-VeBVko",
-    "views": 224,
+    "views": 225,
     "likes": 5
   },
   {
@@ -804,7 +804,7 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/vpn_dIASulU",
-    "views": 43,
+    "views": 44,
     "likes": 1
   },
   {
@@ -812,7 +812,7 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/lqFSVLtReYs",
-    "views": 51,
+    "views": 52,
     "likes": 0
   },
   {
@@ -820,7 +820,7 @@
     "status": "public",
     "date": "2026-10-03",
     "url": "https://youtu.be/P6pelJ2izjA",
-    "views": 183,
+    "views": 188,
     "likes": 3
   },
   {
@@ -828,7 +828,7 @@
     "status": "public",
     "date": "2026-10-03",
     "url": "https://youtu.be/bmuZD5MV7gk",
-    "views": 88,
+    "views": 95,
     "likes": 1
   },
   {
@@ -836,7 +836,7 @@
     "status": "public",
     "date": "2026-10-03",
     "url": "https://youtu.be/709U5Wfu1H4",
-    "views": 124,
+    "views": 135,
     "likes": 2
   },
   {
@@ -844,27 +844,51 @@
     "status": "public",
     "date": "2026-10-04",
     "url": "https://youtu.be/YPXH-ht0gEo",
-    "views": 14,
-    "likes": 0
+    "views": 298,
+    "likes": 3
   },
   {
     "title": "Roll a ball at a 3 cm step. Does it get up? 0.7 m/s: no, 0.9 m/s: yes. The limit is 0.81 m/s",
     "status": "public",
     "date": "2026-10-04",
     "url": "https://youtu.be/jx6LnUOl1Aw",
-    "views": 8,
-    "likes": 0
+    "views": 177,
+    "likes": 1
   },
   {
     "title": "Carry a weight, then stop. Does it swing? Stop at 1 s: 18.4 degrees; stop at 2 s: it hangs still",
     "status": "public",
     "date": "2026-10-04",
     "url": "https://youtu.be/EEpe7RdbNAs",
+    "views": 54,
+    "likes": 0
+  },
+  {
+    "title": "Bolted down or free on ice: which block reaches the floor first? Free wedge 0.39 s, bolted 0.49 s",
+    "status": "public",
+    "date": "2026-10-05",
+    "url": "https://youtu.be/qU1dbX1Ro2E",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Nineteen unproduced measured-claim ideas in docs/niche.md",
+    "title": "Which comes first, dry bottom or spill? 4 cm of water: dry at 342 rpm. 6 cm: spills at 342 rpm",
+    "status": "public",
+    "date": "2026-10-05",
+    "url": "https://youtu.be/TxWDK_XlnHg",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Fired straight up from a rolling cart: does the ball land back in the cup? No, 43 cm behind it",
+    "status": "public",
+    "date": "2026-10-05",
+    "url": "https://youtu.be/6FMt4nruGWc",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Twenty-one unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

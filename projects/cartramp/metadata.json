@@ -1,0 +1,21 @@
+{
+  "title": "Fired straight up from a rolling cart: does the ball land back in the cup? No, 43 cm behind it",
+  "description": "A 1 kg cart with light wheels and no friction is let go from rest at the top of a 30 degree ramp 1.8 m long. It rolls at g sin a = 4.9035 m/s^2 (its normal force M g cos a = 8.493 N stays positive). 30 cm down the ramp it passes a trigger at 0.3498 s moving 1.7153 m/s, and a spring launcher fires a 50 g ball at 2 m/s relative to the cart. The ball then flies freely at g = 9.807 m/s^2 with no air drag. Top band: the launcher points straight up (vertical in the lab). Bottom band: it points square to the ramp. Both carts roll on to a stop pad at the foot of the ramp and stop there (no bounce). Shown at 1/4 speed, five runs on one clock.\n\nMeasured:\n- Trigger: 0.3498 s after the release at 1.7153 m/s; normal force 8.493 N.\n- Fired straight up: in the air 0.4079 s (2 u / g), apex 17.66 cm above the ramp, lands 42.83 cm up the ramp behind the cart (40.79 cm without the 0.050 m/s recoil kick); the cart is 1.1279 m past the trigger at 3.765 m/s.\n- Fired square to the ramp: in the air 0.4710 s (2 u / (g cos a)), apex 23.55 cm, miss 1.4e-11 cm: dead in the cup; the cart is 1.3517 m past the trigger at 4.025 m/s.\n- Both carts reach the stop pad about 0.50 s after the trigger (0.5011 s at 4.222 m/s, 0.5070 s at 4.2015 m/s).\n- Miss straight up on other ramps and balls: 20 deg: 29.30 cm; 45 deg: 60.57 cm; ball at 1.5 m/s: 24.09 cm; ball at 3 m/s: 96.36 cm; 5 kg cart: 41.20 cm. Square to the ramp the miss stays at most 5.2e-11 cm in every case.\n- Launched from rest at the trigger (no roll before the launch): still 42.83 cm behind, still dead in the cup. The miss does not depend on the cart's speed.\n- Checks: RK4 at dt = 1e-4 s in the lab frame against the closed forms, 33 checks, 0 failed; the landing agrees with 2 u^2 sin a (1 + m / M) / g within 1.7e-11 cm; the ball's energy in flight constant within 9.6e-15 J; momentum along the slope 1.801018 kg m/s before and after the launch; a half-step rerun agrees within 2.7e-15 s.\n\nWhy: fired straight up, the ball keeps an up-slope drift of u sin a = 1.000 m/s relative to the cart while the cart keeps speeding up down the slope, so the cart runs out from under it. Fired square to the ramp, the ball shares the cart's roll exactly: in the cart's frame the along-slope pull of gravity is cancelled, so the ball comes straight back down into the cup.\n\nRerun it: python3 sims/cartramp/cartramp.py with projects/cartramp/manifest.json (deterministic, no seed).\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts",
+    "howitzer cart",
+    "projectile",
+    "inclined plane",
+    "ramp",
+    "mechanics",
+    "relative motion",
+    "classical mechanics"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

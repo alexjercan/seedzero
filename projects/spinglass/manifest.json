@@ -1,0 +1,54 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "glass_radius_m": 0.035,
+  "glass_height_m": 0.1,
+  "fill_m": {
+    "shallow": 0.04,
+    "deep": 0.06
+  },
+  "half_fill_m": 0.05,
+  "description_wide_radius_m": 0.045,
+  "description_low_fill_m": 0.02,
+  "table_rpm": [
+    100,
+    200,
+    300,
+    400,
+    450
+  ],
+  "quadrature_rpm": [
+    0,
+    100,
+    200,
+    300,
+    341.8,
+    382.1,
+    400,
+    427.2,
+    450
+  ],
+  "quadrature_intervals": 2000,
+  "water_viscosity_m2_s": 1e-06,
+  "ramp_start_s": 3.0,
+  "ramp_rpm_per_s": 15.0,
+  "ramp_max_rpm": 450.0,
+  "blur_rpm": [
+    100.0,
+    140.0
+  ],
+  "scene_duration": 40.0,
+  "px_per_cm": 36.0,
+  "title": "A glass of water, spun up.|Which comes first,|dry bottom or spill?",
+  "title_until": 3.0,
+  "payoff_t": 23.6,
+  "payoff_hold": 0.6,
+  "payoff_text": "which comes first, dry bottom or spill? | 4 cm: bottom shows at {rpm_dry4:.0f} rpm, rim {rim4:.0f} cm | 6 cm: spills at {rpm_spill6:.0f} rpm, center {z06:.0f} cm | then 4 cm spills at {rpm_spill4:.0f}, 6 cm dries at {rpm_dry6:.0f} | half full: both at once, at {rpm_half:.0f} rpm | the dip equals the climb at the rim",
+  "loop_fade": 0.5,
+  "music_seed": 113,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "7 cm glass, 10 cm tall | 4 vs 6 cm water | no seed"
+}

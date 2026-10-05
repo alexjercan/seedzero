@@ -1630,6 +1630,13 @@ closed form, not a fluid grid):
   1.143x and 2.000x; RK4 of the two-body system within 1e-4 s of the
   closed form, horizontal momentum 1e-13, energy 2.942 J both ways;
   repeat the drop; deterministic, no seed.
+  [produced 2026-10-05 as "Bolted down or free on ice: which block
+  reaches the floor first? Free wedge 0.39 s, bolted 0.49 s"; measured
+  bolted floor at 0.4947 s, free at 0.3911 s (1.2649 times sooner =
+  sqrt 1.6), slope a 7.8456 against 4.9035 m/s^2 (1.6000x exact), the
+  wedge 25.98 cm back and the block 25.98 cm forward, path 49.11
+  degrees, N 0.6928 against 0.8660 of the weight, momentum 0.0e+00,
+  energy 2.9421 J both; task 20261005-100707]
 - Stick or string: a 1 m uniform stick on a pin beside a weight on a 1
   m string, both let go from 20 degrees; measure the periods and the
   count in 30 s; expect 1.651 against 2.022 s, ratio exactly sqrt(2/3)
@@ -1652,3 +1659,106 @@ closed form, not a fluid grid):
   catch up with the glass at 342 rpm (Ekman spin-up), so ramp over 30
   s or more and narrate the rpm, not the time; a fluid, but rigid
   rotation closed form, no grid; rank it low; deterministic, no seed.
+  [produced 2026-10-05 as "Which comes first, dry bottom or spill? 4 cm
+  of water: dry at 342 rpm. 6 cm: spills at 342 rpm"; measured 4 cm: dry
+  bottom at 341.8 rpm (rim 8.0 cm), spill at 427.2 rpm; 6 cm: spill at
+  341.8 rpm (centre 2.0 cm), bottom dry at 382.1 rpm after 38.5 mL has
+  spilled (192.4 mL left, half the glass), not at 418.6 rpm, which is
+  the no-spill guess sqrt(4 g h) / R and would put the rim at 12 cm;
+  half full both at 382.1 rpm; quadrature worst 2.7e-14 mL; task
+  20261005-100710]
+
+Added by trend research 2026-10-05 (evidence in task 20261005-100712;
+selection favoured everyday "does it land back", "push or pull", "where
+do they meet" and "which first" debates with an exact closed form, two
+panels on the same input that end visibly differently, builds of about
+25 minutes with closed forms or RK4 plus an event; the bowling-ball
+nose pendulum, the rotating stool and the leaking bottle rejected as
+siblings or posture models; the train flange kept low because its loop
+is 13 mm):
+
+- Cart on a ramp: a 1 kg cart rolling from rest down a 30 degree ramp
+  with no friction (light wheels, say so) fires a 50 g ball at 2.0 m/s
+  relative to itself as it passes a trigger 30 cm down the ramp (1.715
+  m/s), one launcher pointing straight up beside one pointing square to
+  the ramp; measure where each ball lands; expect the square launch to
+  land dead in the cup (miss 0.0000 m, flight 2 u / (g cos a) = 0.471
+  s, 23.5 cm above the ramp, the cart 1.35 m past the trigger at 4.03
+  m/s) and the straight-up launch to land 42.8 cm up the ramp behind
+  the cart (2 u^2 sin a (1 + m / M) / g, 40.8 cm without the 0.05 m/s
+  recoil kick; flight 2 u / g = 0.408 s, 17.7 cm high, the cart 1.13 m
+  past the trigger), because in the cart's frame gravity along the ramp
+  is cancelled and only g cos a remains, square to the ramp; from rest
+  at the trigger the same 0.0 against 42.8 cm; 20 degrees 29.3 cm, 45
+  degrees 60.6 cm, 1.5 m/s 24.1 cm, 3.0 m/s 96.4 cm, a 5 kg cart 41.2
+  cm; the cart's normal force M g cos a = 8.49 N stays positive and the
+  square launch only presses the cart into the ramp; stepped flight at
+  1e-4 s with bisection at the ramp surface within 1e-12 m of the
+  closed forms; the flat-track version lands in the cart in both panels
+  (the popular Howitzer cart) and the incline version is a live
+  "ahead, behind or in the cart" debate; repeat the run so the short
+  loops; deterministic, no seed.
+  [produced 2026-10-05 as "Fired straight up from a rolling cart: does
+  the ball land back in the cup? No, 43 cm behind it"; measured trigger
+  0.3498 s at 1.7153 m/s, N 8.493 N, straight up in the air 0.4079 s,
+  apex 17.66 cm, lands 42.83 cm behind the cart (40.79 cm without the
+  0.050 m/s recoil), cart 1.1279 m past the trigger at 3.765 m/s;
+  square to the ramp 0.4710 s, apex 23.55 cm, miss 1.4e-11 cm, cart
+  1.3517 m at 4.025 m/s; from rest at the trigger the same 42.83 cm;
+  20 deg 29.30, 45 deg 60.57, 1.5 m/s 24.09, 3 m/s 96.36, 5 kg cart
+  41.20 cm; RK4 dt 1e-4 s against the closed forms within 1.7e-11 cm,
+  33 checks, 0 failed; task 20261005-103139]
+- Push or pull a box: a 10 kg crate on a floor with grip 0.4, the same
+  50 N applied at 30 degrees, pushing down on it beside pulling up on
+  it; measure how far it moves in 2 s; expect the pull to move it 2.81
+  m (a = 1.407 m/s^2: the lift cuts the floor push to 73.1 N and the
+  friction to 29.2 N under the 43.3 N drive) and the push to leave it
+  still (the floor push rises to 123.1 N, friction limit 49.2 N above
+  the 43.3 N drive); thresholds 36.8 N to pull against 58.9 N to push,
+  1.60 times, with 39.2 N flat; 60 N moves both, 4.95 against 0.15 m;
+  grip 0.3 moves both (2.14 against 0.64 m/s^2), grip 0.5 locks the
+  push again; above acot(mu) = 68.2 degrees no push however hard moves
+  the crate; the best pull angle is atan(mu) = 21.8 degrees, 7 percent
+  less force than flat (a 40 N pull on the same crate moves 15 cm flat
+  against 77 cm at 21.8 degrees in 2 s); closed forms; the grip and the
+  force are chosen, so state both; the crate is low, so it slides and
+  never tips; repeat the push; deterministic, no seed.
+- Fingers under a ruler: a 1 m ruler resting on two fingers at 5 and 95
+  cm beside a hammer-like 1 m stick with its balance point 20 cm from
+  the head end, the fingers slid toward each other at 5 cm/s while the
+  stick stays still; measure where the fingers meet; expect exactly the
+  balance point in both, 50.0 cm against 20.0 cm from the head end,
+  whatever the grip, because the finger with less weight on it slips
+  until its load reaches mu_s / mu_k of the other's and then they swap
+  (static 0.4, kinetic 0.3: the slipping finger stops at 3/4 of the
+  other's distance from the balance point, swaps at 16.3, 75.3, 31.0,
+  64.2 cm on the ruler, 17 swaps to a 1 cm gap in 17.8 s; the hammer
+  stick's far finger slides 64 cm before the first swap; grips 0.5 /
+  0.45 give 44 swaps, 0.6 / 0.3 give 8); loads N_a = W x_b / (x_a +
+  x_b); stepped Coulomb slip with an event at each swap; the Science
+  World and Scientific American hammer-ruler trick; repeat the slide;
+  deterministic, no seed.
+- Marble on rails (Galileo's groove): the same 2 cm marble rolling 1 m
+  down the same 20 degree slope, on a flat board beside two rails 1.6
+  radii apart (contact radius 0.6 R); measure which reaches the bottom
+  first; expect the flat marble at 0.914 s (a = g sin a / 1.4 = 2.396
+  m/s^2) against 1.122 s on the rails (a = g sin a / (1 + 0.4 / 0.36) =
+  1.589 m/s^2, 1.508 times less, time 1.228 times = sqrt), the rail
+  marble at 66 cm when the flat one lands, spin taking 52.6 percent of
+  the energy on the rails against 28.6 flat; rails 1.2 R apart 0.984 s,
+  1.8 R 1.361 s; no slip needs grip 0.104 flat and 0.115 on the rails;
+  Galileo's groove 8.5 punti wide for a 10 punti ball cut his
+  acceleration 5.9 percent (TPT 2024 says 5.75); a rolling sibling of
+  the rolling race and the ice cube against the ball, so rank it mid;
+  repeat the roll; deterministic, no seed.
+- Train wheel backward: a car tyre beside a train wheel (rim 42.0 cm,
+  flange 44.8 cm) both rolling at 100 km/h, a marked point on the tyre
+  bottom and on the flange bottom; measure the speed of the marked
+  point; expect the tyre point at exactly 0 km/h and the flange point
+  at 6.67 km/h backward (v (r_f / R - 1)), backward for 40.7 degrees of
+  each turn (acos(R / r_f) each side, 11.3 percent of the time) while
+  the rim top does 200 km/h; the flange point draws a prolate cycloid
+  with a loop only 13.2 mm wide, so the drawing needs an inset or a toy
+  wheel (R 10 cm, flange 15 cm at 1 m/s: 0.5 m/s back, 55 mm loop); a
+  riddle with one number rather than a two-panel race, so rank it low;
+  periodic so the short loops; deterministic, no seed.

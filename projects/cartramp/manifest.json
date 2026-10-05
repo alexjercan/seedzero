@@ -1,0 +1,46 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "cart_kg": 1.0,
+  "ball_kg": 0.05,
+  "launch_speed_mps": 2.0,
+  "angle_deg": 30.0,
+  "ramp_m": 1.8,
+  "trigger_m": 0.3,
+  "description_angles_deg": [
+    20.0,
+    45.0
+  ],
+  "description_speeds_mps": [
+    1.5,
+    3.0
+  ],
+  "description_cart_kg": [
+    5.0
+  ],
+  "steps_per_second": 10000,
+  "table_step_s": 0.1,
+  "slow": 4.0,
+  "cycle_s": 8.0,
+  "release_at": 0.5,
+  "first_cycle_at": -1.0,
+  "reset_fade": 0.6,
+  "pin_fade_s": 0.3,
+  "splash_s": 0.3,
+  "scene_duration": 40.0,
+  "px_per_m": 340.0,
+  "ramp_x0_px": 80,
+  "ramp_top_dy": 190,
+  "title": "Fired straight up from|a rolling cart: does the ball|land back in the cup?",
+  "title_until": 3.0,
+  "payoff_t": 33.6,
+  "payoff_hold": 0.6,
+  "payoff_text": "does the ball land back in the cup? | straight up: no, {gap:.1f} cm behind the cart | square to the ramp: yes, dead in the cup | air {tf_v:.2f} and {tf_s:.2f} s; up {apex_v:.1f} and {apex_s:.1f} cm | same miss from rest at the trigger | 45 deg: {a45:.1f} cm; 5 kg cart: {m5:.1f} cm",
+  "loop_fade": 0.5,
+  "music_seed": 114,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "1 kg cart, 30 deg ramp | ball 2 m/s | no seed"
+}
