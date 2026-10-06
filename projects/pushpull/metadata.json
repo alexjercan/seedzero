@@ -1,0 +1,22 @@
+{
+  "title": "Push down on a crate, or pull up on it: which one moves it? Pull up: 2.8 m in 2 s, push down: 0 m",
+  "description": "Push down on a crate, or pull up on it: which one moves it? A 10 kg crate (a 50 cm cube, weight m g = 98.07 N at g = 9.807 m/s^2) rests on a level floor with grip (friction coefficient) 0.4, the same at rest and sliding (a chosen number). The same force F = 50 N acts at 30 degrees to the floor, applied at mid-height (25 cm up) so the crate slides and never tips. Top band, push down: a rod on the rear face presses forward and down. Bottom band, pull up: a rope on the front face pulls forward and up. The horizontal drive F cos a = 43.30 N is the same in both; the vertical part F sin a = 25.00 N presses the crate into the floor or lifts part of its weight, so the floor push is N = m g + 25.00 N pushing and N = m g - 25.00 N pulling, the grip limit is mu N, and the crate moves only while the drive exceeds it: a = (F cos a - mu N) / m. The force acts for 2 s; then the tool lets go and a moving crate skids to a stop under sliding friction mu m g. Shown at 1/2 speed, five runs on one clock.\n\nMeasured:\n- Push down (top): floor push 123.07 N, grip limit 49.23 N, net -5.93 N: a = 0.0000 m/s^2, 0.000 m at 2 s. The static friction equals the drive 43.30 N, 5.93 N under the limit.\n- Pull up (bottom): floor push 73.07 N, grip limit 29.23 N, net +14.07 N: a = 1.4073 m/s^2; 0.1759 m at 0.5 s, 0.7037 m at 1 s, 1.5832 m at 1.5 s, 2.8147 m at 2 s moving 2.8147 m/s (3 s without the release would be 6.333 m).\n- Skid: after the release the pull crate skids 1.0098 m in 0.7175 s (deceleration mu g = 3.9228 m/s^2) and rests 3.8244 m from the start at 2.7175 s.\n- Energy at 2 s on the pull: drive work 121.88 J = friction heat 82.27 J + kinetic 39.61 J.\n- Thresholds at 30 degrees: 36.80 N pulling against 58.90 N pushing (ratio 1.6006); flat 39.23 N. Push lock angle acot(mu) = 68.20 degrees: at or above it no push, however hard, moves the crate. Best pull angle atan(mu) = 21.80 degrees needing 36.42 N (7.2 percent less than flat).\n- Tipping check at mid-height: pull, lifting the rear 10.83 N m against 24.52 N m, lifting the front 12.50 N m against 35.34 N m; push, 10.83 N m against 37.02 N m: no tip in either band.\n- Other forces, grips and angles at 2 s (pull against push): 40 N 0.683 against 0.000 m; 60 N 4.947 against 0.147 m; 70 N 7.079 against 1.479 m; grip 0.3 4.276 against 1.276 m; grip 0.5 1.353 against 0.000 m; 0 degrees 2.154 m both; 15 degrees 2.849 against 0.778 m; 45 degrees 2.054 against 0.000 m; 60 degrees 0.619 against 0.000 m.\n- Checks: RK4 at dt = 1e-04 s with the stick-slip rule each step against the closed forms within 2.3e-13 m, a half-step rerun within 1.7e-12 m, 50 checks against the planned figures, 0 failed.\n\nWhy: pushing down adds 25 N to the floor push, so the floor grips the crate harder (49 N) than the 43 N drive can move it, and it never moves. Pulling up takes 25 N off the floor push, so the grip drops to 29 N, under the same 43 N drive, and the crate slides 2.8 m in 2 s. Same crate, same force, same angle: only the direction of the vertical part differs.\n\nRerun sims/pushpull/pushpull.py with projects/pushpull/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "push down on a crate or pull up on it: which one moves it",
+    "push or pull",
+    "friction",
+    "normal force",
+    "crate",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts",
+    "mechanics",
+    "classical mechanics",
+    "newton's laws"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

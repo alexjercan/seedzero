@@ -1,0 +1,49 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "marble_radius_m": 0.01,
+  "k_inertia": 0.4,
+  "slope_deg": 20.0,
+  "slope_m": 1.0,
+  "rail_gap_radii": 1.6,
+  "description_gaps_radii": [
+    1.2,
+    1.8
+  ],
+  "description_slopes_deg": [
+    10.0,
+    30.0
+  ],
+  "description_radii_m": [
+    0.005,
+    0.02
+  ],
+  "galileo_groove_punti": 8.5,
+  "galileo_ball_radius_punti": 10.0,
+  "steps_per_second": 10000,
+  "table_step_s": 0.2,
+  "slow": 4.0,
+  "cycle_s": 8.0,
+  "release_at": 0.5,
+  "first_cycle_at": -1.0,
+  "reset_fade": 0.6,
+  "pin_fade_s": 0.3,
+  "mark_fade_s": 0.3,
+  "scene_duration": 40.0,
+  "px_per_m": 650.0,
+  "slope_x0_px": 80,
+  "slope_top_dy": 240,
+  "marble_px": 22,
+  "title": "Two rails or a flat board:|which one gets down first?",
+  "title_until": 3.0,
+  "payoff_t": 33.6,
+  "payoff_hold": 0.6,
+  "payoff_text": "which one gets down first? | the flat board: {tf:.3f} s; the rails: {tr:.3f} s | {short:.0f} cm short when the board one lands | spin takes {sf:.1f} against {sr:.1f} percent | rails 1.2 R apart: {t12:.3f} s; 1.8 R: {t18:.3f} s | any size, any slope: {ratio:.3f} times longer",
+  "loop_fade": 0.5,
+  "music_seed": 116,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "2 cm marble, 20 deg slope, 1 m | no seed"
+}

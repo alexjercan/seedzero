@@ -1723,6 +1723,18 @@ is 13 mm):
   against 77 cm at 21.8 degrees in 2 s); closed forms; the grip and the
   force are chosen, so state both; the crate is low, so it slides and
   never tips; repeat the push; deterministic, no seed.
+  [produced 2026-10-06 as "Push down on a crate, or pull up on it: which
+  one moves it? Pull up: 2.8 m in 2 s, push down: 0 m"; measured drive
+  43.30 N, vertical 25.00 N; push down N 123.07 N, grip 49.23 N, a 0,
+  0.000 m; pull up N 73.07 N, grip 29.23 N, a 1.4073 m/s^2, 2.815 m and
+  2.815 m/s at 2 s, skid 1.010 m in 0.7175 s to rest 3.824 m at 2.7175 s;
+  thresholds 36.80 against 58.90 N (ratio 1.6006), flat 39.23 N, lock
+  angle 68.20 deg, best pull 21.80 deg at 36.42 N; 40 N 0.683 against 0,
+  60 N 4.947 against 0.147, 70 N 7.079 against 1.479 m; grip 0.3 4.276
+  against 1.276, grip 0.5 1.353 against 0 m; 0 deg 2.154 both, 15 deg
+  2.849 against 0.778, 45 deg 2.054 against 0, 60 deg 0.619 against 0 m;
+  RK4 dt 1e-4 s with the stick-slip rule against the closed forms within
+  2.3e-13 m, 50 checks, 0 failed; task 20261006-101400]
 - Fingers under a ruler: a 1 m ruler resting on two fingers at 5 and 95
   cm beside a hammer-like 1 m stick with its balance point 20 cm from
   the head end, the fingers slid toward each other at 5 cm/s while the
@@ -1738,6 +1750,17 @@ is 13 mm):
   x_b); stepped Coulomb slip with an event at each swap; the Science
   World and Scientific American hammer-ruler trick; repeat the slide;
   deterministic, no seed.
+  [produced 2026-10-06 as "Where do two fingers meet under a ruler? At
+  the balance point: 50 cm, and 20 cm under a hammer"; measured 15 slips
+  on the ruler meeting at 49.21 / 50.71 cm (centre 49.96 cm) and 11
+  under the hammer meeting at 19.16 / 20.66 cm (centre 19.91 cm), both
+  in 8.350 s at 10 cm/s with grips 0.4 / 0.3 from pads at 5 and 90 cm,
+  swaps at 20.00, 72.50, 33.13, 62.66 cm on the ruler, the hammer's
+  right finger sliding 58.75 cm first, loads 0.5714 against 0.4286 W at
+  every swap; grips 0.5 / 0.45 give 39 and 29 slips, 0.6 / 0.3 give 7
+  and 5, 5 cm/s the same spots in 16.700 s, balance point 30 cm meets
+  at 29.21 / 30.71 cm; events within 2.8e-17 m of the closed form, 49
+  checks, 0 failed; task 20261006-101406]
 - Marble on rails (Galileo's groove): the same 2 cm marble rolling 1 m
   down the same 20 degree slope, on a flat board beside two rails 1.6
   radii apart (contact radius 0.6 R); measure which reaches the bottom
@@ -1751,6 +1774,17 @@ is 13 mm):
   acceleration 5.9 percent (TPT 2024 says 5.75); a rolling sibling of
   the rolling race and the ice cube against the ball, so rank it mid;
   repeat the roll; deterministic, no seed.
+  [produced 2026-10-06 as "Two rails or a flat board: which one gets
+  down first? The flat board, 0.91 s against 1.12 s"; measured flat
+  board 1 m in 0.9137 s at 2.1890 m/s (a 2.3959 m/s^2), two rails 1.6 R
+  apart (contact 0.6 R) 1.1220 s at 1.7826 m/s (a 1.5888 m/s^2), ratio
+  1.2280 = sqrt 1.5079, margin 0.2083 s, the rail marble 0.6632 m down
+  (33.7 cm short) when the flat one lands, spin 34.8 against 47.3
+  turns/s, spin share 0.2857 against 0.5263, grip 0.1040 and 0.1149,
+  rails 1.2 R 0.9843 s and 1.8 R 1.3607 s, 10 deg 1.2823 / 1.5746 s, 30
+  deg 0.7557 / 0.9279 s, ice cube 0.7722 s, Galileo contact 0.9052 R
+  (5.93 percent less); RK4 dt 1e-4 s against the closed forms, 44
+  checks, 0 failed; task 20261006-101403]
 - Train wheel backward: a car tyre beside a train wheel (rim 42.0 cm,
   flange 44.8 cm) both rolling at 100 km/h, a marked point on the tyre
   bottom and on the flange bottom; measure the speed of the marked

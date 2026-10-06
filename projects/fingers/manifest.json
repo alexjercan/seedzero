@@ -1,0 +1,63 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "stick_m": 1.0,
+  "pad_m": 0.015,
+  "left_m": 0.05,
+  "right_m": 0.9,
+  "mu_s": 0.4,
+  "mu_k": 0.3,
+  "speed_m_s": 0.1,
+  "balance_m": {
+    "ruler": 0.5,
+    "hammer": 0.2
+  },
+  "head_m": 0.1,
+  "head_h_m": 0.07,
+  "handle_h_m": 0.02,
+  "head_density_ratio": 6.0,
+  "description_grips": [
+    [
+      0.5,
+      0.45
+    ],
+    [
+      0.6,
+      0.3
+    ]
+  ],
+  "description_speeds_m_s": [
+    0.05
+  ],
+  "description_balances_m": [
+    0.3
+  ],
+  "steps_per_second": 10000,
+  "cycle_s": 13.333333333333334,
+  "start_at": 0.4,
+  "first_cycle_at": -6.666666666666667,
+  "reset_fade": 0.6,
+  "scene_duration": 40.0,
+  "px_per_m": 800.0,
+  "stick_x0_px": 140,
+  "ruler_numbers_cm": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    100
+  ],
+  "title": "Where do two fingers|meet under a ruler?",
+  "title_until": 3.0,
+  "payoff_t": 27.8,
+  "payoff_hold": 0.6,
+  "payoff_text": "where do two fingers meet under a ruler? | at the balance point: {meet_r:.0f} cm and {meet_h:.0f} cm | {n_r} and {n_h} slips, both done in {t_total:.2f} s | a slide ends at 3/4 of the other's distance | hammer: the first slide is {first_h:.2f} cm long | grip 0.6 / 0.3: {n_r63} and {n_h63} slips, same spots",
+  "loop_fade": 0.5,
+  "music_seed": 117,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "fingers at 10 cm/s, grip 0.4 / 0.3 | no seed"
+}

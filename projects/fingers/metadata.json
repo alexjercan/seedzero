@@ -1,0 +1,22 @@
+{
+  "title": "Where do two fingers meet under a ruler? At the balance point: 50 cm, and 20 cm under a hammer",
+  "description": "Where do two fingers meet under a ruler? A 1 m stick rests level on two finger pads 1.5 cm wide, the left pad's centre at 5 cm and the right pad's centre at 90 cm from the left end (asymmetric on purpose, so there is no tie). Grip between the pads and the stick: static 0.4, sliding 0.3 (chosen numbers). With x_left and x_right the pads' distances from the balance point, the loads are N_left = W x_right / (x_left + x_right) and N_right = W x_left / (x_left + x_right): the finger nearer the balance point carries more, and the weight W cancels. Exactly one finger slips at a time: the finger carrying less weight slides under the stick at 10 cm/s while the other holds. In the model the stick stays still; in your hands the stick drifts along with the gripping finger instead, and the meeting point is the same. The slide ends when 0.3 N_slip = 0.4 N_hold, that is when the slider's distance from the balance point is 0.3 / 0.4 = 0.75 of the holder's; then they swap. The fingers have met when the pad centres are 1.5 cm apart. Top band: a uniform ruler, balance point at 50 cm. Bottom band: a hammer-like stick, its heavy head on the left (a 10 by 7 cm head 6 times as dense as the 2 cm handle), balance point 20 cm from the head end. Event-driven Coulomb model stepped at 10,000 steps per second, each swap located by bisection inside its step and checked against the closed form. Shown at real speed, three runs on one clock.\n\nMeasured:\n- Start loads: ruler left 0.4706 W (45 cm from the middle), right 0.5294 W (40 cm): the left finger slips first. Hammer left 0.8235 W (15 cm from the balance point), right 0.1765 W (70 cm): the right finger slips first.\n- Ruler: 15 slips, the fingers meet at 49.21 and 50.71 cm (centre 49.96 cm) at 8.350 s. Swaps at 20.00 cm (1.500 s), 72.50 cm (3.250 s), 33.13 cm (4.563 s), 62.66 cm (5.547 s), 40.51 cm (6.285 s), 57.12 cm (6.839 s), 44.66 cm (7.254 s), 54.00 cm (7.566 s), and on.\n- Hammer: 11 slips, the fingers meet at 19.16 and 20.66 cm (centre 19.91 cm) at 8.350 s. The right finger slides 58.75 cm first, to 31.25 cm at 5.875 s; then 11.56 cm (6.531 s), 26.33 cm (7.023 s), 15.25 cm (7.393 s), 23.56 cm (7.669 s), 17.33 cm (7.877 s), 22.00 cm (8.033 s), 18.50 cm (8.150 s), and on.\n- At every swap the loads are 0.5714 W on the finger that just slid in and 0.4286 W on the one about to slide: 0.3 x 0.5714 = 0.4 x 0.4286 = 0.1714 W, the slider's distance 0.7500 of the holder's.\n- Total time (90 - 5 - 1.5) cm / 10 cm/s = 8.350 s in every case: exactly one finger moves at any instant.\n- Drawn hammer: the balance point of the drawn shape is 20.00 cm from the head end (closed form and pixel mask agree).\n- Other grips: 0.5 / 0.45 gives 39 slips on the ruler (first swap at 14.0 cm, 0.900 s) and 29 under the hammer; 0.6 / 0.3 gives 7 slips on the ruler (first swap at 30.0 cm, 2.500 s) and 5 under the hammer (the right finger slides 62.50 cm first). At 5 cm/s: the same positions in 16.700 s. A stick with its balance point at 30 cm: 13 slips, meeting at 29.21 and 30.71 cm. In every case the fingers meet at the balance point.\n- Checks: 49 checks against the planned closed forms, 0 failed; every swap located within 2.8e-17 m of its closed form.\n\nWhy: the finger carrying less weight is the one farther from the balance point, so it slips first. As it slides in it takes on more weight, its friction grows, and the holding finger, now carrying less, lets go instead. They take turns, each turn shorter than the last, and the turns close in on the balance point from both sides: the fingers always meet there, whatever the grip or the speed.\n\nRerun sims/fingers/fingers.py with projects/fingers/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "where do two fingers meet under a ruler",
+    "fingers under a ruler",
+    "hammer ruler trick",
+    "balance point",
+    "center of mass",
+    "friction",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts",
+    "classroom physics",
+    "mechanics"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

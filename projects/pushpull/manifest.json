@@ -1,0 +1,50 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "crate_kg": 10.0,
+  "crate_m": 0.5,
+  "apply_height_m": 0.25,
+  "mu": 0.4,
+  "force_n": 50.0,
+  "angle_deg": 30.0,
+  "window_s": 2.0,
+  "description_forces_n": [
+    40.0,
+    60.0,
+    70.0
+  ],
+  "description_mus": [
+    0.3,
+    0.5
+  ],
+  "description_angles_deg": [
+    0.0,
+    15.0,
+    45.0,
+    60.0
+  ],
+  "steps_per_second": 10000,
+  "table_step_s": 0.5,
+  "slow": 2.0,
+  "cycle_s": 8.0,
+  "force_at": 0.5,
+  "first_cycle_at": -4.0,
+  "reset_fade": 0.6,
+  "tool_fade_s": 0.4,
+  "scene_duration": 40.0,
+  "px_per_m": 220.0,
+  "start_x_px": 100,
+  "floor_dy": 398,
+  "title": "Push down on a crate, or|pull up on it: which one|moves it?",
+  "title_until": 3.0,
+  "payoff_t": 30.0,
+  "payoff_hold": 0.6,
+  "payoff_text": "push down or pull up: which moves it? | pull up: {x2:.1f} m in 2 s; push down: 0 m | floor push {n_pull:.0f} N pulling, {n_push:.0f} N pushing | grip {g_pull:.0f} N against {g_push:.0f} N, drive {drive:.0f} N | needs {f_pull:.1f} N pulling, {f_push:.1f} N pushing | above {lock:.0f} deg, no push works",
+  "loop_fade": 0.5,
+  "music_seed": 115,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "10 kg crate, grip 0.4 | 50 N at 30 deg | no seed"
+}
