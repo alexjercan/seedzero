@@ -1,0 +1,57 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "start_m": 0.4,
+  "tray_len_m": 0.46,
+  "rate_deg_s": 3.0,
+  "marble_radius_m": 0.01,
+  "k_inertia": 0.4,
+  "dice_side_m": 0.016,
+  "mu": 0.4,
+  "description_mus": [
+    0.2,
+    0.3,
+    0.5,
+    0.6
+  ],
+  "description_rates_deg_s": [
+    1.0,
+    2.0,
+    5.0
+  ],
+  "description_shapes": {
+    "ice cube on ice (slides, no grip)": 0.0,
+    "solid cylinder": 0.5,
+    "hollow ball": 0.6666666666666666,
+    "ring": 1.0
+  },
+  "description_radii_m": [
+    0.005,
+    0.02
+  ],
+  "steps_per_second": 10000,
+  "table_step_s": 1.0,
+  "cycle_s": 10.0,
+  "release_at": 0.4,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.5,
+  "tick_fade_s": 0.3,
+  "scene_duration": 40.0,
+  "px_per_m": 950.0,
+  "pivot_x_px": 900,
+  "pivot_dy": 400,
+  "dice_px": 30,
+  "marble_px": 11,
+  "title": "Marble or dice|on a tilting tray:|which one goes first?",
+  "title_until": 3.0,
+  "payoff_t": 28.4,
+  "payoff_hold": 0.6,
+  "payoff_text": "which one goes first? | the marble, at {thm:.1f} deg; the dice at {thd:.1f} | dice slides from {ths:.1f} deg, tan = grip {mu:g} | grip 0.2 leaves at {g02:.1f} deg, 0.6 at {g06:.1f} | any grip above {need:.3f} rolls the marble | friction holds a block, only turns a ball",
+  "loop_fade": 0.5,
+  "music_seed": 118,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "marble and dice, 3 deg/s tilt, grip 0.4 | no seed"
+}

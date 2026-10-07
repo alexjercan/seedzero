@@ -12,7 +12,7 @@
     "status": "public",
     "date": "2026-08-30",
     "url": "https://youtu.be/BU_j-UbPR7k",
-    "views": 1164,
+    "views": 1166,
     "likes": 16
   },
   {
@@ -84,7 +84,7 @@
     "status": "public",
     "date": "2026-09-02",
     "url": "https://youtu.be/i_YIsr65vgk",
-    "views": 108,
+    "views": 113,
     "likes": 2
   },
   {
@@ -308,7 +308,7 @@
     "status": "public",
     "date": "2026-09-11",
     "url": "https://youtu.be/iIWkxb6zYqE",
-    "views": 1048,
+    "views": 1049,
     "likes": 10
   },
   {
@@ -436,7 +436,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/Ahe_3vRDMXA",
-    "views": 952,
+    "views": 953,
     "likes": 6
   },
   {
@@ -444,7 +444,7 @@
     "status": "public",
     "date": "2026-09-17",
     "url": "https://youtu.be/wmkc_zygzXQ",
-    "views": 1050,
+    "views": 1051,
     "likes": 12
   },
   {
@@ -484,7 +484,7 @@
     "status": "public",
     "date": "2026-09-19",
     "url": "https://youtu.be/DlmRoaSp85g",
-    "views": 955,
+    "views": 956,
     "likes": 14
   },
   {
@@ -508,7 +508,7 @@
     "status": "public",
     "date": "2026-09-20",
     "url": "https://youtu.be/OsyugHAfCH4",
-    "views": 994,
+    "views": 995,
     "likes": 9
   },
   {
@@ -628,7 +628,7 @@
     "status": "public",
     "date": "2026-09-25",
     "url": "https://youtu.be/5xhaVWmicBI",
-    "views": 574,
+    "views": 575,
     "likes": 4
   },
   {
@@ -660,7 +660,7 @@
     "status": "public",
     "date": "2026-09-26",
     "url": "https://youtu.be/f-ZLd4-azw0",
-    "views": 320,
+    "views": 321,
     "likes": 4
   },
   {
@@ -740,7 +740,7 @@
     "status": "public",
     "date": "2026-09-29",
     "url": "https://youtu.be/G1HkDcfYGNM",
-    "views": 80,
+    "views": 81,
     "likes": 4
   },
   {
@@ -764,7 +764,7 @@
     "status": "public",
     "date": "2026-09-30",
     "url": "https://youtu.be/910Al8RGRNU",
-    "views": 939,
+    "views": 943,
     "likes": 7
   },
   {
@@ -844,8 +844,8 @@
     "status": "public",
     "date": "2026-10-04",
     "url": "https://youtu.be/YPXH-ht0gEo",
-    "views": 314,
-    "likes": 4
+    "views": 318,
+    "likes": 3
   },
   {
     "title": "Roll a ball at a 3 cm step. Does it get up? 0.7 m/s: no, 0.9 m/s: yes. The limit is 0.81 m/s",
@@ -853,7 +853,7 @@
     "date": "2026-10-04",
     "url": "https://youtu.be/jx6LnUOl1Aw",
     "views": 193,
-    "likes": 2
+    "likes": 1
   },
   {
     "title": "Carry a weight, then stop. Does it swing? Stop at 1 s: 18.4 degrees; stop at 2 s: it hangs still",
@@ -868,7 +868,7 @@
     "status": "public",
     "date": "2026-10-05",
     "url": "https://youtu.be/qU1dbX1Ro2E",
-    "views": 234,
+    "views": 239,
     "likes": 1
   },
   {
@@ -876,7 +876,7 @@
     "status": "public",
     "date": "2026-10-05",
     "url": "https://youtu.be/TxWDK_XlnHg",
-    "views": 3,
+    "views": 5,
     "likes": 0
   },
   {
@@ -884,7 +884,7 @@
     "status": "public",
     "date": "2026-10-05",
     "url": "https://youtu.be/6FMt4nruGWc",
-    "views": 49,
+    "views": 63,
     "likes": 1
   },
   {
@@ -892,15 +892,15 @@
     "status": "public",
     "date": "2026-10-06",
     "url": "https://youtu.be/vFjXXGz8o54",
-    "views": 0,
-    "likes": 0
+    "views": 13,
+    "likes": 1
   },
   {
     "title": "Two rails or a flat board: which one gets down first? The flat board, 0.91 s against 1.12 s",
     "status": "public",
     "date": "2026-10-06",
     "url": "https://youtu.be/fbCfcgjoWWI",
-    "views": 0,
+    "views": 64,
     "likes": 0
   },
   {
@@ -908,11 +908,35 @@
     "status": "public",
     "date": "2026-10-06",
     "url": "https://youtu.be/0FDvNFg8KHc",
+    "views": 29,
+    "likes": 0
+  },
+  {
+    "title": "Marble or dice on a tilting tray: which one goes first? The marble at 5.6 deg, the dice at 26.7 deg",
+    "status": "public",
+    "date": "2026-10-07",
+    "url": "https://youtu.be/Ccobr2TekTc",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Twenty-one unproduced measured-claim ideas in docs/niche.md",
+    "title": "Does it matter if the boat is tied when you jump to the dock? Tied 1.25 m on the dock, free 0.52 m",
+    "status": "public",
+    "date": "2026-10-07",
+    "url": "https://youtu.be/gV_1nhnppGU",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Flat road or banked road: which one keeps the car in its lane? Banked holds; flat is off in 1.59 s",
+    "status": "public",
+    "date": "2026-10-07",
+    "url": "https://youtu.be/5U_2xBkAJpY",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Twenty unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

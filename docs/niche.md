@@ -1796,3 +1796,127 @@ is 13 mm):
   wheel (R 10 cm, flange 15 cm at 1 m/s: 0.5 m/s back, 55 mm loop); a
   riddle with one number rather than a two-panel race, so rank it low;
   periodic so the short loops; deterministic, no seed.
+
+Added by trend research 2026-10-07 (evidence in task 20261007-100305;
+selection favoured tabletop and everyday "which goes first", "does it
+make it" and "tip or slide" debates with an exact threshold or factor,
+two panels on the same input that end visibly differently, closed-form
+checks and builds of about 25 minutes with RK4 plus an event or closed
+forms; the ice cube or ball off a dome rejected because its panels look
+alike (leave points 22 px apart, the ball slips before it leaves) and
+walk-or-run in the rain rejected as a rate-only counter; the train
+wheel and the sliding ladder stay low):
+
+- Tilting tray, marble or dice: a marble (solid ball) and a dice (grip
+  0.4) side by side 40 cm up a tray tilted from flat at 3 degrees a
+  second about its low edge; measure the tilt at which each one reaches
+  the edge; expect the marble to be off at 5.6 degrees (1.87 s; x = g
+  (w t - sin w t) / ((1 + k) w^2), k = 2/5, any grip above 0.028 rolls
+  it) and the dice to sit until tan(theta) = mu at 21.8 degrees (7.27
+  s) and leave at 26.7 degrees (8.91 s), 21 degrees and 7.0 s later,
+  because friction holds a block but only turns a ball; grip 0.2 / 0.3
+  / 0.5 / 0.6 puts the dice off at 16.3 / 21.7 / 31.4 / 35.8 degrees;
+  1 / 2 / 5 degrees a second gives 2.7 / 4.3 / 7.9 against 24.2 / 25.6
+  / 28.8; an ice cube on ice 5.0, a cylinder 5.7, a hollow ball 6.0, a
+  ring 6.3 degrees; RK4 in the tray frame (centrifugal and Coriolis
+  terms included, worth 0.006 degrees) within 1.8e-12 s of a half-step
+  rerun and the closed form; tilt back and repeat so the short loops;
+  rank 1; deterministic, no seed.
+  [produced 2026-10-07 as "Marble or dice on a tilting tray: which one
+  goes first? The marble at 5.6 deg, the dice at 26.7 deg"; measured the
+  marble off the edge at 1.8726 s, 5.6179 deg, 0.6415 m/s (closed form
+  1.8707 s, 5.6121 deg; grip needed 0.0281), the dice sliding from 21.80
+  deg at 7.267 s and off at 8.8910 s, 26.6729 deg, 0.7441 m/s (N / W
+  never below 0.8856; with the Coriolis term on N reversed, the planning
+  convention, 8.9095 s, 26.7286 deg), margin 7.02 s and 21.06 deg, grips
+  0.2 / 0.3 / 0.5 / 0.6 off at 16.28 / 21.63 / 31.37 / 35.70 deg, rates 1
+  / 2 / 5 deg/s marble 2.70 / 4.29 / 7.91 against dice 24.15 / 25.52 /
+  28.64 deg, ice cube 5.02, cylinder 5.75, hollow ball 5.95, ring 6.33
+  deg, radius 5 or 20 mm unchanged; RK4 dt 1e-4 s in the tray frame, 29
+  checks, 9 failed on the Coriolis sign (13 of 13 under the planning
+  sign); task 20261007-102006]
+- Jump from a boat, tied or free: a 70 kg jumper pushing off a 50 kg
+  boat at 3.5 m/s and 45 degrees relative to the boat toward a dock
+  edge 1 m away at floor height, the boat tied to the dock beside the
+  same boat free; measure where the jumper lands; expect the tied jump
+  to land 1.25 m out on the dock (2.475 m/s, 0.505 s in the air, apex
+  31 cm) and the free jump to reach only 0.52 m and fall in, 48 cm
+  short, the boat shoved back 0.73 m at 1.44 m/s; the jumper's ground
+  speed is u_x M / (M + m), exactly 1 / 2.4 of the tied speed; a 30 /
+  100 / 200 / 400 kg boat lands 0.37 / 0.73 / 0.93 / 1.06 m; this jump
+  clears 1 m only from a 281 kg boat, and the 50 kg boat needs a 6.7
+  m/s takeoff; the model is a takeoff speed relative to the boat (the
+  textbook form; a same-push-energy model lands 0.81 m, still short),
+  the vertical impulse goes into the water through the hull, no water
+  drag in the 0.5 s; closed forms with an RK4 projectile check; repeat
+  the jump; rank 2; deterministic, no seed. [produced 2026-10-07 as
+  "Does it matter if the boat is tied when you jump to the dock? Tied
+  1.25 m on the dock, free 0.52 m"; measured flight 0.5047 s, apex
+  0.3123 m, tied 2.4749 m/s lands 1.2491 m (24.9 cm past the edge),
+  free 1.0312 m/s lands 0.5205 m (48.0 cm short) with the boat 0.7286
+  m back at 1.4437 m/s, ratio 2.4000 = (M + m) / M, energy 428.8
+  against 303.7 J, 30 / 100 / 200 / 400 kg boats 0.37 / 0.73 / 0.93 /
+  1.06 m, 281.0 kg clears 1 m, the 50 kg boat needs 4.85 m/s (u^2
+  scaling; the 6.72 m/s was a linear scaling); RK4 dt 1e-4 s against
+  the closed forms, 21 checks, 0 failed; task 20261007-102007]
+- Banked curve on ice: the same car at 50 km/h round a 50 m curve with
+  grip 0.1 on a flat road beside a road banked at 20 degrees; measure
+  whether it stays in its 7 m lane; expect the flat car to need 0.393
+  g sideways against 0.1 available, so it follows a 196.7 m radius and
+  is over the outer edge after 22.1 m and 1.59 s (the flat limit sqrt(mu
+  g R) = 25.2 km/h), and the banked car to need a grip of only 0.0257
+  (N 1.074 weights) and hold, because the road pushes it toward the
+  centre; no-grip design speed sqrt(g R tan theta) = 48.1 km/h, the
+  grip-0.1 window 40.2 to 55.3 km/h (below 40 it slides down the bank,
+  above 55 out), 60 km/h slides on both; grip 0.3 / 0.5 / 0.8 flat
+  limits 43.7 / 56.4 / 71.3 km/h; point car, full-grip steer on the
+  flat (the swerve model); top-down lanes with a cross-section inset
+  per panel to show the bank; RK4 of the flat slide within 1e-4 s of
+  the circle; repeat the entry; rank 3; deterministic, no seed.
+  [produced 2026-10-07 as "Flat road or banked road: which one keeps
+  the car in its lane? Banked holds; flat is off in 1.59 s"; measured
+  needed 3.858 m/s^2 = 0.3934 g against 0.1 g, flat circle 196.70 m,
+  over the outer edge after 22.05 m and 1.5876 s (25.3 deg), 19.2 m off
+  at 4 s, banked N 1.0742 weights with grip needed 0.0257 down the
+  slope (inward), flat limit 25.21 km/h, design 48.09 km/h, window
+  40.23 to 55.32 km/h, bank needed 15.76 deg (21.47 with no grip); task
+  20261007-102009]
+- Tall glass or short glass on a tilting tray: a 7 x 18 cm glass and
+  an 8 x 8 cm glass on a tray with grip 0.5 tilted at 3 degrees a
+  second; measure what each one does first; expect the tall glass to
+  tip at tan(theta) = w / h = 21.3 degrees (7.08 s) before it can
+  slide, lying on its side 0.73 s later, and the short glass to slide
+  at tan(theta) = mu = 26.6 degrees (8.86 s) and reach the edge at 31.4
+  degrees without ever tipping (it would need 45 degrees); the line is
+  w / h = mu, so with grip 0.5 anything taller than twice its width
+  tips; grip 0.3 slides both, 0.4 and 0.6 keep the split; the tip is a
+  rotation about the downhill edge (I = m (w^2 + h^2) / 3) whose edge
+  grip stays under 0.5 until the glass has turned 52 degrees and whose
+  edge force reaches zero 0.03 s before the side lands, so draw the
+  last part as a free fall and narrate the thresholds; a tray sibling
+  of the marble or dice, so a week apart; rank 4; deterministic, no
+  seed.
+- Rope or bungee: a 2 kg box with grips 0.5 static and 0.3 kinetic
+  pulled along a floor at 5 cm/s by a hand, through a stiff rope beside
+  a 50 N/m bungee; measure how each box moves; expect the rope box to
+  creep at 5 cm/s and the bungee box to wait 3.92 s while the bungee
+  stretches 19.6 cm, then hop 19.1 cm in 0.68 s (peak 0.45 m/s, nine
+  times the hand) and stick again, five hops in a metre every 3.82 s
+  (hop = 2 (mu_s - mu_k) m g / k plus the hand's travel, cycle = hop /
+  v); 20 / 100 / 200 N/m hop 44 / 10 / 6 cm; equal grips give no hop;
+  energy per hop 0.92 J from the bungee plus 0.20 J from the hand into
+  1.12 J of friction; stepped Coulomb slip with an event per hop within
+  1e-4 of the closed form; the stick-slip mechanism is already in the
+  fingers-under-a-ruler short, so rank 5; periodic so the short loops;
+  deterministic, no seed.
+- Bosun's chair: a 70 kg person on a 10 kg chair hung from a ceiling
+  pulley, a friend on the ground pulling the rope with 450 N beside
+  the person pulling the same 450 N from the chair; measure which
+  rises; expect the friend's pull to move nothing (450 against 785 N)
+  and the self-pull to rise at 1.443 m/s^2, 2.89 m in 2 s, because the
+  rope lifts the chair twice (2 P against W; threshold W / 2 = 392 N,
+  40 kg of pull) while the hands take in 5.77 m of rope; energy 2,597
+  J of hand work = 2,264 J of height plus 333 J of speed; the pull is a
+  chosen number and the person a point mass; a pulley cousin of the
+  Atwood drop and the rope round a post, so rank 6; repeat; closed
+  form; deterministic, no seed.

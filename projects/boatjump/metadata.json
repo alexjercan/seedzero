@@ -1,0 +1,21 @@
+{
+  "title": "Does it matter if the boat is tied when you jump to the dock? Tied 1.25 m on the dock, free 0.52 m",
+  "description": "Does it matter if the boat is tied when you jump to the dock? A jumper of 70 kg (a point mass) stands at the bow of a light dinghy of 50 kg on still water; the dock edge is 1.00 m from the bow at the boat's floor height. The legs give a takeoff of 3.50 m/s at 45 degrees relative to the boat (the textbook form: the push is defined by the relative speed). The horizontal momentum of jumper plus boat is conserved during the push; the vertical impulse (173.2 N s) goes into the water through the hull, so the boat does not move vertically. No water drag on the boat and no air drag in the 0.5 s flight (chosen). g = 9.807 m/s^2. Top band: the boat is free, so the jumper leaves at u_x M / (M + m) over the ground and the boat recoils at u_x m / (M + m). Bottom band: a taut rope to the dock takes the recoil, so the jumper leaves at u_x. Both flights last 2 u_y / g and reach the apex u_y^2 / 2g. Shown at 1/4 speed, eight jumps on one clock.\n\nMeasured:\n- Takeoff: u_x = u_y = 2.4749 m/s; flight 0.5047 s; apex 0.3123 m; vertical impulse 173.2 N s.\n- Tied boat: the jumper leaves at 2.4749 m/s over the ground and lands 1.2491 m out, 24.9 cm past the edge, on the dock; the boat moves 0.0000 m.\n- Free boat: the jumper leaves at 1.0312 m/s over the ground, the boat recoils at 1.4437 m/s; the jumper lands 0.5205 m out, 48.0 cm short of the dock, in the water; the boat is 0.7286 m back by then.\n- Ratio of the landing distances: 2.4000 = (M + m) / M. Horizontal momentum of jumper plus free boat after the push: 0.00e+00 kg m/s.\n- Kinetic energy after the push: tied 428.8 J; free 303.7 J (251.6 J in the jumper and 52.1 J in the boat; less, because the legs push against a boat that is moving away).\n- Table (free boat, jumper x and y, boat x): 0.1 s 0.1031 m, 0.1985 m, -0.1444 m; 0.2 s 0.2062, 0.2988, -0.2887; 0.3 s 0.3094, 0.3011, -0.4331; 0.4 s 0.4125, 0.2054, -0.5775; 0.5 s 0.5156, 0.0116, -0.7218. Tied boat: the jumper's x is 2.4 times larger at every step, same y.\n- Other free boats, same jump: 30 kg lands 0.37 m; 100 kg 0.73 m; 200 kg 0.93 m; 400 kg 1.06 m (on the dock). The free jump clears 1 m only from a boat of at least 281.0 kg.\n- From the 50 kg boat the free jump needs a takeoff of 4.85 m/s relative to the boat (u^2 = g D (M + m) / M at 45 degrees: the landing distance grows as u^2; a linear scaling of the speed with the distance would say 6.72 m/s, which is not this definition).\n- Other angles and takeoffs: 30 or 60 degrees, tied 1.0818 m, free 0.4507 m; 2.5 m/s, tied 0.6373 m, free 0.2655 m; 4.0 m/s, tied 1.6315 m, free 0.6798 m.\n- A model with the same push energy instead of the same relative speed would give the free jumper 1.5975 m/s and 0.8063 m, still short; not used.\n- Checks: both flights by RK4 at dt = 1e-04 s against the closed forms, 21 checks, 0 failed; a half-step rerun agrees to nine decimals (0.504715761 s; 1.249107780 and 0.520461575 m).\n\nWhy: your push is defined by how fast you leave the boat, not the water. The push goes into the boat as much as into you, and the lighter body takes the larger share of the speed: the 50 kg boat takes m / (M + m) of the relative speed and shoots back at 1.44 m/s, leaving you M / (M + m) of it, 1.03 m/s over the water. With the boat tied the rope hands the recoil to the dock and you keep the whole 2.47 m/s. The flight time is the same in both cases, so the landing distance is exactly (M + m) / M = 2.4 times shorter from the free boat: 0.52 m instead of 1.25 m, and you are in the water.\n\nRerun sims/boatjump/boatjump.py with projects/boatjump/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "does it matter if the boat is tied when you jump to the dock",
+    "jump from a boat",
+    "boat recoil",
+    "conservation of momentum",
+    "recoil",
+    "projectile motion",
+    "everyday physics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}
