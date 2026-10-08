@@ -1,0 +1,21 @@
+{
+  "title": "Does toast always land butter side down? No: nudged lands down, swiped at 1.5 m/s lands up",
+  "description": "Does toast always land butter side down? No. The same 10 cm slice of toast leaves the same 75 cm table: nudged over the edge at 5 cm/s it lands butter down; swiped off at 1.5 m/s it lands butter up.\n\nModel: the toast is a thin uniform plate of length 2a = 10 cm (a rod in side view, I = m a^2/3; its mass cancels) on a table 75 cm high, g = 9.807 m/s^2. The clock starts when the centre of mass passes the table corner moving horizontally at v with no tilt (v is the chosen setup number). Then it slides and tips on the corner, frictionless (Mahajan, AJP 2022). With s the centre of mass past the corner along the toast and theta the nose-down tilt:\ns'' = s theta'^2 + g sin theta\n(a^2/3 + s^2) theta'' = g s cos theta - 2 s s' theta'\nN/m = (a^2/3) theta'' / s\nIt leaves the corner when N reaches zero or its back end passes the corner (s = a), then flies freely, turning at the leave spin, until its lower end touches the floor; it lands butter down when cos theta is negative then. RK4 at dt = 1e-05 s with the leave located inside the step; the free flight in closed form. Shown at 1/8 speed. After touchdown the drawing lets each slice settle flat onto the face it shows: that last step is drawn, not simulated.\n\nMeasured:\n- Nudged at 5 cm/s: it tips on the corner and leaves it after 193.2 ms, when the corner force reaches zero, tilted 38.81 deg and spinning 8.89 rad/s (1.41 turns a second). It falls 0.3386 s, has turned 211.22 deg at touchdown and lands butter down, its centre 8.7 cm out from the edge.\n- Swiped at 1.5 m/s: its back end clears the corner after 33.3 ms, tilted only 2.46 deg, spinning 2.45 rad/s. It falls 0.3614 s, turns 53.12 deg and lands butter up, 59.2 cm out.\n- Landing face against the speed: 0.1 m/s turns 213.41 deg, down; 0.2 m/s 199.86 deg, down; 0.3 m/s 181.14 deg, down; 0.4 m/s 159.89 deg, down; 0.5 m/s 140.92 deg, down; 0.6 m/s 123.36 deg, down; 0.8 m/s 96.37 deg, down; 1 m/s 78.34 deg, up; 2 m/s 40.16 deg, up, 78.7 cm out. The face flips at 0.862 m/s; every speed up to 0.8 m/s lands butter down.\n- With grip on the corner (Bacon, AJP 2001: static 0.32, kinetic 0.24, stick-slip): the nudged slice sticks at 21.3 ms, slips at a tilt of 17.73 deg, leaves at 469.5 ms and turns 174.63 deg, butter down; the swiped slice never sticks and turns 54.14 deg, butter up; the flip moves to 0.91 m/s. A 12 cm toast flips at 0.85 m/s (0.91 m/s with the grip). The answer does not hang on the grip.\n- Checks: 41 checks against the expected numbers, 0 failed; the corner force never drops below zero before the leave; the energy per kilogram holds within 4.9e-15 J; a half-step rerun moves the leave time by at most 6.4e-16 s.\n\nWhy: the slow slice reaches the corner with its centre barely past it, so gravity has time to tip it over the corner, and it leaves spinning at 8.89 rad/s; in the 75 cm fall that is more than half a turn, so the butter faces the floor. The fast slice is past the corner in 33.3 ms, before gravity can tip it, so it leaves at 2.45 rad/s and turns only 53.12 deg before it lands.\n\nDeterministic, no seed. Rerun sims/toast/toast.py with projects/toast/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "does toast always land butter side down",
+    "butter side down",
+    "falling toast",
+    "toast physics",
+    "murphys law",
+    "rotation",
+    "table edge",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -18,11 +18,14 @@ from __future__ import annotations
 import datetime as dt
 import json
 import sys
+import time
 from pathlib import Path
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
+from google_auth_httplib2 import AuthorizedHttp
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 REPO = Path(__file__).resolve().parents[1]
 SEED_ZERO_ID = "UCWXsZTvrh_OHkzt6v1xkTsw"
@@ -32,7 +35,20 @@ def client():
     creds = Credentials.from_authorized_user_file(str(REPO / "secrets/token.json"))
     if not creds.valid:
         creds.refresh(Request())
-    return build("youtube", "v3", credentials=creds)
+    # No hidden refresh-and-resend on 401; execute() retries with a delay
+    # (2026-10-08: Google rejected valid tokens on about half of all reads).
+    return build("youtube", "v3", http=AuthorizedHttp(creds, refresh_status_codes=()))
+
+
+def execute(request, tries: int = 8, delay_seconds: int = 10):
+    for attempt in range(1, tries + 1):
+        try:
+            return request.execute()
+        except HttpError as error:
+            if attempt == tries or error.resp.status not in {401, 410, 500, 502, 503, 504}:
+                raise
+            print(f"transient HTTP {error.resp.status}; retry {attempt} of {tries - 1} in {delay_seconds} s", file=sys.stderr)
+            time.sleep(delay_seconds)
 
 
 def video_id(url: str) -> str:
@@ -43,7 +59,7 @@ def main() -> int:
     dry = "--dry-run" in sys.argv
     youtube = client()
     quota = 0
-    channel = youtube.channels().list(part="id,contentDetails,statistics", mine=True).execute()["items"]
+    channel = execute(youtube.channels().list(part="id,contentDetails,statistics", mine=True))["items"]
     quota += 1
     if [c["id"] for c in channel] != [SEED_ZERO_ID]:
         print("error: token does not see exactly the Seed Zero channel", file=sys.stderr)
@@ -54,9 +70,9 @@ def main() -> int:
     ids: list[str] = []
     page = None
     while True:
-        res = youtube.playlistItems().list(
+        res = execute(youtube.playlistItems().list(
             playlistId=uploads, part="contentDetails", maxResults=50, pageToken=page
-        ).execute()
+        ))
         quota += 1
         ids += [it["contentDetails"]["videoId"] for it in res.get("items", [])]
         page = res.get("nextPageToken")
@@ -65,7 +81,7 @@ def main() -> int:
 
     videos: dict[str, dict] = {}
     for i in range(0, len(ids), 50):
-        res = youtube.videos().list(id=",".join(ids[i:i + 50]), part="snippet,status,statistics").execute()
+        res = execute(youtube.videos().list(id=",".join(ids[i:i + 50]), part="snippet,status,statistics"))
         quota += 1
         for v in res.get("items", []):
             videos[v["id"]] = v

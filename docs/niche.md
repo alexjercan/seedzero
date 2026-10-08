@@ -1920,3 +1920,111 @@ wheel and the sliding ladder stay low):
   chosen number and the person a point mass; a pulley cousin of the
   Atwood drop and the rope round a post, so rank 6; repeat; closed
   form; deterministic, no seed.
+
+Added by trend research 2026-10-08 (evidence in task 20261008-100401;
+selection favoured kitchen-table and desk objects a viewer owns with a
+yes-or-no ending (butter up or down, the stack holds or falls, the
+pencil stops or rolls off), exact closed forms or a thin-body RK4 with
+contact checks, two panels on the same input and builds of about 25
+minutes; the moving-walkway shoe tie rejected as a kinematics puzzle
+and the swing ride as a tie; rope or bungee and bosun's chair stay
+ranks 5 and 7; tall glass or short glass waits until about
+2026-10-14):
+
+- Toast, nudged or swiped: the same 10 cm slice of toast (thin uniform
+  plate) leaving a 75 cm table, nudged over the edge at 5 cm/s beside
+  swiped off at 1.5 m/s; measure which face lands down; expect the
+  nudged toast to tip about the table corner, leave it after 193 ms
+  tilted 38.8 degrees and spinning 8.89 rad/s (1.41 turns a second),
+  and touch the floor turned 211 degrees, butter down, 8.7 cm out, and
+  the swiped toast to clear the corner in 33 ms turned only 2.5
+  degrees at 2.45 rad/s and touch the floor turned 53 degrees, butter
+  up, 59 cm out (2.0 m/s: 40 degrees, 79 cm); the face flips at 0.87
+  m/s (frictionless corner, Mahajan AJP 2022) or 0.92 m/s (Bacon's
+  grips 0.32 / 0.24, AJP 2001), 12 cm toast 0.85 / 0.91, so the answer
+  does not hang on the grip; every speed up to 0.8 m/s lands butter
+  down; corner force non-negative until it leaves, energy within 3e-15;
+  RK4 on the slide-and-tip equations, then free flight; Matthews' 1995
+  Ig Nobel myth with a July 2026 news peg; rank 1; repeat; deterministic,
+  no seed.
+  [produced 2026-10-08 as "Does toast always land butter side down? No:
+  nudged lands down, swiped at 1.5 m/s lands up"; measured nudged 5 cm/s
+  leaves the corner at 193.2 ms (N zero) tilted 38.81 deg at 8.89 rad/s,
+  falls 0.3386 s, turns 211.22 deg, butter down 8.7 cm out; swiped 1.5
+  m/s clears the corner at 33.3 ms tilted 2.46 deg at 2.45 rad/s, falls
+  0.3614 s, turns 53.12 deg, butter up 59.2 cm out; flip 0.862 m/s
+  (0.911 stick-slip grip 0.32 / 0.24, 12 cm toast 0.846); every speed up
+  to 0.8 m/s lands down; task 20261008-102528]
+- Books past the table edge: five 20 cm books stacked one at a time at
+  a table edge, each pushed out the same 4.44 cm beside steps that
+  shrink from the top (9.8, 4.9, 3.2, 2.4, 1.9 cm, each just under 1/2,
+  1/4, 1/6, 1/8, 1/10 of a book); measure whether the stack holds with
+  the top book wholly past the table; expect the equal stack to tip
+  when book 4 goes on (its balance point 1.10 cm past the edge; equal
+  steps d fall at book n once d > L / (n + 1)) and the shrinking stack
+  to hold with every margin at least 0.2 cm, the top book 22.2 cm out
+  and its back end 2.2 cm clear of the table; the exact limit is half
+  the harmonic sum, 137/120 of a book for five (22.83 cm), 25/24 for
+  four (only 0.8 cm clear, so use five); the fall drawn as one piece
+  about the edge (0.34 s to about 55 degrees, then it slides off);
+  statics exact in fractions; rank 2; rebuild so the short loops;
+  deterministic, no seed.
+  [produced 2026-10-08 as "Can a stack of books hold the top one
+  completely past the table? Yes, 2.2 cm. Equal falls at book 4";
+  measured equal 4.44 cm margins +5.56 / +3.34 / +1.12 then -1.10 cm at
+  book 4 (centre 1.10 cm past the edge, falls), rule d > L / (n + 1)
+  (4.44 holds 3, limit 4.00 for 4), shrinking 1.9 / 2.4 / 3.2 / 4.9 /
+  9.8 worst +8.10 / +6.90 / +5.433 / +3.475 / +0.200 cm (book 3), top
+  22.20 cm out with its back end 2.20 cm past the table, limits 137/120
+  = 22.833 cm (five) and 25/24 = 20.833 cm (four), drawn fall face frame
+  0.251 s to 23.8 deg then off the corner at 0.342 s, 51.5 deg; task
+  20261008-102540]
+- Round or hexagonal pencil: two 7 mm pencils on a flat desk 25 cm from
+  the edge, both nudged to 0.15 m/s, one round and one hexagonal;
+  measure which one rolls off; expect the round pencil (no rolling
+  loss) to keep 0.15 m/s and drop off the edge after 1.67 s, and the
+  hexagonal one to roll 2 sides, 8.1 mm in 0.10 s, then rock and stop,
+  because each corner impact keeps 11/17 = 0.647 of the spin (0.42 of
+  the energy, I = 5/12 m R^2 about the centre, 17/12 about a corner)
+  and rolling over a corner needs 21.4 rad/s (0.087 m/s); the corner
+  stays loaded below 0.185 m/s, so keep the nudge under it; a hex
+  pencil tips from rest only on a desk tilted past 30 degrees; event
+  steps per side with an exact impact rule; the pencil is small, so
+  draw a magnified cross-section inset per band; rank 3; repeat;
+  deterministic, no seed.
+  [produced 2026-10-08 as "Nudge both pencils the same: which one rolls
+  off the desk? Round does; hexagonal stops after 8.1 mm"; measured
+  round pencil at 0.15 m/s off the 25 cm desk edge at 1.667 s, falls
+  0.391 s, lands 5.9 cm out; hexagonal R 4.041 mm, impact keeps 11/17
+  exactly, corner threshold 21.42 rad/s, faces 37.12 -> 24.02 -> 15.54
+  rad/s, 2 faces = 8.08 mm in 0.1020 s, 10 rocks, stopped at 0.2150 s,
+  grip needed 0.3024 (rocks 0.3711), hop limit 45.84 rad/s; 1/4 speed;
+  task 20261008-102529]
+- Front drive up an icy hill, nose first or reversing: the same
+  front-wheel-drive car (1,300 kg, 2.60 m wheelbase, 60 / 40 front,
+  centre of mass 0.55 m up, grip 0.3) starting up a 10 degree icy hill
+  nose first beside backing up it; measure which one climbs; expect
+  nose first to spin its wheels and roll back 0.85 m in 5 s (front load
+  0.556 of the weight) and reversing to climb 1.92 m in 5 s (front load
+  0.631), the steepest hills tan = mu b / (L + mu h) = 9.61 degrees
+  against mu b / (L - mu h) = 10.88 (rear drive 7.30, all-wheel 16.70;
+  grip 0.2 6.57 against 7.14); the Car Talk "reverse up the hill"
+  debate; the window is 1.3 degrees wide and rests on chosen grip, CG
+  and split, so state them; closed form; rank 4; repeat; deterministic,
+  no seed.
+- Ladder at 75 or 60 degrees: a 4 m, 12 kg ladder on a smooth wall with
+  floor grip 0.3, an 80 kg climber (point mass) going up at 75 degrees
+  (the 4 to 1 rule) beside 60 degrees; measure where each one slips;
+  expect 75 degrees to need grip 0.250 at the top and hold, and 60
+  degrees to need 0.540 and slide out with the climber 2.09 m up the
+  ladder (52 percent, 1.81 m high); 70 degrees slips at 3.49 m; the
+  shallow answer is expected and the climber is a point mass, so rank
+  6; closed form plus a slide; deterministic, no seed.
+- Monkey and weight (Lewis Carroll's puzzle): a 10 kg monkey climbing
+  a rope over a light pulley against a 10 kg weight, pulling in rope
+  at 0.5 m/s, beside the same climb on a rope tied to the ceiling;
+  measure what the weight does; expect the weight to rise with the
+  monkey at 0.25 m/s, face to face, both at a pulley 3 m up after 12.0
+  s, against 6.0 s on the tied rope; a lighter 5 kg weight shoots up at
+  3.27 m/s^2; a pulley sibling of the Atwood drop and bosun's chair, so
+  rank 8; closed form; deterministic, no seed.

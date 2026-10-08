@@ -1,0 +1,22 @@
+{
+  "title": "Nudge both pencils the same: which one rolls off the desk? Round does; hexagonal stops after 8.1 mm",
+  "description": "Nudge both pencils the same: which one rolls off the desk? Two 7 mm pencils, seen end-on, lie on a level desk with their centres 25 cm from the edge, and each gets the same nudge: its centre moves off at 0.15 m/s (the same speed, chosen); g = 9.807 m/s^2. Top band, the round pencil: a solid cylinder of radius 3.5 mm rolling without slipping and with no rolling loss (chosen), so it keeps 0.15 m/s; it leaves the desk as its centre passes the edge and falls freely from a 75 cm desk. Bottom band, the hexagonal pencil: a uniform regular hexagonal prism 7 mm across the flats, so the corner radius is R = 3.5 mm / cos 30 deg = 4.041 mm (the side equals R); I = 5/12 m R^2 about the centre and 17/12 m R^2 about a corner. The nudge leaves its centre moving at 0.15 m/s on an arc about the front corner, omega0 = v0 / R = 37.12 rad/s. It rolls one face at a time, pivoting on the front corner from phi = -30 to +30 deg with phi'' = (12 g / (17 R)) sin phi; energy is conserved over a face. At the next corner an inelastic no-slip impact conserves the angular momentum about the new corner: (17/12) omega+ = (5/12 + cos 60 deg) omega-, so omega+ = (11/17) omega- exactly (121/289 of the energy kept). Climbing over a corner needs a spin above sqrt(24 g (1 - cos 30 deg) / (17 R)) = 21.42 rad/s; below that it rocks back onto the same face and lands on the rear corner with the same rule. The desk grip is 0.5 (chosen). Every face and rock is integrated by RK4 at dt = 1e-06 s, the face end located by bisection inside the last step. Shown at 1/4 speed, five runs on one clock.\n\nMeasured:\n- Round pencil: reaches the edge after 1.667 s, falls 0.391 s and lands 5.9 cm out from the edge. Rolling at a steady speed needs no grip.\n- Hexagonal pencil: face 1 starts and ends at 37.12 rad/s; the impact leaves 24.02; face 2 ends at 24.02; the impact leaves 15.54, under the 21.42 the next corner needs. So 2 faces = 2 R = 8.08 mm (8.1 mm) in 0.1020 s, then 10 rocks, each keeping 11/17 of the spin, until the spin is under 1 percent of the threshold, stopped 0.2150 s after the nudge. The first rock tilts it 9.47 deg toward the third corner and falls back.\n- Spin after each impact (rad/s): 24.0158, 15.5397, 10.0551, 6.5062, 4.2099, 2.7241, 1.7626, 1.1405, 0.7380, 0.4775, 0.3090, 0.1999.\n- Grip needed at the corner: 0.3024 during the faces, up to 0.3711 during the rocks and 0.3712 at each impact, all under 0.5; the corner load never drops under 0.3319 of the weight, so the corner never lets go (it would above 45.84 rad/s, a centre speed of 0.1853 m/s).\n- Other nudges for the hexagonal pencil: 0.10 m/s rolls 1 face, 4.0 mm in 64.2 ms; 0.12 m/s 1 face in 44.5 ms; 0.18 m/s 2 faces, 8.1 mm in 72.4 ms, but needs grip 0.891 at the corner, more than this desk gives; 0.20 m/s (omega0 49.49 rad/s) is over the 45.84 limit: the corner lets go and a real pencil hops, so the model ends there. The round pencil at 0.10 m/s reaches the edge in 2.500 s, at 0.18 m/s in 1.389 s.\n- Tilt: a hexagonal pencil at rest tips over a corner only on a desk tilted past 30 deg.\n- Checks: 32 checks against closed forms and an independent run, 0 failed; every face and rock ends at its start spin within 2.3e-12 rad/s.\n\nWhy: the round pencil has no corners, so nothing takes its spin and it rolls the full 25 cm to the edge. The hexagonal pencil must lift its centre over a corner for every face, and each corner it lands on keeps only 11/17 of its spin, taking away about a third. After two faces it has 15.54 rad/s, less than the 21.42 the next corner needs, so it rocks back and stops after 8.1 mm.\n\nDeterministic, no seed. Rerun sims/pencil/pencil.py with projects/pencil/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "nudge both pencils the same which one rolls off the desk",
+    "round pencil vs hexagonal pencil",
+    "why pencils are hexagonal",
+    "hexagonal pencil",
+    "rolling physics",
+    "rotational inertia",
+    "angular momentum",
+    "desk physics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

@@ -22,7 +22,9 @@ from pathlib import Path
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
+from google_auth_httplib2 import AuthorizedHttp
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 REPO = Path(__file__).resolve().parents[1]
 SEED_ZERO_ID = "UCWXsZTvrh_OHkzt6v1xkTsw"
@@ -32,17 +34,41 @@ def client():
     creds = Credentials.from_authorized_user_file(str(REPO / "secrets/token.json"))
     if not creds.valid:
         creds.refresh(Request())
-    return build("youtube", "v3", credentials=creds)
+    # No hidden refresh-and-resend on 401 (2026-10-08: Google's token
+    # service rejected valid tokens on about half of the replicas, and
+    # every hidden refresh minted one more token). execute() below waits
+    # and retries instead.
+    return build("youtube", "v3", http=AuthorizedHttp(creds, refresh_status_codes=()))
 
 
 def now() -> str:
     return dt.datetime.now().astimezone().isoformat(timespec="seconds")
 
 
+def execute(request, tries: int = 8, delay_seconds: int = 10):
+    """Run a request; retry transient 401, 410 and 5xx answers.
+
+    2026-10-08: videos.list answered 401 Invalid Credentials twice in a row
+    for a token that worked seconds before and after, and the upload chunk
+    answered 410 Gone after the insert had succeeded. Each retry is cheap
+    (reads cost 1 unit, the publish update 50), and the caller re-reads the
+    status after the update, so a repeated update is harmless.
+    """
+    for attempt in range(1, tries + 1):
+        try:
+            return request.execute()
+        except HttpError as error:
+            status = error.resp.status
+            if attempt == tries or status not in {401, 410, 500, 502, 503, 504}:
+                raise
+            print(f"transient HTTP {status}; retry {attempt} of {tries - 1} in {delay_seconds} s", file=sys.stderr)
+            time.sleep(delay_seconds)
+
+
 def fetch(youtube, vid: str) -> dict:
-    items = youtube.videos().list(
+    items = execute(youtube.videos().list(
         id=vid, part="snippet,status,contentDetails,fileDetails,processingDetails,statistics"
-    ).execute().get("items", [])
+    )).get("items", [])
     if len(items) != 1:
         raise SystemExit(f"error: videos.list returned {len(items)} items for {vid}")
     return items[0]
@@ -169,11 +195,11 @@ def main() -> int:
                     "embeddable": True,
                 },
             }
-            youtube.videos().update(part="status", body=body).execute()
+            execute(youtube.videos().update(part="status", body=body))
             quota += 50
             t_pub = now()
             time.sleep(15)
-            st = youtube.videos().list(id=vid, part="status").execute()["items"][0]["status"]
+            st = execute(youtube.videos().list(id=vid, part="status"))["items"][0]["status"]
             quota += 1
             lines.append(
                 f"published: https://youtu.be/{vid} at {t_pub} ({dt.datetime.now(dt.timezone.utc).strftime('%H:%M:%SZ')} now); "
