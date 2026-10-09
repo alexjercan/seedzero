@@ -1,6 +1,6 @@
 # Produce short: round pencil or hexagonal pencil, same nudge, which one rolls off the desk
 
-- STATUS: OPEN
+- STATUS: CLOSED
 - PRIORITY: 0
 - TAGS: day40
 
@@ -414,3 +414,5 @@ task 20261008-102529]
 ## Upload
 
 - Slipped 2026-10-08T13:57:50+03:00 without an attempt: attempts 1 to 4 of the day went to toast (401, 410 with a stuck stub) and bookstack (401, 401) while Google rejected valid access tokens on about half of all requests from 11:12 to 14:00; attempt 5 was held under the recorded rule. final.mp4 (md5 f3665224d8b37f4f7c64f256d5f6147c) passed every local gate and is ready to upload on the next quota day. Gate: upload.
+- Day 41 attempt 3 of 5 (quota day 2026-10-09T10:00 EEST) recorded at 2026-10-09T10:06:18+03:00 before scripts/yt-upload.py pencil; two earlier attempts since the boundary (toast and bookstack, both succeeded). Probe at 10:02 read 0 of 10 rejected.
+- Uploaded private as DAoLIbdbjvA at 2026-10-09T07:06:25Z (videos.insert 1,600 units). yt-qa.py --wait --publish: gate 15 of 15 on the first processed read, published at 2026-10-09T10:07:38+03:00, re-read public, 56 units. https://youtu.be/DAoLIbdbjvA

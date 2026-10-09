@@ -1,6 +1,6 @@
 # Produce short: toast nudged or swiped off a table, which face lands down
 
-- STATUS: OPEN
+- STATUS: CLOSED
 - PRIORITY: 0
 - TAGS: day40
 
@@ -462,3 +462,5 @@ m/s lands down; task 20261008-102528]
 - Stub sQp6CqF01is never finished processing (uploadStatus uploaded, processingStatus processing, P0D, no streams at 11:41:49, 28 min after creation). Slot 1 marked processing timeout; toast is queued for a replacement upload as attempt 5 after bookstack and pencil.
 - Toast replacement upload cancelled: attempt 3 (bookstack) failed on a 401, so only two attempts remain for bookstack and pencil. Slot 1 slips today unless the owner frees quota.
 - Slipped 2026-10-08T13:57:50+03:00: stub sQp6CqF01is still unprocessed; no replacement attempt was possible. final.mp4 (md5 0737689dea46a6f6f000eb29a9f5a097) is ready to upload on the next quota day; delete the stub (videos.delete, 50 units) once a good copy is public. Gate: upload (410 on the media PUT, stub never finalized).
+- Day 41 (quota day 2026-10-09T10:00 EEST): raw probe at 10:02 read 0 of 10 rejected; stub sQp6CqF01is still unprocessed after 26 h. Attempt 1 of 5 recorded at 2026-10-09T10:03:18+03:00 before scripts/yt-upload.py toast; zero attempts on record since the boundary.
+- Uploaded private as YD1H8hALGew at 2026-10-09T07:03:25Z (videos.insert 1,600 units). yt-qa.py --wait --publish: gate 15 of 15 on the first processed read, published at 2026-10-09T10:04:11+03:00, re-read public, 54 units. https://youtu.be/YD1H8hALGew

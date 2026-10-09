@@ -1,6 +1,6 @@
 # Produce short: five books past the table edge, equal steps beside shrinking steps, does the stack hold
 
-- STATUS: OPEN
+- STATUS: CLOSED
 - PRIORITY: 0
 - TAGS: day40
 
@@ -460,3 +460,5 @@ at 0.342 s, 51.5 deg; task 20261008-102540]
 - Attempt 4 of 5 recorded at 2026-10-08T13:27:31+03:00 before scripts/yt-upload.py bookstack (one multipart insert, no hidden resend; last probe 5 of 10 rejected).
 - Attempt 4 failed at 2026-10-08T13:28:36+03:00: multipart insert answered HTTP 401; no video created.
 - Slipped 2026-10-08T13:57:50+03:00: attempt 5 not spent; the final probe at 13:57 read 7 of 10 rejected (rule: fire at 14:00 only at 6 or fewer). final.mp4 (md5 d9c601a403ce3bb4015e90059da282a1) passed every local gate and is ready to upload on the next quota day. Gate: upload (YouTube token service rejecting valid tokens).
+- Day 41 attempt 2 of 5 (quota day 2026-10-09T10:00 EEST) recorded at 2026-10-09T10:04:44+03:00 before scripts/yt-upload.py bookstack; one earlier attempt since the boundary (toast, succeeded). Probe at 10:02 read 0 of 10 rejected.
+- Uploaded private as m_WhE7AMoCE at 2026-10-09T07:04:56Z (videos.insert 1,600 units). yt-qa.py --wait --publish: gate 15 of 15 on the first processed read, published at 2026-10-09T10:05:40+03:00, re-read public, 54 units. https://youtu.be/m_WhE7AMoCE

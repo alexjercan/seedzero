@@ -212,7 +212,7 @@
     "status": "public",
     "date": "2026-09-07",
     "url": "https://youtu.be/b5UMZJhc9UY",
-    "views": 64,
+    "views": 65,
     "likes": 1
   },
   {
@@ -428,7 +428,7 @@
     "status": "public",
     "date": "2026-09-16",
     "url": "https://youtu.be/2TPdAAac0Jc",
-    "views": 974,
+    "views": 976,
     "likes": 9
   },
   {
@@ -556,7 +556,7 @@
     "status": "public",
     "date": "2026-09-22",
     "url": "https://youtu.be/hlBy6yci8_U",
-    "views": 677,
+    "views": 678,
     "likes": 10
   },
   {
@@ -796,7 +796,7 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/yD8XL-OnEz4",
-    "views": 45,
+    "views": 46,
     "likes": 1
   },
   {
@@ -820,7 +820,7 @@
     "status": "public",
     "date": "2026-10-03",
     "url": "https://youtu.be/P6pelJ2izjA",
-    "views": 188,
+    "views": 189,
     "likes": 3
   },
   {
@@ -852,7 +852,7 @@
     "status": "public",
     "date": "2026-10-04",
     "url": "https://youtu.be/jx6LnUOl1Aw",
-    "views": 195,
+    "views": 196,
     "likes": 1
   },
   {
@@ -908,7 +908,7 @@
     "status": "public",
     "date": "2026-10-06",
     "url": "https://youtu.be/0FDvNFg8KHc",
-    "views": 256,
+    "views": 262,
     "likes": 1
   },
   {
@@ -916,7 +916,7 @@
     "status": "public",
     "date": "2026-10-07",
     "url": "https://youtu.be/Ccobr2TekTc",
-    "views": 71,
+    "views": 79,
     "likes": 0
   },
   {
@@ -924,7 +924,7 @@
     "status": "public",
     "date": "2026-10-07",
     "url": "https://youtu.be/gV_1nhnppGU",
-    "views": 10,
+    "views": 13,
     "likes": 0
   },
   {
@@ -932,8 +932,32 @@
     "status": "public",
     "date": "2026-10-07",
     "url": "https://youtu.be/5U_2xBkAJpY",
-    "views": 229,
-    "likes": 1
+    "views": 353,
+    "likes": 2
+  },
+  {
+    "title": "Does toast always land butter side down? No: nudged lands down, swiped at 1.5 m/s lands up",
+    "status": "public",
+    "date": "2026-10-09",
+    "url": "https://youtu.be/YD1H8hALGew",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Can a stack of books hold the top one completely past the table? Yes, 2.2 cm. Equal falls at book 4",
+    "status": "public",
+    "date": "2026-10-09",
+    "url": "https://youtu.be/m_WhE7AMoCE",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Nudge both pencils the same: which one rolls off the desk? Round does; hexagonal stops after 8.1 mm",
+    "status": "public",
+    "date": "2026-10-09",
+    "url": "https://youtu.be/DAoLIbdbjvA",
+    "views": 0,
+    "likes": 0
   },
   {
     "title": "Twenty-three unproduced measured-claim ideas in docs/niche.md",
