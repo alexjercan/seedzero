@@ -1,0 +1,22 @@
+{
+  "title": "Does spinning a coaster make it slide farther? Yes: 34 cm against 17 cm, twice as far",
+  "description": "Does spinning a coaster make it slide farther? Two 10 cm coasters (uniform discs, R = 5 cm, I = m R^2 / 2) on a table with grip 0.3 (chosen) get the same push: each leaves at 1 m/s (chosen); g = 9.807 m/s^2. Top band, the plain coaster: no spin. Bottom band, the spun coaster: the same 1 m/s plus 40.87 rad/s of spin, 6.50 turns a second (rim speed 2.04 m/s). Friction is Coulomb friction with uniform pressure integrated over the contact on a polar grid of 160 radial by 320 angular cells: every cell slips at u = v + omega x r and feels -mu g along its own slip direction, so the force per unit mass is -mu g times the area-weighted mean unit slip direction and the torque about the centre likewise, alpha = torque / (R^2 / 2); x, v, theta and omega by classical RK4 at dt = 0.0002 s; a run stops when |v| and R |omega| are both under 0.002 m/s. Shown at 1/4 speed, five pushes on one clock.\n\nMeasured:\n- Plain coaster: the friction is the full mu g = 2.9421 m/s^2 against the slide; stopped at 0.3394 s after 16.99 cm (closed form v0 / (mu g) = 0.3399 s, v0^2 / (2 mu g) = 16.99 cm).\n- Spun coaster: stopped at 0.6554 s after 33.99 cm, 2.000 times the plain coaster's 16.99 cm. |v| fell under its bound on step 3275 and R |omega| on step 3277, 0.4 ms apart; the zero crossings of v and omega extrapolated from the last two steps are 0.003 ms apart: the slide and the spin end at the same instant. At the stop v / (R omega) = 0.649 (Farkas et al. PRL 2003: 0.653); there the slide feels 0.613 of mu g (61 percent of the friction) and the spin 0.711 of the pure-spin torque.\n- Spun coaster over time (t: v, R omega, v / (R omega)): 0.00 s: 1.0000 m/s, 2.0435 m/s, 0.489; 0.20 s: 0.7154, 1.3988, 0.511; 0.40 s: 0.4170, 0.7683, 0.543; 0.60 s: 0.0971, 0.1614, 0.601; 0.65 s: 0.0109, 0.0170, 0.638. The ratio climbs toward the fixed point and both speeds reach zero together.\n- Other spins at 1 m/s: 20 rad/s slides 21.66 cm (1.275 times the plain), 40 rad/s 33.43 cm (1.967 times), 80 rad/s 60.62 cm (3.567 times). Other pushes with 40.87 rad/s: 0.5 m/s slides 15.46 cm against 4.25 cm plain (3.639 times); 1.5 m/s 57.59 cm against 38.24 cm (1.506 times). Spin only, no push: moves 0.000 cm and stops at 0.5206 s (closed form 3 R omega0 / (4 mu g) = 0.5209 s).\n- Checks: 24 checks against closed forms and an independent run, 0 failed. The grid weights sum to 1 and give I_c within 2.44e-08 m^2 of R^2 / 2; a pure slide gives exactly mu g; the energy per unit mass is 1.5440 J/kg at the push and 1.6e-06 J/kg at the stop; a half-step rerun moves the stop distance by 1.76e-10 mm; the sideways force stays under 1.2e-16 m/s^2.\n\nWhy: under a coaster that only slides, every bit of the contact slips straight back, so the whole friction force brakes the slide. Under a coaster that also spins, most of the contact slips sideways, so only part of the friction force points against the slide (61 percent at the end) and the rest fights the spin. The slide is braked less and goes farther, and because the spin and the slide share one force, they die together: the spun coaster stops at 0.6554 s with its spin and its slide ending at the same instant.\n\nDeterministic, no seed. Rerun sims/spinslide/spinslide.py with projects/spinslide/manifest.json and you get these numbers exactly.\n\nMade end to end by an AI agent: simulation, footage, voice, music, and edit.",
+  "tags": [
+    "does spinning a coaster make it slide farther",
+    "spinning coaster slides farther",
+    "spin and slide friction",
+    "farkas fixed point",
+    "coulomb friction",
+    "curling physics",
+    "table physics",
+    "physics",
+    "physics visualization",
+    "simulation",
+    "shorts",
+    "sliding friction"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "private",
+  "containsSyntheticMedia": true,
+  "selfDeclaredMadeForKids": false
+}

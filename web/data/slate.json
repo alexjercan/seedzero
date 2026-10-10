@@ -108,7 +108,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/BSlee2s9ezM",
-    "views": 132,
+    "views": 133,
     "likes": 1
   },
   {
@@ -116,7 +116,7 @@
     "status": "public",
     "date": "2026-09-03",
     "url": "https://youtu.be/-Jkxs7kNpCg",
-    "views": 322,
+    "views": 323,
     "likes": 2
   },
   {
@@ -804,7 +804,7 @@
     "status": "public",
     "date": "2026-10-02",
     "url": "https://youtu.be/vpn_dIASulU",
-    "views": 44,
+    "views": 45,
     "likes": 1
   },
   {
@@ -900,7 +900,7 @@
     "status": "public",
     "date": "2026-10-06",
     "url": "https://youtu.be/fbCfcgjoWWI",
-    "views": 72,
+    "views": 73,
     "likes": 1
   },
   {
@@ -908,7 +908,7 @@
     "status": "public",
     "date": "2026-10-06",
     "url": "https://youtu.be/0FDvNFg8KHc",
-    "views": 262,
+    "views": 263,
     "likes": 1
   },
   {
@@ -932,7 +932,7 @@
     "status": "public",
     "date": "2026-10-07",
     "url": "https://youtu.be/5U_2xBkAJpY",
-    "views": 353,
+    "views": 366,
     "likes": 2
   },
   {
@@ -940,7 +940,7 @@
     "status": "public",
     "date": "2026-10-09",
     "url": "https://youtu.be/YD1H8hALGew",
-    "views": 0,
+    "views": 70,
     "likes": 0
   },
   {
@@ -948,19 +948,43 @@
     "status": "public",
     "date": "2026-10-09",
     "url": "https://youtu.be/m_WhE7AMoCE",
-    "views": 0,
-    "likes": 0
+    "views": 72,
+    "likes": 1
   },
   {
     "title": "Nudge both pencils the same: which one rolls off the desk? Round does; hexagonal stops after 8.1 mm",
     "status": "public",
     "date": "2026-10-09",
     "url": "https://youtu.be/DAoLIbdbjvA",
+    "views": 3,
+    "likes": 0
+  },
+  {
+    "title": "Does spinning a coaster make it slide farther? Yes: 34 cm against 17 cm, twice as far",
+    "status": "public",
+    "date": "2026-10-10",
+    "url": "https://youtu.be/yYRaj_ALn1k",
     "views": 0,
     "likes": 0
   },
   {
-    "title": "Twenty-three unproduced measured-claim ideas in docs/niche.md",
+    "title": "Paper cup or can: which one rolls off the desk? The can at 1.3 s; the cup circles, back in 5 s",
+    "status": "public",
+    "date": "2026-10-10",
+    "url": "https://youtu.be/cLZ4xAJ0Ptc",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Front-wheel drive on an icy hill: nose first, or in reverse? 10 deg ice: only reverse climbs, 1.92 m",
+    "status": "public",
+    "date": "2026-10-10",
+    "url": "https://youtu.be/H9jNRb9cR9Q",
+    "views": 0,
+    "likes": 0
+  },
+  {
+    "title": "Twenty-five unproduced measured-claim ideas in docs/niche.md",
     "status": "backlog in docs/niche.md"
   }
 ]

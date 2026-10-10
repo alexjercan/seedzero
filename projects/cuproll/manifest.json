@@ -1,0 +1,55 @@
+{
+  "seed": 0,
+  "fps": 60,
+  "g": 9.807,
+  "cup_top_diameter_m": 0.08,
+  "cup_bottom_diameter_m": 0.055,
+  "cup_height_m": 0.09,
+  "can_diameter_m": 0.08,
+  "can_length_m": 0.12,
+  "nudge_speed_m_s": 0.3,
+  "start_to_edge_m": 0.4,
+  "desk_height_m": 0.75,
+  "grip": 0.5,
+  "substeps": 100,
+  "integrate_s": 5.2,
+  "description_cups": {
+    "12 oz cup": [
+      0.09,
+      0.06,
+      0.1
+    ],
+    "4 oz cup": [
+      0.07,
+      0.05,
+      0.06
+    ]
+  },
+  "description_speeds_m_s": [
+    0.2,
+    0.5
+  ],
+  "cycle_s": 8.0,
+  "nudge_at": 0.5,
+  "first_cycle_at": 0.0,
+  "reset_fade": 0.5,
+  "finger_s": 0.5,
+  "scene_duration": 40.0,
+  "px_per_m": 1200.0,
+  "edge_y_px": 330,
+  "desk_bottom_px": 1290,
+  "apex_x_px": 430,
+  "can_x_px": 970,
+  "camera_height_m": 1.5,
+  "title": "Paper cup or can:|which one rolls|off the desk?",
+  "title_until": 3.0,
+  "payoff_t": 28.4,
+  "payoff_hold": 0.6,
+  "payoff_text": "Paper cup or can: | which one rolls off the desk? | can: straight off the desk at {t_edge:.2f} s | cup: circles, back at the start at {t_lap:.2f} s | the cone tip is {l2_cm:.1f} cm from the big rim | {turns:.2f} turns a lap, {near_cm:.1f} cm from the edge",
+  "loop_fade": 0.5,
+  "music_seed": 125,
+  "music_gain": 0.18,
+  "voice_offset": 0.6,
+  "caption_y": 0.75,
+  "overlay": "8 oz cup and 8 cm can, grip 0.5 | no seed"
+}

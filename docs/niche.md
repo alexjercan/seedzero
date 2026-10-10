@@ -2011,7 +2011,7 @@ ranks 5 and 7; tall glass or short glass waits until about
   grip 0.2 6.57 against 7.14); the Car Talk "reverse up the hill"
   debate; the window is 1.3 degrees wide and rests on chosen grip, CG
   and split, so state them; closed form; rank 4; repeat; deterministic,
-  no seed.
+  no seed. [produced 2026-10-10 as "Front-wheel drive on an icy hill: nose first, or in reverse? 10 deg ice: only reverse climbs, 1.92 m", https://youtu.be/H9jNRb9cR9Q; measured a 1,300 kg front-wheel-drive car at grip 0.3 on a 10 degree hill: nose first the front wheels carry 0.5556 W, a = -0.0683 m/s^2, -0.85 m in 5 s; in reverse 0.6309 W, a = +0.1533 m/s^2, +1.92 m in 5 s; steepest 9.61 against 10.88 degrees, window 1.27 degrees; grip 0.2: 6.57 and 7.14, grip 0.4: 12.48 and 14.69, RWD 7.30, AWD 16.70; 23 checks, 0 failed; task 20261010-103221]
 - Ladder at 75 or 60 degrees: a 4 m, 12 kg ladder on a smooth wall with
   floor grip 0.3, an 80 kg climber (point mass) going up at 75 degrees
   (the 4 to 1 rule) beside 60 degrees; measure where each one slips;
@@ -2028,3 +2028,62 @@ ranks 5 and 7; tall glass or short glass waits until about
   s, against 6.0 s on the tied rope; a lighter 5 kg weight shoots up at
   3.27 m/s^2; a pulley sibling of the Atwood drop and bosun's chair, so
   rank 8; closed form; deterministic, no seed.
+
+Added by trend research 2026-10-10 (evidence in task 20261010-100329;
+selection favoured everyday objects a viewer owns with a yes-or-no or
+"which goes farther" ending, two panels on the same push that end
+visibly differently, exact closed forms or a published fixed point the
+sim reproduces, and builds of about 25 to 30 minutes with RK4, contact
+quadrature or closed forms; the ball on a lazy Susan rejected as a
+sibling of the turntable ball, tailgating because its answer flips with
+the chosen reaction time, the rope trick as static, the falling-elevator
+jump as a rate on a human model; the icy hill re-judged to slot 3; tall
+glass or short glass waits until about 2026-10-14):
+
+- Slide a coaster, spun or not: the same 10 cm coaster pushed across a
+  table (grip 0.3) at 1.0 m/s, once with no spin beside once spinning
+  40 rad/s (6.4 turns a second); measure how far each slides and when
+  each stops; expect the plain one to stop after 17.0 cm at 0.339 s (v^2
+  / (2 mu g)) and the spun one to slide 33.4 cm, 1.97 times as far
+  (40.9 rad/s gives exactly 2.0x, 34.0 cm), stopping at 0.646 s with its
+  sliding and its spinning ending at the same instant, because Coulomb
+  friction over the contact is shared between the two motions and the
+  ratio v / (R w) runs to the Farkas fixed point 0.653 (PRL 2003; the
+  slide then feels only 0.616 of the full friction); 20 rad/s 1.28x, 80
+  rad/s 3.57x, 0.5 m/s 3.57x, 1.5 m/s 1.49x; a glass base ring ends at
+  0.93, a phone-shaped slab at 0.98; friction integrated over a 160 x
+  320 polar grid plus RK4, within 1e-4 of the closed forms with and
+  without spin; curling and shuffleboard are the known cases; rank 1;
+  repeat the push; deterministic, no seed. [produced 2026-10-10 as "Does spinning a coaster make it slide farther? Yes: 34 cm against 17 cm, twice as far", https://youtu.be/yYRaj_ALn1k; measured plain coaster at 1.0 m/s on grip 0.3 stopped at 0.3394 s after 16.99 cm (closed form 0.3399 s); spun at 40.87 rad/s (6.50 turns/s) stopped at 0.6554 s after 33.99 cm, ratio 2.000, |v| and R |omega| under the bound 0.4 ms apart, v / (R omega) at the stop 0.649 (Farkas 0.653), the slide feels 0.613 of mu g; 40 rad/s 33.43 cm (1.967x), 20 rad/s 1.275x, 80 rad/s 3.567x, 0.5 m/s 3.639x, 1.5 m/s 1.506x; 24 checks, 0 failed; 1/4 speed; task 20261010-103215]
+- Paper cup or straight can: an 8 oz paper cup (top 8.0 cm, bottom 5.5
+  cm, 9.0 cm tall) and an 8 cm can on a desk 40 cm from the edge, both
+  nudged to 0.30 m/s; measure which one rolls off; expect the can off
+  the edge at 1.333 s and the cup to roll in a circle of radius 23.8 cm
+  (centre of mass) about its apex point 29.1 cm from its big rim, never
+  closer than 10.9 cm to the edge, back at the start after 4.99 s having
+  turned exactly 1 / sin(7.91 deg) = 7.27 times (apex 19.99 cm from the
+  small rim and 29.08 cm from the large rim; the rim circles have those
+  radii, Physics Forums and the rolling-cone geometry); the centre stays
+  at 3.31 cm height so the energy is kept, the normal resultant lies at
+  23.6 cm along the 20.0 to 29.1 cm contact line (steady rolling from
+  the inertia tensor about the apex), and the grip needed is 0.039 of
+  the weight (0.107 at 0.5 m/s); a 12 oz cup circles at 30.3 cm with
+  6.74 turns, a 4 oz cup at 21.3 cm with 6.08; a geometry cousin of the
+  pencil short (rolls off against stops) but the cup comes back, so a
+  natural loop; top-down view; rank 2; deterministic, no seed. [produced 2026-10-10 as "Paper cup or can: which one rolls off the desk? The can at 1.3 s; the cup circles, back in 5 s", https://youtu.be/cLZ4xAJ0Ptc; measured 8 oz cup (8 / 5.5 / 9 cm) and 8 by 12 cm can at 0.3 m/s from 40 cm: can off the desk at 1.333 s, down at 1.724 s, 11.73 cm out; cup slant 9.086 cm, alpha 7.907 deg, apex 19.99 cm beyond the small rim and 29.08 cm from the large rim, 7.269 turns per lap, CM circle 23.82 cm, lap 4.990 s, nearest the edge 10.92 cm, friction needed 0.0385, normal resultant 24.08 cm inside the contact segment; 12 oz cup 30.34 cm and 6.741 turns, 4 oz cup 21.29 cm and 6.083 turns; 26 checks, 0 failed; real time; task 20261010-103219]
+- Ball bouncing down stairs: a ball with bounce 0.8 let go onto 17 cm
+  steps beside the same ball onto a flat floor from the same 47 cm;
+  measure whether the bouncing dies; expect the flat ball at rest after
+  2.79 s and the stair ball to settle into a bounce that never dies, 30.2
+  cm above each step it hits and 47.2 cm above the next (d / (1 - e^2);
+  Gruiz et al. Eur J Phys 2017: stationary bouncing always sets in),
+  one step every 0.559 s at 0.50 m/s forward; event-driven parabolas; a
+  sibling of the Zeno bounce and the bounce down a slope with a chosen
+  restitution, so rank low; the steady bounce is periodic so the short
+  loops; deterministic, no seed.
+- Runaway car up a hill: the same car with no brakes at 90 beside 100
+  km/h onto a 35 m hill; measure whether it gets over; expect 90 km/h to
+  reach 31.9 m and roll back and 100 km/h to clear it with 4.3 m spare
+  (v^2 / 2g: 50 km/h 9.8 m, 130 km/h 66.5 m; point car, no losses); a
+  one-number conversion and a cousin of "which climbs higher", so rank
+  low; closed form; deterministic, no seed.
